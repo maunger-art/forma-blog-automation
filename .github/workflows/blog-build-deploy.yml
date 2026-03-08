@@ -1,5 +1,6 @@
 name: Build and Deploy Forma Blog
 
+# Triggers: any push to main that touches these files
 on:
   push:
     branches:
@@ -8,37 +9,86 @@ on:
       - 'forma_blog_posts.md'
       - 'forma_blog_build.py'
       - 'requirements.txt'
+      - 'forma_fonts.css'
       - '.github/workflows/blog-build-deploy.yml'
+
+  # Manual trigger from GitHub Actions tab (use for testing)
   workflow_dispatch:
+    inputs:
+      force_rebuild:
+        description: 'Force rebuild all posts (ignore cache)'
+        required: false
+        default: 'false'
+        type: boolean
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
-      - name: Download repository files
+
+      # 1. Check out the repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2. Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
+      # 3. Install dependencies
       - name: Install Python packages
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
+      # 4. Show files (confirms what GitHub can see — safe to remove later)
+      - name: Show repository files
+        run: ls -la
+
+      # 5. Run the blog builder
       - name: Run blog build script
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          python forma_blog_build.py
+          FLAGS=""
+          if [ "${{ github.event.inputs.force_rebuild }}" = "true" ]; then
+            FLAGS="--force"
+          fi
+          python forma_blog_build.py $FLAGS
 
-      - name: Upload blog to GoDaddy via FTP
+      # 6. Show what was built (confirms output exists before FTP)
+      - name: Show build output
+        run: |
+          echo "=== output/ contents ==="
+          ls -la output/ || echo "output/ directory not found"
+          echo "=== output/blog/ contents ==="
+          ls -la output/blog/ || echo "output/blog/ directory not found"
+
+      # 7. Commit updated manifest back to repo (saves hash cache)
+      - name: Save updated manifest
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posts_manifest.json
+          if git diff --staged --quiet; then
+            echo "Manifest unchanged — no commit needed"
+          else
+            git commit -m "chore: update posts manifest [skip ci]"
+            git push
+          fi
+
+      # 8. Deploy to GoDaddy via FTP
+      # Secret names must exactly match what you added in GitHub Settings → Secrets
+      - name: Deploy to GoDaddy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.GODADDY_FTP_HOST }}
-          username: ${{ secrets.GODADDY_FTP_USERNAME }}
-          password: ${{ secrets.GODADDY_FTP_PASSWORD }}
-          local-dir: ./output/
-          server-dir: /public_html/blog/
+          server:   ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          local-dir:  ./output/
+          server-dir: ${{ secrets.FTP_REMOTE_DIR }}/
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.DS_Store
