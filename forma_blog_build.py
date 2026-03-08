@@ -170,7 +170,7 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
 
     others = [p for p in all_posts if p["slug"] != slug][:3]
     related_html = "\n".join([
-        f'<a class="related-card" href="{p["slug"]}.html">'
+        f'<a class="related-card" href="/blog/{p['slug']}.html">'
         f'<div class="tag">{p.get("category","")}</div>'
         f'<h3>{p["title"]}</h3></a>'
         for p in others
@@ -209,14 +209,14 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
 <body>
 <nav>
   <div class="nav-inner">
-    <a class="nav-logo" href="../index.html">Forma<span>.</span></a>
+    <a class="nav-logo" href="/">Forma<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="../features.html">Features</a></li>
-      <li><a href="../pricing.html">Pricing</a></li>
-      <li><a href="../blog.html" class="active">Blog</a></li>
-      <li><a href="../help.html">Help</a></li>
+      <li><a href="/features">Features</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/blog" class="active">Blog</a></li>
+      <li><a href="/help">Help</a></li>
     </ul>
-    <a href="../pricing.html" class="btn-nav">Start free trial</a>
+    <a href="/pricing" class="btn-nav">Start free trial</a>
   </div>
 </nav>
 <header class="article-hero">
@@ -242,16 +242,16 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
     <div class="cta-card">
       <h3>Train smarter from tomorrow</h3>
       <p>Forma adapts your plan every morning based on how your body actually feels.</p>
-      <a href="../pricing.html">Start 14-day free trial</a>
+      <a href="/pricing">Start 14-day free trial</a>
     </div>
   </aside>
 </div>
 {('<section class="related-section"><div class="related-inner"><h2>Keep reading</h2><div class="related-grid">' + related_html + '</div></div></section>') if related_html else ''}
 <footer>
   <div class="footer-inner">
-    <span>© 2026 {COMPANY_NAME} · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a></span>
+    <span>© 2026 {COMPANY_NAME} · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
     <div class="footer-links">
-      <a href="../blog.html">← All articles</a>
+      <a href="/blog">← All articles</a>
       <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a>
     </div>
   </div>
@@ -280,7 +280,7 @@ document.querySelectorAll('.article-body h2').forEach(h => obs.observe(h));
 
 def build_blog_index(all_posts: list, font_css: str) -> str:
     cards = "\n".join([
-        f'''<a class="related-card" href="blog/{p["slug"]}.html"
+        f'''<a class="related-card" href="/blog/{p["slug"]}.html"
           style="padding:24px;display:flex;flex-direction:column;gap:10px;">
           <div class="tag">{p.get("category","")}</div>
           <h3 style="font-size:1.05rem;font-weight:700;color:var(--ink);line-height:1.35;">{p["title"]}</h3>
@@ -313,14 +313,14 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
 <body>
 <nav>
   <div class="nav-inner">
-    <a class="nav-logo" href="index.html">Forma<span>.</span></a>
+    <a class="nav-logo" href="/">Forma<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="features.html">Features</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="blog.html" class="active">Blog</a></li>
-      <li><a href="help.html">Help</a></li>
+      <li><a href="/features">Features</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/blog" class="active">Blog</a></li>
+      <li><a href="/help">Help</a></li>
     </ul>
-    <a href="pricing.html" class="btn-nav">Start free trial</a>
+    <a href="/pricing" class="btn-nav">Start free trial</a>
   </div>
 </nav>
 <header class="blog-hero">
@@ -337,8 +337,8 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
   <div class="footer-inner">
     <span>© 2026 {COMPANY_NAME}</span>
     <div class="footer-links">
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
       <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a>
     </div>
   </div>
