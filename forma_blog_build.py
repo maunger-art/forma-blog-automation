@@ -206,7 +206,7 @@ def save_manifest(posts: list[dict]) -> None:
 
 def seo_enhance(raw_title: str, raw_body: str) -> dict:
     """Call Claude API to generate SEO metadata and body HTML."""
-    import urllib.request
+    import anthropic
 
     prompt = f"""You are an SEO specialist for Forma, an adaptive endurance training app (formafit.co.uk) by AMTR Health Ltd.
 
@@ -227,27 +227,14 @@ Return ONLY valid JSON (no markdown fences) with this exact structure:
   "body_html": "Complete article as semantic HTML. h2 id='heading-id', p, ul, li, strong. Keep ALL original content. No html/body wrapper."
 }}"""
 
-    data = json.dumps({
-        "model": MODEL,
-        "max_tokens": 4096,
-        "messages": [{"role": "user", "content": prompt}]
-    }).encode()
-
-    req = urllib.request.Request(
-        "https://api.anthropic.com/v1/messages",
-        data=data,
-        headers={
-            "Content-Type": "application/json",
-            "x-api-key": ANTHROPIC_API_KEY,
-            "anthropic-version": "2023-06-01",
-        },
-        method="POST"
+    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+    message = client.messages.create(
+        model=MODEL,
+        max_tokens=4096,
+        messages=[{"role": "user", "content": prompt}]
     )
 
-    with urllib.request.urlopen(req, timeout=60) as r:
-        result = json.loads(r.read())
-
-    raw_json = result["content"][0]["text"].strip()
+    raw_json = message.content[0].text.strip()
     raw_json = re.sub(r'^```json\s*|\s*```$', '', raw_json).strip()
     return json.loads(raw_json)
 
