@@ -1,0 +1,44 @@
+name: Build and Deploy Forma Blog
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'forma_blog_posts.md'
+      - 'forma_blog_build.py'
+      - 'requirements.txt'
+      - '.github/workflows/blog-build-deploy.yml'
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download repository files
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python packages
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run blog build script
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python forma_blog_build.py
+
+      - name: Upload blog to GoDaddy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.GODADDY_FTP_HOST }}
+          username: ${{ secrets.GODADDY_FTP_USERNAME }}
+          password: ${{ secrets.GODADDY_FTP_PASSWORD }}
+          local-dir: ./output/
+          server-dir: /public_html/blog/
