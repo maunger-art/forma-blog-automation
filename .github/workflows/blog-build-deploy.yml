@@ -8,14 +8,17 @@ on:
       - 'forma_blog_posts.md'
       - 'forma_blog_build.py'
       - 'requirements.txt'
-      - 'blog.html'
       - 'forma_fonts.css'
       - 'posts_manifest.json'
       - '.github/workflows/blog-build-deploy.yml'
+
   workflow_dispatch:
 
+  schedule:
+    - cron: '0 8 * * 1'
+
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -26,6 +29,7 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
 
     steps:
       - name: Checkout repository
@@ -37,25 +41,55 @@ jobs:
           python-version: '3.11'
 
       - name: Install Python packages
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
-      - name: Run blog build script
+      - name: Generate weekly post (scheduled only)
+        if: github.event_name == 'schedule'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python generate_weekly_post.py
+
+      - name: Commit generated post
+        if: github.event_name == 'schedule'
         run: |
-          python forma_blog_build.py
+          if [ ! -f .post_generated ]; then
+            echo "No post generated — queue empty."
+            echo "SKIP_DEPLOY=true" >> $GITHUB_ENV
+            exit 0
+          fi
+          TITLE=$(cat .post_generated)
+          rm -f .post_generated
+          git config user.name  "Forma Blog Bot"
+          git config user.email "bot@formafit.co.uk"
+          git add forma_blog_posts.md blog_topic_queue.txt
+          git commit -m "auto: add weekly post — ${TITLE} [skip ci]" || echo "Nothing to commit"
+          git push
+
+      - name: Skip if queue was empty
+        if: env.SKIP_DEPLOY == 'true'
+        run: |
+          echo "Queue empty — skipping build and deploy."
+          exit 0
+
+      - name: Run blog build script
+        if: env.SKIP_DEPLOY != 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python forma_blog_build.py
 
       - name: Prepare Pages output
+        if: env.SKIP_DEPLOY != 'true'
         run: |
           mkdir -p _site
           cp -R output/* _site/
           touch _site/.nojekyll
 
       - name: Upload Pages artifact
+        if: env.SKIP_DEPLOY != 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
       - name: Deploy to GitHub Pages
+        if: env.SKIP_DEPLOY != 'true'
         uses: actions/deploy-pages@v4
