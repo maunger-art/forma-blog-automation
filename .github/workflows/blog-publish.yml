@@ -1,48 +1,66 @@
-name: Publish Blog Post
+name: Generate and Publish New Blog Post
 
 on:
-  workflow_dispatch:
+  # Run every Monday at 08:00 UTC
   schedule:
-    - cron: "0 9 * * 1"
+    - cron: '0 8 * * 1'
+
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: write   # needed to commit back to the repo
 
 jobs:
-  publish:
-    name: Generate & Publish Blog Post
+  generate-post:
+    name: Generate post and commit to repo
     runs-on: ubuntu-latest
 
+    # Prevent running if the last commit was the bot itself (loop guard)
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+
     steps:
-      - name: Checkout main
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          # Fetch the very latest state of main before we do anything
           ref: main
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
-      - name: Install Python packages
-        run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt
+      - name: Install dependencies
+        run: pip install anthropic python-slugify markdown
 
-      - name: Generate blog post
+      - name: Generate weekly post
+        id: generate
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python generate_weekly_post.py
-
-      - name: Commit generated post
         run: |
+          python generate_weekly_post.py
+          # generate_weekly_post.py writes .post_generated if a post was made
+          if [ -f .post_generated ]; then
+            echo "generated=true" >> $GITHUB_OUTPUT
+            echo "title=$(cat .post_generated)" >> $GITHUB_OUTPUT
+            rm -f .post_generated
+          else
+            echo "generated=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push updated content
+        if: steps.generate.outputs.generated == 'true'
+        run: |
+          git config user.name  "Forma Blog Bot"
           git config user.email "bot@formafit.co.uk"
-          git config user.name "Forma Blog Bot"
           git add forma_blog_posts.md blog_topic_queue.txt
-          git diff --staged --quiet || git commit -m "blog: generate weekly post"
+          git commit -m "auto: add post — ${{ steps.generate.outputs.title }} [skip ci]"
           git push
 
-      - name: Build blog
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python forma_blog_build.py
+      - name: Skip — no topics queued
+        if: steps.generate.outputs.generated == 'false'
+        run: |
+          echo "ℹ️  blog_topic_queue.txt is empty — nothing generated."
+          echo "    Add topics to queue new posts."

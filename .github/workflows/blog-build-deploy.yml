@@ -5,6 +5,7 @@ on:
     branches:
       - main
     paths:
+      # Trigger on any content or config change
       - 'forma_blog_posts.md'
       - 'forma_blog_build.py'
       - 'requirements.txt'
@@ -12,13 +13,11 @@ on:
       - 'posts_manifest.json'
       - '.github/workflows/blog-build-deploy.yml'
 
+  # Allow manual trigger
   workflow_dispatch:
 
-  schedule:
-    - cron: '0 8 * * 1'
-
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -28,68 +27,45 @@ concurrency:
 
 jobs:
   build-and-deploy:
+    name: Build blog and deploy to GitHub Pages
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
 
     steps:
-      - name: Checkout repository
+      - name: Checkout latest repo state
         uses: actions/checkout@v4
+        with:
+          # Always build from the very latest commit on main,
+          # including posts committed by the generate workflow
+          ref: main
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install Python packages
+      - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate weekly post (scheduled only)
-        if: github.event_name == 'schedule'
+      - name: Build blog
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python generate_weekly_post.py
-
-      - name: Commit generated post
-        if: github.event_name == 'schedule'
         run: |
-          if [ ! -f .post_generated ]; then
-            echo "No post generated — queue empty."
-            echo "SKIP_DEPLOY=true" >> $GITHUB_ENV
-            exit 0
-          fi
-          TITLE=$(cat .post_generated)
-          rm -f .post_generated
-          git config user.name  "Forma Blog Bot"
-          git config user.email "bot@formafit.co.uk"
-          git add forma_blog_posts.md blog_topic_queue.txt
-          git commit -m "auto: add weekly post — ${TITLE} [skip ci]" || echo "Nothing to commit"
-          git push
+          echo "▶ Starting build..."
+          python forma_blog_build.py
+          echo "▶ Build complete."
 
-      - name: Skip if queue was empty
-        if: env.SKIP_DEPLOY == 'true'
-        run: |
-          echo "Queue empty — skipping build and deploy."
-          exit 0
-
-      - name: Run blog build script
-        if: env.SKIP_DEPLOY != 'true'
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python forma_blog_build.py
-
-      - name: Prepare Pages output
-        if: env.SKIP_DEPLOY != 'true'
+      - name: Prepare GitHub Pages output
         run: |
           mkdir -p _site
           cp -R output/* _site/
           touch _site/.nojekyll
+          echo "▶ Pages output ready — $(ls _site | wc -l) files"
 
       - name: Upload Pages artifact
-        if: env.SKIP_DEPLOY != 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
       - name: Deploy to GitHub Pages
-        if: env.SKIP_DEPLOY != 'true'
         uses: actions/deploy-pages@v4
