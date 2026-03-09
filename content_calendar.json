@@ -1,0 +1,67 @@
+{
+  "_comment": "Forma Blog Content Calendar — controls automated post generation",
+  "_rotation": "Categories cycle in order. AI picks a fresh angle each time, never repeating existing titles.",
+
+  "schedule": {
+    "frequency_days": 14,
+    "publish_day": "Monday"
+  },
+
+  "category_rotation": [
+    {
+      "id": "training-science-hrv",
+      "label": "Training Science / HRV",
+      "description": "Heart rate variability, periodisation, aerobic adaptation, VO2 max, lactate threshold, training zones, progressive overload, polarised training",
+      "pill_colour": "#DCFCE7",
+      "pill_text": "#16A34A",
+      "emoji": "📊"
+    },
+    {
+      "id": "recovery-sleep",
+      "label": "Recovery & Sleep",
+      "description": "Sleep quality and athletic performance, active recovery, parasympathetic nervous system, overreaching vs overtraining, deload weeks, nutrition for recovery, stress hormones and cortisol",
+      "pill_colour": "#DBEAFE",
+      "pill_text": "#2563EB",
+      "emoji": "😴"
+    },
+    {
+      "id": "wearables-data",
+      "label": "Wearables & Data",
+      "description": "Garmin, Oura, WHOOP, Apple Watch, Polar, COROS — accuracy, metrics comparison, HRV measurement differences, GPS tracking, chest strap vs optical HR, making sense of readiness scores",
+      "pill_colour": "#FEF9C3",
+      "pill_text": "#CA8A04",
+      "emoji": "⌚"
+    },
+    {
+      "id": "race-prep-performance",
+      "label": "Race Prep & Performance",
+      "description": "Tapering strategies, race day nutrition, pacing, half marathon and marathon prep, cycling race readiness, brick sessions, multi-sport periodisation, peak performance timing",
+      "pill_colour": "#FEE2E2",
+      "pill_text": "#DC2626",
+      "emoji": "🏆"
+    }
+  ],
+
+  "tone_guidelines": "Forma's voice is direct, science-backed, and anti-hype. Write like a smart coach who has read the research, not a journalist. Use real numbers and cite mechanisms. Avoid motivational fluff. The reader is a committed amateur endurance athlete — runner or cyclist — who trains 5-10 hours per week and wants to understand their body, not just be told what to do.",
+
+  "content_guidelines": [
+    "1500-2000 words per post",
+    "Open with a strong counterintuitive hook or a common mistake",
+    "Include at least one concrete example or case (e.g. 'an athlete with a CTL of 80...')",
+    "Use subheadings to break up sections — readers scan first",
+    "End with a clear, actionable takeaway tied to the Forma readiness system",
+    "Do not use motivational clichés like 'push through', 'dig deep', 'no pain no gain'",
+    "Avoid generic advice — be specific (e.g. don't say 'sleep more', say 'aim for 8-9h in the 3 nights before a key session')"
+  ],
+
+  "seo_guidelines": [
+    "Target long-tail keywords naturally — e.g. 'how to use HRV for marathon training' not just 'HRV'",
+    "Meta description: 150-160 chars, includes primary keyword, no clickbait",
+    "Title: 50-65 chars, front-load the keyword",
+    "Include internal context: mention Forma's readiness score where it naturally fits"
+  ],
+
+  "next_category_index": 0,
+
+  "generation_history": []
+}

@@ -75,8 +75,15 @@ def load_fonts() -> str:
 def load_manifest() -> list:
     if not MANIFEST_FILE.exists():
         print(f"❌ {MANIFEST_FILE} not found"); raise SystemExit(1)
-    posts = [p for p in json.load(open(MANIFEST_FILE)) if p.get("body_html")]
-    print(f"✓ {len(posts)} posts loaded")
+    all_posts = json.load(open(MANIFEST_FILE))
+    # Only build posts that have HTML content AND are not in draft status
+    # (draft posts are on their own branch; status is cleared to "published" on merge)
+    posts = [
+        p for p in all_posts
+        if p.get("body_html") and p.get("status", "published") != "draft"
+    ]
+    drafts = len(all_posts) - len(posts)
+    print(f"✓ {len(posts)} posts loaded ({drafts} drafts skipped)")
     return posts
 
 # ── Shared nav ────────────────────────────────────────────────────────────────
