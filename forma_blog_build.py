@@ -28,6 +28,7 @@ from pathlib import Path
 MANIFEST_FILE = Path("posts_manifest.json")
 OUTPUT_DIR    = Path("output")
 SITE_URL      = "https://formafit.co.uk"
+BLOG_URL      = "https://blog.formafit.co.uk"
 BRAND_NAME    = "Forma"
 COMPANY_NAME  = "AMTR Health Ltd"
 CONTACT_EMAIL = "formafit816@gmail.com"
@@ -44,22 +45,34 @@ BRAND_CSS = """
 }
 body { font-family: var(--font); color: var(--ink); background: var(--white);
   font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.96);
+/* NAV — matches formafit.co.uk exactly */
+nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97);
   backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
-.nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; height: 64px;
-  display: flex; align-items: center; gap: 32px; }
-.nav-logo { font-weight: 800; font-size: 1.4rem; color: var(--ink);
-  text-decoration: none; letter-spacing: -0.02em; }
-.nav-logo span { color: var(--accent); }
-.nav-links { display: flex; gap: 28px; list-style: none; flex: 1; }
+.nav-inner { max-width: 1160px; margin: 0 auto; padding: 0 32px; height: 64px;
+  display: flex; align-items: center; }
+.nav-logo { display: flex; align-items: center; gap: 6px; text-decoration: none;
+  margin-right: auto; flex-shrink: 0; }
+.nav-logo-mark { display: flex; align-items: baseline; gap: 1px; }
+.nav-logo-mark .f { font-size: 1.35rem; font-weight: 800; color: var(--accent);
+  letter-spacing: -0.03em; line-height: 1; font-style: italic; }
+.nav-logo-mark .slash { font-size: 1.1rem; font-weight: 300; color: var(--accent);
+  margin: 0 1px; }
+.nav-logo-text { font-size: 0.95rem; font-weight: 700; color: var(--ink);
+  letter-spacing: 0.12em; text-transform: uppercase; }
+.nav-links { display: flex; gap: 4px; list-style: none; margin-right: 12px; }
 .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--ink-60);
-  text-decoration: none; transition: color 0.15s; }
-.nav-links a:hover, .nav-links a.active { color: var(--ink); }
-.btn-nav { padding: 9px 20px; border-radius: 99px; background: var(--accent);
+  text-decoration: none; padding: 6px 14px; border-radius: 8px; transition: all 0.15s; }
+.nav-links a:hover { color: var(--ink); }
+.nav-links a.active { color: var(--ink); font-weight: 600; }
+.btn-login { padding: 8px 18px; border-radius: 99px; border: 1.5px solid var(--border);
+  background: white; color: var(--ink); font-size: 0.875rem; font-weight: 500;
+  text-decoration: none; margin-right: 8px; transition: border-color 0.15s; }
+.btn-login:hover { border-color: var(--ink-30); }
+.btn-start { padding: 9px 20px; border-radius: 99px; background: var(--accent);
   color: white; font-size: 0.875rem; font-weight: 600; text-decoration: none;
   transition: background 0.15s; white-space: nowrap; }
-.btn-nav:hover { background: var(--accent-mid); }
-@media(max-width:768px){ .nav-links { display: none; } }
+.btn-start:hover { background: var(--accent-mid); }
+@media(max-width:768px){ .nav-links { display: none; } .btn-login { display: none; } }
 .article-hero { background: var(--ink); padding: 72px 24px 56px; }
 .article-hero .container { max-width: 780px; margin: 0 auto; }
 .article-category { display: inline-block; padding: 4px 14px; border-radius: 99px;
@@ -110,12 +123,33 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.96)
 .related-card .tag { font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.06em; color: var(--accent); margin-bottom: 8px; }
 .related-card h3 { font-size: 0.9rem; font-weight: 600; color: var(--ink); line-height: 1.45; }
-footer { background: var(--ink); padding: 40px 24px; }
-.footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between;
-  align-items: center; flex-wrap: wrap; gap: 16px; font-size: 0.83rem; color: rgba(255,255,255,0.4); }
-.footer-inner a { color: rgba(255,255,255,0.4); text-decoration: none; }
-.footer-inner a:hover { color: white; }
-.footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+/* FOOTER — matches formafit.co.uk 4-column footer */
+footer { background: var(--ink); padding: 64px 32px 40px; }
+.footer-top { max-width: 1160px; margin: 0 auto;
+  display: grid; grid-template-columns: 220px repeat(3, 1fr); gap: 48px;
+  padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+@media(max-width:768px) { .footer-top { grid-template-columns: 1fr 1fr; } }
+@media(max-width:480px) { .footer-top { grid-template-columns: 1fr; } }
+.footer-brand-logo { display: flex; align-items: baseline; gap: 1px; margin-bottom: 12px; }
+.footer-brand-logo .f { font-size: 1.3rem; font-weight: 800; color: var(--accent);
+  font-style: italic; }
+.footer-brand-logo .slash { font-size: 1.05rem; font-weight: 300; color: var(--accent);
+  margin: 0 1px; }
+.footer-brand-logo .name { font-size: 0.9rem; font-weight: 700; color: white;
+  letter-spacing: 0.12em; text-transform: uppercase; }
+.footer-brand p { font-size: 0.83rem; color: rgba(255,255,255,0.35); line-height: 1.7;
+  max-width: 180px; }
+.footer-col h4 { font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.1em; color: rgba(255,255,255,0.3); margin-bottom: 16px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col a { font-size: 0.875rem; color: rgba(255,255,255,0.5);
+  text-decoration: none; transition: color 0.15s; }
+.footer-col a:hover { color: white; }
+.footer-bottom { max-width: 1160px; margin: 0 auto; padding-top: 28px;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 8px; }
+.footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.2); }
+.footer-tagline { font-size: 0.78rem; color: rgba(255,255,255,0.2); font-style: italic; }
 """
 
 def load_fonts() -> str:
@@ -209,14 +243,18 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
 <body>
 <nav>
   <div class="nav-inner">
-    <a class="nav-logo" href="/">Forma<span>.</span></a>
+    <a class="nav-logo" href="{SITE_URL}">
+      <div class="nav-logo-mark"><span class="f">F</span><span class="slash">/</span></div>
+      <span class="nav-logo-text">Forma</span>
+    </a>
     <ul class="nav-links">
-      <li><a href="/features">Features</a></li>
-      <li><a href="/pricing">Pricing</a></li>
-      <li><a href="/blog" class="active">Blog</a></li>
-      <li><a href="/help">Help</a></li>
+      <li><a href="{SITE_URL}/features">Features</a></li>
+      <li><a href="{SITE_URL}/pricing">Pricing</a></li>
+      <li><a href="{BLOG_URL}" class="active">Blog</a></li>
+      <li><a href="{SITE_URL}/help">Help</a></li>
     </ul>
-    <a href="/pricing" class="btn-nav">Start free trial</a>
+    <a href="{SITE_URL}/login" class="btn-login">Log in</a>
+    <a href="{SITE_URL}/pricing" class="btn-start">Start free</a>
   </div>
 </nav>
 <header class="article-hero">
@@ -242,18 +280,48 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
     <div class="cta-card">
       <h3>Train smarter from tomorrow</h3>
       <p>Forma adapts your plan every morning based on how your body actually feels.</p>
-      <a href="/pricing">Start 14-day free trial</a>
+      <a href="{SITE_URL}/pricing">Start 14-day free trial</a>
     </div>
   </aside>
 </div>
 {('<section class="related-section"><div class="related-inner"><h2>Keep reading</h2><div class="related-grid">' + related_html + '</div></div></section>') if related_html else ''}
 <footer>
-  <div class="footer-inner">
-    <span>© 2026 {COMPANY_NAME} · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
-    <div class="footer-links">
-      <a href="/blog">← All articles</a>
-      <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-brand-logo">
+        <span class="f">F</span><span class="slash">/</span>
+        <span class="name">Forma</span>
+      </div>
+      <p>Readiness-driven endurance training for runners and cyclists.</p>
     </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="{SITE_URL}/features">Features</a></li>
+        <li><a href="{SITE_URL}/pricing">Pricing</a></li>
+        <li><a href="{SITE_URL}/changelog">Changelog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="{BLOG_URL}">Blog</a></li>
+        <li><a href="{SITE_URL}/help">Help Centre</a></li>
+        <li><a href="{SITE_URL}/community">Community</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="{SITE_URL}/about">About</a></li>
+        <li><a href="{SITE_URL}/privacy">Privacy</a></li>
+        <li><a href="{SITE_URL}/terms">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Forma. Train smart. Stay whole.</span>
+    <span class="footer-tagline">Built for endurance. Designed for humans.</span>
   </div>
 </footer>
 <script>
@@ -295,17 +363,17 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog — Forma Training Intelligence</title>
   <meta name="description" content="Science-backed writing on HRV, recovery, adaptive training, and endurance performance.">
-  <link rel="canonical" href="{SITE_URL}/blog">
+  <link rel="canonical" href="{BLOG_URL}">
   <meta name="robots" content="index, follow">
   <style>
 {font_css}
 {BRAND_CSS}
-.blog-hero {{ background:var(--ink); padding:64px 24px; }}
-.blog-hero .container {{ max-width:1100px; margin:0 auto; }}
+.blog-hero {{ background:var(--ink); padding:64px 32px; }}
+.blog-hero .container {{ max-width:1160px; margin:0 auto; }}
 .blog-hero h1 {{ font-size:clamp(2rem,4vw,3rem); font-weight:800; color:white;
   letter-spacing:-0.02em; margin-bottom:12px; }}
 .blog-hero p {{ font-size:1rem; color:rgba(255,255,255,0.5); max-width:520px; }}
-.blog-grid-section {{ max-width:1100px; margin:56px auto; padding:0 24px 80px; }}
+.blog-grid-section {{ max-width:1160px; margin:56px auto; padding:0 32px 80px; }}
 .blog-grid {{ display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }}
 @media(max-width:640px){{ .blog-grid {{ grid-template-columns:1fr; }} }}
   </style>
@@ -313,14 +381,18 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
 <body>
 <nav>
   <div class="nav-inner">
-    <a class="nav-logo" href="/">Forma<span>.</span></a>
+    <a class="nav-logo" href="{SITE_URL}">
+      <div class="nav-logo-mark"><span class="f">F</span><span class="slash">/</span></div>
+      <span class="nav-logo-text">Forma</span>
+    </a>
     <ul class="nav-links">
-      <li><a href="/features">Features</a></li>
-      <li><a href="/pricing">Pricing</a></li>
-      <li><a href="/blog" class="active">Blog</a></li>
-      <li><a href="/help">Help</a></li>
+      <li><a href="{SITE_URL}/features">Features</a></li>
+      <li><a href="{SITE_URL}/pricing">Pricing</a></li>
+      <li><a href="{BLOG_URL}" class="active">Blog</a></li>
+      <li><a href="{SITE_URL}/help">Help</a></li>
     </ul>
-    <a href="/pricing" class="btn-nav">Start free trial</a>
+    <a href="{SITE_URL}/login" class="btn-login">Log in</a>
+    <a href="{SITE_URL}/pricing" class="btn-start">Start free</a>
   </div>
 </nav>
 <header class="blog-hero">
@@ -334,13 +406,42 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
   <div class="blog-grid">{cards}</div>
 </div>
 <footer>
-  <div class="footer-inner">
-    <span>© 2026 {COMPANY_NAME}</span>
-    <div class="footer-links">
-      <a href="/privacy">Privacy</a>
-      <a href="/terms">Terms</a>
-      <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-brand-logo">
+        <span class="f">F</span><span class="slash">/</span>
+        <span class="name">Forma</span>
+      </div>
+      <p>Readiness-driven endurance training for runners and cyclists.</p>
     </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="{SITE_URL}/features">Features</a></li>
+        <li><a href="{SITE_URL}/pricing">Pricing</a></li>
+        <li><a href="{SITE_URL}/changelog">Changelog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="{BLOG_URL}">Blog</a></li>
+        <li><a href="{SITE_URL}/help">Help Centre</a></li>
+        <li><a href="{SITE_URL}/community">Community</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="{SITE_URL}/about">About</a></li>
+        <li><a href="{SITE_URL}/privacy">Privacy</a></li>
+        <li><a href="{SITE_URL}/terms">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Forma. Train smart. Stay whole.</span>
+    <span class="footer-tagline">Built for endurance. Designed for humans.</span>
   </div>
 </footer>
 </body>
