@@ -39,7 +39,49 @@ jobs:
           git diff --staged --quiet || git commit -m "blog: generate weekly post"
           git push
 
-      - name: Trigger site build
+      name: Publish Blog Post
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 * * 1"
+
+jobs:
+  publish:
+    name: Generate & Publish Blog Post
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+
+      - name: Generate blog post
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh workflow run blog-build-deploy.yml --ref main
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python generate_weekly_post.py
+
+      - name: Commit generated post
+        run: |
+          git config user.email "bot@formafit.co.uk"
+          git config user.name "Forma Blog Bot"
+          git add forma_blog_posts.md blog_topic_queue.txt
+          git diff --staged --quiet || git commit -m "blog: generate weekly post"
+          git push
+
+      - name: Build blog
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python forma_blog_build.py
+        
