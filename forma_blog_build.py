@@ -92,10 +92,11 @@ def NAV(active="blog"):
              ("Pricing",  f"{SITE_URL}/pricing",  "pricing"),
              ("Blog",     BLOG_URL,                "blog"),
              ("Help",     f"{SITE_URL}/help",      "help")]
-    lis = "\n".join([
-        f'<li><a href="{url}"{" class=\"active\"" if k==active else ""}>{label}</a></li>'
-        for label, url, k in links
-    ])
+        items = []
+    for label, url, k in links:
+        active_class = " class='active'" if k == active else ""
+        items.append(f'<li><a href="{url}"{active_class}>{label}</a></li>')
+    lis = "\n".join(items)
     return f"""<nav>
   <div class="nav-inner">
     <a class="nav-logo" href="{SITE_URL}">{LOGO_SVG}</a>
