@@ -410,8 +410,8 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
   <link rel="alternate" type="application/rss+xml" title="Forma Blog" href="{BLOG_URL}/feed.xml">
   <script type="application/ld+json">{schema}</script>
   <style>
-{font_css}
 {BRAND_CSS}
+{font_css}
   </style>
 </head>
 <body>
@@ -500,8 +500,8 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
   <meta name="twitter:image" content="{OG_IMAGE_URL}">
   <link rel="alternate" type="application/rss+xml" title="Forma Blog" href="{BLOG_URL}/feed.xml">
   <style>
-{font_css}
 {BRAND_CSS}
+{font_css}
 /* BLOG INDEX */
 .blog-hero {{ padding: 80px 32px 72px; max-width: 1200px; margin: 0 auto; }}
 .blog-eyebrow {{ font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
