@@ -191,8 +191,8 @@ footer { background: var(--ink); padding: 64px 32px 40px; }
 .cat-pill { display: inline-block; padding: 4px 14px; border-radius: 99px;
   font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
   background: rgba(74,222,128,0.15); color: #4ADE80; margin-bottom: 20px; }
-.article-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800;
-  color: white; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 20px; }
+.article-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 300;
+  color: white; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 20px; }
 .article-meta { display: flex; gap: 20px; flex-wrap: wrap;
   font-size: 0.825rem; color: rgba(255,255,255,0.4); }
 .article-meta strong { color: rgba(255,255,255,0.65); }
@@ -393,8 +393,8 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
 .blog-hero {{ padding: 80px 32px 72px; max-width: 1200px; margin: 0 auto; }}
 .blog-eyebrow {{ font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.12em; color: var(--green); margin-bottom: 20px; }}
-.blog-hero h1 {{ font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800;
-  color: var(--ink); line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 20px; }}
+.blog-hero h1 {{ font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 300;
+  color: var(--ink); line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 20px; }}
 .blog-hero p {{ font-size: 1.05rem; color: var(--ink-60); max-width: 520px; line-height: 1.75; }}
 .blog-divider {{ border: none; border-top: 1px solid var(--border); margin: 0; }}
 .blog-grid-section {{ max-width: 1200px; margin: 0 auto; padding: 56px 32px 80px; }}
@@ -414,7 +414,7 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
   font-size: 0.7rem; font-weight: 700; width: fit-content; }}
 .post-meta {{ font-size: 0.72rem; font-weight: 600; color: var(--ink-30);
   letter-spacing: 0.04em; }}
-.post-card h3 {{ font-size: 1rem; font-weight: 700; color: var(--ink);
+.post-card h3 {{ font-size: 1rem; font-weight: 500; color: var(--ink);
   line-height: 1.4; flex: 1; }}
 .post-card p {{ font-size: 0.85rem; color: var(--ink-60); line-height: 1.65; }}
 
