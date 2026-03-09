@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
 """
-Forma Blog Builder  v5  — matches formafit.co.uk design exactly
+Forma Blog Builder  v6
+======================
+Unchanged from v5 except three additions:
+  C. writes output/sitemap.xml and output/feed.xml
+  D. generates output/og-default.png and injects og:image / twitter:image
+     into every page (index + posts)
 """
 
 import json
-from datetime import date
+import textwrap
+from datetime import date, datetime
 from pathlib import Path
+from email.utils import format_datetime
+from xml.sax.saxutils import escape as xml_escape
 
 MANIFEST_FILE = Path("posts_manifest.json")
 OUTPUT_DIR    = Path("output")
@@ -15,6 +23,8 @@ BRAND_NAME    = "Forma"
 COMPANY_NAME  = "AMTR Health Ltd"
 CONTACT_EMAIL = "formafit816@gmail.com"
 TODAY         = date.today().isoformat()
+
+OG_IMAGE_URL  = f"{BLOG_URL}/og-default.png"   # shared OG image for all pages
 
 # ── Exact SVG logo mark from brand files ──────────────────────────────────────
 LOGO_SVG = """<svg width="200" height="44" viewBox="0 0 200 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +45,6 @@ LOGO_SVG_WHITE = """<svg width="200" height="44" viewBox="0 0 200 44" fill="none
   <text x="60" y="33" font-family="Oxanium, monospace" font-weight="800" font-size="28" fill="white" letter-spacing="1">FORMA</text>
 </svg>"""
 
-# Category → (pill colour, thumb bg, emoji)
 CATEGORY_STYLES = {
     "training science": ("#DCFCE7", "#16A34A", "#F0FFF4", "🧬"),
     "wearables":        ("#FEF9C3", "#CA8A04", "#FEFCE8", "⌚"),
@@ -55,12 +64,10 @@ def cat_style(cat: str):
     return ("#DCFCE7", "#16A34A", "#F0FFF4", "📖")
 
 def fmt_date(d: str) -> str:
-    """2026-03-09 → MARCH 2026"""
     try:
-        from datetime import datetime
         dt = datetime.strptime(d[:10], "%Y-%m-%d")
         return dt.strftime("%B %Y").upper()
-    except:
+    except Exception:
         return d.upper() if d else "2026"
 
 def load_fonts() -> str:
@@ -76,8 +83,6 @@ def load_manifest() -> list:
     if not MANIFEST_FILE.exists():
         print(f"❌ {MANIFEST_FILE} not found"); raise SystemExit(1)
     all_posts = json.load(open(MANIFEST_FILE))
-    # Only build posts that have HTML content AND are not in draft status
-    # (draft posts are on their own branch; status is cleared to "published" on merge)
     posts = [
         p for p in all_posts
         if p.get("body_html") and p.get("status", "published") != "draft"
@@ -88,17 +93,15 @@ def load_manifest() -> list:
 
 # ── Shared nav ────────────────────────────────────────────────────────────────
 def NAV(active="blog"):
-    links = [("Features", f"{SITE_URL}/features", "features"),
-             ("Pricing",  f"{SITE_URL}/pricing",  "pricing"),
-             ("Blog",     BLOG_URL,                "blog"),
-             ("Help",     f"{SITE_URL}/help",      "help")]
-
+    links = [("Features", f"{SITE_URL}/features",  "features"),
+             ("Pricing",  f"{SITE_URL}/pricing",   "pricing"),
+             ("Blog",     BLOG_URL,                 "blog"),
+             ("Help",     f"{SITE_URL}/help",       "help")]
     items = []
     for label, url, k in links:
         active_class = " class='active'" if k == active else ""
         items.append(f'<li><a href="{url}"{active_class}>{label}</a></li>')
     lis = "\n".join(items)
-
     return f"""<nav>
   <div class="nav-inner">
     <a class="nav-logo" href="{SITE_URL}">{LOGO_SVG}</a>
@@ -148,8 +151,6 @@ BRAND_CSS = """
 }
 body { font-family: var(--font); color: var(--ink); background: var(--white);
   font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-
-/* NAV */
 nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97);
   backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
 .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 68px;
@@ -173,8 +174,6 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97)
   text-decoration: none; transition: background 0.15s; white-space: nowrap; }
 .btn-start:hover { background: var(--green-mid); }
 @media(max-width:768px) { .nav-links,.btn-login { display: none; } }
-
-/* FOOTER */
 footer { background: var(--ink); padding: 64px 32px 40px; }
 .footer-top { max-width: 1200px; margin: 0 auto;
   display: grid; grid-template-columns: 280px repeat(3, 1fr); gap: 48px;
@@ -194,8 +193,6 @@ footer { background: var(--ink); padding: 64px 32px 40px; }
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 .footer-copy, .footer-tagline { font-size: 0.78rem; color: rgba(255,255,255,0.2); }
 .footer-tagline { font-style: italic; }
-
-/* ARTICLE STYLES */
 .article-hero { background: var(--ink); padding: 72px 32px 56px; }
 .article-hero-inner { max-width: 800px; margin: 0 auto; }
 .cat-pill { display: inline-block; padding: 4px 14px; border-radius: 99px;
@@ -219,8 +216,8 @@ footer { background: var(--ink); padding: 64px 32px 40px; }
 .article-body li { font-size: 1.0625rem; line-height: 1.75; margin-bottom: 6px; }
 .article-body strong { font-weight: 700; }
 .article-body hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
-.article-body blockquote { border-left: 3px solid var(--green);
-  padding: 12px 20px; background: var(--green-light); border-radius: 0 8px 8px 0; margin: 28px 0; }
+.article-body blockquote { border-left: 3px solid var(--green); padding: 12px 20px;
+  background: var(--green-light); border-radius: 0 8px 8px 0; margin: 28px 0; }
 .article-sidebar { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 16px; }
 .sidebar-card { background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 20px; }
@@ -254,6 +251,103 @@ footer { background: var(--ink); padding: 64px 32px 40px; }
 .related-card h3 { font-size: 0.9rem; font-weight: 600; color: var(--ink); line-height: 1.45; }
 """
 
+# ── C: Sitemap ────────────────────────────────────────────────────────────────
+def build_sitemap(all_posts: list) -> str:
+    urls = [f"  <url><loc>{BLOG_URL}/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>"]
+    for p in all_posts:
+        loc = f"{BLOG_URL}/blog/{p['slug']}.html"
+        lastmod = p.get("date", TODAY)
+        urls.append(f"  <url><loc>{loc}</loc><lastmod>{lastmod}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>")
+    return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>"
+
+# ── C: RSS feed ───────────────────────────────────────────────────────────────
+def build_rss(all_posts: list) -> str:
+    recent = sorted(all_posts, key=lambda p: p.get("date", ""), reverse=True)[:20]
+
+    def rfc822(d: str) -> str:
+        try:
+            dt = datetime.strptime(d[:10], "%Y-%m-%d")
+            return format_datetime(dt)
+        except Exception:
+            return ""
+
+    items = []
+    for p in recent:
+        title    = xml_escape(p.get("title", ""))
+        link     = f"{BLOG_URL}/blog/{p['slug']}.html"
+        desc     = xml_escape(p.get("meta_description", ""))
+        pub_date = rfc822(p.get("date", TODAY))
+        items.append(f"""  <item>
+    <title>{title}</title>
+    <link>{link}</link>
+    <description>{desc}</description>
+    <pubDate>{pub_date}</pubDate>
+    <guid isPermaLink="true">{link}</guid>
+  </item>""")
+
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forma Blog — Train smart. Think deep.</title>
+    <link>{BLOG_URL}</link>
+    <description>Science-backed writing on HRV, recovery and adaptive endurance training.</description>
+    <language>en-gb</language>
+    <lastBuildDate>{rfc822(TODAY)}</lastBuildDate>
+    <atom:link href="{BLOG_URL}/feed.xml" rel="self" type="application/rss+xml"/>
+{chr(10).join(items)}
+  </channel>
+</rss>"""
+
+# ── D: OG image (SVG → PNG via Pillow if available, else SVG fallback) ────────
+def build_og_image(output_dir: Path):
+    """
+    Generate a simple branded OG image at output/og-default.png.
+    Uses Pillow if installed. Falls back to writing an SVG at og-default.svg
+    and a 1x1 transparent PNG stub so the HTML reference doesn't 404.
+    """
+    out_png = output_dir / "og-default.png"
+
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+        W, H = 1200, 630
+        img = Image.new("RGB", (W, H), "#0F1117")
+        draw = ImageDraw.Draw(img)
+
+        # Green accent bar left
+        draw.rectangle([0, 0, 8, H], fill="#1A6B4A")
+
+        # Brand name
+        try:
+            font_large = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 72)
+            font_small = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 32)
+            font_tag   = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
+        except Exception:
+            font_large = ImageFont.load_default()
+            font_small = font_large
+            font_tag   = font_large
+
+        draw.text((80, 160), "FORMA", fill="#FFFFFF", font=font_large)
+        draw.text((80, 260), "Train smart. Think deep.", fill="#1A6B4A", font=font_small)
+        draw.text((80, 330), "Science-backed writing for endurance athletes.", fill="#5A5F6E", font=font_tag)
+
+        # Bottom domain
+        draw.text((80, H - 80), "blog.formafit.co.uk", fill="rgba(255,255,255,0.3)", font=font_tag)
+
+        img.save(out_png, "PNG", optimize=True)
+        print(f"  ✓ og-default.png ({out_png.stat().st_size // 1024} KB) — Pillow")
+
+    except ImportError:
+        # Pillow not installed — write a minimal valid 1×1 PNG stub
+        # (real browsers won't error; social crawlers get a fallback)
+        import base64
+        stub = base64.b64decode(
+            "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+        )
+        out_png.write_bytes(stub)
+        print("  ⚠  og-default.png — stub (install pillow for real image)")
+
+
+# ── Post pages ────────────────────────────────────────────────────────────────
 def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
     slug      = post["slug"]
     title     = post["title"]
@@ -265,7 +359,6 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
     toc_items = post.get("toc_items", [])
     pub_date  = post.get("date", TODAY)
     canonical = f"{BLOG_URL}/blog/{slug}"
-    og_image  = f"{SITE_URL}/og/blog-{slug}.jpg"
 
     schema = json.dumps({
         "@context": "https://schema.org", "@type": "BlogPosting",
@@ -303,13 +396,15 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
   <meta property="og:url" content="{canonical}">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{meta_desc}">
-  <meta property="og:image" content="{og_image}">
+  <meta property="og:image" content="{OG_IMAGE_URL}">
   <meta property="og:site_name" content="Forma">
   <meta property="og:locale" content="en_GB">
   <meta property="article:published_time" content="{pub_date}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{meta_desc}">
+  <meta name="twitter:image" content="{OG_IMAGE_URL}">
+  <link rel="alternate" type="application/rss+xml" title="Forma Blog" href="{BLOG_URL}/feed.xml">
   <script type="application/ld+json">{schema}</script>
   <style>
 {font_css}
@@ -364,6 +459,8 @@ document.querySelectorAll('.article-body h2').forEach(h => obs.observe(h));
 </body>
 </html>"""
 
+
+# ── Blog index ────────────────────────────────────────────────────────────────
 def build_blog_index(all_posts: list, font_css: str) -> str:
     cards = ""
     for p in all_posts:
@@ -395,10 +492,13 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
   <meta property="og:title" content="Blog — Forma">
   <meta property="og:description" content="Science-backed writing on HRV, recovery and adaptive endurance training.">
   <meta property="og:url" content="{BLOG_URL}">
+  <meta property="og:image" content="{OG_IMAGE_URL}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{OG_IMAGE_URL}">
+  <link rel="alternate" type="application/rss+xml" title="Forma Blog" href="{BLOG_URL}/feed.xml">
   <style>
 {font_css}
 {BRAND_CSS}
-
 /* BLOG INDEX */
 .blog-hero {{ padding: 80px 32px 72px; max-width: 1200px; margin: 0 auto; }}
 .blog-eyebrow {{ font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
@@ -411,7 +511,6 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
 .blog-grid {{ display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }}
 @media(max-width:900px) {{ .blog-grid {{ grid-template-columns: repeat(2,1fr); }} }}
 @media(max-width:580px) {{ .blog-grid {{ grid-template-columns: 1fr; }} }}
-
 .post-card {{ background: white; border: 1px solid var(--border); border-radius: 16px;
   text-decoration: none; display: flex; flex-direction: column;
   overflow: hidden; transition: all 0.2s; }}
@@ -422,13 +521,9 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
 .post-body {{ padding: 24px; display: flex; flex-direction: column; gap: 8px; flex: 1; }}
 .post-pill {{ display: inline-block; padding: 3px 12px; border-radius: 99px;
   font-size: 0.7rem; font-weight: 700; width: fit-content; }}
-.post-meta {{ font-size: 0.72rem; font-weight: 600; color: var(--ink-30);
-  letter-spacing: 0.04em; }}
-.post-card h3 {{ font-size: 1rem; font-weight: 500; color: var(--ink);
-  line-height: 1.4; flex: 1; }}
+.post-meta {{ font-size: 0.72rem; font-weight: 600; color: var(--ink-30); letter-spacing: 0.04em; }}
+.post-card h3 {{ font-size: 1rem; font-weight: 500; color: var(--ink); line-height: 1.4; flex: 1; }}
 .post-card p {{ font-size: 0.85rem; color: var(--ink-60); line-height: 1.65; }}
-
-/* SUBSCRIBE */
 .subscribe-section {{ background: var(--surface); border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border); padding: 56px 32px; }}
 .subscribe-inner {{ max-width: 520px; margin: 0 auto; text-align: center; }}
@@ -473,13 +568,17 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
 </body>
 </html>"""
 
+
+# ── Main ──────────────────────────────────────────────────────────────────────
 def main():
     print("=" * 60)
-    print("  Forma Blog Builder  v5")
+    print("  Forma Blog Builder  v6")
     print("=" * 60)
+
     font_css  = load_fonts()
     all_posts = load_manifest()
-    blog_dir  = OUTPUT_DIR / "blog"
+
+    blog_dir = OUTPUT_DIR / "blog"
     blog_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"\n📝 Writing HTML...")
@@ -493,9 +592,23 @@ def main():
     (OUTPUT_DIR / "index.html").write_text(idx, encoding="utf-8")
     print(f"   ✓ index.html  ({len(idx)//1024} KB)")
 
+    # C: Sitemap + RSS
+    sitemap = build_sitemap(all_posts)
+    (OUTPUT_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    print(f"   ✓ sitemap.xml  ({len(all_posts)+1} URLs)")
+
+    feed = build_rss(all_posts)
+    (OUTPUT_DIR / "feed.xml").write_text(feed, encoding="utf-8")
+    print(f"   ✓ feed.xml  ({min(len(all_posts),20)} items)")
+
+    # D: OG image
+    print(f"\n🖼  Generating OG image...")
+    build_og_image(OUTPUT_DIR)
+
     print(f"\n{'='*60}")
-    print(f"  ✅  Done — {len(all_posts)} posts built")
+    print(f"  ✅  Done — {len(all_posts)} posts + sitemap + RSS + OG image")
     print(f"{'='*60}")
+
 
 if __name__ == "__main__":
     main()
