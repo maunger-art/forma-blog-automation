@@ -14,7 +14,7 @@ Usage:
     python forma_blog_build.py
 
 Outputs:
-    output/blog.html
+    output/index.html
     output/blog/<slug>.html
 """
 
@@ -365,8 +365,8 @@ def main():
         print(f"   ✓ blog/{post['slug']}.html  ({len(html)//1024} KB)")
 
     blog_index = build_blog_index(all_posts, font_css)
-    (OUTPUT_DIR / "blog.html").write_text(blog_index, encoding="utf-8")
-    print(f"   ✓ blog.html  ({len(blog_index)//1024} KB)")
+    (OUTPUT_DIR / "index.html").write_text(blog_index, encoding="utf-8")
+    print(f"   ✓ index.html  ({len(blog_index)//1024} KB)")
 
     print(f"\n{'=' * 60}")
     print(f"  ✅  Done — {len(all_posts)} posts built from cache")
