@@ -1,0 +1,40 @@
+name: Publish Blog Post
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  publish:
+    if: |
+      github.event.pull_request.merged == true &&
+      startsWith(github.event.pull_request.head.ref, 'draft/post-')
+
+    name: Clear Draft Status & Deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Clear draft status on merged post
+        run: python forma_blog_publish.py
+
+      - name: Commit published status
+        run: |
+          git config user.email "bot@formafit.co.uk"
+          git config user.name "Forma Blog Bot"
+          git add posts_manifest.json
+          git diff --staged --quiet || git commit -m "publish: clear draft status after PR merge"
+          git push
