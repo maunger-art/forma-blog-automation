@@ -142,6 +142,7 @@ FOOTER = f"""<footer>
 
 # ── Shared CSS ────────────────────────────────────────────────────────────────
 BRAND_CSS = """
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --green: #1A6B4A; --green-mid: #2D9165; --green-light: #F0FFF4;
@@ -151,6 +152,7 @@ BRAND_CSS = """
 }
 body { font-family: var(--font); color: var(--ink); background: var(--white);
   font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4 { font-family: var(--font); font-weight: 300; }
 nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97);
   backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
 .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 68px;
@@ -162,8 +164,8 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97)
 .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--ink-60);
   text-decoration: none; padding: 6px 14px; border-radius: 8px; transition: color 0.15s; }
 .nav-links a:hover { color: var(--ink); }
-.nav-links a.active { color: var(--ink); font-weight: 700;
-  border-bottom: 2px solid var(--ink); border-radius: 0; padding-bottom: 4px; }
+.nav-links a.active { color: var(--green); font-weight: 600;
+  border-bottom: 2px solid var(--green); border-radius: 0; padding-bottom: 4px; }
 .btn-login { padding: 8px 20px; border-radius: 99px; border: 1.5px solid var(--border);
   background: white; color: var(--ink); font-size: 0.875rem; font-weight: 500;
   font-family: var(--font); text-decoration: none; margin-right: 8px;
@@ -198,8 +200,8 @@ footer { background: var(--ink); padding: 64px 32px 40px; }
 .cat-pill { display: inline-block; padding: 4px 14px; border-radius: 99px;
   font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
   background: rgba(74,222,128,0.15); color: #4ADE80; margin-bottom: 20px; }
-.article-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 300;
-  color: white; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 20px; }
+.article-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 200;
+  color: white; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 20px; }
 .article-meta { display: flex; gap: 20px; flex-wrap: wrap;
   font-size: 0.825rem; color: rgba(255,255,255,0.4); }
 .article-meta strong { color: rgba(255,255,255,0.65); }
@@ -331,7 +333,7 @@ def build_og_image(output_dir: Path):
         draw.text((80, 330), "Science-backed writing for endurance athletes.", fill="#5A5F6E", font=font_tag)
 
         # Bottom domain
-        draw.text((80, H - 80), "blog.formafit.co.uk", fill="rgba(255, 255, 255, 80)", font=font_tag)
+        draw.text((80, H - 80), "blog.formafit.co.uk", fill="rgba(255,255,255,0.3)", font=font_tag)
 
         img.save(out_png, "PNG", optimize=True)
         print(f"  ✓ og-default.png ({out_png.stat().st_size // 1024} KB) — Pillow")
@@ -503,8 +505,8 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
 .blog-hero {{ padding: 80px 32px 72px; max-width: 1200px; margin: 0 auto; }}
 .blog-eyebrow {{ font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.12em; color: var(--green); margin-bottom: 20px; }}
-.blog-hero h1 {{ font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 300;
-  color: var(--ink); line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 20px; }}
+.blog-hero h1 {{ font-size: clamp(2.2rem, 5vw, 3.5rem) !important; font-weight: 200 !important;
+  color: var(--ink); line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 20px; }}
 .blog-hero p {{ font-size: 1.05rem; color: var(--ink-60); max-width: 520px; line-height: 1.75; }}
 .blog-divider {{ border: none; border-top: 1px solid var(--border); margin: 0; }}
 .blog-grid-section {{ max-width: 1200px; margin: 0 auto; padding: 56px 32px 80px; }}
