@@ -334,7 +334,7 @@ def build_og_image(output_dir: Path):
         draw.text((80, 330), "Science-backed writing for endurance athletes.", fill="#5A5F6E", font=font_tag)
 
         # Bottom domain
-        draw.text((80, H - 80), "blog.formafit.co.uk", fill="rgba(255,255,255,0.3)", font=font_tag)
+        draw.text((80, H - 80), "blog.formafit.co.uk", fill="#444444", font=font_tag)
 
         img.save(out_png, "PNG", optimize=True)
         print(f"  ✓ og-default.png ({out_png.stat().st_size // 1024} KB) — Pillow")
