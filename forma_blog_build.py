@@ -156,11 +156,12 @@ h1, h2, h3, h4 { font-family: var(--font); font-weight: 300; }
 nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97);
   backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
 .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 68px;
-  display: flex; align-items: center; }
+  display: flex; align-items: center; position: relative; }
 .nav-logo { display: flex; align-items: center; text-decoration: none;
-  margin-right: auto; flex-shrink: 0; }
+  flex-shrink: 0; margin-right: auto; }
 .nav-logo svg { height: 28px; width: auto; }
-.nav-links { display: flex; gap: 4px; list-style: none; margin-right: 12px; }
+.nav-links { display: flex; gap: 4px; list-style: none;
+  position: absolute; left: 50%; transform: translateX(-50%); }
 .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--ink-60);
   text-decoration: none; padding: 6px 14px; border-radius: 8px; transition: color 0.15s; }
 .nav-links a:hover { color: var(--ink); }
