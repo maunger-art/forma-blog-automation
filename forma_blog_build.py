@@ -303,51 +303,17 @@ def build_rss(all_posts: list) -> str:
 
 # ── D: OG image (SVG → PNG via Pillow if available, else SVG fallback) ────────
 def build_og_image(output_dir: Path):
-    """
-    Generate a simple branded OG image at output/og-default.png.
-    Uses Pillow if installed. Falls back to writing an SVG at og-default.svg
-    and a 1x1 transparent PNG stub so the HTML reference doesn't 404.
-    """
+    """Write a minimal valid PNG so og:image never 404s. Cannot fail."""
+    import base64
     out_png = output_dir / "og-default.png"
-
     try:
-        from PIL import Image, ImageDraw, ImageFont
-        W, H = 1200, 630
-        img = Image.new("RGB", (W, H), "#0F1117")
-        draw = ImageDraw.Draw(img)
-
-        # Green accent bar left
-        draw.rectangle([0, 0, 8, H], fill="#1A6B4A")
-
-        # Brand name
-        try:
-            font_large = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 72)
-            font_small = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 32)
-            font_tag   = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
-        except Exception:
-            font_large = ImageFont.load_default()
-            font_small = font_large
-            font_tag   = font_large
-
-        draw.text((80, 160), "FORMA", fill="#FFFFFF", font=font_large)
-        draw.text((80, 260), "Train smart. Think deep.", fill="#1A6B4A", font=font_small)
-        draw.text((80, 330), "Science-backed writing for endurance athletes.", fill="#5A5F6E", font=font_tag)
-
-        # Bottom domain
-        draw.text((80, H - 80), "blog.formafit.co.uk", fill="#444444", font=font_tag)
-
-        img.save(out_png, "PNG", optimize=True)
-        print(f"  ✓ og-default.png ({out_png.stat().st_size // 1024} KB) — Pillow")
-
-    except ImportError:
-        # Pillow not installed — write a minimal valid 1×1 PNG stub
-        # (real browsers won't error; social crawlers get a fallback)
-        import base64
         stub = base64.b64decode(
             "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
         )
         out_png.write_bytes(stub)
-        print("  ⚠  og-default.png — stub (install pillow for real image)")
+        print("  ✓ og-default.png (stub)")
+    except Exception as e:
+        print(f"  ⚠  og-default.png skipped: {e}")
 
 
 # ── Post pages ────────────────────────────────────────────────────────────────
