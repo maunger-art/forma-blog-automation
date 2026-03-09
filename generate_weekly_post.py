@@ -25,7 +25,7 @@ QUEUE_FILE    = Path("blog_topic_queue.txt")
 POSTS_FILE    = Path("forma_blog_posts.md")
 MANIFEST_FILE = Path("posts_manifest.json")
 FLAG_FILE     = Path(".post_generated")
-MODEL         = "claude-opus-4-20250514"
+MODEL         = "claude-opus-4-6"
 TODAY         = date.today().isoformat()
 
 
