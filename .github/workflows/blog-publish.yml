@@ -1,18 +1,13 @@
 name: Publish Blog Post
 
 on:
-  pull_request:
-    types: [closed]
-    branches:
-      - main
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 * * 1"
 
 jobs:
   publish:
-    if: |
-      github.event.pull_request.merged == true &&
-      startsWith(github.event.pull_request.head.ref, 'draft/post-')
-
-    name: Clear Draft Status & Deploy
+    name: Generate & Publish Blog Post
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -26,15 +21,25 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
-      - name: Clear draft status on merged post
-        run: python forma_blog_publish.py
+      - name: Install Python packages
+        run: pip install -r requirements.txt
 
-      - name: Commit published status
+      - name: Generate blog post
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python generate_weekly_post.py
+
+      - name: Commit generated post
         run: |
           git config user.email "bot@formafit.co.uk"
           git config user.name "Forma Blog Bot"
-          git add posts_manifest.json
-          git diff --staged --quiet || git commit -m "publish: clear draft status after PR merge"
+          git add forma_blog_posts.md blog_topic_queue.txt
+          git diff --staged --quiet || git commit -m "blog: generate weekly post"
           git push
+
+      - name: Trigger site build
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run blog-build-deploy.yml --ref main
