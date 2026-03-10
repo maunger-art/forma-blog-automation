@@ -2,18 +2,14 @@ name: Build and Deploy Forma Blog
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
-      # Trigger on any content or config change
       - 'forma_blog_posts.md'
-      - 'forma_blog_build.py'
-      - 'requirements.txt'
-      - 'forma_fonts.css'
       - 'posts_manifest.json'
+      - 'forma_blog_build.py'
+      - 'forma_fonts.css'
+      - 'requirements.txt'
       - '.github/workflows/blog-build-deploy.yml'
-
-  # Allow manual trigger
   workflow_dispatch:
 
 permissions:
@@ -23,19 +19,19 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
-    name: Build blog and deploy to GitHub Pages
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Checkout latest repo state
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          # Always build from the very latest commit on main,
-          # including posts committed by the generate workflow
           ref: main
           fetch-depth: 1
 
@@ -47,20 +43,23 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build blog
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Sync blog sources
         run: |
-          echo "▶ Starting build..."
-          python forma_blog_build.py
-          echo "▶ Build complete."
+          echo "🔄 Syncing posts_manifest.json ↔ forma_blog_posts.md..."
+          python sync_blog_sources.py
 
-      - name: Prepare GitHub Pages output
+      - name: Build blog
+        run: |
+          echo "🔨 Starting blog build..."
+          python forma_blog_build.py
+          echo "📄 Post count: $(python3 -c "import json; d=json.load(open('posts_manifest.json')); print(len([p for p in d if p.get('body_html')]))")"
+
+      - name: Prepare _site directory
         run: |
           mkdir -p _site
           cp -R output/* _site/
           touch _site/.nojekyll
-          echo "▶ Pages output ready — $(ls _site | wc -l) files"
+          echo "✅ _site ready — $(find _site -name '*.html' | wc -l) HTML files"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -68,4 +67,5 @@ jobs:
           path: _site
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
