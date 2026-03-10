@@ -1,31 +1,24 @@
 name: Generate and Publish New Blog Post
 
 on:
-  # Run every Monday at 08:00 UTC
   schedule:
-    - cron: '0 8 * * 1'
-
-  # Allow manual trigger from GitHub Actions UI
-  workflow_dispatch:
+    - cron: '0 8 * * 1'   # Every Monday 08:00 UTC
+  workflow_dispatch:       # Manual trigger
 
 permissions:
-  contents: write   # needed to commit back to the repo
+  contents: write
 
 jobs:
   generate-post:
-    name: Generate post and commit to repo
     runs-on: ubuntu-latest
 
-    # Prevent running if the last commit was the bot itself (loop guard)
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
-
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          # Fetch the very latest state of main before we do anything
           ref: main
           fetch-depth: 1
+          token: ${{ secrets.PAT_TOKEN }}   # PAT required so push triggers build workflow
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -41,26 +34,24 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           python generate_weekly_post.py
-          # generate_weekly_post.py writes .post_generated if a post was made
           if [ -f .post_generated ]; then
+            TITLE=$(cat .post_generated)
             echo "generated=true" >> $GITHUB_OUTPUT
-            echo "title=$(cat .post_generated)" >> $GITHUB_OUTPUT
+            echo "title=$TITLE" >> $GITHUB_OUTPUT
             rm -f .post_generated
+            echo "✅ Post generated: $TITLE"
           else
             echo "generated=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No post generated (queue empty or error)"
           fi
 
-      - name: Commit and push updated content
+      - name: Commit and push updated files
         if: steps.generate.outputs.generated == 'true'
         run: |
-          git config user.name  "Forma Blog Bot"
+          git config user.name "Forma Blog Bot"
           git config user.email "bot@formafit.co.uk"
           git add forma_blog_posts.md blog_topic_queue.txt posts_manifest.json
-          git commit -m "auto: add post — ${{ steps.generate.outputs.title }} [skip ci]"
+          git status
+          git commit -m "auto: add post — ${{ steps.generate.outputs.title }}"
           git push
-
-      - name: Skip — no topics queued
-        if: steps.generate.outputs.generated == 'false'
-        run: |
-          echo "ℹ️  blog_topic_queue.txt is empty — nothing generated."
-          echo "    Add topics to queue new posts."
+          echo "✅ Committed and pushed — build workflow will trigger automatically"
