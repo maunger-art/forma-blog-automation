@@ -9,6 +9,7 @@ on:
       - 'forma_blog_build.py'
       - 'forma_fonts.css'
       - 'requirements.txt'
+      - 'sync_blog_sources.py'
       - '.github/workflows/blog-build-deploy.yml'
   workflow_dispatch:
 
@@ -45,8 +46,12 @@ jobs:
 
       - name: Sync blog sources
         run: |
-          echo "🔄 Syncing posts_manifest.json ↔ forma_blog_posts.md..."
-          python sync_blog_sources.py
+          if [ -f sync_blog_sources.py ]; then
+            echo "🔄 Syncing posts_manifest.json ↔ forma_blog_posts.md..."
+            python sync_blog_sources.py
+          else
+            echo "ℹ️  sync_blog_sources.py not found — skipping sync step"
+          fi
 
       - name: Build blog
         run: |
