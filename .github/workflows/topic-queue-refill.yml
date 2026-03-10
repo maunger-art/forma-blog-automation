@@ -1,0 +1,54 @@
+name: Refill Blog Topic Queue
+
+on:
+  schedule:
+    - cron: '0 8 * * 4'   # Every Thursday 08:00 UTC (different day from Monday publish)
+  workflow_dispatch:       # Manual trigger always available
+
+permissions:
+  contents: write
+
+jobs:
+  refill-queue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Refill topic queue
+        id: refill
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # Optional — improves titles if set
+        run: |
+          python generate_topic_queue.py
+          # Count how many lines are in the queue now
+          COUNT=$(wc -l < blog_topic_queue.txt | tr -d ' ')
+          echo "queue_count=$COUNT" >> $GITHUB_OUTPUT
+          echo "Queue now has $COUNT topics"
+
+      - name: Commit updated queue
+        run: |
+          git config user.name "Forma Blog Bot"
+          git config user.email "bot@formafit.co.uk"
+          git add blog_topic_queue.txt
+          # Only commit if the file actually changed
+          if git diff --staged --quiet; then
+            echo "ℹ️  No changes to commit (queue was already full)"
+          else
+            git commit -m "auto: refill topic queue (${{ steps.refill.outputs.queue_count }} topics) [skip ci]"
+            git push
+            echo "✅ Queue committed and pushed"
+          fi
