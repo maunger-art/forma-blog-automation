@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-Forma Blog Builder  v7
+Forma Blog Builder  v6
 ======================
-Adds to v6:
-  E. Automatic internal linking — inserts contextual links between related
-     posts based on keyword matching. No AI, no external deps, HTML-only.
+Unchanged from v5 except three additions:
+  C. writes output/sitemap.xml and output/feed.xml
+  D. generates output/og-default.png and injects og:image / twitter:image
+     into every page (index + posts)
 """
 
 import json
-import re
 import textwrap
 from datetime import date, datetime
 from pathlib import Path
@@ -98,18 +98,43 @@ def NAV(active="blog"):
              ("Blog",     BLOG_URL,                 "blog"),
              ("Help",     f"{SITE_URL}/help",       "help")]
     items = []
+    drawer_items = []
     for label, url, k in links:
         active_class = " class='active'" if k == active else ""
         items.append(f'<li><a href="{url}"{active_class}>{label}</a></li>')
+        drawer_active = " drawer-active" if k == active else ""
+        drawer_items.append(f'<a href="{url}" class="drawer-link{drawer_active}">{label}</a>')
     lis = "\n".join(items)
-    return f"""<nav>
+    drawer_links = "\n      ".join(drawer_items)
+    return f"""<nav id="site-nav">
   <div class="nav-inner">
     <a class="nav-logo" href="{SITE_URL}">{LOGO_SVG}</a>
     <ul class="nav-links">{lis}</ul>
     <a href="{SITE_URL}/login" class="btn-login">Log in</a>
     <a href="{SITE_URL}/pricing" class="btn-start">Start free</a>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
   </div>
-</nav>"""
+</nav>
+<div class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <div class="drawer-inner">
+    <div class="drawer-header">
+      <a class="drawer-logo" href="{SITE_URL}">{LOGO_SVG}</a>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><line x1="2" y1="2" x2="16" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="2" x2="2" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      {drawer_links}
+    </nav>
+    <div class="drawer-cta">
+      <a href="{SITE_URL}/pricing" class="drawer-btn-start">Start free</a>
+      <a href="{SITE_URL}/login" class="drawer-btn-login">Log in</a>
+    </div>
+  </div>
+</div>
+<div class="nav-overlay" id="navOverlay"></div>"""
 
 # ── Shared footer ─────────────────────────────────────────────────────────────
 FOOTER = f"""<footer>
@@ -139,6 +164,30 @@ FOOTER = f"""<footer>
     <span class="footer-tagline">Built for endurance. Designed for humans.</span>
   </div>
 </footer>"""
+
+# ── Mobile drawer JS (injected into every page) ───────────────────────────────
+DRAWER_JS = """
+const menuBtn  = document.getElementById('menuBtn');
+const drawer   = document.getElementById('navDrawer');
+const overlay  = document.getElementById('navOverlay');
+const closeBtn = document.getElementById('drawerClose');
+function openDrawer() {
+  drawer.classList.add('open'); overlay.classList.add('open');
+  menuBtn.setAttribute('aria-expanded','true');
+  drawer.setAttribute('aria-hidden','false');
+  document.body.style.overflow = 'hidden';
+}
+function closeDrawer() {
+  drawer.classList.remove('open'); overlay.classList.remove('open');
+  menuBtn.setAttribute('aria-expanded','false');
+  drawer.setAttribute('aria-hidden','true');
+  document.body.style.overflow = '';
+}
+if (menuBtn)  menuBtn.addEventListener('click', openDrawer);
+if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+if (overlay)  overlay.addEventListener('click', closeDrawer);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+"""
 
 # ── Shared CSS ────────────────────────────────────────────────────────────────
 BRAND_CSS = """
@@ -176,7 +225,62 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97)
   color: white; font-size: 0.875rem; font-weight: 600; font-family: var(--font);
   text-decoration: none; transition: background 0.15s; white-space: nowrap; }
 .btn-start:hover { background: var(--green-mid); }
-@media(max-width:768px) { .nav-links,.btn-login { display: none; } }
+/* ── Mobile nav trigger ── */
+.nav-menu-btn { display: none; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 10px; border: 1.5px solid var(--border);
+  background: white; cursor: pointer; flex-direction: column; gap: 5px; padding: 0;
+  margin-left: 12px; transition: border-color 0.15s, background 0.15s; flex-shrink: 0; }
+.nav-menu-btn:hover { border-color: var(--ink-30); background: var(--surface); }
+.nav-menu-btn .bar { display: block; width: 16px; height: 1.5px; background: var(--ink);
+  border-radius: 2px; transition: transform 0.2s, opacity 0.2s; }
+.nav-menu-btn[aria-expanded="true"] .bar:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-menu-btn[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; }
+.nav-menu-btn[aria-expanded="true"] .bar:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+/* ── Drawer ── */
+.nav-drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(320px, 88vw);
+  background: white; z-index: 200; transform: translateX(100%);
+  transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: -8px 0 32px rgba(0,0,0,0.08); display: flex; flex-direction: column; }
+.nav-drawer.open { transform: translateX(0); }
+.nav-overlay { position: fixed; inset: 0; background: rgba(15,17,23,0.35);
+  z-index: 199; opacity: 0; pointer-events: none;
+  transition: opacity 0.28s ease; backdrop-filter: blur(2px); }
+.nav-overlay.open { opacity: 1; pointer-events: auto; }
+.drawer-inner { display: flex; flex-direction: column; height: 100%; padding: 0; }
+.drawer-header { display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px; height: 68px; border-bottom: 1px solid var(--border); flex-shrink: 0; }
+.drawer-logo svg { height: 24px; width: auto; }
+.drawer-close { display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 8px; border: 1.5px solid var(--border);
+  background: white; cursor: pointer; color: var(--ink); transition: border-color 0.15s; }
+.drawer-close:hover { border-color: var(--ink-30); }
+.drawer-nav { display: flex; flex-direction: column; padding: 12px 12px;
+  flex: 1; gap: 2px; }
+.drawer-link { display: block; padding: 13px 16px; border-radius: 10px;
+  font-size: 1rem; font-weight: 500; color: var(--ink-60);
+  text-decoration: none; font-family: var(--font); transition: background 0.12s, color 0.12s; }
+.drawer-link:hover { background: var(--surface); color: var(--ink); }
+.drawer-link.drawer-active { color: var(--green); font-weight: 600;
+  background: var(--green-light); }
+.drawer-cta { padding: 16px 20px 32px; border-top: 1px solid var(--border);
+  display: flex; flex-direction: column; gap: 10px; }
+.drawer-btn-start { display: block; text-align: center; padding: 13px 20px;
+  border-radius: 99px; background: var(--green); color: white;
+  font-size: 0.9rem; font-weight: 600; font-family: var(--font);
+  text-decoration: none; transition: background 0.15s; }
+.drawer-btn-start:hover { background: var(--green-mid); }
+.drawer-btn-login { display: block; text-align: center; padding: 12px 20px;
+  border-radius: 99px; border: 1.5px solid var(--border); background: white;
+  color: var(--ink); font-size: 0.9rem; font-weight: 500; font-family: var(--font);
+  text-decoration: none; transition: border-color 0.15s; }
+.drawer-btn-login:hover { border-color: var(--ink-30); }
+@media(max-width:768px) {
+  .nav-links, .btn-login, .btn-start { display: none; }
+  .nav-menu-btn { display: flex; }
+  .nav-inner { padding: 0 20px; }
+  .article-hero { padding: 40px 20px 32px; }
+  .blog-hero { padding: 40px 20px 36px; }
+}
 footer { background: var(--ink); padding: 64px 32px 40px; }
 .footer-top { max-width: 1200px; margin: 0 auto;
   display: grid; grid-template-columns: 280px repeat(3, 1fr); gap: 48px;
@@ -196,7 +300,7 @@ footer { background: var(--ink); padding: 64px 32px 40px; }
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 .footer-copy, .footer-tagline { font-size: 0.78rem; color: rgba(255,255,255,0.2); }
 .footer-tagline { font-style: italic; }
-.article-hero { background: var(--ink); padding: 72px 32px 56px; }
+.article-hero { background: var(--ink); padding: 56px 32px 44px; }
 .article-hero-inner { max-width: 800px; margin: 0 auto; }
 .cat-pill { display: inline-block; padding: 4px 14px; border-radius: 99px;
   font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
@@ -221,10 +325,6 @@ footer { background: var(--ink); padding: 64px 32px 40px; }
 .article-body hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
 .article-body blockquote { border-left: 3px solid var(--green); padding: 12px 20px;
   background: var(--green-light); border-radius: 0 8px 8px 0; margin: 28px 0; }
-.internal-link { color: var(--green); text-decoration: underline;
-  text-decoration-color: rgba(26,107,74,0.35); text-underline-offset: 2px;
-  transition: text-decoration-color 0.15s; }
-.internal-link:hover { text-decoration-color: var(--green); }
 .article-sidebar { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 16px; }
 .sidebar-card { background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 20px; }
@@ -307,178 +407,51 @@ def build_rss(all_posts: list) -> str:
 
 # ── D: OG image (SVG → PNG via Pillow if available, else SVG fallback) ────────
 def build_og_image(output_dir: Path):
-    """Write a minimal valid PNG so og:image never 404s. Cannot fail."""
-    import base64
+    """
+    Generate a simple branded OG image at output/og-default.png.
+    Uses Pillow if installed. Falls back to writing an SVG at og-default.svg
+    and a 1x1 transparent PNG stub so the HTML reference doesn't 404.
+    """
     out_png = output_dir / "og-default.png"
+
     try:
+        from PIL import Image, ImageDraw, ImageFont
+        W, H = 1200, 630
+        img = Image.new("RGB", (W, H), "#0F1117")
+        draw = ImageDraw.Draw(img)
+
+        # Green accent bar left
+        draw.rectangle([0, 0, 8, H], fill="#1A6B4A")
+
+        # Brand name
+        try:
+            font_large = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 72)
+            font_small = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 32)
+            font_tag   = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
+        except Exception:
+            font_large = ImageFont.load_default()
+            font_small = font_large
+            font_tag   = font_large
+
+        draw.text((80, 160), "FORMA", fill="#FFFFFF", font=font_large)
+        draw.text((80, 260), "Train smart. Think deep.", fill="#1A6B4A", font=font_small)
+        draw.text((80, 330), "Science-backed writing for endurance athletes.", fill="#5A5F6E", font=font_tag)
+
+        # Bottom domain
+        draw.text((80, H - 80), "blog.formafit.co.uk", fill="rgba(255,255,255,0.3)", font=font_tag)
+
+        img.save(out_png, "PNG", optimize=True)
+        print(f"  ✓ og-default.png ({out_png.stat().st_size // 1024} KB) — Pillow")
+
+    except ImportError:
+        # Pillow not installed — write a minimal valid 1×1 PNG stub
+        # (real browsers won't error; social crawlers get a fallback)
+        import base64
         stub = base64.b64decode(
             "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
         )
         out_png.write_bytes(stub)
-        print("  ✓ og-default.png (stub)")
-    except Exception as e:
-        print(f"  ⚠  og-default.png skipped: {e}")
-
-
-# ── E: Internal linking ───────────────────────────────────────────────────────
-
-# Keywords that map to specific post slugs.
-# Each entry: "phrase to match in body text" → "slug of target post"
-# Phrases are matched case-insensitively against plain text only
-# (never inside existing <a> tags or heading tags).
-# Add new entries here as the blog grows.
-INTERNAL_LINK_MAP = {
-    # Training load / ACWR post
-    "training load":         "training-load-management-atl-ctl-acwr",
-    "acute training load":   "training-load-management-atl-ctl-acwr",
-    "chronic training load":  "training-load-management-atl-ctl-acwr",
-    "ACWR":                  "training-load-management-atl-ctl-acwr",
-    "ATL":                   "training-load-management-atl-ctl-acwr",
-    "CTL":                   "training-load-management-atl-ctl-acwr",
-    # Adaptive training post
-    "adaptive training":     "science-of-adaptive-training",
-    "physiology-driven":     "science-of-adaptive-training",
-    "readiness":             "science-of-adaptive-training",
-    # Wearables post
-    "Garmin":                "garmin-vs-oura-vs-whoop-wearable-data",
-    "Oura":                  "garmin-vs-oura-vs-whoop-wearable-data",
-    "WHOOP":                 "garmin-vs-oura-vs-whoop-wearable-data",
-    "wearable":              "garmin-vs-oura-vs-whoop-wearable-data",
-    "HRV":                   "garmin-vs-oura-vs-whoop-wearable-data",
-    # Athlete's paradox post
-    "overtraining":          "athletes-paradox-why-more-training-isnt-better",
-    "recovery":              "athletes-paradox-why-more-training-isnt-better",
-    # Easy runs / Zone 2 post
-    "Zone 2":                "easy-runs-too-hard-killing-gains",
-    "easy run":              "easy-runs-too-hard-killing-gains",
-    "easy runs":             "easy-runs-too-hard-killing-gains",
-    "polarised training":    "easy-runs-too-hard-killing-gains",
-    # FTP / cycling zones post
-    "FTP":                   "cycling-training-zones-ftp-isnt-everything",
-    "training zones":        "cycling-training-zones-ftp-isnt-everything",
-    "power zones":           "cycling-training-zones-ftp-isnt-everything",
-}
-
-MAX_INTERNAL_LINKS = 3   # Max links injected per post
-
-
-def inject_internal_links(body_html: str, current_slug: str, all_posts: list) -> str:
-    """
-    Scan body_html for keyword mentions and convert the FIRST plain-text
-    occurrence of each matched phrase into an internal link.
-
-    Rules:
-    - Never link a post to itself
-    - Never link inside an existing <a>…</a> tag
-    - Never link inside a heading tag (h1–h4)
-    - Only link the first occurrence of each phrase (no repeat links)
-    - Stop after MAX_INTERNAL_LINKS total insertions
-    - Only link to posts that exist in the manifest (slugs validated)
-
-    Algorithm:
-    1. Build a set of valid target slugs from all_posts (exclude current)
-    2. Split body_html into "safe" text segments and "protected" HTML tag
-       segments using re.split on any tag pattern
-    3. For each text segment, try each keyword in priority order (longest
-       first to avoid partial matches like "HRV" matching inside "ACWR HRV")
-    4. When a match is found, replace it with <a href="...">phrase</a>
-       mark the slug as used, increment counter, move to next segment
-    5. Reassemble and return
-
-    Returns body_html unchanged if anything goes wrong (safe fallback).
-    """
-    try:
-        valid_slugs = {p["slug"] for p in all_posts if p["slug"] != current_slug}
-
-        # Only keep entries whose target slug actually exists
-        link_map = {
-            phrase: slug
-            for phrase, slug in INTERNAL_LINK_MAP.items()
-            if slug in valid_slugs
-        }
-
-        if not link_map:
-            return body_html
-
-        # Sort phrases longest-first to avoid partial-match shadowing
-        phrases_by_length = sorted(link_map.keys(), key=len, reverse=True)
-
-        used_slugs   = set()   # one link per destination post
-        links_added  = 0
-        result_parts = []
-
-        # Split into alternating: text, tag, text, tag, ...
-        # Pattern matches any HTML tag including closing and self-closing
-        TAG_RE   = re.compile(r'(<[^>]+>)')
-        # Protected contexts: we skip text that sits inside <a> or <h1-h4>
-        # We track this with a simple depth counter as we walk the segments
-        in_anchor  = 0
-        in_heading = 0
-
-        segments = TAG_RE.split(body_html)
-
-        for seg in segments:
-            if TAG_RE.match(seg):
-                # It's a tag — update protection state, pass through unchanged
-                tag_lower = seg.lower()
-                if tag_lower.startswith('<a ') or tag_lower == '<a>':
-                    in_anchor += 1
-                elif tag_lower.startswith('</a'):
-                    in_anchor = max(0, in_anchor - 1)
-                elif re.match(r'<h[1-4][\s>]', tag_lower):
-                    in_heading += 1
-                elif re.match(r'</h[1-4]>', tag_lower):
-                    in_heading = max(0, in_heading - 1)
-                result_parts.append(seg)
-                continue
-
-            # It's a text node — attempt linking if not inside protected context
-            if in_anchor > 0 or in_heading > 0 or links_added >= MAX_INTERNAL_LINKS:
-                result_parts.append(seg)
-                continue
-
-            for phrase in phrases_by_length:
-                if links_added >= MAX_INTERNAL_LINKS:
-                    break
-
-                target_slug = link_map[phrase]
-                if target_slug in used_slugs:
-                    continue   # already linked to this post
-
-                # Case-insensitive search, but preserve original casing in output
-                pattern = re.compile(re.escape(phrase), re.IGNORECASE)
-                match   = pattern.search(seg)
-                if not match:
-                    continue
-
-                original_text = match.group(0)   # preserves original case
-                url = f"/blog/{target_slug}.html"
-                replacement = (
-                    f'<a href="{url}" class="internal-link">{original_text}</a>'
-                )
-                # Replace only the first occurrence in this segment
-                seg = seg[:match.start()] + replacement + seg[match.end():]
-                used_slugs.add(target_slug)
-                links_added += 1
-                # Don't break — allow other phrases to match in same segment
-                # (they'll be caught in subsequent phrase iterations on the
-                # already-modified seg, but at new positions — safe because
-                # we search forward from 0 each time and used_slugs prevents
-                # linking same destination twice)
-
-            result_parts.append(seg)
-
-        linked_html = "".join(result_parts)
-
-        if links_added > 0:
-            print(f"     → {links_added} internal link(s) injected")
-
-        return linked_html
-
-    except Exception as e:
-        # Never crash the build — return original HTML untouched
-        print(f"  ⚠  Internal linking skipped: {e}")
-        return body_html
+        print("  ⚠  og-default.png — stub (install pillow for real image)")
 
 
 # ── Post pages ────────────────────────────────────────────────────────────────
@@ -490,7 +463,6 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
     read_time = post.get("read_time", 5)
     keywords  = post.get("keywords", "")
     body_html = post.get("body_html", "")
-    body_html = inject_internal_links(body_html, slug, all_posts)  # E: internal links
     toc_items = post.get("toc_items", [])
     pub_date  = post.get("date", TODAY)
     canonical = f"{BLOG_URL}/blog/{slug}"
@@ -542,8 +514,8 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
   <link rel="alternate" type="application/rss+xml" title="Forma Blog" href="{BLOG_URL}/feed.xml">
   <script type="application/ld+json">{schema}</script>
   <style>
-{BRAND_CSS}
 {font_css}
+{BRAND_CSS}
   </style>
 </head>
 <body>
@@ -573,6 +545,7 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
 {"<section class='related-section'><div class='related-inner'><h2>Keep reading</h2><div class='related-grid'>" + related_html + "</div></div></section>" if related_html else ""}
 {FOOTER}
 <script>
+{DRAWER_JS}
 document.querySelectorAll('.toc-list a').forEach(a => {{
   a.addEventListener('click', e => {{
     e.preventDefault();
@@ -632,10 +605,10 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
   <meta name="twitter:image" content="{OG_IMAGE_URL}">
   <link rel="alternate" type="application/rss+xml" title="Forma Blog" href="{BLOG_URL}/feed.xml">
   <style>
-{BRAND_CSS}
 {font_css}
+{BRAND_CSS}
 /* BLOG INDEX */
-.blog-hero {{ padding: 80px 32px 72px; max-width: 1200px; margin: 0 auto; }}
+.blog-hero {{ padding: 60px 32px 56px; max-width: 1200px; margin: 0 auto; }}
 .blog-eyebrow {{ font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.12em; color: var(--green); margin-bottom: 20px; }}
 .blog-hero h1 {{ font-size: clamp(2.2rem, 5vw, 3.5rem) !important; font-weight: 200 !important;
@@ -700,6 +673,7 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
   </div>
 </section>
 {FOOTER}
+<script>{DRAWER_JS}</script>
 </body>
 </html>"""
 
@@ -707,7 +681,7 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
 # ── Main ──────────────────────────────────────────────────────────────────────
 def main():
     print("=" * 60)
-    print("  Forma Blog Builder  v7")
+    print("  Forma Blog Builder  v6")
     print("=" * 60)
 
     font_css  = load_fonts()
