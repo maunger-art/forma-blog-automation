@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 """
-Forma Blog Builder  v6
+Forma Blog Builder  v7
 ======================
 Unchanged from v5 except three additions:
   C. writes output/sitemap.xml and output/feed.xml
   D. generates output/og-default.png and injects og:image / twitter:image
      into every page (index + posts)
+Adds to v6:
+  E. Automatic internal linking — inserts contextual links between related
+     posts based on keyword matching. No AI, no external deps, HTML-only.
 """
 
 import json
+import re
 import textwrap
 from datetime import date, datetime
 from pathlib import Path
@@ -325,6 +329,10 @@ footer { background: var(--ink); padding: 64px 32px 40px; }
 .article-body hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
 .article-body blockquote { border-left: 3px solid var(--green); padding: 12px 20px;
   background: var(--green-light); border-radius: 0 8px 8px 0; margin: 28px 0; }
+.internal-link { color: var(--green); text-decoration: underline;
+  text-decoration-color: rgba(26,107,74,0.35); text-underline-offset: 2px;
+  transition: text-decoration-color 0.15s; }
+.internal-link:hover { text-decoration-color: var(--green); }
 .article-sidebar { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 16px; }
 .sidebar-card { background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 20px; }
@@ -454,6 +462,152 @@ def build_og_image(output_dir: Path):
         print("  ⚠  og-default.png — stub (install pillow for real image)")
 
 
+# ── E: Internal linking ───────────────────────────────────────────────────────
+# Keywords that map to specific post slugs.
+# Each entry: "phrase to match in body text" → "slug of target post"
+# Phrases are matched case-insensitively against plain text only
+# (never inside existing <a> tags or heading tags).
+# Add new entries here as the blog grows.
+INTERNAL_LINK_MAP = {
+    # Training load / ACWR post
+    "training load":          "training-load-management-atl-ctl-acwr",
+    "acute training load":    "training-load-management-atl-ctl-acwr",
+    "chronic training load":  "training-load-management-atl-ctl-acwr",
+    "ACWR":                   "training-load-management-atl-ctl-acwr",
+    "ATL":                    "training-load-management-atl-ctl-acwr",
+    "CTL":                    "training-load-management-atl-ctl-acwr",
+    # Adaptive training post
+    "adaptive training":      "science-of-adaptive-training",
+    "physiology-driven":      "science-of-adaptive-training",
+    "readiness":              "science-of-adaptive-training",
+    # Wearables post
+    "Garmin":                 "garmin-vs-oura-vs-whoop-wearable-data",
+    "Oura":                   "garmin-vs-oura-vs-whoop-wearable-data",
+    "WHOOP":                  "garmin-vs-oura-vs-whoop-wearable-data",
+    "wearable":               "garmin-vs-oura-vs-whoop-wearable-data",
+    "HRV":                    "garmin-vs-oura-vs-whoop-wearable-data",
+    # Athlete's paradox post
+    "overtraining":           "athletes-paradox-why-more-training-isnt-better",
+    "recovery":               "athletes-paradox-why-more-training-isnt-better",
+    # Easy runs / Zone 2 post
+    "Zone 2":                 "easy-runs-too-hard-killing-gains",
+    "easy run":               "easy-runs-too-hard-killing-gains",
+    "easy runs":              "easy-runs-too-hard-killing-gains",
+    "polarised training":     "easy-runs-too-hard-killing-gains",
+    # FTP / cycling zones post
+    "FTP":                    "cycling-training-zones-ftp-isnt-everything",
+    "training zones":         "cycling-training-zones-ftp-isnt-everything",
+    "power zones":            "cycling-training-zones-ftp-isnt-everything",
+}
+
+MAX_INTERNAL_LINKS = 3   # Max links injected per post
+
+
+def inject_internal_links(body_html: str, current_slug: str, all_posts: list) -> str:
+    """
+    Scan body_html for keyword mentions and convert the FIRST plain-text
+    occurrence of each matched phrase into an internal link.
+    Rules:
+    - Never link a post to itself
+    - Never link inside an existing <a>…</a> tag
+    - Never link inside a heading tag (h1–h4)
+    - Only link the first occurrence of each phrase (no repeat links)
+    - Stop after MAX_INTERNAL_LINKS total insertions
+    - Only link to posts that exist in the manifest (slugs validated)
+    Algorithm:
+    1. Build a set of valid target slugs from all_posts (exclude current)
+    2. Split body_html into "safe" text segments and "protected" HTML tag
+       segments using re.split on any tag pattern
+    3. For each text segment, try each keyword in priority order (longest
+       first to avoid partial matches like "HRV" matching inside "ACWR HRV")
+    4. When a match is found, replace it with <a href="...">phrase</a>
+       mark the slug as used, increment counter, move to next segment
+    5. Reassemble and return
+    Returns body_html unchanged if anything goes wrong (safe fallback).
+    """
+    try:
+        valid_slugs = {p["slug"] for p in all_posts if p["slug"] != current_slug}
+        # Only keep entries whose target slug actually exists
+        link_map = {
+            phrase: slug
+            for phrase, slug in INTERNAL_LINK_MAP.items()
+            if slug in valid_slugs
+        }
+        if not link_map:
+            return body_html
+
+        # Sort phrases longest-first to avoid partial-match shadowing
+        phrases_by_length = sorted(link_map.keys(), key=len, reverse=True)
+        used_slugs   = set()   # one link per destination post
+        links_added  = 0
+        result_parts = []
+
+        # Split into alternating: text, tag, text, tag, ...
+        # Pattern matches any HTML tag including closing and self-closing
+        TAG_RE   = re.compile(r'(<[^>]+>)')
+        # Protected contexts: we skip text that sits inside <a> or <h1-h4>
+        # We track this with a simple depth counter as we walk the segments
+        in_anchor  = 0
+        in_heading = 0
+
+        segments = TAG_RE.split(body_html)
+        for seg in segments:
+            if TAG_RE.match(seg):
+                # It's a tag — update protection state, pass through unchanged
+                tag_lower = seg.lower()
+                if tag_lower.startswith('<a ') or tag_lower == '<a>':
+                    in_anchor += 1
+                elif tag_lower.startswith('</a'):
+                    in_anchor = max(0, in_anchor - 1)
+                elif re.match(r'<h[1-4][\s>]', tag_lower):
+                    in_heading += 1
+                elif re.match(r'</h[1-4]>', tag_lower):
+                    in_heading = max(0, in_heading - 1)
+                result_parts.append(seg)
+                continue
+
+            # It's a text node — attempt linking if not inside protected context
+            if in_anchor > 0 or in_heading > 0 or links_added >= MAX_INTERNAL_LINKS:
+                result_parts.append(seg)
+                continue
+
+            for phrase in phrases_by_length:
+                if links_added >= MAX_INTERNAL_LINKS:
+                    break
+                target_slug = link_map[phrase]
+                if target_slug in used_slugs:
+                    continue   # already linked to this post
+
+                # Case-insensitive search, but preserve original casing in output
+                pattern = re.compile(re.escape(phrase), re.IGNORECASE)
+                match   = pattern.search(seg)
+                if not match:
+                    continue
+
+                original_text = match.group(0)   # preserves original case
+                url = f"/blog/{target_slug}.html"
+                replacement = (
+                    f'<a href="{url}" class="internal-link">{original_text}</a>'
+                )
+                # Replace only the first occurrence in this segment
+                seg = seg[:match.start()] + replacement + seg[match.end():]
+                used_slugs.add(target_slug)
+                links_added += 1
+
+            result_parts.append(seg)
+
+        linked_html = "".join(result_parts)
+        if links_added > 0:
+            print(f"     → {links_added} internal link(s) injected")
+        return linked_html
+
+    except Exception as e:
+        # Never crash the build — return original HTML untouched
+        print(f"  ⚠  Internal linking skipped: {e}")
+        return body_html
+
+
+
 # ── Post pages ────────────────────────────────────────────────────────────────
 def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
     slug      = post["slug"]
@@ -463,6 +617,7 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
     read_time = post.get("read_time", 5)
     keywords  = post.get("keywords", "")
     body_html = post.get("body_html", "")
+    body_html = inject_internal_links(body_html, slug, all_posts)  # E: internal links
     toc_items = post.get("toc_items", [])
     pub_date  = post.get("date", TODAY)
     canonical = f"{BLOG_URL}/blog/{slug}"
@@ -681,7 +836,7 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
 # ── Main ──────────────────────────────────────────────────────────────────────
 def main():
     print("=" * 60)
-    print("  Forma Blog Builder  v6")
+    print("  Forma Blog Builder  v7")
     print("=" * 60)
 
     font_css  = load_fonts()
