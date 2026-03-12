@@ -74,11 +74,12 @@ def _jaccard(a: str, b: str) -> float:
     union = len(sa | sb)
     return inter / union if union else 0.0
 def _slugify(text: str) -> str:
-    text = text.lower().strip()
+    """Convert question text to a URL slug."""
+    import re
+    text = text.lower().strip().rstrip("?")
     text = re.sub(r"[^\w\s-]", "", text)
     text = re.sub(r"[\s_]+", "-", text)
-    text = re.sub(r"-+", "-", text)
-    return text[:80].strip("-")
+    return re.sub(r"-+", "-", text)[:80].strip("-")
 # ---------------------------------------------------------------------------
 # Content type classifier
 # ---------------------------------------------------------------------------
@@ -324,16 +325,18 @@ def _build_tool_opportunities(clusters_out: dict, clusters_meta: list) -> list[d
     tools.sort(key=lambda x: x["priority_score"], reverse=True)
     return tools
 def _suggest_tool_name(question: str) -> str:
-    """Derive a tool name from a question."""
-    q = question.lower().rstrip("?")
-    replacements = [
-        ("what should my ", ""), ("how much ", ""), ("how long should ",  ""),
-        ("what is my ", ""), ("what heart rate is ", ""), ("calculate ", ""),
-        ("how do i calculate ", ""), ("how fast should ", ""),
-    ]
-    for old, new in replacements:
-        q = q.replace(old, new)
-    return q.strip().title() + " Calculator"
+    """Derive a suggested tool name from a question."""
+    import re
+    q = question.lower()
+    if "pace" in q:       return "Pace Calculator"
+    if "heart rate" in q: return "Heart Rate Zone Calculator"
+    if "ftp" in q:        return "FTP Calculator"
+    if "calorie" in q or "how much" in q: return "Training Calorie Calculator"
+    if "how long" in q:   return "Training Duration Estimator"
+    if "vo2" in q:        return "VO2 Max Estimator"
+    # fallback: capitalise key nouns
+    words = re.sub(r"(what|how|is|are|do|does|should|i|my|a|an|the)\s+", " ", q).split()
+    return " ".join(w.capitalize() for w in words[:4]).strip() + " Tool"
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -425,18 +428,89 @@ def main() -> None:
     with (DATA_DIR / "question_graph.json").open("w") as fh:
         json.dump(graph, fh, indent=2)
     # ------------------------------------------------------------------
-    # Stage 5: Build shared Phase 2 outputs
+    # Write question_graph.json to shared/ (blog builder reads from here)
     # ------------------------------------------------------------------
+    shared_graph_path = SHARED_DIR / "question_graph.json"
     SHARED_DIR.mkdir(parents=True, exist_ok=True)
-    cluster_manifest = _build_cluster_manifest(clusters_out, clusters_meta)
+    with shared_graph_path.open("w") as fh:
+        json.dump(graph_edges, fh, indent=2)
+
+    # ------------------------------------------------------------------
+    # Build and write cluster_manifest.json
+    # ------------------------------------------------------------------
+    manifest_clusters = []
+    for cid, cdata in clusters_out["clusters"].items():
+        qs = cdata["top_questions"]
+        pillars = [q for q in qs if q.get("content_type") == "pillar_article"]
+        pillar_q = pillars[0] if pillars else (qs[0] if qs else None)
+        manifest_clusters.append({
+            "id":              cid,
+            "name":            cdata["name"],
+            "question_count":  cdata["question_count"],
+            "content_type_split": cdata["content_type_split"],
+            "pillar_question": pillar_q["text"] if pillar_q else None,
+            "pillar_slug":     _slugify(pillar_q["text"]) if pillar_q else None,
+            "pillar_score":    pillar_q.get("scores", {}).get("composite", 0) if pillar_q else 0,
+            "supporting_questions": [
+                {"text": q["text"], "slug": _slugify(q["text"]), "score": q.get("scores", {}).get("composite", 0)}
+                for q in qs if q.get("content_type") == "article"
+            ][:10],
+            "tool_questions": [
+                {"text": q["text"], "slug": _slugify(q["text"]), "score": q.get("scores", {}).get("composite", 0)}
+                for q in qs if q.get("content_type") == "tool"
+            ],
+        })
+    cluster_manifest = {"generated_at": generated_at, "clusters": manifest_clusters}
     with (SHARED_DIR / "cluster_manifest.json").open("w") as fh:
         json.dump(cluster_manifest, fh, indent=2)
-    pillar_specs = _build_pillar_specs(clusters_out, clusters_meta)
+    print(f"[cluster] \u2713 cluster_manifest.json \u2014 {len(manifest_clusters)} clusters")
+
+    # ------------------------------------------------------------------
+    # Build and write pillar_page_specs.json
+    # ------------------------------------------------------------------
+    pillar_specs = []
+    for c in manifest_clusters:
+        if not c["pillar_question"]:
+            continue
+        pillar_specs.append({
+            "cluster":           c["id"],
+            "slug":              c["pillar_slug"],
+            "h1":                c["pillar_question"],
+            "pillar_score":      c["pillar_score"],
+            "suggested_sections": [q["text"] for q in c["supporting_questions"]],
+            "tool_ctas":         [q["text"] for q in c["tool_questions"]],
+            "internal_links_to": [
+                other["pillar_slug"]
+                for other in manifest_clusters
+                if other["id"] != c["id"] and other["pillar_slug"]
+            ],
+        })
     with (SHARED_DIR / "pillar_page_specs.json").open("w") as fh:
         json.dump(pillar_specs, fh, indent=2)
-    tool_opps = _build_tool_opportunities(clusters_out, clusters_meta)
+    print(f"[cluster] \u2713 pillar_page_specs.json \u2014 {len(pillar_specs)} pillar specs")
+
+    # ------------------------------------------------------------------
+    # Build and write tool_opportunities.json
+    # ------------------------------------------------------------------
+    tool_opps = []
+    for cid, cdata in clusters_out["clusters"].items():
+        for q in cdata["top_questions"]:
+            if q.get("content_type") == "tool":
+                tool_opps.append({
+                    "cluster":    cid,
+                    "question":   q["text"],
+                    "slug":       _slugify(q["text"]),
+                    "score":      q.get("scores", {}).get("composite", 0),
+                    "tool_name":  _suggest_tool_name(q["text"]),
+                    "supporting": [
+                        sq["text"] for sq in cdata["top_questions"]
+                        if sq.get("content_type") == "article"
+                    ][:3],
+                })
+    tool_opps.sort(key=lambda x: x["score"], reverse=True)
     with (SHARED_DIR / "tool_opportunities.json").open("w") as fh:
         json.dump(tool_opps, fh, indent=2)
+    print(f"[cluster] \u2713 tool_opportunities.json \u2014 {len(tool_opps)} tool opportunities")
     # ------------------------------------------------------------------
     # Summary
     # ------------------------------------------------------------------
