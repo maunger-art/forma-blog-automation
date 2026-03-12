@@ -1,0 +1,24 @@
+{
+  "search_potential":  0.30,
+  "pain_intensity":    0.25,
+  "commercial_intent": 0.20,
+  "topical_fit":       0.15,
+  "differentiation":   0.10,
+
+  "pain_keywords": [
+    "sore", "struggling", "confused", "frustrated", "wrong",
+    "not working", "spike", "crash", "slow", "tired", "fatigued"
+  ],
+  "device_keywords": [
+    "garmin", "wahoo", "polar", "whoop", "coros", "apple watch", "suunto"
+  ],
+  "product_keywords": [
+    "app", "training plan", "coach", "programme", "tracker", "platform"
+  ],
+  "engagement_thresholds": {
+    "reddit_upvotes": [[0,1],[5,3],[20,5],[50,7],[100,9],[200,10]],
+    "paa_default": 7,
+    "autosuggest_default": 5,
+    "competitor_default": 6
+  }
+}

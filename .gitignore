@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# AQE cache — never commit, restore via CI cache action
+research/cache/
+
+# OS
+.DS_Store
+Thumbs.db
