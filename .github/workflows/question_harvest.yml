@@ -29,6 +29,7 @@ jobs:
       - run: python -m research.question_collector
         env:
           AQE_SOURCES: ${{ github.event.inputs.sources || 'all' }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
       - run: python -m research.dedup_engine
       - run: python -m research.question_scorer
       - run: python -m research.cluster_builder
