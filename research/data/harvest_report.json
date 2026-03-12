@@ -1,6 +1,6 @@
 {
   "run_id": "2026-03-12-weekly",
-  "run_at": "2026-03-12T10:36:07Z",
+  "run_at": "2026-03-12T11:38:55Z",
   "collection": {
     "reddit": 0,
     "autosuggest": 83,
@@ -26,9 +26,9 @@
     "unclassified_rate": "24.7%",
     "by_cluster": {
       "zone-2-training": 24,
-      "hrv-readiness": 10,
+      "hrv-readiness": 3,
       "training-load": 1,
-      "garmin-wearable": 0,
+      "garmin-wearable": 7,
       "marathon-training": 9,
       "cycling-endurance": 3,
       "recovery-sleep": 2,
@@ -36,8 +36,8 @@
     }
   },
   "queue": {
-    "total_queued": 38,
-    "new_this_run": 38,
+    "total_queued": 39,
+    "new_this_run": 1,
     "assigned": 0,
     "in_progress": 0,
     "published": 0
