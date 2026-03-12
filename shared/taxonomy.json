@@ -1,0 +1,252 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-12",
+  "clusters": [
+    {
+      "id": "zone-2-training",
+      "name": "Zone 2 Training",
+      "description": "Low-intensity aerobic training, heart rate zones, aerobic base building, fat oxidation",
+      "pillar_slug": "zone-2-training-complete-guide",
+      "related_tool": "zone-2-calculator",
+      "seed_terms": [
+        "zone 2 training",
+        "zone 2 heart rate",
+        "aerobic base running",
+        "low heart rate running",
+        "maffetone method"
+      ],
+      "keywords": {
+        "primary": [
+          "zone 2", "z2", "aerobic base", "maffetone", "fat burning zone",
+          "low heart rate training", "aerobic threshold", "zone two"
+        ],
+        "secondary": [
+          "easy runs", "base training", "slow running", "conversational pace",
+          "fat oxidation", "mitochondria", "aerobic efficiency", "polarised training"
+        ],
+        "negative": [
+          "zone 5", "vo2max intervals", "anaerobic", "sprint training",
+          "high intensity interval"
+        ]
+      },
+      "article_quota": 8,
+      "programmatic_quota": 20,
+      "tool_quota": 2,
+      "research_quota": 1
+    },
+    {
+      "id": "hrv-readiness",
+      "name": "HRV and Readiness",
+      "description": "Heart rate variability, morning readiness, recovery scores, autonomic nervous system",
+      "pillar_slug": "hrv-for-endurance-athletes-guide",
+      "related_tool": "readiness-explainer",
+      "seed_terms": [
+        "HRV training",
+        "heart rate variability running",
+        "readiness score training",
+        "morning HRV protocol"
+      ],
+      "keywords": {
+        "primary": [
+          "hrv", "heart rate variability", "readiness score", "readiness",
+          "morning readiness", "recovery score", "hrv training"
+        ],
+        "secondary": [
+          "resting heart rate", "autonomic nervous system", "parasympathetic",
+          "sympathetic nervous system", "overreaching", "overtraining detection",
+          "morning protocol", "sleep quality"
+        ],
+        "negative": [
+          "heart rate zone", "max heart rate", "lactate"
+        ]
+      },
+      "article_quota": 8,
+      "programmatic_quota": 15,
+      "tool_quota": 1,
+      "research_quota": 1
+    },
+    {
+      "id": "training-load",
+      "name": "Training Load Management",
+      "description": "ATL, CTL, TSB, ACWR, periodisation, taper, overtraining prevention",
+      "pillar_slug": "training-load-management-endurance-guide",
+      "related_tool": "training-load-calculator",
+      "seed_terms": [
+        "training load cycling",
+        "training stress score running",
+        "acute chronic workload ratio",
+        "training periodisation endurance"
+      ],
+      "keywords": {
+        "primary": [
+          "training load", "atl", "ctl", "tsb", "training stress",
+          "acute chronic workload", "acwr", "periodisation", "tss"
+        ],
+        "secondary": [
+          "taper", "peak week", "deload week", "recovery week",
+          "training block", "base build race", "volume management",
+          "progressive overload", "training fatigue"
+        ],
+        "negative": []
+      },
+      "article_quota": 7,
+      "programmatic_quota": 15,
+      "tool_quota": 2,
+      "research_quota": 1
+    },
+    {
+      "id": "garmin-wearable",
+      "name": "Garmin and Wearable Interpretation",
+      "description": "Garmin metrics, wearable data literacy, device-specific training insights",
+      "pillar_slug": "understanding-garmin-training-data",
+      "related_tool": null,
+      "seed_terms": [
+        "what does Garmin readiness mean",
+        "Garmin training status explained",
+        "Garmin body battery running",
+        "Garmin HRV status",
+        "wearable training data"
+      ],
+      "keywords": {
+        "primary": [
+          "garmin", "garmin readiness", "garmin training status",
+          "body battery", "garmin hrv status", "garmin connect"
+        ],
+        "secondary": [
+          "wearable", "fitness tracker", "recovery time garmin",
+          "training effect", "aerobic te", "anaerobic te",
+          "vo2max garmin", "performance condition", "wahoo", "coros", "polar"
+        ],
+        "negative": []
+      },
+      "article_quota": 8,
+      "programmatic_quota": 25,
+      "tool_quota": 0,
+      "research_quota": 0
+    },
+    {
+      "id": "marathon-training",
+      "name": "Marathon Training",
+      "description": "Marathon-specific training, race preparation, long run strategy, race day execution",
+      "pillar_slug": "marathon-training-science-backed-guide",
+      "related_tool": "marathon-pace-calculator",
+      "seed_terms": [
+        "marathon training plan",
+        "marathon long run pace",
+        "marathon taper week",
+        "first marathon training",
+        "marathon race day strategy"
+      ],
+      "keywords": {
+        "primary": [
+          "marathon", "marathon training", "marathon plan", "marathon race",
+          "26.2", "marathon prep", "marathon taper"
+        ],
+        "secondary": [
+          "long run", "tempo run marathon", "marathon nutrition", "carb loading",
+          "marathon pacing", "negative split", "hitting the wall", "bonk",
+          "16 week plan", "18 week plan", "marathon pb", "bq boston qualifier"
+        ],
+        "negative": [
+          "half marathon", "5k", "10k", "ultra"
+        ]
+      },
+      "article_quota": 10,
+      "programmatic_quota": 20,
+      "tool_quota": 2,
+      "research_quota": 1
+    },
+    {
+      "id": "cycling-endurance",
+      "name": "Cycling Endurance",
+      "description": "Cycling-specific training, power zones, FTP, cycling performance",
+      "pillar_slug": "cycling-endurance-training-complete-guide",
+      "related_tool": null,
+      "seed_terms": [
+        "cycling endurance training",
+        "FTP cycling",
+        "cycling power zones",
+        "cycling base miles",
+        "century ride training"
+      ],
+      "keywords": {
+        "primary": [
+          "cycling", "ftp", "functional threshold power", "watts cycling",
+          "power zones", "cycling endurance", "cyclist training"
+        ],
+        "secondary": [
+          "base miles", "z2 cycling", "sweet spot training", "century ride",
+          "gran fondo", "cycling volume", "power to weight", "w/kg",
+          "tempo cycling", "threshold cycling", "vo2max cycling"
+        ],
+        "negative": [
+          "running", "triathlon", "swimming"
+        ]
+      },
+      "article_quota": 8,
+      "programmatic_quota": 15,
+      "tool_quota": 1,
+      "research_quota": 1
+    },
+    {
+      "id": "recovery-sleep",
+      "name": "Recovery and Sleep",
+      "description": "Sleep quality for athletes, active recovery, rest day strategy, recovery optimisation",
+      "pillar_slug": "athlete-recovery-sleep-complete-guide",
+      "related_tool": null,
+      "seed_terms": [
+        "athlete sleep quality",
+        "active recovery running",
+        "rest day training",
+        "sleep and running performance",
+        "recovery between runs"
+      ],
+      "keywords": {
+        "primary": [
+          "recovery", "sleep quality", "rest day", "active recovery",
+          "sleep and performance", "athlete sleep", "recovery run"
+        ],
+        "secondary": [
+          "deep sleep", "rem sleep", "sleep score", "recovery between sessions",
+          "cold water immersion", "ice bath", "foam rolling", "stretching",
+          "recovery nutrition", "protein timing", "muscle soreness", "doms"
+        ],
+        "negative": []
+      },
+      "article_quota": 7,
+      "programmatic_quota": 12,
+      "tool_quota": 0,
+      "research_quota": 1
+    },
+    {
+      "id": "injury-prevention",
+      "name": "Injury Prevention",
+      "description": "Common running and cycling injuries, prevention strategies, load management for injury avoidance",
+      "pillar_slug": "running-injury-prevention-guide",
+      "related_tool": null,
+      "seed_terms": [
+        "running injury prevention",
+        "IT band syndrome running",
+        "shin splints cause prevention",
+        "runners knee cause",
+        "avoid running injuries"
+      ],
+      "keywords": {
+        "primary": [
+          "injury", "running injury", "injury prevention", "pain running",
+          "injury risk", "overuse injury"
+        ],
+        "secondary": [
+          "it band", "iliotibial", "shin splints", "plantar fasciitis",
+          "runners knee", "patellofemoral", "achilles", "stress fracture",
+          "tendinopathy", "hamstring", "hip flexor", "return to running"
+        ],
+        "negative": []
+      },
+      "article_quota": 7,
+      "programmatic_quota": 15,
+      "tool_quota": 0,
+      "research_quota": 0
+    }
+  ]
+}

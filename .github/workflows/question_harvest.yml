@@ -1,0 +1,48 @@
+name: Weekly Athlete Question Harvest
+on:
+  schedule:
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
+    inputs:
+      sources:
+        description: 'Sources to run (all|reddit|autosuggest|paa|competitor)'
+        default: 'all'
+      skip_cache:
+        description: 'Force fresh fetch'
+        type: boolean
+        default: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11', cache: pip }
+      - run: pip install -r research/requirements.txt
+      - uses: actions/cache@v4
+        with:
+          path: research/cache
+          key: aqe-cache-${{ hashFiles('research/config/sources.json') }}
+          restore-keys: aqe-cache-
+      - run: python -m research.question_collector
+        env:
+          REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
+          AQE_SOURCES: ${{ github.event.inputs.sources || 'all' }}
+      - run: python -m research.dedup_engine
+      - run: python -m research.question_scorer
+      - run: python -m research.cluster_builder
+      - run: python -m research.queue_generator
+      - run: |
+          git config user.email 'ci@formafit.co.uk'
+          git config user.name 'Forma AQE'
+          git add research/data/ shared/queue.json
+          git diff --staged --quiet && echo 'No changes' || \
+            git commit -m 'chore(aqe): weekly harvest'
+          git push
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: harvest-report-${{ github.run_id }}
+          path: research/data/harvest_report.json

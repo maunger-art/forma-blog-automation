@@ -1,0 +1,24 @@
+{
+  "subreddits": [
+    "running", "advancedrunning", "cycling", "triathlon",
+    "Garmin", "Strava", "ultrarunning", "marathon_training"
+  ],
+  "seed_terms": [
+    "zone 2 training", "HRV training", "running heart rate",
+    "Garmin readiness score", "marathon training plan",
+    "cycling endurance", "training load", "recovery running",
+    "overtraining symptoms", "running injury prevention",
+    "zone 2 pace", "how to run slower", "aerobic base building"
+  ],
+  "competitor_sites": [
+    { "name": "TrainingPeaks", "url": "https://www.trainingpeaks.com/blog/" },
+    { "name": "Runners World",  "url": "https://www.runnersworld.com/training/" },
+    { "name": "8020 Endurance", "url": "https://www.8020endurance.com/blog/" }
+  ],
+  "source_schedule": {
+    "reddit":      "weekly",
+    "autosuggest": "weekly",
+    "paa":         "weekly",
+    "competitor":  "monthly"
+  }
+}
