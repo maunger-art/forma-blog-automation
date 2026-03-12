@@ -5,7 +5,9 @@ import requests
 from .base_source import BaseSource
 
 
-NOISE_TERMS = ["roblox", "cricket", "studio", "minecraft"]
+NOISE_TERMS = ["roblox", "cricket", "minecraft", "fifa", "nba", "nfl",
+               "baseball", "basketball", "football", "soccer", "tennis",
+               "golf", "hockey", "rugby", "studio", "gaming", "game"]
 
 
 class AutosuggestSource(BaseSource):
