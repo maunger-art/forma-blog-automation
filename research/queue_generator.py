@@ -58,11 +58,12 @@ def main() -> None:
     # Build sets of already-queued/published question IDs
     already_queued_ids: set[str] = {e["question_id"] for e in existing_queue}
 
-    # Count currently queued per cluster (non-published)
-    queued_per_cluster: dict[str, int] = {}
+    # Count only ACTIVE entries (assigned or in_progress) against quota
+    active_per_cluster: dict[str, int] = {}
     for e in preserved:
-        cid = e.get("cluster", "")
-        queued_per_cluster[cid] = queued_per_cluster.get(cid, 0) + 1
+        if e.get("status") in ("assigned", "in_progress"):
+            cid = e.get("cluster", "")
+            active_per_cluster[cid] = active_per_cluster.get(cid, 0) + 1
 
     new_entries: list[dict] = []
     new_count = 0
@@ -72,8 +73,8 @@ def main() -> None:
     for cluster in clusters_meta:
         cid = cluster["id"]
         quota = quota_map.get(cid, 0)
-        currently_queued = queued_per_cluster.get(cid, 0)
-        slots_remaining = quota - currently_queued
+        currently_active = active_per_cluster.get(cid, 0)
+        slots_remaining = quota - currently_active
 
         if slots_remaining <= 0:
             continue
