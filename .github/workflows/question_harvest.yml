@@ -26,7 +26,7 @@ jobs:
           path: research/cache
           key: aqe-cache-${{ hashFiles('research/config/sources.json') }}
           restore-keys: aqe-cache-
-      - - name: Debug env
+      - name: Debug env
         env:
           REDDIT_UA: ${{ secrets.REDDIT_USER_AGENT }}
         run: |
