@@ -41,7 +41,7 @@ class RedditSource(BaseSource):
         for p in raw["data"].get("data", []):
             title = p.get("title", "").strip()
             score = p.get("score", 0)
-            if score < 5:
+            if score < 2:
                 continue
             if not QUESTION_RE.match(title):
                 continue
