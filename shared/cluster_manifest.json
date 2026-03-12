@@ -1,0 +1,320 @@
+{
+  "generated_at": "2026-03-12T19:37:55Z",
+  "clusters": [
+    {
+      "id": "zone-2-training",
+      "name": "Zone 2 Training",
+      "question_count": 44,
+      "content_type_split": {
+        "article": 19,
+        "programmatic": 23,
+        "tool": 2,
+        "research": 0,
+        "pillar_article": 0
+      },
+      "pillar_question": "How slow do I need to run for zone 2?",
+      "pillar_slug": "how-slow-do-i-need-to-run-for-zone-2",
+      "pillar_score": 6.9,
+      "supporting_questions": [
+        {
+          "text": "How slow do I need to run for zone 2?",
+          "slug": "how-slow-do-i-need-to-run-for-zone-2",
+          "score": 6.9
+        },
+        {
+          "text": "How fast does zone 2 pace improve?",
+          "slug": "how-fast-does-zone-2-pace-improve",
+          "score": 6.8
+        },
+        {
+          "text": "Is zone 2 or 3 better for heart health?",
+          "slug": "is-zone-2-or-3-better-for-heart-health",
+          "score": 6.5
+        },
+        {
+          "text": "Can walking improve your aerobic base?",
+          "slug": "can-walking-improve-your-aerobic-base",
+          "score": 6.5
+        },
+        {
+          "text": "How long should I train for zone 2?",
+          "slug": "how-long-should-i-train-for-zone-2",
+          "score": 6.4
+        },
+        {
+          "text": "How do I know my zone 2?",
+          "slug": "how-do-i-know-my-zone-2",
+          "score": 6.4
+        },
+        {
+          "text": "How long does it take to build up an aerobic base?",
+          "slug": "how-long-does-it-take-to-build-up-an-aerobic-base",
+          "score": 6.4
+        },
+        {
+          "text": "How much zone 2 to build an aerobic base?",
+          "slug": "how-much-zone-2-to-build-an-aerobic-base",
+          "score": 6.4
+        },
+        {
+          "text": "Is 20 minutes of zone 2 enough?",
+          "slug": "is-20-minutes-of-zone-2-enough",
+          "score": 6.2
+        },
+        {
+          "text": "Can you build an aerobic base without running?",
+          "slug": "can-you-build-an-aerobic-base-without-running",
+          "score": 6.2
+        }
+      ],
+      "tool_questions": [
+        {
+          "text": "zone 2 training calculator",
+          "slug": "zone-2-training-calculator",
+          "score": 5.0
+        },
+        {
+          "text": "zone 2 pace calculator",
+          "slug": "zone-2-pace-calculator",
+          "score": 5.0
+        }
+      ]
+    },
+    {
+      "id": "hrv-readiness",
+      "name": "HRV and Readiness",
+      "question_count": 9,
+      "content_type_split": {
+        "article": 5,
+        "programmatic": 4,
+        "tool": 0,
+        "research": 0,
+        "pillar_article": 0
+      },
+      "pillar_question": "Why is my Garmin training readiness always low?",
+      "pillar_slug": "why-is-my-garmin-training-readiness-always-low",
+      "pillar_score": 7.3,
+      "supporting_questions": [
+        {
+          "text": "Why is my Garmin training readiness always low?",
+          "slug": "why-is-my-garmin-training-readiness-always-low",
+          "score": 7.3
+        },
+        {
+          "text": "How do you train to improve HRV?",
+          "slug": "how-do-you-train-to-improve-hrv",
+          "score": 6.8
+        },
+        {
+          "text": "Why is my HRV so low?",
+          "slug": "why-is-my-hrv-so-low",
+          "score": 6.7
+        },
+        {
+          "text": "Why is my readiness score so low?",
+          "slug": "why-is-my-readiness-score-so-low",
+          "score": 6.7
+        },
+        {
+          "text": "Is an HRV of 150 good?",
+          "slug": "is-an-hrv-of-150-good",
+          "score": 6.2
+        }
+      ],
+      "tool_questions": []
+    },
+    {
+      "id": "training-load",
+      "name": "Training Load Management",
+      "question_count": 7,
+      "content_type_split": {
+        "article": 2,
+        "programmatic": 5,
+        "tool": 0,
+        "research": 0,
+        "pillar_article": 0
+      },
+      "pillar_question": "training load apple watch",
+      "pillar_slug": "training-load-apple-watch",
+      "pillar_score": 6.0,
+      "supporting_questions": [
+        {
+          "text": "What\u2019s a guy gotta do to get a high anaerobic benefit?",
+          "slug": "whats-a-guy-gotta-do-to-get-a-high-anaerobic-benefit",
+          "score": 5.5
+        },
+        {
+          "text": "How high are your Training Loads?",
+          "slug": "how-high-are-your-training-loads",
+          "score": 3.6
+        }
+      ],
+      "tool_questions": []
+    },
+    {
+      "id": "garmin-wearable",
+      "name": "Garmin and Wearable Interpretation",
+      "question_count": 11,
+      "content_type_split": {
+        "article": 3,
+        "programmatic": 7,
+        "tool": 0,
+        "research": 1,
+        "pillar_article": 0
+      },
+      "pillar_question": "How hard is it to get a 100 sleep score in Garmin?",
+      "pillar_slug": "how-hard-is-it-to-get-a-100-sleep-score-in-garmin",
+      "pillar_score": 7.3,
+      "supporting_questions": [
+        {
+          "text": "How hard is it to get a 100 sleep score in Garmin?",
+          "slug": "how-hard-is-it-to-get-a-100-sleep-score-in-garmin",
+          "score": 7.3
+        },
+        {
+          "text": "How does my Garmin watch know that I am stressed?",
+          "slug": "how-does-my-garmin-watch-know-that-i-am-stressed",
+          "score": 7.0
+        },
+        {
+          "text": "Can I pair my chest strap to my watch without my phone?",
+          "slug": "can-i-pair-my-chest-strap-to-my-watch-without-my-phone",
+          "score": 4.2
+        }
+      ],
+      "tool_questions": []
+    },
+    {
+      "id": "marathon-training",
+      "name": "Marathon Training",
+      "question_count": 15,
+      "content_type_split": {
+        "article": 5,
+        "programmatic": 10,
+        "tool": 0,
+        "research": 0,
+        "pillar_article": 0
+      },
+      "pillar_question": "How long should you train for a marathon?",
+      "pillar_slug": "how-long-should-you-train-for-a-marathon",
+      "pillar_score": 6.4,
+      "supporting_questions": [
+        {
+          "text": "How long should you train for a marathon?",
+          "slug": "how-long-should-you-train-for-a-marathon",
+          "score": 6.4
+        },
+        {
+          "text": "What pace is a 4 hour marathon?",
+          "slug": "what-pace-is-a-4-hour-marathon",
+          "score": 5.9
+        },
+        {
+          "text": "What is the 10 10 10 rule for marathon?",
+          "slug": "what-is-the-10-10-10-rule-for-marathon",
+          "score": 5.7
+        },
+        {
+          "text": "Can I run a Strong Marathon 3 weeks after a \"bad\" Marathon?",
+          "slug": "can-i-run-a-strong-marathon-3-weeks-after-a-bad-marathon",
+          "score": 5.2
+        },
+        {
+          "text": "How do you warm up for brick workouts?",
+          "slug": "how-do-you-warm-up-for-brick-workouts",
+          "score": 3.6
+        }
+      ],
+      "tool_questions": []
+    },
+    {
+      "id": "cycling-endurance",
+      "name": "Cycling Endurance",
+      "question_count": 6,
+      "content_type_split": {
+        "article": 2,
+        "programmatic": 4,
+        "tool": 0,
+        "research": 0,
+        "pillar_article": 0
+      },
+      "pillar_question": "How much cycling is equal to 10,000 steps?",
+      "pillar_slug": "how-much-cycling-is-equal-to-10000-steps",
+      "pillar_score": 6.4,
+      "supporting_questions": [
+        {
+          "text": "How much cycling is equal to 10,000 steps?",
+          "slug": "how-much-cycling-is-equal-to-10000-steps",
+          "score": 6.4
+        },
+        {
+          "text": "How good is cycling for endurance?",
+          "slug": "how-good-is-cycling-for-endurance",
+          "score": 6.4
+        }
+      ],
+      "tool_questions": []
+    },
+    {
+      "id": "recovery-sleep",
+      "name": "Recovery and Sleep",
+      "question_count": 7,
+      "content_type_split": {
+        "article": 3,
+        "programmatic": 3,
+        "tool": 0,
+        "research": 1,
+        "pillar_article": 0
+      },
+      "pillar_question": "How long should I run for a recovery run?",
+      "pillar_slug": "how-long-should-i-run-for-a-recovery-run",
+      "pillar_score": 6.4,
+      "supporting_questions": [
+        {
+          "text": "How long should I run for a recovery run?",
+          "slug": "how-long-should-i-run-for-a-recovery-run",
+          "score": 6.4
+        },
+        {
+          "text": "How / how long to regain fitness after flu",
+          "slug": "how-how-long-to-regain-fitness-after-flu",
+          "score": 3.6
+        },
+        {
+          "text": "When to take rest days?",
+          "slug": "when-to-take-rest-days",
+          "score": 3.4
+        }
+      ],
+      "tool_questions": []
+    },
+    {
+      "id": "injury-prevention",
+      "name": "Injury Prevention",
+      "question_count": 11,
+      "content_type_split": {
+        "article": 2,
+        "programmatic": 9,
+        "tool": 0,
+        "research": 0,
+        "pillar_article": 0
+      },
+      "pillar_question": "How to prevent injury as a runner?",
+      "pillar_slug": "how-to-prevent-injury-as-a-runner",
+      "pillar_score": 6.4,
+      "supporting_questions": [
+        {
+          "text": "How to prevent injury as a runner?",
+          "slug": "how-to-prevent-injury-as-a-runner",
+          "score": 6.4
+        },
+        {
+          "text": "Is it normal to get lower back and neck soreness when transitioning to a road bike?",
+          "slug": "is-it-normal-to-get-lower-back-and-neck-soreness-when-transitioning-to-a-road-bi",
+          "score": 4.0
+        }
+      ],
+      "tool_questions": []
+    }
+  ]
+}

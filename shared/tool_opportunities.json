@@ -1,0 +1,26 @@
+[
+  {
+    "cluster": "zone-2-training",
+    "question": "zone 2 training calculator",
+    "slug": "zone-2-training-calculator",
+    "score": 5.0,
+    "tool_name": "Zone 2 Training Calculator Tool",
+    "supporting": [
+      "How slow do I need to run for zone 2?",
+      "How fast does zone 2 pace improve?",
+      "Is zone 2 or 3 better for heart health?"
+    ]
+  },
+  {
+    "cluster": "zone-2-training",
+    "question": "zone 2 pace calculator",
+    "slug": "zone-2-pace-calculator",
+    "score": 5.0,
+    "tool_name": "Pace Calculator",
+    "supporting": [
+      "How slow do I need to run for zone 2?",
+      "How fast does zone 2 pace improve?",
+      "Is zone 2 or 3 better for heart health?"
+    ]
+  }
+]
