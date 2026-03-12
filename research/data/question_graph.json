@@ -1,1 +1,490 @@
-[]
+[
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "paa-99fb3e10",
+    "child_text": "How slow do I need to run for zone 2?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "paa-a812da17",
+    "child_text": "How fast does zone 2 pace improve?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "paa-5c612a32",
+    "child_text": "Is zone 2 or 3 better for heart health?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "paa-27a718e5",
+    "child_text": "How long should I train for zone 2?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "paa-0bad901c",
+    "child_text": "How do I know my zone 2?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "paa-b3bd889f",
+    "child_text": "How much zone 2 to build an aerobic base?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "paa-857fb637",
+    "child_text": "Is 20 minutes of zone 2 enough?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "paa-80fb74f0",
+    "child_text": "What should be my pace for zone 2?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-96712e4a",
+    "child_text": "zone 2 training plan",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-d6479549",
+    "child_text": "zone 2 pace is so slow",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-8dd96186",
+    "child_text": "zone 2 pace improvement",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-9425c548",
+    "child_text": "zone 2 training benefits",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-e77cc3a0",
+    "child_text": "zone 2 training heart rate",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-57811885",
+    "child_text": "zone 2 training cycling",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-0bd83e9f",
+    "child_text": "zone 2 training calculator",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-f27f44de",
+    "child_text": "zone 2 training running",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-d26e9892",
+    "child_text": "zone 2 training reddit",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-bb6eeab2",
+    "child_text": "zone 2 training myth",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-2b49f6fb",
+    "child_text": "zone 2 training duration",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-84613921",
+    "child_text": "zone 2 pace calculator",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-5059a3c2",
+    "child_text": "zone 2 pace running",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-8ff8942c",
+    "child_text": "zone 2 pace reddit",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-3b0d6abb",
+    "child_text": "zone 2 pace not improving",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-c8cf5142",
+    "child_text": "zone 2 pace chart",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-9848f646",
+    "child_text": "zone 2 pace heart rate",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
+    "child_id": "autosugg-58af5db0",
+    "child_text": "zone 2 pace meaning",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-240fdf34",
+    "pillar_text": "What is the training load?",
+    "child_id": "autosugg-869bf007",
+    "child_text": "training load apple watch",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-240fdf34",
+    "pillar_text": "What is the training load?",
+    "child_id": "paa-ffd7c98f",
+    "child_text": "What is a good training load number?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-240fdf34",
+    "pillar_text": "What is the training load?",
+    "child_id": "paa-dc8b1471",
+    "child_text": "What is training load class 11?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-240fdf34",
+    "pillar_text": "What is the training load?",
+    "child_id": "paa-4bd9f6d3",
+    "child_text": "What is the 28 day training load?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-240fdf34",
+    "pillar_text": "What is the training load?",
+    "child_id": "reddit-5b14c450",
+    "child_text": "How high are your Training Loads?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-dc8b1471",
+    "pillar_text": "What is training load class 11?",
+    "child_id": "autosugg-869bf007",
+    "child_text": "training load apple watch",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-dc8b1471",
+    "pillar_text": "What is training load class 11?",
+    "child_id": "paa-240fdf34",
+    "child_text": "What is the training load?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-dc8b1471",
+    "pillar_text": "What is training load class 11?",
+    "child_id": "paa-ffd7c98f",
+    "child_text": "What is a good training load number?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-dc8b1471",
+    "pillar_text": "What is training load class 11?",
+    "child_id": "paa-4bd9f6d3",
+    "child_text": "What is the 28 day training load?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-dc8b1471",
+    "pillar_text": "What is training load class 11?",
+    "child_id": "reddit-5b14c450",
+    "child_text": "How high are your Training Loads?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-4bd9f6d3",
+    "pillar_text": "What is the 28 day training load?",
+    "child_id": "autosugg-869bf007",
+    "child_text": "training load apple watch",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-4bd9f6d3",
+    "pillar_text": "What is the 28 day training load?",
+    "child_id": "paa-240fdf34",
+    "child_text": "What is the training load?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-4bd9f6d3",
+    "pillar_text": "What is the 28 day training load?",
+    "child_id": "paa-ffd7c98f",
+    "child_text": "What is a good training load number?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-4bd9f6d3",
+    "pillar_text": "What is the 28 day training load?",
+    "child_id": "paa-dc8b1471",
+    "child_text": "What is training load class 11?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-4bd9f6d3",
+    "pillar_text": "What is the 28 day training load?",
+    "child_id": "reddit-5b14c450",
+    "child_text": "How high are your Training Loads?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "marathon-training",
+    "pillar_id": "paa-aafd0d7c",
+    "pillar_text": "What is the ideal marathon training plan?",
+    "child_id": "paa-4057488e",
+    "child_text": "What is the 10 10 10 rule for marathon?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "marathon-training",
+    "pillar_id": "paa-aafd0d7c",
+    "pillar_text": "What is the ideal marathon training plan?",
+    "child_id": "autosugg-42ee4307",
+    "child_text": "marathon training plan for beginners",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "marathon-training",
+    "pillar_id": "paa-aafd0d7c",
+    "pillar_text": "What is the ideal marathon training plan?",
+    "child_id": "autosugg-682a5368",
+    "child_text": "marathon training plan pdf",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "marathon-training",
+    "pillar_id": "paa-aafd0d7c",
+    "pillar_text": "What is the ideal marathon training plan?",
+    "child_id": "autosugg-7948e20b",
+    "child_text": "marathon training plan 16 weeks",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "marathon-training",
+    "pillar_id": "paa-aafd0d7c",
+    "pillar_text": "What is the ideal marathon training plan?",
+    "child_id": "autosugg-edac5d83",
+    "child_text": "marathon training plan 20 weeks",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "marathon-training",
+    "pillar_id": "paa-aafd0d7c",
+    "pillar_text": "What is the ideal marathon training plan?",
+    "child_id": "autosugg-ffe6d921",
+    "child_text": "marathon training plan hal higdon",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "marathon-training",
+    "pillar_id": "paa-aafd0d7c",
+    "pillar_text": "What is the ideal marathon training plan?",
+    "child_id": "autosugg-12a4f7a5",
+    "child_text": "marathon training plan reddit",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "marathon-training",
+    "pillar_id": "paa-aafd0d7c",
+    "pillar_text": "What is the ideal marathon training plan?",
+    "child_id": "autosugg-eadbf471",
+    "child_text": "marathon training plan free",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "marathon-training",
+    "pillar_id": "paa-aafd0d7c",
+    "pillar_text": "What is the ideal marathon training plan?",
+    "child_id": "autosugg-5c4416d9",
+    "child_text": "marathon training plan 12 weeks",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "marathon-training",
+    "pillar_id": "paa-aafd0d7c",
+    "pillar_text": "What is the ideal marathon training plan?",
+    "child_id": "autosugg-7617f308",
+    "child_text": "marathon training plan 6 months",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "marathon-training",
+    "pillar_id": "paa-aafd0d7c",
+    "pillar_text": "What is the ideal marathon training plan?",
+    "child_id": "reddit-91966f90",
+    "child_text": "Can I run a Strong Marathon 3 weeks after a \"bad\" Marathon?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "cycling-endurance",
+    "pillar_id": "paa-463cc43f",
+    "pillar_text": "What is the 80 20 rule in cycling?",
+    "child_id": "paa-82bed1a8",
+    "child_text": "How much cycling is equal to 10,000 steps?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "cycling-endurance",
+    "pillar_id": "paa-463cc43f",
+    "pillar_text": "What is the 80 20 rule in cycling?",
+    "child_id": "paa-ca4190ef",
+    "child_text": "How good is cycling for endurance?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "cycling-endurance",
+    "pillar_id": "paa-463cc43f",
+    "pillar_text": "What is the 80 20 rule in cycling?",
+    "child_id": "autosugg-0c217a6a",
+    "child_text": "cycling endurance training plan",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "cycling-endurance",
+    "pillar_id": "paa-463cc43f",
+    "pillar_text": "What is the 80 20 rule in cycling?",
+    "child_id": "autosugg-a694ea11",
+    "child_text": "cycling endurance training for beginners",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "cycling-endurance",
+    "pillar_id": "paa-463cc43f",
+    "pillar_text": "What is the 80 20 rule in cycling?",
+    "child_id": "autosugg-1e2f82fc",
+    "child_text": "cycling endurance events uk",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "recovery-sleep",
+    "pillar_id": "paa-3013817a",
+    "pillar_text": "What is recovery running?",
+    "child_id": "paa-3e37f525",
+    "child_text": "How long should I run for a recovery run?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "recovery-sleep",
+    "pillar_id": "paa-3013817a",
+    "pillar_text": "What is recovery running?",
+    "child_id": "paa-62f0e2f7",
+    "child_text": "How many kilometers is a recovery run?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "recovery-sleep",
+    "pillar_id": "paa-3013817a",
+    "pillar_text": "What is recovery running?",
+    "child_id": "autosugg-96721009",
+    "child_text": "recovery running shoes meaning",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "recovery-sleep",
+    "pillar_id": "paa-3013817a",
+    "pillar_text": "What is recovery running?",
+    "child_id": "autosugg-ac979e89",
+    "child_text": "recovery running shoes reddit",
+    "relationship": "specificity"
+  }
+]
