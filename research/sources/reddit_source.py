@@ -15,14 +15,16 @@ QUESTION_RE = re.compile(
 class RedditSource(BaseSource):
     cache_ttl_days = 7
     rate_limit_seconds = 2.0
-    source_name = "arctic-shift"
+    source_name = "reddit"
 
-    def _iter_targets(self, config: dict):
+    def get_targets(self, config: dict) -> list[str]:
+        targets = []
         for sub in config.get("subreddits", []):
             for term in config.get("seed_terms", []):
-                yield f"{sub}::{term}", {}
+                targets.append(f"{sub}::{term}")
+        return targets
 
-    def _fetch_target(self, target: str, **kwargs) -> list[dict]:
+    def _fetch_target(self, target: str) -> dict:
         sub, term = target.split("::", 1)
         one_year_ago = int(time.time()) - (365 * 24 * 60 * 60)
         url = (
@@ -31,11 +33,12 @@ class RedditSource(BaseSource):
         )
         resp = requests.get(url, timeout=15)
         resp.raise_for_status()
-        return self._parse(resp.json(), sub)
+        return {"sub": sub, "data": resp.json()}
 
-    def _parse(self, data: dict, sub: str) -> list[dict]:
+    def _parse(self, raw: dict, target: str) -> list[dict]:
+        sub = raw["sub"]
         results = []
-        for p in data.get("data", []):
+        for p in raw["data"].get("data", []):
             title = p.get("title", "").strip()
             score = p.get("score", 0)
             if score < 5:
