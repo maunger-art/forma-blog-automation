@@ -28,7 +28,6 @@ jobs:
           restore-keys: aqe-cache-
       - run: python -m research.question_collector
         env:
-          REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
           AQE_SOURCES: ${{ github.event.inputs.sources || 'all' }}
       - run: python -m research.dedup_engine
       - run: python -m research.question_scorer
