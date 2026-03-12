@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forma Blog — Train smart. Think deep.</title>
+    <link>https://blog.formafit.co.uk</link>
+    <description>Science-backed writing on HRV, recovery and adaptive endurance training.</description>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 -0000</lastBuildDate>
+    <atom:link href="https://blog.formafit.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>What Garmin Recovery Metrics Actually Mean — And When to Ignore Them</title>
+    <link>https://blog.formafit.co.uk/blog/what-garmin-recovery-metrics-actually-mean.html</link>
+    <description>Garmin's Body Battery, recovery time, and HRV status look precise — but what do they actually measure? A science-backed breakdown for endurance athletes.</description>
+    <pubDate>Wed, 11 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/what-garmin-recovery-metrics-actually-mean.html</guid>
+  </item>
+  <item>
+    <title>How Sleep Debt Destroys Endurance Performance — and the Numbers Behind It</title>
+    <link>https://blog.formafit.co.uk/blog/how-sleep-debt-destroys-endurance-performance.html</link>
+    <description>Sleep debt silently erodes VO2max, glycogen repletion, and pacing discipline. Here's what the research says and how to protect your training gains.</description>
+    <pubDate>Mon, 09 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/how-sleep-debt-destroys-endurance-performance.html</guid>
+  </item>
+  <item>
+    <title>Cycling Training Zones: Why Your FTP Isn't Everything</title>
+    <link>https://blog.formafit.co.uk/blog/cycling-training-zones-ftp-isnt-everything.html</link>
+    <description>FTP is just one number. Learn why cycling training zones matter more, how to use them effectively, and what metrics beyond FTP tell you about your real fitness.</description>
+    <pubDate>Tue, 10 Feb 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/cycling-training-zones-ftp-isnt-everything.html</guid>
+  </item>
+  <item>
+    <title>Why Your Easy Runs Are Probably Too Hard (And It's Killing Your Gains)</title>
+    <link>https://blog.formafit.co.uk/blog/easy-runs-too-hard-killing-gains.html</link>
+    <description>Most runners train too hard on easy days, blunting adaptation and accumulating fatigue. Learn what easy really means and why Zone 2 is your biggest performance lever.</description>
+    <pubDate>Tue, 03 Feb 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/easy-runs-too-hard-killing-gains.html</guid>
+  </item>
+  <item>
+    <title>The Science of Adaptive Training for Endurance Athletes</title>
+    <link>https://blog.formafit.co.uk/blog/science-of-adaptive-training.html</link>
+    <description>Discover how adaptive training uses HRV, sleep and recovery signals to optimise every workout. Why physiology-driven plans outperform fixed schedules.</description>
+    <pubDate>Thu, 12 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/science-of-adaptive-training.html</guid>
+  </item>
+  <item>
+    <title>Training Load Management: ATL, CTL and the ACWR Explained</title>
+    <link>https://blog.formafit.co.uk/blog/training-load-management-atl-ctl-acwr.html</link>
+    <description>ATL, CTL and ACWR explained for runners and cyclists. Learn how managing your acute-to-chronic workload ratio reduces injury risk and builds peak fitness.</description>
+    <pubDate>Thu, 12 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/training-load-management-atl-ctl-acwr.html</guid>
+  </item>
+  <item>
+    <title>Garmin vs Oura vs WHOOP: Which Wearable Data Should You Trust?</title>
+    <link>https://blog.formafit.co.uk/blog/garmin-vs-oura-vs-whoop-wearable-data.html</link>
+    <description>Garmin, Oura and WHOOP compared for endurance athletes. Which wearable gives the most reliable HRV and recovery data? What the numbers actually mean.</description>
+    <pubDate>Thu, 12 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/garmin-vs-oura-vs-whoop-wearable-data.html</guid>
+  </item>
+  <item>
+    <title>The Athlete's Paradox: Why Training More Doesn't Mean Performing Better</title>
+    <link>https://blog.formafit.co.uk/blog/athletes-paradox-why-more-training-isnt-better.html</link>
+    <description>More miles, more intervals — but better results? The science behind why recovery builds fitness, and why the best athletes train less than you think.</description>
+    <pubDate>Thu, 12 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/athletes-paradox-why-more-training-isnt-better.html</guid>
+  </item>
+  </channel>
+</rss>
