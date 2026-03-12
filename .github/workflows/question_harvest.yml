@@ -26,8 +26,11 @@ jobs:
           path: research/cache
           key: aqe-cache-${{ hashFiles('research/config/sources.json') }}
           restore-keys: aqe-cache-
-      - name: Debug env
-        run: echo "UA set: ${{ secrets.REDDIT_USER_AGENT != '' }}"
+      - - name: Debug env
+        env:
+          REDDIT_UA: ${{ secrets.REDDIT_USER_AGENT }}
+        run: |
+          if [ -n "$REDDIT_UA" ]; then echo "REDDIT_USER_AGENT: set"; else echo "REDDIT_USER_AGENT: MISSING"; fi
       - run: python -m research.question_collector
         env:
           REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
