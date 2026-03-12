@@ -34,12 +34,16 @@ jobs:
       - run: python -m research.question_scorer
       - run: python -m research.cluster_builder
       - run: python -m research.queue_generator
+      - name: Generate blog stubs from queue
+        run: |
+          pip install -r requirements.txt
+          python forma_blog_build.py --from-queue --queue-path shared/queue.json --min-score 5.0
       - run: |
           git config user.email 'ci@formafit.co.uk'
           git config user.name 'Forma AQE'
-          git add research/data/ shared/queue.json
+          git add research/data/ shared/queue.json posts_manifest.json
           git diff --staged --quiet && echo 'No changes' || \
-            git commit -m 'chore(aqe): weekly harvest'
+            git commit -m 'chore(aqe): weekly harvest + blog stubs'
           git push
       - uses: actions/upload-artifact@v4
         if: always()

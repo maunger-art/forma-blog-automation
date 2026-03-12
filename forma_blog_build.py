@@ -11,6 +11,7 @@ Adds to v6:
      posts based on keyword matching. No AI, no external deps, HTML-only.
 """
 
+import argparse
 import json
 import re
 import textwrap
@@ -58,6 +59,17 @@ CATEGORY_STYLES = {
     "hrv":              ("#DBEAFE", "#2563EB", "#EFF6FF", "📊"),
     "science":          ("#FEF3C7", "#D97706", "#FFFBEB", "🔬"),
     "load":             ("#F3E8FF", "#9333EA", "#FAF5FF", "📈"),
+}
+
+CLUSTER_TO_CATEGORY = {
+    "zone-2-training":   "Training Science",
+    "hrv-readiness":     "HRV",
+    "training-load":     "Load",
+    "garmin-wearable":   "Wearables",
+    "marathon-training": "Performance",
+    "cycling-endurance": "Performance",
+    "recovery-sleep":    "Recovery",
+    "injury-prevention": "Recovery",
 }
 
 def cat_style(cat: str):
@@ -833,11 +845,109 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
 </html>"""
 
 
+# ── CLI ───────────────────────────────────────────────────────────────────────
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--from-queue",
+        action="store_true",
+        help="Generate stub manifest entries from shared/queue.json"
+    )
+    parser.add_argument(
+        "--queue-path",
+        default="../shared/queue.json",
+        help="Path to queue.json (default: ../shared/queue.json)"
+    )
+    parser.add_argument(
+        "--min-score",
+        type=float,
+        default=5.0,
+        help="Minimum composite_score to include (default: 5.0)"
+    )
+    return parser.parse_args()
+
+
+# ── Queue → Manifest stubs ───────────────────────────────────────────────────
+def generate_stubs_from_queue(queue_path: str, min_score: float) -> list[dict]:
+    """
+    Read queue.json and generate stub manifest entries for unassigned
+    questions above min_score that don't already exist in posts_manifest.json.
+    Returns list of new stub dicts ready to append to the manifest.
+    """
+    import slugify  # pip install python-slugify
+
+    queue_file = Path(queue_path)
+    if not queue_file.exists():
+        print(f"[queue] ERROR: {queue_path} not found")
+        return []
+
+    queue = json.loads(queue_file.read_text())
+
+    # Load existing manifest slugs to avoid duplicates
+    existing_slugs = set()
+    if MANIFEST_FILE.exists():
+        existing = json.load(open(MANIFEST_FILE))
+        existing_slugs = {p["slug"] for p in existing}
+
+    stubs = []
+    for entry in queue:
+        if entry.get("status") != "unassigned":
+            continue
+        if entry.get("composite_score", 0) < min_score:
+            continue
+
+        title = entry.get("suggested_title") or entry.get("question_text", "")
+        if not title:
+            continue
+
+        slug = slugify.slugify(title)[:80]
+        if slug in existing_slugs:
+            continue
+
+        cluster = entry.get("cluster", "")
+        category = CLUSTER_TO_CATEGORY.get(cluster, "Training")
+
+        stub = {
+            "slug": slug,
+            "title": title,
+            "meta_description": f"Everything endurance athletes need to know about {title.lower()}.",
+            "category": category,
+            "date": TODAY,
+            "read_time": 6,
+            "keywords": entry.get("question_text", ""),
+            "status": "draft",
+            "body_html": f"<p><em>Coming soon: {title}</em></p>",
+            "toc_items": [],
+            "_queue_id": entry.get("question_id"),
+            "_cluster": cluster,
+            "_composite_score": entry.get("composite_score"),
+        }
+        stubs.append(stub)
+        existing_slugs.add(slug)
+        print(f"  [queue→manifest] {slug} (score: {entry.get('composite_score')})")
+
+    print(f"[queue] {len(stubs)} stubs generated")
+    return stubs
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 def main():
+    args = parse_args()
+
     print("=" * 60)
-    print("  Forma Blog Builder  v7")
+    print("  Forma Blog Builder  v8")
     print("=" * 60)
+
+    if args.from_queue:
+        print("\n📥 Generating stubs from queue...")
+        stubs = generate_stubs_from_queue(args.queue_path, args.min_score)
+        if stubs:
+            existing = json.load(open(MANIFEST_FILE)) if MANIFEST_FILE.exists() else []
+            existing.extend(stubs)
+            with open(MANIFEST_FILE, "w") as fh:
+                json.dump(existing, fh, indent=2)
+            print(f"  ✓ {len(stubs)} stubs appended to {MANIFEST_FILE}")
+        return  # Don't build HTML — just update manifest, let next step build
 
     font_css  = load_fonts()
     all_posts = load_manifest()
