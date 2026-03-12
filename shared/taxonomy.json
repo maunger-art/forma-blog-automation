@@ -24,7 +24,8 @@
         "secondary": [
           "easy runs", "base training", "slow running", "conversational pace", 
           "fat oxidation", "mitochondria", "aerobic efficiency", "polarised training",
-          "run slowly", "slow run", "heart rate spike", "running slowly"
+          "run slowly", "slow run", "heart rate spike", "running slowly",
+          "aerobic base", "run slower", "zone 2 pace", "zone 2 myth", "stamina"
         ],
         "negative": [
           "zone 5", "vo2max intervals", "anaerobic", "sprint training",
@@ -90,7 +91,8 @@
         "secondary": [
           "taper", "peak week", "deload week", "recovery week",
           "training block", "base build race", "volume management",
-          "progressive overload", "training fatigue"
+          "progressive overload", "training fatigue",
+          "anaerobic", "training loads", "steps weekly"
         ],
         "negative": []
       },
@@ -120,7 +122,8 @@
         "secondary": [
           "wearable", "fitness tracker", "recovery time garmin",
           "training effect", "aerobic te", "anaerobic te",
-          "vo2max garmin", "performance condition", "wahoo", "coros", "polar"
+          "vo2max garmin", "performance condition", "wahoo", "coros", "polar",
+          "chest strap", "steps", "pair watch", "anaerobic benefit"
         ],
         "negative": []
       },
@@ -149,12 +152,13 @@
         ],
         "secondary": [
           "long run", "tempo run marathon", "marathon nutrition", "carb loading",
-          "marathon pacing", "negative split", "hitting the wall", 
+          "marathon pacing", "negative split", "hitting the wall",
           "16 week plan", "18 week plan", "marathon pb", "bq boston qualifier",
-          "hit the wall", "bonking", "marathon wall"
+          "hit the wall", "bonking", "marathon wall",
+          "ultra", "50 miler", "ultrarunning", "brick workout", "triathlon", "warm up for"
         ],
         "negative": [
-          "half marathon", "5k", "10k", "ultra"
+          "half marathon", "5k", "10k"
         ]
       },
       "article_quota": 10,
@@ -184,7 +188,8 @@
           "base miles", "z2 cycling", "sweet spot training", "century ride",
           "gran fondo", "cycling volume", "power to weight", "w/kg",
           "tempo cycling", "threshold cycling", "vo2max cycling",
-          "power drop", "climbing power", "watts on climbs"
+          "power drop", "climbing power", "watts on climbs",
+          "stamina on rides", "longer rides", "endurance training for beginners"
         ],
         "negative": [
           "running", "triathlon", "swimming"
@@ -217,7 +222,8 @@
           "deep sleep", "rem sleep", "sleep score", "recovery between sessions",
           "cold water immersion", "ice bath", "foam rolling", "stretching",
           "recovery nutrition", "protein timing", "muscle soreness", "doms",
-          "tired", "exhausted", "fatigue", "always tired", "easy run tired"
+          "tired", "exhausted", "fatigue", "always tired", "easy run tired",
+          "rest days", "regain fitness", "illness", "flu", "recovery run"
         ],
         "negative": []
       },
@@ -248,7 +254,8 @@
           "it band", "iliotibial", "shin splints", "plantar fasciitis",
           "runners knee", "patellofemoral", "achilles", "stress fracture",
           "tendinopathy", "hamstring", "hip flexor", "return to running",
-          "run through pain"
+          "run through pain",
+          "road bike soreness", "soreness when", "back soreness", "neck soreness"
         ],
         "negative": []
       },
