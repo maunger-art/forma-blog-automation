@@ -477,45 +477,129 @@ def build_og_image(output_dir: Path):
 # ── E: Internal linking ───────────────────────────────────────────────────────
 # Keywords that map to specific post slugs.
 # Each entry: "phrase to match in body text" → "slug of target post"
-# Phrases are matched case-insensitively against plain text only
-# (never inside existing <a> tags or heading tags).
-# Add new entries here as the blog grows.
-INTERNAL_LINK_MAP = {
-    # Training load / ACWR post
-    "training load":          "training-load-management-atl-ctl-acwr",
-    "acute training load":    "training-load-management-atl-ctl-acwr",
-    "chronic training load":  "training-load-management-atl-ctl-acwr",
-    "ACWR":                   "training-load-management-atl-ctl-acwr",
-    "ATL":                    "training-load-management-atl-ctl-acwr",
-    "CTL":                    "training-load-management-atl-ctl-acwr",
-    # Adaptive training post
-    "adaptive training":      "science-of-adaptive-training",
-    "physiology-driven":      "science-of-adaptive-training",
-    "readiness":              "science-of-adaptive-training",
-    # Wearables post
-    "Garmin":                 "garmin-vs-oura-vs-whoop-wearable-data",
-    "Oura":                   "garmin-vs-oura-vs-whoop-wearable-data",
-    "WHOOP":                  "garmin-vs-oura-vs-whoop-wearable-data",
-    "wearable":               "garmin-vs-oura-vs-whoop-wearable-data",
-    "HRV":                    "garmin-vs-oura-vs-whoop-wearable-data",
-    # Athlete's paradox post
-    "overtraining":           "athletes-paradox-why-more-training-isnt-better",
-    "recovery":               "athletes-paradox-why-more-training-isnt-better",
-    # Easy runs / Zone 2 post
-    "Zone 2":                 "easy-runs-too-hard-killing-gains",
-    "easy run":               "easy-runs-too-hard-killing-gains",
-    "easy runs":              "easy-runs-too-hard-killing-gains",
-    "polarised training":     "easy-runs-too-hard-killing-gains",
-    # FTP / cycling zones post
-    "FTP":                    "cycling-training-zones-ftp-isnt-everything",
-    "training zones":         "cycling-training-zones-ftp-isnt-everything",
-    "power zones":            "cycling-training-zones-ftp-isnt-everything",
-}
+_SCRIPT_DIR   = Path(__file__).resolve().parent
+GRAPH_PATH    = _SCRIPT_DIR.parent / "shared" / "question_graph.json"
+MANIFEST_PATH = _SCRIPT_DIR.parent / "shared" / "cluster_manifest.json"
+
+
+def _load_graph_link_map() -> dict[str, str]:
+    """
+    Build an internal link map from question_graph.json.
+    Returns {phrase: slug} for all adjacent_to and parent_of edges
+    where both source and target nodes have known slugs.
+    Falls back to empty dict if graph files don't exist.
+    """
+    if not GRAPH_PATH.exists() or not MANIFEST_PATH.exists():
+        return _fallback_link_map()
+
+    try:
+        graph    = json.loads(GRAPH_PATH.read_text())
+        manifest = json.loads(MANIFEST_PATH.read_text())
+    except Exception as exc:
+        print(f"⚠  Could not load graph files — {exc}")
+        return _fallback_link_map()
+
+    # Build node lookup: id → {text, slug, content_type}
+    node_map: dict[str, dict] = {}
+    for node in graph.get("nodes", []):
+        text = node.get("text", "")
+        if not text:
+            continue
+        node_map[node["id"]] = {
+            "text":         text,
+            "slug":         _slugify_title(text),
+            "content_type": node.get("content_type", "article"),
+            "cluster":      node.get("cluster", ""),
+        }
+
+    # Also add pillar slugs from cluster_manifest (these have real published slugs)
+    pillar_slugs: dict[str, str] = {}
+    for cluster in manifest.get("clusters", []):
+        if cluster.get("pillar_slug") and cluster.get("pillar_question"):
+            pillar_slugs[cluster["pillar_question"].lower()] = cluster["pillar_slug"]
+
+    link_map: dict[str, str] = {}
+
+    # Add edges: for each adjacent_to / parent_of edge, map the source
+    # question's key phrases to the target's slug
+    for edge in graph.get("edges", []):
+        if edge.get("type") not in ("adjacent_to", "parent_of"):
+            continue
+
+        source_node = node_map.get(edge.get("source", ""))
+        target_node = node_map.get(edge.get("target", ""))
+        if not source_node or not target_node:
+            continue
+
+        # Use shared tokens as link phrases where available
+        shared = edge.get("shared_tokens", [])
+        target_slug = target_node["slug"]
+
+        # Prefer pillar slug if target is a pillar
+        if target_node["content_type"] == "pillar_article":
+            target_slug = pillar_slugs.get(
+                target_node["text"].lower(), target_slug
+            )
+
+        for token in shared:
+            if len(token) >= 4:  # skip very short tokens
+                link_map[token] = target_slug
+
+        # Also map the full target question text (stripped of question words)
+        target_text = re.sub(
+            r"^(what is|what are|how does|how do|why is|why does|how to|is it|can i|should i)\s+",
+            "", target_node["text"].lower(), flags=re.IGNORECASE
+        ).strip().rstrip("?")
+        if len(target_text) >= 6:
+            link_map[target_text] = target_slug
+
+    # Add explicit pillar mappings (always override)
+    for question_text, slug in pillar_slugs.items():
+        phrase = re.sub(
+            r"^(what is|what are|how does|how do)\s+", "",
+            question_text, flags=re.IGNORECASE
+        ).strip().rstrip("?")
+        if len(phrase) >= 4:
+            link_map[phrase] = slug
+
+    print(f"  ✓ Graph link map: {len(link_map)} phrases from {len(graph.get('nodes', []))} nodes")
+    return link_map
+
+
+def _slugify_title(text: str) -> str:
+    """Convert question text to a URL slug."""
+    text = text.lower().strip().rstrip("?")
+    text = re.sub(r"[^\w\s-]", "", text)
+    text = re.sub(r"[\s_]+", "-", text)
+    return re.sub(r"-+", "-", text)[:80].strip("-")
+
+
+def _fallback_link_map() -> dict[str, str]:
+    """Hardcoded fallback used when graph files don't exist yet."""
+    print("  ⚠  Graph files not found — using fallback link map")
+    return {
+        "training load":     "training-load-management-atl-ctl-acwr",
+        "acute training load": "training-load-management-atl-ctl-acwr",
+        "chronic training load": "training-load-management-atl-ctl-acwr",
+        "ACWR":              "training-load-management-atl-ctl-acwr",
+        "adaptive training": "science-of-adaptive-training",
+        "readiness":         "science-of-adaptive-training",
+        "Garmin":            "garmin-vs-oura-vs-whoop-wearable-data",
+        "Oura":              "garmin-vs-oura-vs-whoop-wearable-data",
+        "WHOOP":             "garmin-vs-oura-vs-whoop-wearable-data",
+        "HRV":               "garmin-vs-oura-vs-whoop-wearable-data",
+        "overtraining":      "athletes-paradox-why-more-training-isnt-better",
+        "recovery":          "athletes-paradox-why-more-training-isnt-better",
+        "Zone 2":            "easy-runs-too-hard-killing-gains",
+        "easy run":          "easy-runs-too-hard-killing-gains",
+        "FTP":               "cycling-training-zones-ftp-isnt-everything",
+        "training zones":    "cycling-training-zones-ftp-isnt-everything",
+    }
 
 MAX_INTERNAL_LINKS = 3   # Max links injected per post
 
 
-def inject_internal_links(body_html: str, current_slug: str, all_posts: list) -> str:
+def inject_internal_links(body_html: str, current_slug: str, all_posts: list, link_map: dict = None) -> str:
     """
     Scan body_html for keyword mentions and convert the FIRST plain-text
     occurrence of each matched phrase into an internal link.
@@ -542,7 +626,7 @@ def inject_internal_links(body_html: str, current_slug: str, all_posts: list) ->
         # Only keep entries whose target slug actually exists
         link_map = {
             phrase: slug
-            for phrase, slug in INTERNAL_LINK_MAP.items()
+            for phrase, slug in (link_map or {}).items()
             if slug in valid_slugs
         }
         if not link_map:
@@ -621,7 +705,7 @@ def inject_internal_links(body_html: str, current_slug: str, all_posts: list) ->
 
 
 # ── Post pages ────────────────────────────────────────────────────────────────
-def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
+def build_post_html(post: dict, all_posts: list, font_css: str, link_map: dict = None) -> str:
     slug      = post["slug"]
     title     = post["title"]
     meta_desc = post.get("meta_description", "")
@@ -629,7 +713,7 @@ def build_post_html(post: dict, all_posts: list, font_css: str) -> str:
     read_time = post.get("read_time", 5)
     keywords  = post.get("keywords", "")
     body_html = post.get("body_html", "")
-    body_html = inject_internal_links(body_html, slug, all_posts)  # E: internal links
+    body_html = inject_internal_links(body_html, slug, all_posts, link_map)  # E: internal links
     toc_items = post.get("toc_items", [])
     pub_date  = post.get("date", TODAY)
     canonical = f"{BLOG_URL}/blog/{slug}"
@@ -951,13 +1035,14 @@ def main():
 
     font_css  = load_fonts()
     all_posts = load_manifest()
+    link_map  = _load_graph_link_map()
 
     blog_dir = OUTPUT_DIR / "blog"
     blog_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"\n📝 Writing HTML...")
     for post in all_posts:
-        html    = build_post_html(post, all_posts, font_css)
+        html    = build_post_html(post, all_posts, font_css, link_map)
         outfile = blog_dir / f"{post['slug']}.html"
         outfile.write_text(html, encoding="utf-8")
         print(f"   ✓ blog/{post['slug']}.html  ({len(html)//1024} KB)")
