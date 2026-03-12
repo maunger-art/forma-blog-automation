@@ -4,7 +4,7 @@ import hashlib
 import json
 import os
 import time
-from abc import ABC, abstractmethod
+from abc import ABC
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -36,14 +36,6 @@ class BaseSource(ABC):
         except Exception as exc:
             print(f"[{self.source_name}] WARNING: fetch failed — {exc}")
             return []
-
-    # ------------------------------------------------------------------
-    # Abstract inner fetch — subclasses implement this
-    # ------------------------------------------------------------------
-
-    @abstractmethod
-    def _do_fetch(self, config: dict) -> list[dict]:
-        """Perform the actual network fetch. Returns list of raw dicts."""
 
     # ------------------------------------------------------------------
     # Cache helpers
