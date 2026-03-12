@@ -177,6 +177,7 @@ def _infer_content_type(q: dict, composite: float) -> str:
     text = q.get("text", "").lower()
     wc = q.get("word_count", 0)
     qtype = q.get("question_type", "other")
+    source = q.get("source", "")
 
     if text.startswith("what is") and wc <= 8:
         return "programmatic"
@@ -184,6 +185,9 @@ def _infer_content_type(q: dict, composite: float) -> str:
         return "tool"
     if re.search(r"\baverage\b|\btypical\b|\bhow many\b", text) and METRIC_WORDS_RE.search(text):
         return "research"
+    # Autosuggest fragments with no question word → programmatic SEO targets
+    if source == "autosuggest" and qtype == "other" and wc <= 6:
+        return "programmatic"
     if composite >= 8.0 and qtype in ("why", "how"):
         return "pillar_article"
     return "article"
