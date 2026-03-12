@@ -1,4 +1,4 @@
-"""Reddit source — fetches top questions via Arctic Shift API."""
+"""Reddit source — fetches top questions via PullPush API."""
 
 import re
 import time
@@ -28,10 +28,10 @@ class RedditSource(BaseSource):
         sub, term = target.split("::", 1)
         one_year_ago = int(time.time()) - (365 * 24 * 60 * 60)
         url = (
-            f"https://arctic-shift.photon-reddit.com/api/submissions/search"
-            f"?q={quote(term)}&subreddit={sub}&limit=100&sort=top&after={one_year_ago}"
+            f"https://api.pullpush.io/reddit/search/submission/"
+            f"?q={quote(term)}&subreddit={sub}&size=100&sort=score&after={one_year_ago}"
         )
-        resp = requests.get(url, timeout=15)
+        resp = requests.get(url, timeout=20)
         resp.raise_for_status()
         return {"sub": sub, "data": resp.json()}
 
