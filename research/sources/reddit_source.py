@@ -1,7 +1,7 @@
-"""Reddit source — fetches top questions from target subreddits."""
+"""Reddit source — fetches top questions via Arctic Shift API."""
 
-import os
 import re
+import time
 import requests
 from urllib.parse import quote
 from .base_source import BaseSource
@@ -15,7 +15,7 @@ QUESTION_RE = re.compile(
 class RedditSource(BaseSource):
     cache_ttl_days = 7
     rate_limit_seconds = 2.0
-    source_name = "reddit"
+    source_name = "arctic-shift"
 
     def _iter_targets(self, config: dict):
         for sub in config.get("subreddits", []):
@@ -24,19 +24,18 @@ class RedditSource(BaseSource):
 
     def _fetch_target(self, target: str, **kwargs) -> list[dict]:
         sub, term = target.split("::", 1)
+        one_year_ago = int(time.time()) - (365 * 24 * 60 * 60)
         url = (
-            f"https://www.reddit.com/r/{sub}/search.json"
-            f"?q={quote(term)}&sort=top&t=year&limit=100&restrict_sr=1"
+            f"https://arctic-shift.photon-reddit.com/api/posts/search"
+            f"?q={quote(term)}&subreddit={sub}&limit=100&sort=top&after={one_year_ago}"
         )
-        ua = os.environ.get("REDDIT_USER_AGENT", "Forma-AQE/1.0 contact:tech@formafit.co.uk")
-        resp = requests.get(url, headers={"User-Agent": ua}, timeout=15)
+        resp = requests.get(url, timeout=15)
         resp.raise_for_status()
         return self._parse(resp.json(), sub)
 
     def _parse(self, data: dict, sub: str) -> list[dict]:
         results = []
-        for post in data.get("data", {}).get("children", []):
-            p = post.get("data", {})
+        for p in data.get("data", []):
             title = p.get("title", "").strip()
             score = p.get("score", 0)
             if score < 5:
