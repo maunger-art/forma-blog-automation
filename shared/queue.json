@@ -313,6 +313,19 @@
   },
   {
     "rank": 25,
+    "question_id": "autosugg-dfd09706",
+    "question_text": "marathon training plan 5 months",
+    "suggested_title": "Marathon Training Plan 5 Months",
+    "cluster": "marathon-training",
+    "content_type": "programmatic",
+    "composite_score": 5.5,
+    "status": "unassigned",
+    "assigned_to": null,
+    "due_date": null,
+    "published_url": null
+  },
+  {
+    "rank": 26,
     "question_id": "autosugg-9425c548",
     "question_text": "zone 2 training benefits",
     "suggested_title": "Zone 2 Training Benefits",
@@ -325,7 +338,7 @@
     "published_url": null
   },
   {
-    "rank": 26,
+    "rank": 27,
     "question_id": "autosugg-e77cc3a0",
     "question_text": "zone 2 training heart rate",
     "suggested_title": "Zone 2 Training Heart Rate",
@@ -338,7 +351,7 @@
     "published_url": null
   },
   {
-    "rank": 27,
+    "rank": 28,
     "question_id": "autosugg-0bd83e9f",
     "question_text": "zone 2 training calculator",
     "suggested_title": "Zone 2 Training Calculator",
@@ -351,7 +364,7 @@
     "published_url": null
   },
   {
-    "rank": 28,
+    "rank": 29,
     "question_id": "autosugg-57811885",
     "question_text": "zone 2 training cycling",
     "suggested_title": "Zone 2 Training Cycling",
@@ -364,7 +377,7 @@
     "published_url": null
   },
   {
-    "rank": 29,
+    "rank": 30,
     "question_id": "autosugg-d26e9892",
     "question_text": "zone 2 training reddit",
     "suggested_title": "Zone 2 Training Reddit",
@@ -377,7 +390,7 @@
     "published_url": null
   },
   {
-    "rank": 30,
+    "rank": 31,
     "question_id": "autosugg-a694ea11",
     "question_text": "cycling endurance training for beginners",
     "suggested_title": "Cycling Endurance Training for Beginners",
@@ -390,7 +403,7 @@
     "published_url": null
   },
   {
-    "rank": 31,
+    "rank": 32,
     "question_id": "autosugg-1e2f82fc",
     "question_text": "cycling endurance events uk",
     "suggested_title": "Cycling Endurance Events Uk",
@@ -403,7 +416,7 @@
     "published_url": null
   },
   {
-    "rank": 32,
+    "rank": 33,
     "question_id": "autosugg-96721009",
     "question_text": "recovery running shoes meaning",
     "suggested_title": "Recovery Running Shoes Meaning",
@@ -416,7 +429,7 @@
     "published_url": null
   },
   {
-    "rank": 33,
+    "rank": 34,
     "question_id": "autosugg-ac979e89",
     "question_text": "recovery running shoes reddit",
     "suggested_title": "Recovery Running Shoes Reddit",
@@ -429,7 +442,7 @@
     "published_url": null
   },
   {
-    "rank": 34,
+    "rank": 35,
     "question_id": "autosugg-4f2490cf",
     "question_text": "running injury prevention exercises",
     "suggested_title": "Running Injury Prevention Exercises",
@@ -442,7 +455,7 @@
     "published_url": null
   },
   {
-    "rank": 35,
+    "rank": 36,
     "question_id": "autosugg-e1613b57",
     "question_text": "running injury prevention strength training",
     "suggested_title": "Running Injury Prevention Strength Training",
@@ -455,7 +468,7 @@
     "published_url": null
   },
   {
-    "rank": 36,
+    "rank": 37,
     "question_id": "autosugg-c197e5c5",
     "question_text": "running injury prevention program",
     "suggested_title": "Running Injury Prevention Program",
@@ -468,7 +481,7 @@
     "published_url": null
   },
   {
-    "rank": 37,
+    "rank": 38,
     "question_id": "autosugg-e7e1a215",
     "question_text": "running injury prevention workout",
     "suggested_title": "Running Injury Prevention Workout",
@@ -481,7 +494,7 @@
     "published_url": null
   },
   {
-    "rank": 38,
+    "rank": 39,
     "question_id": "autosugg-d778221b",
     "question_text": "running injury prevention reddit",
     "suggested_title": "Running Injury Prevention Reddit",
@@ -494,7 +507,7 @@
     "published_url": null
   },
   {
-    "rank": 39,
+    "rank": 40,
     "question_id": "autosugg-edcb391f",
     "question_text": "running injury prevention routine",
     "suggested_title": "Running Injury Prevention Routine",
