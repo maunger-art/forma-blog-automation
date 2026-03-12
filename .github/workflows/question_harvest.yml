@@ -26,28 +26,6 @@ jobs:
           path: research/cache
           key: aqe-cache-${{ hashFiles('research/config/sources.json') }}
           restore-keys: aqe-cache-
-      - name: Debug Arctic Shift API
-        run: |
-          python3 -c "
-          import requests, time, json
-          from urllib.parse import quote
-          term = 'zone 2 training'
-          sub = 'running'
-          one_year_ago = int(time.time()) - (365 * 24 * 60 * 60)
-          url = f'https://arctic-shift.photon-reddit.com/api/submissions/search?q={quote(term)}&subreddit={sub}&limit=5&sort=top&after={one_year_ago}'
-          print('URL:', url)
-          resp = requests.get(url, timeout=15)
-          print('Status:', resp.status_code)
-          data = resp.json()
-          print('Keys:', list(data.keys()))
-          posts = data.get('data', [])
-          print('Posts count:', len(posts))
-          if posts:
-              print('First title:', posts[0].get('title',''))
-              print('Score field:', [k for k in posts[0].keys() if 'score' in k.lower() or 'ups' in k.lower()])
-          else:
-              print('Full response:', json.dumps(data)[:300])
-          "
       - run: python -m research.question_collector
         env:
           AQE_SOURCES: ${{ github.event.inputs.sources || 'all' }}
