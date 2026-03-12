@@ -5,6 +5,9 @@ import requests
 from .base_source import BaseSource
 
 
+NOISE_TERMS = ["roblox", "cricket", "studio", "minecraft"]
+
+
 class AutosuggestSource(BaseSource):
     cache_ttl_days = 14
     rate_limit_seconds = 1.5
@@ -30,6 +33,8 @@ class AutosuggestSource(BaseSource):
         results = []
         for suggestion in suggestions:
             suggestion = suggestion.strip()
+            if any(noise in suggestion.lower() for noise in NOISE_TERMS):
+                continue
             if len(suggestion.split()) >= 4:
                 results.append({
                     "text": suggestion,
