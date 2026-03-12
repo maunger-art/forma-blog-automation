@@ -82,11 +82,12 @@ def _build_graph(clustered_questions: dict, clusters_meta: list) -> list[dict]:
     for cluster_id, cluster_data in clustered_questions.get("clusters", {}).items():
         questions = cluster_data.get("top_questions", [])
 
-        # Find pillar questions: starts with "what is", <= 8 words
+        # Find pillar questions: starts with "what is", <= 8 words, no opinion qualifiers
         pillars = [
             q for q in questions
             if q.get("text", "").lower().startswith("what is")
             and q.get("word_count", 999) <= 8
+            and not re.search(r"\b(best|good|better|worst)\b", q.get("text", ""), re.IGNORECASE)
         ]
 
         if not pillars:
