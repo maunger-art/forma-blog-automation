@@ -28,7 +28,7 @@ class RedditSource(BaseSource):
         sub, term = target.split("::", 1)
         one_year_ago = int(time.time()) - (365 * 24 * 60 * 60)
         url = (
-            f"https://arctic-shift.photon-reddit.com/api/posts/search"
+            f"https://arctic-shift.photon-reddit.com/api/submissions/search"
             f"?q={quote(term)}&subreddit={sub}&limit=100&sort=top&after={one_year_ago}"
         )
         resp = requests.get(url, timeout=15)
