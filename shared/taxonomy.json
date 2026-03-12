@@ -18,11 +18,13 @@
       "keywords": {
         "primary": [
           "zone 2", "z2", "aerobic base", "maffetone", "fat burning zone",
-          "low heart rate training", "aerobic threshold", "zone two"
+          "low heart rate training", "aerobic threshold", "zone two", 
+          "heart rate zone", "fat burning zone"
         ],
         "secondary": [
-          "easy runs", "base training", "slow running", "conversational pace",
-          "fat oxidation", "mitochondria", "aerobic efficiency", "polarised training"
+          "easy runs", "base training", "slow running", "conversational pace", 
+          "fat oxidation", "mitochondria", "aerobic efficiency", "polarised training",
+          "run slowly", "slow run", "heart rate spike", "running slowly"
         ],
         "negative": [
           "zone 5", "vo2max intervals", "anaerobic", "sprint training",
@@ -54,7 +56,8 @@
         "secondary": [
           "resting heart rate", "autonomic nervous system", "parasympathetic",
           "sympathetic nervous system", "overreaching", "overtraining detection",
-          "morning protocol", "sleep quality"
+          "morning protocol", "sleep quality", "avoid overtraining", 
+          "overtraining runner", "runner overtraining"
         ],
         "negative": [
           "heart rate zone", "max heart rate", "lactate"
@@ -144,8 +147,9 @@
         ],
         "secondary": [
           "long run", "tempo run marathon", "marathon nutrition", "carb loading",
-          "marathon pacing", "negative split", "hitting the wall", "bonk",
-          "16 week plan", "18 week plan", "marathon pb", "bq boston qualifier"
+          "marathon pacing", "negative split", "hitting the wall", 
+          "16 week plan", "18 week plan", "marathon pb", "bq boston qualifier",
+          "hit the wall", "bonking", "marathon wall"
         ],
         "negative": [
           "half marathon", "5k", "10k", "ultra"
@@ -177,7 +181,8 @@
         "secondary": [
           "base miles", "z2 cycling", "sweet spot training", "century ride",
           "gran fondo", "cycling volume", "power to weight", "w/kg",
-          "tempo cycling", "threshold cycling", "vo2max cycling"
+          "tempo cycling", "threshold cycling", "vo2max cycling",
+          "power drop", "climbing power", "watts on climbs"
         ],
         "negative": [
           "running", "triathlon", "swimming"
@@ -209,7 +214,8 @@
         "secondary": [
           "deep sleep", "rem sleep", "sleep score", "recovery between sessions",
           "cold water immersion", "ice bath", "foam rolling", "stretching",
-          "recovery nutrition", "protein timing", "muscle soreness", "doms"
+          "recovery nutrition", "protein timing", "muscle soreness", "doms",
+          "tired", "exhausted", "fatigue", "always tired", "easy run tired"
         ],
         "negative": []
       },
@@ -234,12 +240,13 @@
       "keywords": {
         "primary": [
           "injury", "running injury", "injury prevention", "pain running",
-          "injury risk", "overuse injury"
+          "injury risk", "overuse injury", "knee pain", "pain running"
         ],
         "secondary": [
           "it band", "iliotibial", "shin splints", "plantar fasciitis",
           "runners knee", "patellofemoral", "achilles", "stress fracture",
-          "tendinopathy", "hamstring", "hip flexor", "return to running"
+          "tendinopathy", "hamstring", "hip flexor", "return to running",
+          "run through pain"
         ],
         "negative": []
       },
