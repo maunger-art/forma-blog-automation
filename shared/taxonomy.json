@@ -60,7 +60,9 @@
           "overtraining runner", "runner overtraining"
         ],
         "negative": [
-          "heart rate zone", "max heart rate", "lactate"
+          "heart rate zone", "max heart rate", "lactate",
+          "garmin readiness", "body battery", "garmin connect",
+          "fenix", "venu", "vivoactive", "forerunner"
         ]
       },
       "article_quota": 8,
