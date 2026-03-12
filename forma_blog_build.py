@@ -478,8 +478,8 @@ def build_og_image(output_dir: Path):
 # Keywords that map to specific post slugs.
 # Each entry: "phrase to match in body text" → "slug of target post"
 _SCRIPT_DIR   = Path(__file__).resolve().parent
-GRAPH_PATH    = _SCRIPT_DIR.parent / "shared" / "question_graph.json"
-MANIFEST_PATH = _SCRIPT_DIR.parent / "shared" / "cluster_manifest.json"
+GRAPH_PATH    = _SCRIPT_DIR / "shared" / "question_graph.json"
+MANIFEST_PATH = _SCRIPT_DIR / "shared" / "cluster_manifest.json"
 
 
 def _load_graph_link_map() -> dict[str, str]:
