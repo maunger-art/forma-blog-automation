@@ -107,8 +107,8 @@ def _score_topical_fit(q: dict, taxonomy_clusters: list) -> float:
         if any(n in text for n in negative):
             continue
 
-        p_matches = sum(1 for p in primary if p in text)
-        s_matches = sum(1 for s in secondary if s in text)
+        p_matches = sum(1 for p in primary if re.search(r"\b" + re.escape(p) + r"\b", text))
+        s_matches = sum(1 for s in secondary if re.search(r"\b" + re.escape(s) + r"\b", text))
 
         if p_matches >= 2:
             score = 8.0
@@ -193,6 +193,9 @@ def _infer_content_type(q: dict, composite: float) -> str:
 # Title generation
 # ---------------------------------------------------------------------------
 
+ACRONYMS = {"ftp", "hrv", "tsb", "ctl", "atl", "tss", "acwr", "vo2", "bpm", "km", "pb", "bq"}
+
+
 def _title_case(s: str) -> str:
     # Simple title case — capitalise each word except minor words unless first
     MINOR = {"a", "an", "the", "and", "but", "or", "for", "nor", "on", "at",
@@ -200,7 +203,9 @@ def _title_case(s: str) -> str:
     words = s.split()
     result = []
     for i, w in enumerate(words):
-        if i == 0 or w.lower() not in MINOR:
+        if w.lower() in ACRONYMS:
+            result.append(w.upper())
+        elif i == 0 or w.lower() not in MINOR:
             result.append(w.capitalize())
         else:
             result.append(w.lower())
