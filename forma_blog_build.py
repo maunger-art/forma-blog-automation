@@ -493,76 +493,61 @@ def _load_graph_link_map() -> dict[str, str]:
         return _fallback_link_map()
 
     try:
-        graph    = json.loads(GRAPH_PATH.read_text())
+        edges    = json.loads(GRAPH_PATH.read_text())   # list of edge dicts
         manifest = json.loads(MANIFEST_PATH.read_text())
     except Exception as exc:
         print(f"⚠  Could not load graph files — {exc}")
         return _fallback_link_map()
 
-    # Build node lookup: id → {text, slug, content_type}
-    node_map: dict[str, dict] = {}
-    for node in graph.get("nodes", []):
-        text = node.get("text", "")
-        if not text:
-            continue
-        node_map[node["id"]] = {
-            "text":         text,
-            "slug":         _slugify_title(text),
-            "content_type": node.get("content_type", "article"),
-            "cluster":      node.get("cluster", ""),
-        }
-
-    # Also add pillar slugs from cluster_manifest (these have real published slugs)
+    # Build pillar slugs from cluster_manifest
     pillar_slugs: dict[str, str] = {}
     for cluster in manifest.get("clusters", []):
         if cluster.get("pillar_slug") and cluster.get("pillar_question"):
             pillar_slugs[cluster["pillar_question"].lower()] = cluster["pillar_slug"]
 
+    import re as _re
     link_map: dict[str, str] = {}
 
-    # Add edges: for each adjacent_to / parent_of edge, map the source
-    # question's key phrases to the target's slug
-    for edge in graph.get("edges", []):
+    # Graph is a flat list of edges: {source, target, type, shared_tokens, ...}
+    for edge in (edges if isinstance(edges, list) else edges.get("edges", [])):
         if edge.get("type") not in ("adjacent_to", "parent_of"):
             continue
 
-        source_node = node_map.get(edge.get("source", ""))
-        target_node = node_map.get(edge.get("target", ""))
-        if not source_node or not target_node:
+        target_text = edge.get("target", "")
+        if not target_text:
             continue
 
-        # Use shared tokens as link phrases where available
-        shared = edge.get("shared_tokens", [])
-        target_slug = target_node["slug"]
+        # Derive slug from target question text
+        t = target_text.lower().strip().rstrip("?")
+        target_slug = _re.sub(r"[^\w\s-]", "", t)
+        target_slug = _re.sub(r"[\s_]+", "-", target_slug)[:80].strip("-")
 
-        # Prefer pillar slug if target is a pillar
-        if target_node["content_type"] == "pillar_article":
-            target_slug = pillar_slugs.get(
-                target_node["text"].lower(), target_slug
-            )
+        # Override with pillar slug if available
+        target_slug = pillar_slugs.get(target_text.lower(), target_slug)
 
-        for token in shared:
-            if len(token) >= 4:  # skip very short tokens
+        # Map shared tokens to target slug
+        for token in edge.get("shared_tokens", []):
+            if len(token) >= 4:
                 link_map[token] = target_slug
 
-        # Also map the full target question text (stripped of question words)
-        target_text = re.sub(
+        # Map stripped target phrase
+        phrase = _re.sub(
             r"^(what is|what are|how does|how do|why is|why does|how to|is it|can i|should i)\s+",
-            "", target_node["text"].lower(), flags=re.IGNORECASE
+            "", target_text.lower(), flags=_re.IGNORECASE
         ).strip().rstrip("?")
-        if len(target_text) >= 6:
-            link_map[target_text] = target_slug
+        if len(phrase) >= 6:
+            link_map[phrase] = target_slug
 
-    # Add explicit pillar mappings (always override)
+    # Add explicit pillar mappings
     for question_text, slug in pillar_slugs.items():
-        phrase = re.sub(
+        phrase = _re.sub(
             r"^(what is|what are|how does|how do)\s+", "",
-            question_text, flags=re.IGNORECASE
+            question_text, flags=_re.IGNORECASE
         ).strip().rstrip("?")
         if len(phrase) >= 4:
             link_map[phrase] = slug
 
-    print(f"  ✓ Graph link map: {len(link_map)} phrases from {len(graph.get('nodes', []))} nodes")
+    print(f"  ✓ Graph link map: {len(link_map)} phrases from {len(edges if isinstance(edges, list) else edges.get('edges', []))} edges")
     return link_map
 
 
