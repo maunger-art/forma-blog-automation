@@ -55,8 +55,8 @@
   },
   {
     "cluster": "training-load",
-    "slug": "training-load-apple-watch",
-    "h1": "training load apple watch",
+    "slug": "how-to-manage-training-load-endurance-athletes",
+    "h1": "How to manage training load for endurance athletes",
     "pillar_score": 6.0,
     "suggested_sections": [
       "What\u2019s a guy gotta do to get a high anaerobic benefit?",
@@ -75,8 +75,8 @@
   },
   {
     "cluster": "garmin-wearable",
-    "slug": "how-hard-is-it-to-get-a-100-sleep-score-in-garmin",
-    "h1": "How hard is it to get a 100 sleep score in Garmin?",
+    "slug": "garmin-training-metrics-guide",
+    "h1": "How to get the most out of your Garmin training metrics",
     "pillar_score": 7.3,
     "suggested_sections": [
       "How hard is it to get a 100 sleep score in Garmin?",
@@ -119,8 +119,8 @@
   },
   {
     "cluster": "cycling-endurance",
-    "slug": "how-much-cycling-is-equal-to-10000-steps",
-    "h1": "How much cycling is equal to 10,000 steps?",
+    "slug": "how-to-build-cycling-endurance",
+    "h1": "How to build cycling endurance: the complete guide",
     "pillar_score": 6.4,
     "suggested_sections": [
       "How much cycling is equal to 10,000 steps?",
@@ -139,8 +139,8 @@
   },
   {
     "cluster": "recovery-sleep",
-    "slug": "how-long-should-i-run-for-a-recovery-run",
-    "h1": "How long should I run for a recovery run?",
+    "slug": "recovery-run-length-and-rest-days",
+    "h1": "How long should a recovery run be \u2014 and when to take rest days",
     "pillar_score": 6.4,
     "suggested_sections": [
       "How long should I run for a recovery run?",
@@ -160,8 +160,8 @@
   },
   {
     "cluster": "injury-prevention",
-    "slug": "how-to-prevent-injury-as-a-runner",
-    "h1": "How to prevent injury as a runner?",
+    "slug": "how-to-prevent-running-injuries",
+    "h1": "How to prevent running injuries: a practical guide",
     "pillar_score": 6.4,
     "suggested_sections": [
       "How to prevent injury as a runner?",
