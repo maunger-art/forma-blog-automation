@@ -87,13 +87,28 @@ def existing_slugs(manifest: list[dict]) -> set[str]:
 
 
 def pick_questions(queue: list[dict], manifest: list[dict], batch: int) -> list[dict]:
-    """Pick top unassigned questions not already in manifest."""
-    slugs = existing_slugs(manifest)
-    candidates = [
-        q for q in queue
-        if q.get("status") == "unassigned"
-        and slugify(q.get("suggested_title") or q.get("question_text", "")) not in slugs
-    ]
+    """
+    Pick top unassigned questions for content generation.
+    Prefers questions that are already in manifest as drafts (fill them first).
+    Falls back to questions not yet in manifest.
+    Skips questions already published.
+    """
+    # Build lookup: slug -> manifest entry
+    slug_to_entry = {p["slug"]: p for p in manifest}
+
+    # Published slugs — never regenerate
+    published_slugs = {p["slug"] for p in manifest if p.get("status") == "published"}
+
+    candidates = []
+    for q in queue:
+        if q.get("status") not in ("unassigned", None):
+            continue
+        slug = slugify(q.get("suggested_title") or q.get("question_text", ""))
+        if slug in published_slugs:
+            continue  # already published — skip
+        # Include whether draft or not yet in manifest
+        candidates.append(q)
+
     candidates.sort(key=lambda x: x.get("composite_score", 0), reverse=True)
     return candidates[:batch]
 
@@ -307,7 +322,7 @@ def main():
         return
 
     # ── Write to manifest ────────────────────────────────────────────────────
-    # Remove any existing drafts for same slugs, add new entries
+    # Replace existing drafts with generated content; add new entries
     new_slugs = {e["slug"] for e in generated_entries}
     manifest  = [p for p in manifest if p["slug"] not in new_slugs]
     manifest.extend(generated_entries)

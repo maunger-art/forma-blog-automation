@@ -5,8 +5,36 @@
     <link>https://blog.formafit.co.uk</link>
     <description>Science-backed writing on HRV, recovery and adaptive endurance training.</description>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 -0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 -0000</lastBuildDate>
     <atom:link href="https://blog.formafit.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>How Slow Do I Need to Run for Zone 2? The Complete Guide</title>
+    <link>https://blog.formafit.co.uk/blog/how-slow-do-i-need-to-run-for-zone-2-the-complete-guide.html</link>
+    <description>Discover the precise pacing guidelines for effective Zone 2 training, from lactate threshold testing to conversational pace markers.</description>
+    <pubDate>Wed, 18 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/how-slow-do-i-need-to-run-for-zone-2-the-complete-guide.html</guid>
+  </item>
+  <item>
+    <title>How Does My Garmin Watch Know That I Am Stressed</title>
+    <link>https://blog.formafit.co.uk/blog/how-does-my-garmin-watch-know-that-i-am-stressed.html</link>
+    <description>Discover the science behind Garmin's stress monitoring: HRV algorithms, physiological markers, and how your watch translates data into stress scores.</description>
+    <pubDate>Mon, 16 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/how-does-my-garmin-watch-know-that-i-am-stressed.html</guid>
+  </item>
+  <item>
+    <title>How Hard is it to Get a 100 Sleep Score in Garmin?</title>
+    <link>https://blog.formafit.co.uk/blog/how-hard-is-it-to-get-a-100-sleep-score-in-garmin.html</link>
+    <description>Getting a perfect 100 sleep score on Garmin requires understanding how the algorithm weighs duration, deep sleep, and recovery metrics.</description>
+    <pubDate>Sat, 14 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/how-hard-is-it-to-get-a-100-sleep-score-in-garmin.html</guid>
+  </item>
+  <item>
+    <title>Why Is My Garmin Training Readiness Always Low?</title>
+    <link>https://blog.formafit.co.uk/blog/why-is-my-garmin-training-readiness-always-low.html</link>
+    <description>Your Garmin training readiness stays low due to HRV baselines, sleep debt, and algorithm sensitivity. Learn what's really happening and how to respond.</description>
+    <pubDate>Fri, 13 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/why-is-my-garmin-training-readiness-always-low.html</guid>
+  </item>
   <item>
     <title>What Garmin Recovery Metrics Actually Mean — And When to Ignore Them</title>
     <link>https://blog.formafit.co.uk/blog/what-garmin-recovery-metrics-actually-mean.html</link>
@@ -39,28 +67,28 @@
     <title>The Science of Adaptive Training for Endurance Athletes</title>
     <link>https://blog.formafit.co.uk/blog/science-of-adaptive-training.html</link>
     <description>Discover how adaptive training uses HRV, sleep and recovery signals to optimise every workout. Why physiology-driven plans outperform fixed schedules.</description>
-    <pubDate>Thu, 12 Mar 2026 00:00:00 -0000</pubDate>
+    <pubDate>Fri, 13 Mar 2026 00:00:00 -0000</pubDate>
     <guid isPermaLink="true">https://blog.formafit.co.uk/blog/science-of-adaptive-training.html</guid>
   </item>
   <item>
     <title>Training Load Management: ATL, CTL and the ACWR Explained</title>
     <link>https://blog.formafit.co.uk/blog/training-load-management-atl-ctl-acwr.html</link>
     <description>ATL, CTL and ACWR explained for runners and cyclists. Learn how managing your acute-to-chronic workload ratio reduces injury risk and builds peak fitness.</description>
-    <pubDate>Thu, 12 Mar 2026 00:00:00 -0000</pubDate>
+    <pubDate>Fri, 13 Mar 2026 00:00:00 -0000</pubDate>
     <guid isPermaLink="true">https://blog.formafit.co.uk/blog/training-load-management-atl-ctl-acwr.html</guid>
   </item>
   <item>
     <title>Garmin vs Oura vs WHOOP: Which Wearable Data Should You Trust?</title>
     <link>https://blog.formafit.co.uk/blog/garmin-vs-oura-vs-whoop-wearable-data.html</link>
     <description>Garmin, Oura and WHOOP compared for endurance athletes. Which wearable gives the most reliable HRV and recovery data? What the numbers actually mean.</description>
-    <pubDate>Thu, 12 Mar 2026 00:00:00 -0000</pubDate>
+    <pubDate>Fri, 13 Mar 2026 00:00:00 -0000</pubDate>
     <guid isPermaLink="true">https://blog.formafit.co.uk/blog/garmin-vs-oura-vs-whoop-wearable-data.html</guid>
   </item>
   <item>
     <title>The Athlete's Paradox: Why Training More Doesn't Mean Performing Better</title>
     <link>https://blog.formafit.co.uk/blog/athletes-paradox-why-more-training-isnt-better.html</link>
     <description>More miles, more intervals — but better results? The science behind why recovery builds fitness, and why the best athletes train less than you think.</description>
-    <pubDate>Thu, 12 Mar 2026 00:00:00 -0000</pubDate>
+    <pubDate>Fri, 13 Mar 2026 00:00:00 -0000</pubDate>
     <guid isPermaLink="true">https://blog.formafit.co.uk/blog/athletes-paradox-why-more-training-isnt-better.html</guid>
   </item>
   </channel>
