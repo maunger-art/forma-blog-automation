@@ -427,6 +427,9 @@ def run_resource_finder(args) -> None:
                 unique.append(r)
 
         # Score and filter for resource pages specifically
+        print(f"    Raw results for cluster {cluster}: {len(unique)}")
+        for r in unique[:3]:
+            print(f"      [{score_opportunity(r):.1f}] {r.get('link','')[:80]}")
         for r in unique:
             score = score_opportunity(r)
             url   = r.get("link", "").lower()
