@@ -115,7 +115,18 @@ REQUIRED OUTPUT FORMAT — respond with a single JSON object only, no markdown f
   ],
   "intro_html": "<p>Opening 2-3 paragraphs before the first section heading. Hook immediately.</p>",
   "meta_description": "Compelling meta description 140-155 chars covering the full guide",
-  "keywords": "comma-separated keyword phrases (8-10 terms)"
+  "keywords": "comma-separated keyword phrases (8-10 terms)",
+  "references": [
+    {{
+      "id": "ref1",
+      "authors": "Last, F., & Last, F.",
+      "year": "2023",
+      "title": "Full study or book title",
+      "source": "Journal of Sports Science or publisher name",
+      "url": "https://doi.org/... or https://pubmed.ncbi.nlm.nih.gov/... (only include if real and verifiable)"
+    }},
+    ...4-8 references total
+  ]
 }}
 
 CONTENT REQUIREMENTS:
@@ -127,6 +138,7 @@ CONTENT REQUIREMENTS:
 - Do NOT include conclusion headings. End naturally.
 - HTML must be clean — no inline styles, no div wrappers, no class attributes.
 - IDs must be s0, s1, s2... matching the section order exactly.
+- references: 4-8 real, verifiable studies or authoritative sources. Use actual published research where it exists (PubMed, journals, textbooks). ONLY include URLs you are confident are real — omit the url field if uncertain. Do not fabricate citations.
 
 TONE EXAMPLES from existing Forma posts:
 "Progressive overload is one of the most fundamental principles in endurance training. If you want to run faster or ride further, you need to challenge your body with gradually increasing stress. But the real question isn't whether overload works — it's <strong>how much stress the body can adapt to, and when</strong>."
@@ -303,6 +315,27 @@ def build_filled_pillar_html(spec: dict, generated: dict, all_posts: list, font_
         f'</div></section>'
     ) if related_cards else ""
 
+    # References block
+    references    = generated.get("references", [])
+    ref_items     = ""
+    for ref in references:
+        authors = ref.get("authors", "")
+        year    = ref.get("year", "")
+        title   = ref.get("title", "")
+        source  = ref.get("source", "")
+        url     = ref.get("url", "")
+        cite    = f"{authors} ({year}). <em>{title}</em>. {source}."
+        if url:
+            cite = f'<a href="{url}" target="_blank" rel="noopener">{cite}</a>'
+        ref_items += f"<li>{cite}</li>\n"
+
+    refs_block = (
+        f'<div class="references-block">'
+        f'<h2>References</h2>'
+        f'<ol class="references-list">{ref_items}</ol>'
+        f'</div>'
+    ) if ref_items else ""
+
     # Quick answer block
     qa_block = (
         f'<div style="background:#F0FFF8;border-left:4px solid #1A6B4A;'
@@ -373,6 +406,12 @@ body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#
 .cta-card a{{display:block;background:#1A6B4A;color:white;text-align:center;padding:.65rem 1rem;border-radius:7px;font-size:.85rem;font-weight:600;text-decoration:none}}
 .cta-card a:hover{{background:#155A3C}}
 .tool-cta-card{{display:flex;align-items:center;gap:1rem;background:#FAFAFA;border:1px solid #E5E7EB;border-radius:8px;padding:1rem 1.25rem;margin-bottom:.75rem}}
+.references-block{{margin-top:3rem;padding-top:2rem;border-top:1px solid #E5E7EB}}
+.references-block h2{{font-size:1.1rem;font-weight:700;color:#0F1117;margin-bottom:1rem}}
+.references-list{{padding-left:1.25rem}}
+.references-list li{{font-size:.85rem;color:#666;margin-bottom:.6rem;line-height:1.6}}
+.references-list a{{color:#1A6B4A;text-decoration:none}}
+.references-list a:hover{{text-decoration:underline}}
 .related-section{{background:#F8F9FA;padding:3rem 2rem}}
 .related-inner{{max-width:1100px;margin:0 auto}}
 .related-inner h2{{font-size:1.3rem;font-weight:700;margin-bottom:1.5rem}}
@@ -413,6 +452,7 @@ footer a{{color:rgba(255,255,255,0.4);text-decoration:none}}
     {intro_html}
     {sections_html}
     {tool_block}
+    {refs_block}
   </article>
   <aside class="article-sidebar">
     {toc_block}
