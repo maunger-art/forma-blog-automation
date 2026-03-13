@@ -58,44 +58,44 @@ CONTACT_EMAIL = "formafit816@gmail.com"
 # ── Cluster → topic keywords for resource search ───────────────────────────────
 CLUSTER_RESOURCE_QUERIES = {
     "zone-2-training":   [
-        "best resources zone 2 training endurance athletes",
-        "zone 2 training tools runners site:reddit.com",
-        "aerobic base training resources guide",
+        "zone 2 heart rate training guide running coach blog",
+        "aerobic base training calculator runners coaching blog",
+        "zone 2 running pace calculator endurance coaching",
     ],
     "hrv-readiness":     [
-        "best HRV resources endurance athletes",
-        "heart rate variability tools runners guide",
-        "HRV training resources coaches",
+        "HRV training guide endurance athletes coaching blog",
+        "garmin training readiness score explained running coach",
+        "HRV monitoring runners guide coaching blog",
     ],
     "training-load":     [
-        "training load calculator resources endurance",
-        "ATL CTL ACWR resources runners",
-        "training stress score resources coaches",
+        "training load management runners guide coaching blog",
+        "acute chronic training load ratio running injury blog",
+        "CTL ATL TSB explained endurance training blog",
     ],
     "garmin-wearable":   [
-        "Garmin training resources guide athletes",
-        "best Garmin tools endurance athletes",
-        "Garmin metrics explained resources",
+        "garmin running metrics explained coaching blog guide",
+        "garmin body battery training readiness guide athletes",
+        "garmin watch training features runners coaching",
     ],
     "marathon-training": [
-        "marathon training resources tools guide",
-        "best marathon training calculators",
-        "marathon preparation resources coaches",
+        "marathon training plan guide coaching blog recommended",
+        "marathon pace calculator training zones coaching guide",
+        "marathon preparation tools running coaching blog",
     ],
     "cycling-endurance": [
-        "cycling endurance training resources",
-        "FTP training resources cyclists",
-        "cycling power training tools guide",
+        "cycling FTP training zones guide coaching blog",
+        "cycling endurance training plan calculator coaching",
+        "polarised training cycling guide coaching blog",
     ],
     "recovery-sleep":    [
-        "athlete recovery resources tools",
-        "sleep tracking resources endurance athletes",
-        "recovery run guide resources",
+        "athlete sleep recovery guide running coaching blog",
+        "recovery run pace guide endurance athletes coaching",
+        "sleep quality athletes performance guide coaching blog",
     ],
     "injury-prevention": [
-        "running injury prevention resources",
-        "injury prevention tools runners",
-        "running strength training resources guide",
+        "running injury prevention guide coaching blog strength",
+        "running load management injury prevention coaching",
+        "strength training runners guide coaching blog",
     ],
 }
 
@@ -111,7 +111,7 @@ SKIP_DOMAINS = {
     "formafit.co.uk", "blog.formafit.co.uk",
     "google.com", "youtube.com", "facebook.com", "twitter.com",
     "instagram.com", "tiktok.com", "pinterest.com", "linkedin.com",
-    "amazon.com", "reddit.com",  # reddit handles differently
+    "amazon.com",
     "wikipedia.org", "strava.com", "garmin.com", "whoop.com",
 }
 
@@ -323,7 +323,7 @@ def run_outreach(posts: list[dict], args) -> None:
         opportunities = []
         for r in unique_results:
             score = score_opportunity(r)
-            if score >= 2.0:
+            if score >= 1.5:
                 opportunities.append({
                     "url":         r.get("link", ""),
                     "title":       r.get("title", ""),
@@ -440,7 +440,7 @@ def run_resource_finder(args) -> None:
             if is_resource_page:
                 score += 2.0
 
-            if score >= 3.0:
+            if score >= 1.5:
                 all_opportunities.append({
                     "cluster":       cluster,
                     "url":           r.get("link", ""),
