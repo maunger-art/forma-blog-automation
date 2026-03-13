@@ -76,7 +76,10 @@
     "status": "published",
     "_queue_id": "paa-10365ac1",
     "_cluster": "garmin-wearable",
-    "_composite_score": 7.0
+    "_composite_score": 7.0,
+    "tool_ctas": [
+      "readiness-explainer"
+    ]
   },
   {
     "slug": "how-hard-is-it-to-get-a-100-sleep-score-in-garmin",
@@ -112,7 +115,10 @@
     "status": "published",
     "_queue_id": "paa-f11d8a79",
     "_cluster": "garmin-wearable",
-    "_composite_score": 7.3
+    "_composite_score": 7.3,
+    "tool_ctas": [
+      "readiness-explainer"
+    ]
   },
   {
     "slug": "why-is-my-garmin-training-readiness-always-low",
@@ -150,7 +156,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 7.3,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -189,7 +196,9 @@
     "_cluster": "zone-2-training",
     "_composite_score": 6.8,
     "tool_ctas": [
-      "zone2 calculator"
+      "zone2 calculator",
+      "pace-predictor",
+      "marathon-pace-calculator"
     ]
   },
   {
@@ -232,7 +241,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 6.8,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -268,7 +278,9 @@
     "_cluster": "zone-2-training",
     "_composite_score": 6.8,
     "tool_ctas": [
-      "zone2 calculator"
+      "zone2 calculator",
+      "pace-predictor",
+      "marathon-pace-calculator"
     ]
   },
   {
@@ -286,7 +298,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 6.8,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -304,7 +317,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 6.7,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -322,7 +336,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 6.7,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -358,7 +373,8 @@
     "_cluster": "zone-2-training",
     "_composite_score": 6.5,
     "tool_ctas": [
-      "zone2 calculator"
+      "zone2 calculator",
+      "training-load-calculator"
     ]
   },
   {
@@ -412,7 +428,8 @@
     "_cluster": "zone-2-training",
     "_composite_score": 6.4,
     "tool_ctas": [
-      "zone2 calculator"
+      "zone2 calculator",
+      "training-load-calculator"
     ]
   },
   {
@@ -430,7 +447,8 @@
     "_cluster": "zone-2-training",
     "_composite_score": 6.4,
     "tool_ctas": [
-      "zone2 calculator"
+      "zone2 calculator",
+      "training-load-calculator"
     ]
   },
   {
@@ -446,7 +464,11 @@
     "toc_items": [],
     "_queue_id": "paa-3cff4529",
     "_cluster": "marathon-training",
-    "_composite_score": 6.4
+    "_composite_score": 6.4,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "how-much-cycling-is-equal-to-10000-steps",
@@ -491,7 +513,11 @@
     "toc_items": [],
     "_queue_id": "paa-3e37f525",
     "_cluster": "recovery-sleep",
-    "_composite_score": 6.4
+    "_composite_score": 6.4,
+    "tool_ctas": [
+      "pace-predictor",
+      "readiness-explainer"
+    ]
   },
   {
     "slug": "how-many-kilometers-is-a-recovery-run",
@@ -506,7 +532,10 @@
     "toc_items": [],
     "_queue_id": "paa-62f0e2f7",
     "_cluster": "recovery-sleep",
-    "_composite_score": 6.4
+    "_composite_score": 6.4,
+    "tool_ctas": [
+      "readiness-explainer"
+    ]
   },
   {
     "slug": "how-to-prevent-injury-as-a-runner",
@@ -538,7 +567,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 6.2,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -554,7 +584,11 @@
     "toc_items": [],
     "_queue_id": "paa-aafd0d7c",
     "_cluster": "marathon-training",
-    "_composite_score": 6.1
+    "_composite_score": 6.1,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "training-load-apple-watch",
@@ -569,7 +603,10 @@
     "toc_items": [],
     "_queue_id": "autosugg-869bf007",
     "_cluster": "training-load",
-    "_composite_score": 6.0
+    "_composite_score": 6.0,
+    "tool_ctas": [
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "what-pace-is-a-4-hour-marathon",
@@ -584,7 +621,11 @@
     "toc_items": [],
     "_queue_id": "paa-7f7d11a3",
     "_cluster": "marathon-training",
-    "_composite_score": 5.9
+    "_composite_score": 5.9,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "garmin-readiness-score-watches",
@@ -601,7 +642,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 5.7,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -619,7 +661,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 5.7,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -637,7 +680,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 5.7,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -655,7 +699,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 5.7,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -673,7 +718,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 5.7,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -691,7 +737,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 5.7,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -709,7 +756,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 5.7,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -727,7 +775,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 5.7,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -745,7 +794,8 @@
     "_cluster": "garmin-wearable",
     "_composite_score": 5.7,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -763,7 +813,8 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 5.7,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -779,7 +830,10 @@
     "toc_items": [],
     "_queue_id": "paa-240fdf34",
     "_cluster": "training-load",
-    "_composite_score": 5.7
+    "_composite_score": 5.7,
+    "tool_ctas": [
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "what-is-a-good-training-load-number",
@@ -794,7 +848,10 @@
     "toc_items": [],
     "_queue_id": "paa-ffd7c98f",
     "_cluster": "training-load",
-    "_composite_score": 5.7
+    "_composite_score": 5.7,
+    "tool_ctas": [
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "what-is-training-load-class-11",
@@ -809,7 +866,10 @@
     "toc_items": [],
     "_queue_id": "paa-dc8b1471",
     "_cluster": "training-load",
-    "_composite_score": 5.7
+    "_composite_score": 5.7,
+    "tool_ctas": [
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "what-is-the-28-day-training-load",
@@ -824,7 +884,10 @@
     "toc_items": [],
     "_queue_id": "paa-4bd9f6d3",
     "_cluster": "training-load",
-    "_composite_score": 5.7
+    "_composite_score": 5.7,
+    "tool_ctas": [
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "what-is-the-10-10-10-rule-for-marathon",
@@ -839,7 +902,11 @@
     "toc_items": [],
     "_queue_id": "paa-4057488e",
     "_cluster": "marathon-training",
-    "_composite_score": 5.7
+    "_composite_score": 5.7,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "what-is-the-80-20-rule-in-cycling",
@@ -854,7 +921,10 @@
     "toc_items": [],
     "_queue_id": "paa-463cc43f",
     "_cluster": "cycling-endurance",
-    "_composite_score": 5.7
+    "_composite_score": 5.7,
+    "tool_ctas": [
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "what-is-recovery-running",
@@ -869,7 +939,11 @@
     "toc_items": [],
     "_queue_id": "paa-3013817a",
     "_cluster": "recovery-sleep",
-    "_composite_score": 5.7
+    "_composite_score": 5.7,
+    "tool_ctas": [
+      "pace-predictor",
+      "readiness-explainer"
+    ]
   },
   {
     "slug": "zone-2-training-plan",
@@ -886,7 +960,9 @@
     "_cluster": "zone-2-training",
     "_composite_score": 5.5,
     "tool_ctas": [
-      "zone2 calculator"
+      "zone2 calculator",
+      "pace-predictor",
+      "marathon-pace-calculator"
     ]
   },
   {
@@ -904,7 +980,9 @@
     "_cluster": "zone-2-training",
     "_composite_score": 5.5,
     "tool_ctas": [
-      "zone2 calculator"
+      "zone2 calculator",
+      "pace-predictor",
+      "marathon-pace-calculator"
     ]
   },
   {
@@ -922,7 +1000,9 @@
     "_cluster": "zone-2-training",
     "_composite_score": 5.5,
     "tool_ctas": [
-      "zone2 calculator"
+      "zone2 calculator",
+      "pace-predictor",
+      "marathon-pace-calculator"
     ]
   },
   {
@@ -938,7 +1018,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-42ee4307",
     "_cluster": "marathon-training",
-    "_composite_score": 5.5
+    "_composite_score": 5.5,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "marathon-training-plan-pdf",
@@ -953,7 +1037,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-682a5368",
     "_cluster": "marathon-training",
-    "_composite_score": 5.5
+    "_composite_score": 5.5,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "marathon-training-plan-16-weeks",
@@ -968,7 +1056,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-7948e20b",
     "_cluster": "marathon-training",
-    "_composite_score": 5.5
+    "_composite_score": 5.5,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "marathon-training-plan-20-weeks",
@@ -983,7 +1075,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-edac5d83",
     "_cluster": "marathon-training",
-    "_composite_score": 5.5
+    "_composite_score": 5.5,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "marathon-training-plan-hal-higdon",
@@ -998,7 +1094,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-ffe6d921",
     "_cluster": "marathon-training",
-    "_composite_score": 5.5
+    "_composite_score": 5.5,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "marathon-training-plan-reddit",
@@ -1013,7 +1113,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-12a4f7a5",
     "_cluster": "marathon-training",
-    "_composite_score": 5.5
+    "_composite_score": 5.5,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "marathon-training-plan-free",
@@ -1028,7 +1132,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-eadbf471",
     "_cluster": "marathon-training",
-    "_composite_score": 5.5
+    "_composite_score": 5.5,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "marathon-training-plan-12-weeks",
@@ -1043,7 +1151,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-5c4416d9",
     "_cluster": "marathon-training",
-    "_composite_score": 5.5
+    "_composite_score": 5.5,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "marathon-training-plan-6-months",
@@ -1058,7 +1170,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-7617f308",
     "_cluster": "marathon-training",
-    "_composite_score": 5.5
+    "_composite_score": 5.5,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "cycling-endurance-training-plan",
@@ -1073,7 +1189,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-0c217a6a",
     "_cluster": "cycling-endurance",
-    "_composite_score": 5.5
+    "_composite_score": 5.5,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "running-injury-prevention-app",
@@ -1088,7 +1208,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-189f0aed",
     "_cluster": "injury-prevention",
-    "_composite_score": 5.5
+    "_composite_score": 5.5,
+    "tool_ctas": [
+      "pace-predictor",
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "marathon-training-plan-5-months",
@@ -1103,7 +1227,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-dfd09706",
     "_cluster": "marathon-training",
-    "_composite_score": 5.5
+    "_composite_score": 5.5,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "hrv-training-plan-free",
@@ -1120,7 +1248,10 @@
     "_cluster": "hrv-readiness",
     "_composite_score": 5.5,
     "tool_ctas": [
-      "hr zone calculator"
+      "hr zone calculator",
+      "pace-predictor",
+      "marathon-pace-calculator",
+      "readiness-explainer"
     ]
   },
   {
@@ -1151,7 +1282,11 @@
     "toc_items": [],
     "_queue_id": "reddit-91966f90",
     "_cluster": "marathon-training",
-    "_composite_score": 5.2
+    "_composite_score": 5.2,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
   },
   {
     "slug": "zone-2-training-benefits",
@@ -1257,7 +1392,10 @@
     "toc_items": [],
     "_queue_id": "autosugg-a694ea11",
     "_cluster": "cycling-endurance",
-    "_composite_score": 5.0
+    "_composite_score": 5.0,
+    "tool_ctas": [
+      "pace-predictor"
+    ]
   },
   {
     "slug": "cycling-endurance-events-uk",
@@ -1272,7 +1410,10 @@
     "toc_items": [],
     "_queue_id": "autosugg-1e2f82fc",
     "_cluster": "cycling-endurance",
-    "_composite_score": 5.0
+    "_composite_score": 5.0,
+    "tool_ctas": [
+      "pace-predictor"
+    ]
   },
   {
     "slug": "recovery-running-shoes-meaning",
@@ -1287,7 +1428,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-96721009",
     "_cluster": "recovery-sleep",
-    "_composite_score": 5.0
+    "_composite_score": 5.0,
+    "tool_ctas": [
+      "pace-predictor",
+      "readiness-explainer"
+    ]
   },
   {
     "slug": "recovery-running-shoes-reddit",
@@ -1302,7 +1447,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-ac979e89",
     "_cluster": "recovery-sleep",
-    "_composite_score": 5.0
+    "_composite_score": 5.0,
+    "tool_ctas": [
+      "pace-predictor",
+      "readiness-explainer"
+    ]
   },
   {
     "slug": "running-injury-prevention-exercises",
@@ -1317,7 +1466,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-4f2490cf",
     "_cluster": "injury-prevention",
-    "_composite_score": 5.0
+    "_composite_score": 5.0,
+    "tool_ctas": [
+      "pace-predictor",
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "running-injury-prevention-strength-training",
@@ -1332,7 +1485,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-e1613b57",
     "_cluster": "injury-prevention",
-    "_composite_score": 5.0
+    "_composite_score": 5.0,
+    "tool_ctas": [
+      "pace-predictor",
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "running-injury-prevention-program",
@@ -1347,7 +1504,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-c197e5c5",
     "_cluster": "injury-prevention",
-    "_composite_score": 5.0
+    "_composite_score": 5.0,
+    "tool_ctas": [
+      "pace-predictor",
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "running-injury-prevention-workout",
@@ -1362,7 +1523,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-e7e1a215",
     "_cluster": "injury-prevention",
-    "_composite_score": 5.0
+    "_composite_score": 5.0,
+    "tool_ctas": [
+      "pace-predictor",
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "running-injury-prevention-reddit",
@@ -1377,7 +1542,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-d778221b",
     "_cluster": "injury-prevention",
-    "_composite_score": 5.0
+    "_composite_score": 5.0,
+    "tool_ctas": [
+      "pace-predictor",
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "running-injury-prevention-routine",
@@ -1392,7 +1561,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-edcb391f",
     "_cluster": "injury-prevention",
-    "_composite_score": 5.0
+    "_composite_score": 5.0,
+    "tool_ctas": [
+      "pace-predictor",
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "running-injury-prevention-book",
@@ -1407,7 +1580,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-15877877",
     "_cluster": "injury-prevention",
-    "_composite_score": 5.0
+    "_composite_score": 5.0,
+    "tool_ctas": [
+      "pace-predictor",
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "running-injury-prevention-tips",
@@ -1422,7 +1599,11 @@
     "toc_items": [],
     "_queue_id": "autosugg-a07d4ad7",
     "_cluster": "injury-prevention",
-    "_composite_score": 5.0
+    "_composite_score": 5.0,
+    "tool_ctas": [
+      "pace-predictor",
+      "training-load-calculator"
+    ]
   },
   {
     "slug": "what-garmin-recovery-metrics-actually-mean",
@@ -1456,7 +1637,10 @@
         "text": "How to Actually Use This Data"
       }
     ],
-    "hash": "9e9b7b34e64635369f5d74f7136ef6a2"
+    "hash": "9e9b7b34e64635369f5d74f7136ef6a2",
+    "tool_ctas": [
+      "readiness-explainer"
+    ]
   },
   {
     "slug": "how-sleep-debt-destroys-endurance-performance",
@@ -1490,7 +1674,10 @@
         "text": "Practical takeaways for the 5\u201310 hour athlete"
       }
     ],
-    "hash": "16391789549d079f5f04e483407d2b15"
+    "hash": "16391789549d079f5f04e483407d2b15",
+    "tool_ctas": [
+      "readiness-explainer"
+    ]
   },
   {
     "title": "Cycling Training Zones: Why Your FTP Isn't Everything",
@@ -1619,7 +1806,10 @@
         "text": "Peaking for performance"
       }
     ],
-    "body_html": "<p>One of the most powerful concepts in endurance training is <strong>training load management</strong>.</p>\n\n<p>While workouts build fitness, it\u2019s the balance between training stress and recovery that determines whether performance improves or declines.</p>\n\n<p>Sports scientists often describe this balance using three key metrics:</p>\n\n<ul>\n  <li><strong>ATL</strong> (Acute Training Load)</li>\n  <li><strong>CTL</strong> (Chronic Training Load)</li>\n  <li><strong>TSB</strong> (Training Stress Balance)</li>\n</ul>\n\n<p>Understanding how these interact can help athletes train smarter and reduce injury risk.</p>\n\n<h2 id=\"what-is-ctl\">What is CTL?</h2>\n\n<p>CTL represents your <strong>long-term fitness base</strong>.</p>\n\n<p>It measures the average training load accumulated over roughly six weeks. Higher CTL values generally indicate greater aerobic fitness and endurance capacity.</p>\n\n<p>As athletes build consistent training volume, CTL gradually rises.</p>\n\n<h2 id=\"what-is-atl\">What is ATL?</h2>\n\n<p>ATL represents <strong>short-term fatigue</strong>.</p>\n\n<p>It reflects the training load accumulated over the previous 7\u201310 days. Hard training blocks, races, and high-intensity sessions cause ATL to rise quickly.</p>\n\n<p>A high ATL indicates the body is under significant stress.</p>\n\n<h2 id=\"the-importance-of-the-ratio\">The importance of the ACWR ratio</h2>\n\n<p>The relationship between ATL and CTL is crucial.</p>\n\n<p>This relationship is often expressed as the <strong>acute-to-chronic workload ratio (ACWR)</strong>.</p>\n\n<p>Large spikes in training load relative to long-term baseline are strongly associated with injury risk. For example:</p>\n\n<ul>\n  <li>Doubling weekly mileage suddenly</li>\n  <li>Adding multiple high-intensity sessions at once</li>\n  <li>Dramatically increasing cycling volume</li>\n</ul>\n\n<p>Gradual progression protects the body. As a general guide, most coaches recommend increasing weekly training load by no more than 10% per week \u2014 and being more conservative when recovering from illness or time off.</p>\n\n<h2 id=\"peaking-for-performance\">Peaking for performance</h2>\n\n<p>Load management also plays a crucial role in preparing for races.</p>\n\n<p>During the final weeks before competition, athletes reduce volume while maintaining intensity. This process, known as <strong>tapering</strong>, reduces fatigue while preserving fitness.</p>\n\n<p>The result is peak performance on race day.</p>\n\n<p>Understanding and tracking your ATL, CTL, and TSB is one of the most effective ways to take control of your training and avoid unnecessary setbacks.</p>"
+    "body_html": "<p>One of the most powerful concepts in endurance training is <strong>training load management</strong>.</p>\n\n<p>While workouts build fitness, it\u2019s the balance between training stress and recovery that determines whether performance improves or declines.</p>\n\n<p>Sports scientists often describe this balance using three key metrics:</p>\n\n<ul>\n  <li><strong>ATL</strong> (Acute Training Load)</li>\n  <li><strong>CTL</strong> (Chronic Training Load)</li>\n  <li><strong>TSB</strong> (Training Stress Balance)</li>\n</ul>\n\n<p>Understanding how these interact can help athletes train smarter and reduce injury risk.</p>\n\n<h2 id=\"what-is-ctl\">What is CTL?</h2>\n\n<p>CTL represents your <strong>long-term fitness base</strong>.</p>\n\n<p>It measures the average training load accumulated over roughly six weeks. Higher CTL values generally indicate greater aerobic fitness and endurance capacity.</p>\n\n<p>As athletes build consistent training volume, CTL gradually rises.</p>\n\n<h2 id=\"what-is-atl\">What is ATL?</h2>\n\n<p>ATL represents <strong>short-term fatigue</strong>.</p>\n\n<p>It reflects the training load accumulated over the previous 7\u201310 days. Hard training blocks, races, and high-intensity sessions cause ATL to rise quickly.</p>\n\n<p>A high ATL indicates the body is under significant stress.</p>\n\n<h2 id=\"the-importance-of-the-ratio\">The importance of the ACWR ratio</h2>\n\n<p>The relationship between ATL and CTL is crucial.</p>\n\n<p>This relationship is often expressed as the <strong>acute-to-chronic workload ratio (ACWR)</strong>.</p>\n\n<p>Large spikes in training load relative to long-term baseline are strongly associated with injury risk. For example:</p>\n\n<ul>\n  <li>Doubling weekly mileage suddenly</li>\n  <li>Adding multiple high-intensity sessions at once</li>\n  <li>Dramatically increasing cycling volume</li>\n</ul>\n\n<p>Gradual progression protects the body. As a general guide, most coaches recommend increasing weekly training load by no more than 10% per week \u2014 and being more conservative when recovering from illness or time off.</p>\n\n<h2 id=\"peaking-for-performance\">Peaking for performance</h2>\n\n<p>Load management also plays a crucial role in preparing for races.</p>\n\n<p>During the final weeks before competition, athletes reduce volume while maintaining intensity. This process, known as <strong>tapering</strong>, reduces fatigue while preserving fitness.</p>\n\n<p>The result is peak performance on race day.</p>\n\n<p>Understanding and tracking your ATL, CTL, and TSB is one of the most effective ways to take control of your training and avoid unnecessary setbacks.</p>",
+    "tool_ctas": [
+      "training-load-calculator"
+    ]
   },
   {
     "title": "Garmin vs Oura vs WHOOP: Which Wearable Data Should You Trust?",
@@ -1646,7 +1836,10 @@
         "text": "Why the numbers differ between devices"
       }
     ],
-    "body_html": "<p>Wearable technology has transformed endurance training.</p>\n\n<p>Devices now collect a constant stream of data about sleep, recovery, stress, and training load. But with so many devices available, athletes often ask the same question:</p>\n\n<p><strong>Which one should you trust?</strong></p>\n\n<p>Garmin, Oura, and WHOOP are three of the most popular wearable ecosystems for runners and cyclists. Here\u2019s how they compare.</p>\n\n<h2 id=\"garmin-training-metrics\">Garmin: training-focused metrics</h2>\n\n<p>Garmin devices combine GPS training data with physiological signals, making them a natural fit for athletes who train with specific performance targets.</p>\n\n<p>Key metrics include:</p>\n\n<ul>\n  <li><strong>Training Load</strong> \u2014 cumulative stress from all activities</li>\n  <li><strong>Training Status</strong> \u2014 whether your fitness is building, maintaining, or recovering</li>\n  <li><strong>Recovery Time</strong> \u2014 estimated hours before you\u2019re ready for the next hard session</li>\n  <li><strong>Body Battery</strong> \u2014 a 0\u2013100 score reflecting energy reserves</li>\n</ul>\n\n<p>Garmin is especially strong for runners, cyclists, and triathletes who want GPS, pace, power, and recovery data in one ecosystem.</p>\n\n<h2 id=\"whoop-recovery-first\">WHOOP: recovery-first approach</h2>\n\n<p>WHOOP focuses primarily on recovery metrics. Worn 24/7, it monitors:</p>\n\n<ul>\n  <li>HRV during sleep</li>\n  <li>Daily strain score</li>\n  <li>Sleep quality and stages</li>\n  <li>Recovery percentage (0\u2013100)</li>\n</ul>\n\n<p>This approach is particularly valued by athletes who want a dedicated recovery signal to guide daily training decisions, without GPS or sport tracking built in.</p>\n\n<h2 id=\"oura-sleep-readiness\">Oura: sleep and readiness insights</h2>\n\n<p>The Oura ring excels at sleep and recovery tracking, using its finger-based sensors to capture particularly clean HRV readings overnight.</p>\n\n<p>It combines HRV, sleep quality, and activity data to produce a <strong>daily readiness score</strong>, which many athletes find among the most intuitive signals for morning training decisions.</p>\n\n<h2 id=\"why-numbers-differ\">Why the numbers differ between devices</h2>\n\n<p>Different wearables use different algorithms, measurement windows, and sensor positions.</p>\n\n<p>HRV might be measured at different times of night, sleep stages classified differently, and readiness scores built from different weightings. This is why comparing raw numbers between devices is rarely meaningful.</p>\n\n<p>The most important insight from any wearable is <strong>trend over time, not single values</strong>. A Garmin Body Battery of 60 means very different things to two different athletes.</p>\n\n<p>Whatever device you use, the goal is to build a personalised baseline \u2014 and then notice when your metrics deviate from it. That deviation is the signal worth acting on.</p>"
+    "body_html": "<p>Wearable technology has transformed endurance training.</p>\n\n<p>Devices now collect a constant stream of data about sleep, recovery, stress, and training load. But with so many devices available, athletes often ask the same question:</p>\n\n<p><strong>Which one should you trust?</strong></p>\n\n<p>Garmin, Oura, and WHOOP are three of the most popular wearable ecosystems for runners and cyclists. Here\u2019s how they compare.</p>\n\n<h2 id=\"garmin-training-metrics\">Garmin: training-focused metrics</h2>\n\n<p>Garmin devices combine GPS training data with physiological signals, making them a natural fit for athletes who train with specific performance targets.</p>\n\n<p>Key metrics include:</p>\n\n<ul>\n  <li><strong>Training Load</strong> \u2014 cumulative stress from all activities</li>\n  <li><strong>Training Status</strong> \u2014 whether your fitness is building, maintaining, or recovering</li>\n  <li><strong>Recovery Time</strong> \u2014 estimated hours before you\u2019re ready for the next hard session</li>\n  <li><strong>Body Battery</strong> \u2014 a 0\u2013100 score reflecting energy reserves</li>\n</ul>\n\n<p>Garmin is especially strong for runners, cyclists, and triathletes who want GPS, pace, power, and recovery data in one ecosystem.</p>\n\n<h2 id=\"whoop-recovery-first\">WHOOP: recovery-first approach</h2>\n\n<p>WHOOP focuses primarily on recovery metrics. Worn 24/7, it monitors:</p>\n\n<ul>\n  <li>HRV during sleep</li>\n  <li>Daily strain score</li>\n  <li>Sleep quality and stages</li>\n  <li>Recovery percentage (0\u2013100)</li>\n</ul>\n\n<p>This approach is particularly valued by athletes who want a dedicated recovery signal to guide daily training decisions, without GPS or sport tracking built in.</p>\n\n<h2 id=\"oura-sleep-readiness\">Oura: sleep and readiness insights</h2>\n\n<p>The Oura ring excels at sleep and recovery tracking, using its finger-based sensors to capture particularly clean HRV readings overnight.</p>\n\n<p>It combines HRV, sleep quality, and activity data to produce a <strong>daily readiness score</strong>, which many athletes find among the most intuitive signals for morning training decisions.</p>\n\n<h2 id=\"why-numbers-differ\">Why the numbers differ between devices</h2>\n\n<p>Different wearables use different algorithms, measurement windows, and sensor positions.</p>\n\n<p>HRV might be measured at different times of night, sleep stages classified differently, and readiness scores built from different weightings. This is why comparing raw numbers between devices is rarely meaningful.</p>\n\n<p>The most important insight from any wearable is <strong>trend over time, not single values</strong>. A Garmin Body Battery of 60 means very different things to two different athletes.</p>\n\n<p>Whatever device you use, the goal is to build a personalised baseline \u2014 and then notice when your metrics deviate from it. That deviation is the signal worth acting on.</p>",
+    "tool_ctas": [
+      "readiness-explainer"
+    ]
   },
   {
     "title": "The Athlete's Paradox: Why Training More Doesn't Mean Performing Better",
