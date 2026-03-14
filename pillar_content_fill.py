@@ -71,81 +71,137 @@ def load_manifest() -> list[dict]:
     return json.loads(MANIFEST_PATH.read_text())
 
 
-def build_prompt(spec: dict) -> str:
+
+def build_intro_prompt(spec: dict) -> str:
+    """Prompt for the opening intro — same focused style as regular posts."""
     h1       = spec["h1"]
     cluster  = spec.get("cluster", "")
-    sections = spec.get("suggested_sections", [])
-    tool_ctas = spec.get("tool_ctas", [])
-
     context  = CLUSTER_CONTEXT.get(cluster, "endurance training for runners and cyclists")
+    sections = spec.get("suggested_sections", [])
+    section_list = ", ".join(f'"{s}"' for s in sections[:4])
 
-    # Format sections as a numbered list for the prompt
-    sections_formatted = "\n".join(f"{i+1}. {s}" for i, s in enumerate(sections))
-
-    # Tool CTA note
-    tool_note = ""
-    if tool_ctas:
-        tool_names = ", ".join(t.title() for t in tool_ctas)
-        tool_note = f"\nNote: This topic has free calculator tools available ({tool_names}). Reference these naturally in the relevant sections where a reader would want to calculate their own numbers."
-
-    return f"""You are writing a comprehensive long-form guide for Forma, an adaptive endurance training app for runners and cyclists.
+    return f"""You are writing the opening section of a long-form guide for Forma, an adaptive endurance training app for runners and cyclists.
 
 Forma's voice: authoritative, science-backed, written for serious amateur athletes. Direct and specific. No motivational filler. No throat-clearing. Every sentence earns its place.
 
 TOPIC CONTEXT: {context}
 
-Write a complete, comprehensive guide answering: "{h1}"
+Write the OPENING 2-3 paragraphs for a guide titled: "{h1}"
 
-The guide must cover ALL of these sections in order:
-{sections_formatted}
-{tool_note}
+The guide will go on to cover: {section_list} (and more). Your intro should set up why this topic matters without listing what the guide covers.
 
-TARGET: 2,500-3,500 words total across all sections.
-
-REQUIRED OUTPUT FORMAT — respond with a single JSON object only, no markdown fences, no preamble:
+REQUIRED OUTPUT FORMAT — single JSON object only, no markdown fences:
 
 {{
-  "sections": [
-    {{
-      "id": "s0",
-      "heading": "Exact section heading text from the list above",
-      "html": "<p>Full HTML content for this section...</p>"
-    }},
-    ...one entry per section
-  ],
-  "intro_html": "<p>Opening 2-3 paragraphs before the first section heading. Hook immediately.</p>",
-  "meta_description": "Compelling meta description 140-155 chars covering the full guide",
-  "keywords": "comma-separated keyword phrases (8-10 terms)",
+  "intro_html": "<p>Opening paragraphs...</p>",
+  "meta_description": "Compelling meta description 140-155 chars",
+  "keywords": "comma-separated keyword phrases (8-10 terms)"
+}}
+
+REQUIREMENTS:
+- 150-250 words total
+- Hook immediately — state the core problem, surprising insight, or counterintuitive truth
+- No "In this guide we will..." openers
+- No "Whether you are a beginner or experienced athlete..." openers
+- Use <strong> for key terms
+- HTML must be clean — <p> tags only, no inline styles
+
+TONE EXAMPLES:
+"Progressive overload is one of the most fundamental principles in endurance training. If you want to run faster or ride further, you need to challenge your body with gradually increasing stress. But the real question is not whether overload works — it is <strong>how much stress the body can adapt to, and when</strong>."
+
+"Traditional training plans assume that the body behaves predictably. A typical schedule might include intervals on Tuesday, a tempo session on Thursday, and a long run at the weekend. While this structure works for many athletes, it overlooks an important reality: <strong>human physiology fluctuates daily</strong>."
+
+Match this tone exactly — direct, confident, specific."""
+
+
+def build_section_prompt(section_heading: str, spec: dict, section_index: int,
+                         total_sections: int, prev_sections: list) -> str:
+    """One section — same focused approach as regular post generator."""
+    h1        = spec["h1"]
+    cluster   = spec.get("cluster", "")
+    context   = CLUSTER_CONTEXT.get(cluster, "endurance training for runners and cyclists")
+    tool_ctas = spec.get("tool_ctas", [])
+    is_last   = section_index == total_sections - 1
+
+    tool_note = ""
+    if tool_ctas:
+        tool_names = ", ".join(t.title() for t in tool_ctas)
+        tool_note = f"\nNote: Forma has free calculator tools ({tool_names}). If directly relevant to this section, reference them naturally."
+
+    prev_note = ""
+    if prev_sections:
+        prev_note = f"\nThis section follows sections on: {', '.join(prev_sections[-2:])}. Reference earlier concepts naturally but do not repeat them."
+
+    final_note = ""
+    if is_last:
+        final_note = "\nThis is the final section. End with a forward-looking paragraph about how Forma adapts training daily based on this data. Natural conclusion, not a sales pitch."
+
+    return f"""You are writing one section of a long-form guide for Forma, an adaptive endurance training app for runners and cyclists.
+
+Forma's voice: authoritative, science-backed, written for serious amateur athletes. Direct and specific. No motivational filler. No throat-clearing. Every sentence earns its place.
+
+GUIDE TITLE: "{h1}"
+TOPIC CONTEXT: {context}{prev_note}{tool_note}{final_note}
+
+Write the section with this heading: "{section_heading}"
+
+REQUIRED OUTPUT FORMAT — single JSON object only, no markdown fences:
+
+{{
+  "html": "<h2 id=\"s{section_index}\">{section_heading}</h2><p>Section content...</p>"
+}}
+
+REQUIREMENTS:
+- 280-380 words
+- Start directly after the heading — do not restate the heading or introduce the section
+- Use <strong> for key concepts and important terms
+- Use <ul>/<li> for lists where natural — maximum one list
+- Include at least one specific number, threshold, or study reference
+- Clean HTML only — <p>, <strong>, <ul>, <li> — no inline styles, no divs
+- The h2 id must be exactly: s{section_index}
+
+TONE EXAMPLES:
+"Progressive overload is one of the most fundamental principles in endurance training. If you want to run faster or ride further, you need to challenge your body with gradually increasing stress. But the real question is not whether overload works — it is <strong>how much stress the body can adapt to, and when</strong>."
+
+"Traditional training plans assume that the body behaves predictably. A typical schedule might include intervals on Tuesday, a tempo session on Thursday, and a long run at the weekend. While this structure works for many athletes, it overlooks an important reality: <strong>human physiology fluctuates daily</strong>."
+
+Match this tone exactly — direct, confident, specific, no fluff."""
+
+
+def build_references_prompt(spec: dict, section_headings: list) -> str:
+    """References — separate call after all sections are written."""
+    h1       = spec["h1"]
+    context  = CLUSTER_CONTEXT.get(spec.get("cluster", ""), "endurance training")
+    headings = "\n".join(f"- {s}" for s in section_headings)
+
+    return f"""A long-form guide titled "{h1}" covers these topics:
+{headings}
+
+Context: {context}
+
+List 5-8 real, verifiable academic studies or authoritative sources that directly support this content.
+
+REQUIRED OUTPUT FORMAT — single JSON object only, no markdown fences:
+
+{{
   "references": [
     {{
       "id": "ref1",
       "authors": "Last, F., & Last, F.",
       "year": "2023",
-      "title": "Full study or book title",
-      "source": "Journal of Sports Science or publisher name",
-      "url": "https://doi.org/... or https://pubmed.ncbi.nlm.nih.gov/... (only include if real and verifiable)"
-    }},
-    ...4-8 references total
+      "title": "Full study title",
+      "source": "Journal name or publisher",
+      "url": "https://doi.org/... (omit if not confident it is real)"
+    }}
   ]
 }}
 
-CONTENT REQUIREMENTS:
-- intro_html: 150-250 words. Hook immediately — state the core problem or insight. No "In this guide we will cover..." openers.
-- Each section html: 250-400 words. Dense, specific, actionable. Use <p> tags for paragraphs, <strong> for key terms, <ul>/<li> for lists where natural (max 1 list per section).
-- Include specific numbers, study references, or measurable thresholds in each section (e.g. "Zone 2 sits below 75% of max heart rate", "studies show a 6-week aerobic base phase increases mitochondrial density by 15-25%").
-- The sections should flow as a coherent guide — later sections can reference earlier ones naturally.
-- End the final section with a forward-looking paragraph that references how Forma's adaptive engine uses this data daily.
-- Do NOT include conclusion headings. End naturally.
-- HTML must be clean — no inline styles, no div wrappers, no class attributes.
-- IDs must be s0, s1, s2... matching the section order exactly.
-- references: 4-8 real, verifiable studies or authoritative sources. Use actual published research where it exists (PubMed, journals, textbooks). ONLY include URLs you are confident are real — omit the url field if uncertain. Do not fabricate citations.
+RULES:
+- Only real published studies — no fabricated citations
+- Prioritise PubMed-indexed research and sports science journals
+- Only include a URL if you are confident it exists and is accessible
+- Prefer post-2015 studies where possible, but include landmark older work if relevant"""
 
-TONE EXAMPLES from existing Forma posts:
-"Progressive overload is one of the most fundamental principles in endurance training. If you want to run faster or ride further, you need to challenge your body with gradually increasing stress. But the real question isn't whether overload works — it's <strong>how much stress the body can adapt to, and when</strong>."
-
-"Traditional training plans assume that the body behaves predictably. A typical schedule might include intervals on Tuesday, a tempo session on Thursday, and a long run at the weekend. While this structure works for many athletes, it overlooks an important reality: <strong>human physiology fluctuates daily</strong>."
-
-Match this tone exactly — direct, confident, specific, no fluff."""
 
 
 def call_api(prompt: str, api_key: str) -> dict:
@@ -531,21 +587,61 @@ def main():
         print(f"\n  [{i+1}/{len(specs)}] {h1}")
         print(f"         cluster: {spec.get('cluster')} | sections: {len(sections)}")
 
-        prompt    = build_prompt(spec)
-        generated = call_api(prompt, args.api_key)
+        # ── Per-section generation ─────────────────────────────────────────
+        # One API call per section — same focused quality as regular posts
 
-        if not generated or not generated.get("sections"):
-            print(f"  ✗ Generation failed — skipping")
+        # Step 1: Intro
+        print(f"    Generating intro...")
+        intro_result = call_api(build_intro_prompt(spec), args.api_key)
+        if not intro_result:
+            print(f"  ✗ Intro generation failed — skipping pillar")
             continue
 
-        gen_sections = generated.get("sections", [])
-        total_words  = sum(
+        time.sleep(1.5)
+
+        # Step 2: Each section individually
+        gen_sections = []
+        prev_headings = []
+        for j, section_heading in enumerate(sections):
+            print(f"    Section {j+1}/{len(sections)}: {section_heading[:50]}")
+            prompt = build_section_prompt(
+                section_heading, spec, j, len(sections), prev_headings
+            )
+            result = call_api(prompt, args.api_key)
+            if result and result.get("html"):
+                gen_sections.append({"id": f"s{j}", "heading": section_heading, "html": result["html"]})
+                prev_headings.append(section_heading)
+            else:
+                # Fallback placeholder if one section fails
+                gen_sections.append({
+                    "id": f"s{j}",
+                    "heading": section_heading,
+                    "html": f'<h2 id="s{j}">{section_heading}</h2><p>This section covers {section_heading.lower().rstrip("?")}.</p>'
+                })
+            time.sleep(1.5)
+
+        # Step 3: References
+        print(f"    Generating references...")
+        ref_result = call_api(build_references_prompt(spec, sections), args.api_key)
+        time.sleep(1.5)
+
+        # Assemble the generated dict
+        generated = {
+            "intro_html":      intro_result.get("intro_html", ""),
+            "meta_description": intro_result.get("meta_description", ""),
+            "keywords":         intro_result.get("keywords", ""),
+            "sections":         gen_sections,
+            "references":       ref_result.get("references", []) if ref_result else [],
+        }
+
+        total_words = sum(
             len(re.sub(r"<[^>]+>", "", gs.get("html", "")).split())
             for gs in gen_sections
         )
         intro_words = len(re.sub(r"<[^>]+>", "", generated.get("intro_html", "")).split())
+        ref_count   = len(generated.get("references", []))
 
-        print(f"  ✓ Generated: {len(gen_sections)} sections, ~{total_words + intro_words} words")
+        print(f"  ✓ Generated: {len(gen_sections)} sections, ~{total_words + intro_words} words, {ref_count} references")
 
         # Build and write the filled HTML
         html    = build_filled_pillar_html(spec, generated, all_posts)
@@ -555,7 +651,7 @@ def main():
         print(f"    → output/blog/{slug}.html  ({len(html)//1024} KB)")
         filled.append(slug)
 
-        # Rate limit between pillars
+        # Pause between pillars
         if i < len(specs) - 1:
             print("    (waiting 3s before next pillar...)")
             time.sleep(3)
