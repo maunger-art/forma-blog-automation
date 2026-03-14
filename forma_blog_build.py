@@ -102,6 +102,7 @@ def load_manifest() -> list:
     posts = [
         p for p in all_posts
         if p.get("body_html") and p.get("status", "published") != "draft"
+        and p.get("type", "post") != "pillar"
     ]
     drafts = len(all_posts) - len(posts)
     print(f"✓ {len(posts)} posts loaded ({drafts} drafts skipped)")
