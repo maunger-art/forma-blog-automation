@@ -1,5 +1,72 @@
 [
   {
+    "slug": "how-to-prevent-running-injuries",
+    "title": "How to Prevent Running Injuries: A Practical Guide",
+    "date": "2026-03-27",
+    "category": "Recovery",
+    "status": "published",
+    "meta_description": "The complete guide to preventing running injuries. Load management, strength training, biomechanics and recovery for runners.",
+    "keywords": "running injury prevention, strength training runners, load management, running biomechanics",
+    "read_time": 10,
+    "toc_items": [],
+    "body_html": ""
+  },
+  {
+    "slug": "recovery-run-length-and-rest-days",
+    "title": "How Long Should a Recovery Run Be — and When to Take Rest Days",
+    "date": "2026-03-25",
+    "category": "Recovery",
+    "status": "published",
+    "meta_description": "The complete guide to recovery runs and rest days. Pace, duration, frequency and when to skip the run entirely.",
+    "keywords": "recovery run, recovery run pace, rest days, active recovery, endurance recovery",
+    "read_time": 10,
+    "toc_items": [],
+    "body_html": ""
+  },
+  {
+    "slug": "how-to-build-cycling-endurance",
+    "title": "How to Build Cycling Endurance: The Complete Guide",
+    "date": "2026-03-23",
+    "category": "Cycling",
+    "status": "published",
+    "meta_description": "The complete guide to building cycling endurance. FTP, training zones, base miles and polarised training for cyclists.",
+    "keywords": "cycling endurance, FTP, training zones, base miles, polarised training, cycling fitness",
+    "read_time": 10,
+    "toc_items": [],
+    "body_html": ""
+  },
+  {
+    "slug": "how-long-should-you-train-for-a-marathon",
+    "title": "How Long Should You Train for a Marathon",
+    "meta_description": "Everything endurance athletes need to know about how long should you train for a marathon.",
+    "category": "Performance",
+    "date": "2026-03-21",
+    "read_time": 6,
+    "keywords": "How long should you train for a marathon?",
+    "status": "published",
+    "body_html": "<p><em>Coming soon: How Long Should You Train for a Marathon</em></p>",
+    "toc_items": [],
+    "_queue_id": "paa-3cff4529",
+    "_cluster": "marathon-training",
+    "_composite_score": 6.4,
+    "tool_ctas": [
+      "pace-predictor",
+      "marathon-pace-calculator"
+    ]
+  },
+  {
+    "slug": "garmin-training-metrics-guide",
+    "title": "How to Get the Most Out of Your Garmin Training Metrics",
+    "date": "2026-03-20",
+    "category": "Wearables",
+    "status": "published",
+    "meta_description": "The complete guide to Garmin training metrics. Body Battery, Training Readiness, sleep score and HRV explained for endurance athletes.",
+    "keywords": "garmin training metrics, body battery, training readiness, garmin sleep score, garmin HRV",
+    "read_time": 10,
+    "toc_items": [],
+    "body_html": ""
+  },
+  {
     "slug": "how-slow-do-i-need-to-run-for-zone-2-the-complete-guide",
     "title": "How Slow Do I Need to Run for Zone 2? The Complete Guide",
     "date": "2026-03-18",
@@ -43,6 +110,18 @@
     ]
   },
   {
+    "slug": "how-to-manage-training-load-endurance-athletes",
+    "title": "How to Manage Training Load for Endurance Athletes",
+    "date": "2026-03-18",
+    "category": "Training Science",
+    "status": "published",
+    "meta_description": "The complete guide to managing training load. ATL, CTL, ACWR and TSB explained for runners and cyclists.",
+    "keywords": "training load, ATL, CTL, ACWR, TSB, training stress, overtraining prevention",
+    "read_time": 10,
+    "toc_items": [],
+    "body_html": ""
+  },
+  {
     "slug": "how-does-my-garmin-watch-know-that-i-am-stressed",
     "title": "How Does My Garmin Watch Know That I Am Stressed",
     "date": "2026-03-16",
@@ -78,6 +157,46 @@
     "_cluster": "garmin-wearable",
     "_composite_score": 7.0,
     "tool_ctas": [
+      "readiness-explainer"
+    ]
+  },
+  {
+    "slug": "why-is-my-garmin-training-readiness-always-low",
+    "title": "Why Is My Garmin Training Readiness Always Low?",
+    "date": "2026-03-16",
+    "category": "Wearables",
+    "meta_description": "Your Garmin training readiness stays low due to HRV baselines, sleep debt, and algorithm sensitivity. Learn what's really happening and how to respond.",
+    "keywords": "Garmin training readiness, heart rate variability, HRV training, recovery metrics, training status, sleep and recovery, adaptive training",
+    "read_time": 7,
+    "toc_items": [
+      {
+        "id": "understanding-training-readiness",
+        "text": "Understanding Training Readiness Algorithms"
+      },
+      {
+        "id": "hrv-baseline-problems",
+        "text": "The HRV Baseline Problem"
+      },
+      {
+        "id": "sleep-debt-accumulation",
+        "text": "Sleep Debt and Recovery Lag"
+      },
+      {
+        "id": "algorithm-sensitivity",
+        "text": "Why the Algorithm Errs Conservative"
+      },
+      {
+        "id": "responding-to-low-readiness",
+        "text": "How to Respond to Persistently Low Scores"
+      }
+    ],
+    "body_html": "<p>Your Garmin shows another low training readiness score, despite feeling fine. Yesterday's score was low too. So was last week's. If this sounds familiar, you're not alone — many serious athletes find themselves frustrated by consistently pessimistic readiness metrics that don't match their subjective sense of recovery.</p>\n\n<p>The issue isn't that your device is broken or that you're perpetually overtrained. Instead, <strong>training readiness algorithms face inherent challenges when applied to dedicated endurance athletes</strong> who train consistently at moderate to high volumes. Understanding these limitations helps you interpret the data more effectively and make better training decisions.</p>\n\n<h2 id=\"understanding-training-readiness\">Understanding Training Readiness Algorithms</h2>\n\n<p>Garmin's training readiness combines multiple physiological markers: <strong>heart rate variability (HRV), sleep quality, recovery time, and recent training load</strong>. The algorithm compares your current metrics against your historical baseline to generate a readiness score between 1-100.</p>\n\n<p>This approach works well in theory, but it assumes your body operates within predictable parameters. For athletes training 6-12 hours per week with structured workouts, several factors can skew these calculations toward consistently low scores.</p>\n\n<p>The algorithm weighs recent training stress heavily, often penalizing you for the very consistency that builds fitness. A challenging interval session followed by a tempo run might register as excessive stress accumulation, even if this represents normal training for your fitness level.</p>\n\n<h2 id=\"hrv-baseline-problems\">The HRV Baseline Problem</h2>\n\n<p>Heart rate variability forms the cornerstone of most readiness calculations, but <strong>HRV baselines can be surprisingly unstable</strong> for endurance athletes. Your baseline shifts with fitness adaptations, seasonal training phases, and even subtle lifestyle changes.</p>\n\n<p>During build phases, your HRV often decreases as your body adapts to increased training stress. The algorithm interprets this lower HRV as poor readiness, when it might actually indicate normal adaptation. Research shows that well-trained athletes can maintain performance despite HRV values that would suggest overreaching in less conditioned individuals.</p>\n\n<p>Environmental factors compound this issue. Travel, altitude changes, temperature variations, and even hydration status affect HRV measurements. If you live in a climate with seasonal temperature swings or travel frequently for work, your baseline becomes a moving target that the algorithm struggles to track accurately.</p>\n\n<p>The device also needs 3-4 weeks to establish a reliable baseline when you first start using it. During this period, readiness scores often skew low because the algorithm lacks sufficient data to understand your normal physiological patterns.</p>\n\n<h2 id=\"sleep-debt-accumulation\">Sleep Debt and Recovery Lag</h2>\n\n<p>Sleep metrics heavily influence training readiness, but <strong>sleep debt accumulates differently than the algorithm assumes</strong>. Missing 30 minutes of sleep for three consecutive nights creates a cumulative deficit that doesn't resolve with a single good night's rest.</p>\n\n<p>Most readiness algorithms evaluate recent sleep quality without accounting for longer-term sleep patterns. If you consistently sleep 6.5 hours instead of the recommended 7-8 hours, you may feel adapted to this schedule, but your readiness scores will remain depressed because your sleep consistently falls below optimal thresholds.</p>\n\n<p>Sleep architecture also matters more than total sleep time. Light sleepers who wake frequently may accumulate adequate sleep duration but poor sleep quality scores. The algorithm interprets this as insufficient recovery, even if you feel rested upon waking.</p>\n\n<p>Shift workers and parents face particular challenges here. Irregular sleep schedules prevent the algorithm from establishing consistent sleep patterns, leading to chronically low readiness scores that may not reflect actual recovery capacity.</p>\n\n<h2 id=\"algorithm-sensitivity\">Why the Algorithm Errs Conservative</h2>\n\n<p>Training readiness algorithms are designed to prevent overtraining rather than optimize performance. This conservative approach means <strong>the algorithm flags potential issues early, often before you feel any negative effects</strong>.</p>\n\n<p>For liability and user safety reasons, fitness devices err on the side of caution. The algorithm would rather suggest unnecessary rest than risk recommending training that could lead to injury or overreaching. This bias toward conservative recommendations becomes more pronounced as your training volume increases.</p>\n\n<p>The algorithm also struggles with individual variation in recovery capacity. Some athletes recover quickly from high-intensity sessions but need extra time after long aerobic efforts. Others show the opposite pattern. <strong>Generic algorithms can't account for these individual recovery signatures</strong>, leading to readiness scores that consistently underestimate your actual capacity.</p>\n\n<p>Research from exercise physiologists at the Australian Institute of Sport found that standardized recovery metrics showed poor correlation with actual performance capacity in elite endurance athletes, with individual variation explaining up to 40% of the discrepancy between predicted and actual readiness.</p>\n\n<h2 id=\"responding-to-low-readiness\">How to Respond to Persistently Low Scores</h2>\n\n<p>Consistently low training readiness doesn't necessarily mean you should skip workouts or reduce training load. Instead, <strong>use readiness scores as one data point among many</strong>, including subjective feelings, performance metrics, and planned training periodization.</p>\n\n<p>Pay attention to trends rather than daily fluctuations. If your readiness score drops from an average of 65 to 45 over several days, this suggests meaningful physiological stress. However, if your scores consistently hover around 50 but your workouts feel manageable and your performance remains stable, the algorithm may simply be miscalibrated for your individual physiology.</p>\n\n<p>Consider your training context when interpreting scores. Low readiness during a planned build phase may indicate the training stimulus is working as intended. The same score during a recovery week warrants more attention and possible training adjustments.</p>\n\n<p>Track correlations between readiness scores and actual performance. If low readiness consistently coincides with poor workout quality or increased perceived exertion, trust the metric. If the correlation is weak, weight subjective measures more heavily in your training decisions.</p>\n\n<p>Modern training is moving toward systems that learn your individual patterns rather than applying generic thresholds. <strong>Adaptive training platforms can recognize when low readiness scores don't correlate with actual performance capacity</strong>, adjusting recommendations based on your unique physiological signature rather than population averages. This personalized approach addresses many of the limitations inherent in one-size-fits-all readiness algorithms, helping you train optimally even when standard metrics suggest otherwise.</p>",
+    "status": "published",
+    "_queue_id": "paa-43a9de93",
+    "_cluster": "hrv-readiness",
+    "_composite_score": 7.3,
+    "tool_ctas": [
+      "hr zone calculator",
       "readiness-explainer"
     ]
   },
@@ -157,43 +276,21 @@
     "_composite_score": 6.7
   },
   {
-    "slug": "why-is-my-garmin-training-readiness-always-low",
-    "title": "Why Is My Garmin Training Readiness Always Low?",
-    "date": "2026-03-13",
-    "category": "Wearables",
-    "meta_description": "Your Garmin training readiness stays low due to HRV baselines, sleep debt, and algorithm sensitivity. Learn what's really happening and how to respond.",
-    "keywords": "Garmin training readiness, heart rate variability, HRV training, recovery metrics, training status, sleep and recovery, adaptive training",
-    "read_time": 7,
-    "toc_items": [
-      {
-        "id": "understanding-training-readiness",
-        "text": "Understanding Training Readiness Algorithms"
-      },
-      {
-        "id": "hrv-baseline-problems",
-        "text": "The HRV Baseline Problem"
-      },
-      {
-        "id": "sleep-debt-accumulation",
-        "text": "Sleep Debt and Recovery Lag"
-      },
-      {
-        "id": "algorithm-sensitivity",
-        "text": "Why the Algorithm Errs Conservative"
-      },
-      {
-        "id": "responding-to-low-readiness",
-        "text": "How to Respond to Persistently Low Scores"
-      }
-    ],
-    "body_html": "<p>Your Garmin shows another low training readiness score, despite feeling fine. Yesterday's score was low too. So was last week's. If this sounds familiar, you're not alone — many serious athletes find themselves frustrated by consistently pessimistic readiness metrics that don't match their subjective sense of recovery.</p>\n\n<p>The issue isn't that your device is broken or that you're perpetually overtrained. Instead, <strong>training readiness algorithms face inherent challenges when applied to dedicated endurance athletes</strong> who train consistently at moderate to high volumes. Understanding these limitations helps you interpret the data more effectively and make better training decisions.</p>\n\n<h2 id=\"understanding-training-readiness\">Understanding Training Readiness Algorithms</h2>\n\n<p>Garmin's training readiness combines multiple physiological markers: <strong>heart rate variability (HRV), sleep quality, recovery time, and recent training load</strong>. The algorithm compares your current metrics against your historical baseline to generate a readiness score between 1-100.</p>\n\n<p>This approach works well in theory, but it assumes your body operates within predictable parameters. For athletes training 6-12 hours per week with structured workouts, several factors can skew these calculations toward consistently low scores.</p>\n\n<p>The algorithm weighs recent training stress heavily, often penalizing you for the very consistency that builds fitness. A challenging interval session followed by a tempo run might register as excessive stress accumulation, even if this represents normal training for your fitness level.</p>\n\n<h2 id=\"hrv-baseline-problems\">The HRV Baseline Problem</h2>\n\n<p>Heart rate variability forms the cornerstone of most readiness calculations, but <strong>HRV baselines can be surprisingly unstable</strong> for endurance athletes. Your baseline shifts with fitness adaptations, seasonal training phases, and even subtle lifestyle changes.</p>\n\n<p>During build phases, your HRV often decreases as your body adapts to increased training stress. The algorithm interprets this lower HRV as poor readiness, when it might actually indicate normal adaptation. Research shows that well-trained athletes can maintain performance despite HRV values that would suggest overreaching in less conditioned individuals.</p>\n\n<p>Environmental factors compound this issue. Travel, altitude changes, temperature variations, and even hydration status affect HRV measurements. If you live in a climate with seasonal temperature swings or travel frequently for work, your baseline becomes a moving target that the algorithm struggles to track accurately.</p>\n\n<p>The device also needs 3-4 weeks to establish a reliable baseline when you first start using it. During this period, readiness scores often skew low because the algorithm lacks sufficient data to understand your normal physiological patterns.</p>\n\n<h2 id=\"sleep-debt-accumulation\">Sleep Debt and Recovery Lag</h2>\n\n<p>Sleep metrics heavily influence training readiness, but <strong>sleep debt accumulates differently than the algorithm assumes</strong>. Missing 30 minutes of sleep for three consecutive nights creates a cumulative deficit that doesn't resolve with a single good night's rest.</p>\n\n<p>Most readiness algorithms evaluate recent sleep quality without accounting for longer-term sleep patterns. If you consistently sleep 6.5 hours instead of the recommended 7-8 hours, you may feel adapted to this schedule, but your readiness scores will remain depressed because your sleep consistently falls below optimal thresholds.</p>\n\n<p>Sleep architecture also matters more than total sleep time. Light sleepers who wake frequently may accumulate adequate sleep duration but poor sleep quality scores. The algorithm interprets this as insufficient recovery, even if you feel rested upon waking.</p>\n\n<p>Shift workers and parents face particular challenges here. Irregular sleep schedules prevent the algorithm from establishing consistent sleep patterns, leading to chronically low readiness scores that may not reflect actual recovery capacity.</p>\n\n<h2 id=\"algorithm-sensitivity\">Why the Algorithm Errs Conservative</h2>\n\n<p>Training readiness algorithms are designed to prevent overtraining rather than optimize performance. This conservative approach means <strong>the algorithm flags potential issues early, often before you feel any negative effects</strong>.</p>\n\n<p>For liability and user safety reasons, fitness devices err on the side of caution. The algorithm would rather suggest unnecessary rest than risk recommending training that could lead to injury or overreaching. This bias toward conservative recommendations becomes more pronounced as your training volume increases.</p>\n\n<p>The algorithm also struggles with individual variation in recovery capacity. Some athletes recover quickly from high-intensity sessions but need extra time after long aerobic efforts. Others show the opposite pattern. <strong>Generic algorithms can't account for these individual recovery signatures</strong>, leading to readiness scores that consistently underestimate your actual capacity.</p>\n\n<p>Research from exercise physiologists at the Australian Institute of Sport found that standardized recovery metrics showed poor correlation with actual performance capacity in elite endurance athletes, with individual variation explaining up to 40% of the discrepancy between predicted and actual readiness.</p>\n\n<h2 id=\"responding-to-low-readiness\">How to Respond to Persistently Low Scores</h2>\n\n<p>Consistently low training readiness doesn't necessarily mean you should skip workouts or reduce training load. Instead, <strong>use readiness scores as one data point among many</strong>, including subjective feelings, performance metrics, and planned training periodization.</p>\n\n<p>Pay attention to trends rather than daily fluctuations. If your readiness score drops from an average of 65 to 45 over several days, this suggests meaningful physiological stress. However, if your scores consistently hover around 50 but your workouts feel manageable and your performance remains stable, the algorithm may simply be miscalibrated for your individual physiology.</p>\n\n<p>Consider your training context when interpreting scores. Low readiness during a planned build phase may indicate the training stimulus is working as intended. The same score during a recovery week warrants more attention and possible training adjustments.</p>\n\n<p>Track correlations between readiness scores and actual performance. If low readiness consistently coincides with poor workout quality or increased perceived exertion, trust the metric. If the correlation is weak, weight subjective measures more heavily in your training decisions.</p>\n\n<p>Modern training is moving toward systems that learn your individual patterns rather than applying generic thresholds. <strong>Adaptive training platforms can recognize when low readiness scores don't correlate with actual performance capacity</strong>, adjusting recommendations based on your unique physiological signature rather than population averages. This personalized approach addresses many of the limitations inherent in one-size-fits-all readiness algorithms, helping you train optimally even when standard metrics suggest otherwise.</p>",
+    "slug": "how-slow-do-i-need-to-run-for-zone-2",
+    "title": "How Slow Do I Need to Run for Zone 2",
+    "meta_description": "Everything endurance athletes need to know about how slow do i need to run for zone 2.",
+    "category": "Training Science",
+    "date": "2026-03-14",
+    "read_time": 6,
+    "keywords": "How slow do I need to run for zone 2?",
     "status": "published",
-    "_queue_id": "paa-43a9de93",
-    "_cluster": "hrv-readiness",
-    "_composite_score": 7.3,
+    "body_html": "<p><em>Coming soon: How Slow Do I Need to Run for Zone 2</em></p>",
+    "toc_items": [],
+    "_queue_id": "paa-99fb3e10",
+    "_cluster": "zone-2-training",
+    "_composite_score": 6.9,
     "tool_ctas": [
-      "hr zone calculator",
-      "readiness-explainer"
+      "zone2 calculator"
     ]
   },
   {
@@ -279,24 +376,6 @@
     "tool_ctas": [
       "hr zone calculator",
       "readiness-explainer"
-    ]
-  },
-  {
-    "slug": "how-slow-do-i-need-to-run-for-zone-2",
-    "title": "How Slow Do I Need to Run for Zone 2",
-    "meta_description": "Everything endurance athletes need to know about how slow do i need to run for zone 2.",
-    "category": "Training Science",
-    "date": "2026-03-12",
-    "read_time": 6,
-    "keywords": "How slow do I need to run for zone 2?",
-    "status": "draft",
-    "body_html": "<p><em>Coming soon: How Slow Do I Need to Run for Zone 2</em></p>",
-    "toc_items": [],
-    "_queue_id": "paa-99fb3e10",
-    "_cluster": "zone-2-training",
-    "_composite_score": 6.9,
-    "tool_ctas": [
-      "zone2 calculator"
     ]
   },
   {
@@ -485,25 +564,6 @@
     "tool_ctas": [
       "zone2 calculator",
       "training-load-calculator"
-    ]
-  },
-  {
-    "slug": "how-long-should-you-train-for-a-marathon",
-    "title": "How Long Should You Train for a Marathon",
-    "meta_description": "Everything endurance athletes need to know about how long should you train for a marathon.",
-    "category": "Performance",
-    "date": "2026-03-12",
-    "read_time": 6,
-    "keywords": "How long should you train for a marathon?",
-    "status": "draft",
-    "body_html": "<p><em>Coming soon: How Long Should You Train for a Marathon</em></p>",
-    "toc_items": [],
-    "_queue_id": "paa-3cff4529",
-    "_cluster": "marathon-training",
-    "_composite_score": 6.4,
-    "tool_ctas": [
-      "pace-predictor",
-      "marathon-pace-calculator"
     ]
   },
   {
