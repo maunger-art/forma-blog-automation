@@ -82,7 +82,7 @@ def cat_style(cat: str):
 def fmt_date(d: str) -> str:
     try:
         dt = datetime.strptime(d[:10], "%Y-%m-%d")
-        return dt.strftime("%B %Y").upper()
+        return dt.strftime("%-d %b %Y")
     except Exception:
         return d.upper() if d else "2026"
 
