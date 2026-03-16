@@ -674,3 +674,53 @@ Here's a framework that works for most recreational endurance athletes:
 - **Trust perceived readiness too.** A 2021 study in the *International Journal of Sports Physiology and Performance* found that subjective wellness questionnaires predicted training response nearly as well as HRV in trained athletes.
 
 No wearable fully models recovery. Your watch approximates physiology with optical sensors and proprietary algorithms. That's useful — but it's not a coach. The best approach is triangulating the data: Garmin metrics, subjective feel, and the structure of your training plan working together. That's exactly how an adaptive training system should work — treating wearable data as an input, not an oracle.
+
+
+---
+
+## 11. How to Build Marathon Fitness Without Burning Out | Training Science
+
+## The counterintuitive truth about marathon training
+
+The single biggest predictor of marathon performance isn't your longest run or your VO₂max. It's consistency — specifically, the number of weeks you train without interruption. A 2019 analysis of over 500 recreational marathoners found that those who completed more than 90% of planned sessions finished an average of 19 minutes faster than those who completed fewer than 75%, regardless of the plan itself.
+
+The implication is uncomfortable: the best thing you can do for your marathon is not train harder. It's avoid the injury, illness, or motivation collapse that kills your streak. That reframes the entire problem. You're not trying to maximize any single workout. You're trying to stay in the game for 16–20 weeks straight.
+
+## Why most marathon plans create burnout
+
+Traditional 16-week marathon plans ramp weekly volume by roughly 10% per week while simultaneously layering in tempo runs, long intervals, and progressively longer weekend runs. For someone training 5–10 hours per week, this means you're adding both volume and intensity at the same time — a combination that research consistently links to overtraining syndrome.
+
+A 2020 study in the International Journal of Sports Physiology and Performance tracked training load and mood disturbance in 30 recreational runners during marathon prep. The athletes who reported the highest burnout scores weren't those with the most total mileage. They were those with the steepest week-to-week jumps in session RPE — essentially, the ones whose training got dramatically harder before their bodies adapted.
+
+The mechanism is straightforward. Every hard session creates a dose of physiological stress. Adaptation happens during the recovery window. If you stack hard sessions before that window closes, you accumulate fatigue faster than fitness. After a few weeks, you're running on fumes, your HRV trends downward, sleep quality drops, and you start dreading your alarm.
+
+## The 80/20 rule, applied correctly
+
+Polarized training — roughly 80% of sessions at low intensity, 20% at moderate-to-high intensity — has strong evidence behind it for endurance athletes at every level. But most runners misapply it. They count sessions rather than time, and they run their easy days too fast.
+
+Here's a concrete example. Say you run five days per week, totaling seven hours. Under a properly polarized model:
+
+- **5 hours 36 minutes** should be genuinely easy — nose-breathing pace, conversational, typically 60–75% of max heart rate. For many runners, this means slowing down by 30–60 seconds per kilometer from what feels "easy."
+- **1 hour 24 minutes** can be hard — threshold work, intervals, or fast-finish long runs.
+
+That leaves zero room for "moderate" efforts — the tempo-ish, grey-zone runs that feel productive but accumulate more fatigue per unit of fitness gained. Cutting these is the single highest-leverage change most 5–10 hour per week athletes can make.
+
+## Periodize load, not just mileage
+
+Volume (kilometers per week) is only one axis of training stress. The other is intensity. A smarter approach separates them into blocks:
+
+1. **Weeks 1–6: Base phase.** Build to your target weekly volume with almost entirely easy running. Add no more than 15–20 minutes per week. Keep hard sessions to short strides or hill sprints — neuromuscular work that doesn't tax the aerobic system heavily.
+2. **Weeks 7–12: Development phase.** Volume holds steady. Introduce one structured workout per week — threshold intervals, cruise intervals, or progression runs. Add a second quality session only if HRV and subjective fatigue remain stable.
+3. **Weeks 13–16+: Specific phase.** Volume drops 10–15%. Intensity becomes race-specific: marathon-pace segments inside long runs, longer threshold efforts. The reduction in volume creates the headroom for harder work without increasing total load.
+
+This structure means you never increase volume and intensity in the same week. That single constraint prevents most of the burnout cascades that derail marathon blocks.
+
+## Monitor the signals that matter
+
+Resting heart rate and HRV trends over 7-day rolling averages are more useful than any single-day reading. A sustained HRV drop of more than 10% from your baseline, combined with a resting heart rate increase of 3–5 bpm, is a reliable early warning. When you see it, the correct response is an extra easy day or a rest day — not pushing through.
+
+Subjective metrics matter too. Rate your energy, motivation, and sleep quality on a 1–5 scale each morning. If the 7-day average on any of these drops below 3, treat it with the same seriousness as a heart rate flag.
+
+## Practical takeaway
+
+Before your next marathon block, set one non-negotiable rule: never increase weekly volume and weekly intensity in the same seven-day period. Build volume first on easy effort. Add intensity only after volume stabilizes. Track your HRV trend and subjective readiness weekly, and respond to downward trends within 48 hours. The goal isn't to find your limit — it's to stay just below it for four months straight. That's what actually produces a fast marathon.
