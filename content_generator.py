@@ -59,13 +59,25 @@ def slugify(text: str) -> str:
     return re.sub(r"-+", "-", text)[:80].strip("-")
 
 
-def next_pub_dates(n: int) -> list[str]:
-    """Return the next n publishing dates (Mon/Wed/Fri/Sat)."""
+def next_pub_dates(n: int, manifest: list[dict] | None = None) -> list[str]:
+    """Return the next n publishing dates (Mon/Wed/Fri/Sat).
+    Skips dates already occupied by a published post to prevent collisions."""
+    # Build set of already-used dates
+    used_dates: set[str] = set()
+    if manifest:
+        used_dates = {
+            p.get("date", "") for p in manifest
+            if p.get("status") == "published" and p.get("date")
+        }
+
     dates = []
     d = date.today()
     while len(dates) < n:
         if d.weekday() in PUB_DAYS:
-            dates.append(d.isoformat())
+            iso = d.isoformat()
+            if iso not in used_dates:
+                dates.append(iso)
+                used_dates.add(iso)  # prevent duplicates within this batch
         d += timedelta(days=1)
     return dates
 
@@ -276,7 +288,7 @@ def main():
         print("\n  No unassigned questions available — queue may be empty or all assigned")
         return
 
-    pub_dates = next_pub_dates(len(selected))
+    pub_dates = next_pub_dates(len(selected), manifest=load_manifest())
 
     print(f"\n  {len(selected)} questions selected for generation:")
     for i, (q, d) in enumerate(zip(selected, pub_dates)):
