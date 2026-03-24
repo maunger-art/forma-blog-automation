@@ -38,7 +38,7 @@ LOGO_SVG = """<svg width="200" height="44" viewBox="0 0 200 44" fill="none" xmln
   <rect x="0" y="18.5" width="21" height="7" fill="#1A6B4A"/>
   <polygon points="33,44 39,44 46,28 40,28" fill="#1A6B4A"/>
   <polygon points="38,44 42,44 49,28 45,28" fill="#1A6B4A" opacity="0.22"/>
-  <text x="60" y="33" font-family="Oxanium, monospace" font-weight="800" font-size="28" fill="#0F1117" letter-spacing="1">FORMA</text>
+  <text x="60" y="33" font-family="Oxanium, monospace" font-weight="300" font-size="28" fill="#0F1117" letter-spacing="1">FORMA</text>
 </svg>"""
 
 LOGO_SVG_WHITE = """<svg width="200" height="44" viewBox="0 0 200 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@ LOGO_SVG_WHITE = """<svg width="200" height="44" viewBox="0 0 200 44" fill="none
   <rect x="0" y="18.5" width="21" height="7" fill="white"/>
   <polygon points="33,44 39,44 46,28 40,28" fill="white"/>
   <polygon points="38,44 42,44 49,28 45,28" fill="white" opacity="0.22"/>
-  <text x="60" y="33" font-family="Oxanium, monospace" font-weight="800" font-size="28" fill="white" letter-spacing="1">FORMA</text>
+  <text x="60" y="33" font-family="Oxanium, monospace" font-weight="300" font-size="28" fill="white" letter-spacing="1">FORMA</text>
 </svg>"""
 
 CATEGORY_STYLES = {
@@ -113,6 +113,7 @@ def load_manifest() -> list:
 def NAV(active="blog"):
     links = [("Features", f"{SITE_URL}/features",  "features"),
              ("Pricing",  f"{SITE_URL}/pricing",   "pricing"),
+             ("Tools",    f"{SITE_URL}/tools",     "tools"),
              ("Blog",     BLOG_URL,                 "blog"),
              ("Help",     f"{SITE_URL}/help",       "help")]
     items = []
@@ -129,7 +130,7 @@ def NAV(active="blog"):
     <a class="nav-logo" href="{SITE_URL}">{LOGO_SVG}</a>
     <ul class="nav-links">{lis}</ul>
     <a href="{SITE_URL}/login" class="btn-login">Log in</a>
-    <a href="{SITE_URL}/pricing" class="btn-start">Start free</a>
+    <a href="{SITE_URL}/pricing" class="btn-start">Join beta</a>
     <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
@@ -147,7 +148,7 @@ def NAV(active="blog"):
       {drawer_links}
     </nav>
     <div class="drawer-cta">
-      <a href="{SITE_URL}/pricing" class="drawer-btn-start">Start free</a>
+      <a href="{SITE_URL}/pricing" class="drawer-btn-start">Join beta</a>
       <a href="{SITE_URL}/login" class="drawer-btn-login">Log in</a>
     </div>
   </div>
