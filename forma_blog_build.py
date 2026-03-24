@@ -378,7 +378,13 @@ footer { background: var(--ink); padding: 64px 32px 40px; }
 .related-card .tag { font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.06em; color: var(--green); margin-bottom: 8px; }
 .related-card h3 { font-size: 0.9rem; font-weight: 600; color: var(--ink); line-height: 1.45; }
+.embedded #site-nav,.embedded .nav-drawer,.embedded .nav-overlay{display:none!important;}
 """
+
+EMBEDDED_HEAD_SCRIPT = (
+    "<script>if(new URLSearchParams(location.search).get('embedded')==='true')"
+    "{document.documentElement.classList.add('embedded');}</script>\n"
+)
 
 # ── C: Sitemap ────────────────────────────────────────────────────────────────
 def build_sitemap(all_posts: list) -> str:
@@ -857,6 +863,7 @@ def build_pillar_html(spec, all_posts, font_css, link_map=None):
         f"{BRAND_CSS}\n"
         f"{pillar_css}\n"
         "</style>\n"
+        f"{EMBEDDED_HEAD_SCRIPT}"
         "</head>\n"
         "<body>\n"
         f"{NAV()}\n"
@@ -966,7 +973,7 @@ def build_post_html(post: dict, all_posts: list, font_css: str, link_map: dict =
 {font_css}
 {BRAND_CSS}
   </style>
-</head>
+{EMBEDDED_HEAD_SCRIPT}</head>
 <body>
 {NAV()}
 <header class="article-hero">
@@ -1105,7 +1112,7 @@ def build_blog_index(all_posts: list, font_css: str) -> str:
   border: none; cursor: pointer; transition: background 0.15s; white-space: nowrap; }}
 .subscribe-form button:hover {{ background: var(--green-mid); }}
   </style>
-</head>
+{EMBEDDED_HEAD_SCRIPT}</head>
 <body>
 {NAV("blog")}
 <div class="blog-hero">
