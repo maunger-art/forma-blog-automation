@@ -13,6 +13,11 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Blog","name":"Forma Training Blog","url":"https://formafit.co.uk/blog","publisher":{"@type":"Organization","name":"AMTR Health Ltd","url":"https://formafit.co.uk"}}
   </script>
+  <script>
+  if (new URLSearchParams(location.search).get('embedded') === 'true') {
+    document.documentElement.classList.add('embedded');
+  }
+  </script>
   <style>
 @font-face {
   font-family: 'Oxanium';
@@ -125,6 +130,13 @@ footer { background: var(--ink); padding: 40px 24px; }
 .blog-grid-section { max-width:1100px; margin:56px auto; padding:0 24px 80px; }
 .blog-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
 @media(max-width:640px){ .blog-grid { grid-template-columns:1fr; } }
+
+.embedded nav,
+.embedded header,
+.embedded .nav,
+.embedded .navbar {
+  display: none !important;
+}
   </style>
 </head>
 <body>
