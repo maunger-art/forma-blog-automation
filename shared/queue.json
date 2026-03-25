@@ -241,9 +241,9 @@
     "cluster": "recovery-sleep",
     "content_type": "research",
     "composite_score": 6.4,
-    "status": "unassigned",
-    "assigned_to": null,
-    "due_date": null,
+    "status": "assigned",
+    "assigned_to": "content_generator",
+    "due_date": "2026-03-25",
     "published_url": null
   },
   {
