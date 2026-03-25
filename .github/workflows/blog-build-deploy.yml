@@ -12,6 +12,9 @@ on:
       - 'sync_blog_sources.py'
       - '.github/workflows/blog-build-deploy.yml'
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Generate and Publish New Blog Post", "Generate and publish posts"]
+    types: [completed]
 
 permissions:
   contents: read
