@@ -5,8 +5,15 @@
     <link>https://blog.formafit.co.uk</link>
     <description>Science-backed writing on HRV, recovery and adaptive endurance training.</description>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 -0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 -0000</lastBuildDate>
     <atom:link href="https://blog.formafit.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>How Many Kilometers is a Recovery Run? The Science-Based Guide</title>
+    <link>https://blog.formafit.co.uk/blog/how-many-kilometers-is-a-recovery-run-the-science-based-guide.html</link>
+    <description>Discover the optimal distance for recovery runs based on training science. Learn why 20-40% of your normal run distance maximizes adaptation without stress.</description>
+    <pubDate>Wed, 25 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/how-many-kilometers-is-a-recovery-run-the-science-based-guide.html</guid>
+  </item>
   <item>
     <title>How Slow Do I Need to Run for Zone 2? The Complete Guide</title>
     <link>https://blog.formafit.co.uk/blog/how-slow-do-i-need-to-run-for-zone-2-the-complete-guide.html</link>
@@ -22,6 +29,20 @@
     <guid isPermaLink="true">https://blog.formafit.co.uk/blog/how-does-my-garmin-watch-know-that-i-am-stressed.html</guid>
   </item>
   <item>
+    <title>How Good is Cycling for Endurance: Power Zones &amp; FTP</title>
+    <link>https://blog.formafit.co.uk/blog/how-good-is-cycling-for-endurance-power-zones-ftp.html</link>
+    <description>Cycling builds exceptional endurance through sustained power output and efficient training zones. Learn how FTP and power-based training optimize your development.</description>
+    <pubDate>Mon, 16 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/how-good-is-cycling-for-endurance-power-zones-ftp.html</guid>
+  </item>
+  <item>
+    <title>How to Build Marathon Fitness Without Burning Out | Training Science</title>
+    <link>https://blog.formafit.co.uk/blog/build-marathon-fitness-without-burning-out.html</link>
+    <description>Most marathon plans push too hard too early. Learn the research-backed approach to building marathon fitness on 5–10 hours per week without overtraining or burnout.</description>
+    <pubDate>Mon, 16 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/build-marathon-fitness-without-burning-out.html</guid>
+  </item>
+  <item>
     <title>How Hard is it to Get a 100 Sleep Score in Garmin?</title>
     <link>https://blog.formafit.co.uk/blog/how-hard-is-it-to-get-a-100-sleep-score-in-garmin.html</link>
     <description>Getting a perfect 100 sleep score on Garmin requires understanding how the algorithm weighs duration, deep sleep, and recovery metrics.</description>
@@ -29,11 +50,11 @@
     <guid isPermaLink="true">https://blog.formafit.co.uk/blog/how-hard-is-it-to-get-a-100-sleep-score-in-garmin.html</guid>
   </item>
   <item>
-    <title>Why Is My Garmin Training Readiness Always Low?</title>
-    <link>https://blog.formafit.co.uk/blog/why-is-my-garmin-training-readiness-always-low.html</link>
-    <description>Your Garmin training readiness stays low due to HRV baselines, sleep debt, and algorithm sensitivity. Learn what's really happening and how to respond.</description>
-    <pubDate>Fri, 13 Mar 2026 00:00:00 -0000</pubDate>
-    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/why-is-my-garmin-training-readiness-always-low.html</guid>
+    <title>Why is My HRV So Low? Understanding Heart Rate Variability</title>
+    <link>https://blog.formafit.co.uk/blog/why-is-my-hrv-so-low-understanding-heart-rate-variability.html</link>
+    <description>Low HRV doesn't always mean poor fitness. Learn what affects heart rate variability and when to adjust your training based on HRV trends.</description>
+    <pubDate>Sat, 14 Mar 2026 00:00:00 -0000</pubDate>
+    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/why-is-my-hrv-so-low-understanding-heart-rate-variability.html</guid>
   </item>
   <item>
     <title>How Fast Does Zone 2 Pace Improve? Real Timeline Data</title>
@@ -76,34 +97,6 @@
     <description>Most runners train too hard on easy days, blunting adaptation and accumulating fatigue. Learn what easy really means and why Zone 2 is your biggest performance lever.</description>
     <pubDate>Tue, 03 Feb 2026 00:00:00 -0000</pubDate>
     <guid isPermaLink="true">https://blog.formafit.co.uk/blog/easy-runs-too-hard-killing-gains.html</guid>
-  </item>
-  <item>
-    <title>The Science of Adaptive Training for Endurance Athletes</title>
-    <link>https://blog.formafit.co.uk/blog/science-of-adaptive-training.html</link>
-    <description>Discover how adaptive training uses HRV, sleep and recovery signals to optimise every workout. Why physiology-driven plans outperform fixed schedules.</description>
-    <pubDate>Fri, 13 Mar 2026 00:00:00 -0000</pubDate>
-    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/science-of-adaptive-training.html</guid>
-  </item>
-  <item>
-    <title>Training Load Management: ATL, CTL and the ACWR Explained</title>
-    <link>https://blog.formafit.co.uk/blog/training-load-management-atl-ctl-acwr.html</link>
-    <description>ATL, CTL and ACWR explained for runners and cyclists. Learn how managing your acute-to-chronic workload ratio reduces injury risk and builds peak fitness.</description>
-    <pubDate>Fri, 13 Mar 2026 00:00:00 -0000</pubDate>
-    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/training-load-management-atl-ctl-acwr.html</guid>
-  </item>
-  <item>
-    <title>Garmin vs Oura vs WHOOP: Which Wearable Data Should You Trust?</title>
-    <link>https://blog.formafit.co.uk/blog/garmin-vs-oura-vs-whoop-wearable-data.html</link>
-    <description>Garmin, Oura and WHOOP compared for endurance athletes. Which wearable gives the most reliable HRV and recovery data? What the numbers actually mean.</description>
-    <pubDate>Fri, 13 Mar 2026 00:00:00 -0000</pubDate>
-    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/garmin-vs-oura-vs-whoop-wearable-data.html</guid>
-  </item>
-  <item>
-    <title>The Athlete's Paradox: Why Training More Doesn't Mean Performing Better</title>
-    <link>https://blog.formafit.co.uk/blog/athletes-paradox-why-more-training-isnt-better.html</link>
-    <description>More miles, more intervals — but better results? The science behind why recovery builds fitness, and why the best athletes train less than you think.</description>
-    <pubDate>Fri, 13 Mar 2026 00:00:00 -0000</pubDate>
-    <guid isPermaLink="true">https://blog.formafit.co.uk/blog/athletes-paradox-why-more-training-isnt-better.html</guid>
   </item>
   </channel>
 </rss>
