@@ -1,14 +1,14 @@
 [
   {
-    "kept": "autosugg-d959ff21",
-    "merged": "autosugg-28874476",
-    "similarity": 0.8333,
-    "method": "fuzzy"
-  },
-  {
     "kept": "autosugg-0777ddb3",
     "merged": "autosugg-c9d184d1",
     "similarity": 0.8,
+    "method": "fuzzy"
+  },
+  {
+    "kept": "autosugg-d959ff21",
+    "merged": "autosugg-28874476",
+    "similarity": 0.8333,
     "method": "fuzzy"
   },
   {
