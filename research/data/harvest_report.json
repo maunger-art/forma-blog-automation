@@ -1,6 +1,6 @@
 {
-  "run_id": "2026-03-30-weekly",
-  "run_at": "2026-03-30T06:53:10Z",
+  "run_id": "2026-04-06-weekly",
+  "run_at": "2026-04-06T06:55:01Z",
   "collection": {
     "reddit": 13,
     "autosuggest": 85,
@@ -36,9 +36,9 @@
     }
   },
   "queue": {
-    "total_queued": 96,
-    "new_this_run": 13,
-    "assigned": 21,
+    "total_queued": 97,
+    "new_this_run": 1,
+    "assigned": 25,
     "in_progress": 0,
     "published": 0
   }
