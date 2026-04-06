@@ -332,9 +332,9 @@
     "cluster": "hrv-readiness",
     "content_type": "article",
     "composite_score": 6.2,
-    "status": "unassigned",
-    "assigned_to": null,
-    "due_date": null,
+    "status": "assigned",
+    "assigned_to": "content_generator",
+    "due_date": "2026-04-06",
     "published_url": null
   },
   {
@@ -899,8 +899,8 @@
   {
     "rank": 70,
     "question_id": "reddit-8057676d",
-    "question_text": "What\u2019s a guy gotta do to get a high anaerobic benefit?",
-    "suggested_title": "What\u2019s a Guy Gotta Do to Get a High Anaerobic Benefit",
+    "question_text": "What’s a guy gotta do to get a high anaerobic benefit?",
+    "suggested_title": "What’s a Guy Gotta Do to Get a High Anaerobic Benefit",
     "cluster": "training-load",
     "content_type": "article",
     "composite_score": 5.5,
