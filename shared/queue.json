@@ -27,6 +27,19 @@
   },
   {
     "rank": 3,
+    "question_id": "paa-88995fdc",
+    "question_text": "Why is my training readiness so low on Garmin?",
+    "suggested_title": "Why is My Training Readiness So Low on Garmin",
+    "cluster": "hrv-readiness",
+    "content_type": "article",
+    "composite_score": 7.3,
+    "status": "unassigned",
+    "assigned_to": null,
+    "due_date": null,
+    "published_url": null
+  },
+  {
+    "rank": 4,
     "question_id": "paa-10365ac1",
     "question_text": "How does my Garmin watch know that I am stressed?",
     "suggested_title": "How Does My Garmin Watch Know That I Am Stressed",
@@ -39,7 +52,7 @@
     "published_url": null
   },
   {
-    "rank": 4,
+    "rank": 5,
     "question_id": "paa-99fb3e10",
     "question_text": "How slow do I need to run for zone 2?",
     "suggested_title": "How Slow Do I Need to Run for Zone 2",
@@ -52,7 +65,7 @@
     "published_url": null
   },
   {
-    "rank": 5,
+    "rank": 6,
     "question_id": "paa-a812da17",
     "question_text": "How fast does zone 2 pace improve?",
     "suggested_title": "How Fast Does Zone 2 Pace Improve",
@@ -65,7 +78,7 @@
     "published_url": null
   },
   {
-    "rank": 6,
+    "rank": 7,
     "question_id": "paa-216b142e",
     "question_text": "How do you train to improve HRV?",
     "suggested_title": "How Do You Train to Improve HRV",
@@ -78,7 +91,7 @@
     "published_url": null
   },
   {
-    "rank": 7,
+    "rank": 8,
     "question_id": "paa-19ef252d",
     "question_text": "How can I improve my cycling endurance?",
     "suggested_title": "How Can I Improve My Cycling Endurance",
@@ -91,7 +104,20 @@
     "published_url": null
   },
   {
-    "rank": 8,
+    "rank": 9,
+    "question_id": "paa-06e21b37",
+    "question_text": "Is 70 a good sleep score for Garmin?",
+    "suggested_title": "70 a Good Sleep Score for Garmin: is It?",
+    "cluster": "garmin-wearable",
+    "content_type": "article",
+    "composite_score": 6.8,
+    "status": "unassigned",
+    "assigned_to": null,
+    "due_date": null,
+    "published_url": null
+  },
+  {
+    "rank": 10,
     "question_id": "paa-534f379e",
     "question_text": "Why is my HRV so low?",
     "suggested_title": "Why is My HRV So Low",
@@ -104,7 +130,7 @@
     "published_url": null
   },
   {
-    "rank": 9,
+    "rank": 11,
     "question_id": "paa-18e1f3d4",
     "question_text": "Why is my readiness score so low?",
     "suggested_title": "Why is My Readiness Score So Low",
@@ -117,7 +143,7 @@
     "published_url": null
   },
   {
-    "rank": 10,
+    "rank": 12,
     "question_id": "paa-5c612a32",
     "question_text": "Is zone 2 or 3 better for heart health?",
     "suggested_title": "Zone 2 or 3 Better for Heart Health: is It?",
@@ -130,7 +156,7 @@
     "published_url": null
   },
   {
-    "rank": 11,
+    "rank": 13,
     "question_id": "paa-ca1357fa",
     "question_text": "Can walking improve your aerobic base?",
     "suggested_title": "Can Walking Improve Your Aerobic Base",
@@ -143,7 +169,7 @@
     "published_url": null
   },
   {
-    "rank": 12,
+    "rank": 14,
     "question_id": "paa-f0d5d344",
     "question_text": "Is a recovery run better than rest?",
     "suggested_title": "A Recovery Run Better Than Rest: is It?",
@@ -156,7 +182,7 @@
     "published_url": null
   },
   {
-    "rank": 13,
+    "rank": 15,
     "question_id": "paa-27a718e5",
     "question_text": "How long should I train for zone 2?",
     "suggested_title": "How Long Should I Train for Zone 2",
@@ -169,7 +195,7 @@
     "published_url": null
   },
   {
-    "rank": 14,
+    "rank": 16,
     "question_id": "paa-0bad901c",
     "question_text": "How do I know my zone 2?",
     "suggested_title": "How Do I Know My Zone 2",
@@ -182,7 +208,7 @@
     "published_url": null
   },
   {
-    "rank": 15,
+    "rank": 17,
     "question_id": "paa-2bd9eb8c",
     "question_text": "How long does it take to build up an aerobic base?",
     "suggested_title": "How Long Does it Take to Build up an Aerobic Base",
@@ -195,7 +221,7 @@
     "published_url": null
   },
   {
-    "rank": 16,
+    "rank": 18,
     "question_id": "paa-b3bd889f",
     "question_text": "How much zone 2 to build an aerobic base?",
     "suggested_title": "How Much Zone 2 to Build an Aerobic Base",
@@ -208,7 +234,7 @@
     "published_url": null
   },
   {
-    "rank": 17,
+    "rank": 19,
     "question_id": "paa-3cff4529",
     "question_text": "How long should you train for a marathon?",
     "suggested_title": "How Long Should You Train for a Marathon",
@@ -221,7 +247,7 @@
     "published_url": null
   },
   {
-    "rank": 18,
+    "rank": 20,
     "question_id": "paa-82bed1a8",
     "question_text": "How much cycling is equal to 10,000 steps?",
     "suggested_title": "How Much Cycling is Equal to 10,000 Steps",
@@ -234,7 +260,7 @@
     "published_url": null
   },
   {
-    "rank": 19,
+    "rank": 21,
     "question_id": "paa-ca4190ef",
     "question_text": "How good is cycling for endurance?",
     "suggested_title": "How Good is Cycling for Endurance",
@@ -247,7 +273,7 @@
     "published_url": null
   },
   {
-    "rank": 20,
+    "rank": 22,
     "question_id": "paa-3e37f525",
     "question_text": "How long should I run for a recovery run?",
     "suggested_title": "How Long Should I Run for a Recovery Run",
@@ -260,7 +286,7 @@
     "published_url": null
   },
   {
-    "rank": 21,
+    "rank": 23,
     "question_id": "paa-62f0e2f7",
     "question_text": "How many kilometers is a recovery run?",
     "suggested_title": "How Many Kilometers is a Recovery Run",
@@ -273,7 +299,7 @@
     "published_url": null
   },
   {
-    "rank": 22,
+    "rank": 24,
     "question_id": "paa-07017774",
     "question_text": "How to prevent injury as a runner?",
     "suggested_title": "How to Prevent Injury as a Runner",
@@ -286,7 +312,7 @@
     "published_url": null
   },
   {
-    "rank": 23,
+    "rank": 25,
     "question_id": "paa-eaad3ee5",
     "question_text": "How to build your HRV?",
     "suggested_title": "How to Build Your HRV",
@@ -299,7 +325,7 @@
     "published_url": null
   },
   {
-    "rank": 24,
+    "rank": 26,
     "question_id": "paa-3001a704",
     "question_text": "How many km is a recovery run?",
     "suggested_title": "How Many KM is a Recovery Run",
@@ -312,7 +338,33 @@
     "published_url": null
   },
   {
-    "rank": 25,
+    "rank": 27,
+    "question_id": "paa-e5052970",
+    "question_text": "How many types of training load are there?",
+    "suggested_title": "How Many Types of Training Load Are There",
+    "cluster": "training-load",
+    "content_type": "article",
+    "composite_score": 6.4,
+    "status": "unassigned",
+    "assigned_to": null,
+    "due_date": null,
+    "published_url": null
+  },
+  {
+    "rank": 28,
+    "question_id": "paa-c4ee3858",
+    "question_text": "How many hours a day do marathon runners train?",
+    "suggested_title": "How Many Hours a Day Do Marathon Runners Train",
+    "cluster": "marathon-training",
+    "content_type": "research",
+    "composite_score": 6.4,
+    "status": "unassigned",
+    "assigned_to": null,
+    "due_date": null,
+    "published_url": null
+  },
+  {
+    "rank": 29,
     "question_id": "paa-3d9f6b17",
     "question_text": "Is an HRV of 150 good?",
     "suggested_title": "An HRV of 150 Good: is It?",
@@ -325,7 +377,7 @@
     "published_url": null
   },
   {
-    "rank": 26,
+    "rank": 30,
     "question_id": "paa-099ad946",
     "question_text": "Can you still train with low HRV?",
     "suggested_title": "Can You Still Train With Low HRV",
@@ -338,7 +390,7 @@
     "published_url": null
   },
   {
-    "rank": 27,
+    "rank": 31,
     "question_id": "paa-97f9fca9",
     "question_text": "Can I run a marathon with heart disease?",
     "suggested_title": "Can I Run a Marathon With Heart Disease",
@@ -351,7 +403,7 @@
     "published_url": null
   },
   {
-    "rank": 28,
+    "rank": 32,
     "question_id": "paa-8ff81a91",
     "question_text": "Is cycling good for high cholesterol?",
     "suggested_title": "Cycling Good for High Cholesterol: is It?",
@@ -364,7 +416,20 @@
     "published_url": null
   },
   {
-    "rank": 29,
+    "rank": 33,
+    "question_id": "paa-aea5511e",
+    "question_text": "Can I run a 4 hour marathon?",
+    "suggested_title": "Can I Run a 4 Hour Marathon",
+    "cluster": "marathon-training",
+    "content_type": "article",
+    "composite_score": 6.2,
+    "status": "unassigned",
+    "assigned_to": null,
+    "due_date": null,
+    "published_url": null
+  },
+  {
+    "rank": 34,
     "question_id": "paa-aafd0d7c",
     "question_text": "What is the ideal marathon training plan?",
     "suggested_title": "What is the Ideal Marathon Training Plan",
@@ -377,7 +442,7 @@
     "published_url": null
   },
   {
-    "rank": 30,
+    "rank": 35,
     "question_id": "paa-2ff82fb1",
     "question_text": "What is the best injury prevention exercise for runners?",
     "suggested_title": "What is the Best Injury Prevention Exercise for Runners",
@@ -390,7 +455,7 @@
     "published_url": null
   },
   {
-    "rank": 31,
+    "rank": 36,
     "question_id": "autosugg-869bf007",
     "question_text": "training load apple watch",
     "suggested_title": "Training Load Apple Watch",
@@ -403,7 +468,7 @@
     "published_url": null
   },
   {
-    "rank": 32,
+    "rank": 37,
     "question_id": "autosugg-79c222ac",
     "question_text": "hrv training apple watch",
     "suggested_title": "HRV Training Apple Watch",
@@ -416,7 +481,7 @@
     "published_url": null
   },
   {
-    "rank": 33,
+    "rank": 38,
     "question_id": "paa-7f7d11a3",
     "question_text": "What pace is a 4 hour marathon?",
     "suggested_title": "What Pace is a 4 Hour Marathon",
@@ -429,7 +494,7 @@
     "published_url": null
   },
   {
-    "rank": 34,
+    "rank": 39,
     "question_id": "autosugg-1ca3debb",
     "question_text": "garmin readiness score watches",
     "suggested_title": "Garmin Readiness Score Watches",
@@ -442,7 +507,7 @@
     "published_url": null
   },
   {
-    "rank": 35,
+    "rank": 40,
     "question_id": "autosugg-51f07e09",
     "question_text": "garmin readiness score fenix 6",
     "suggested_title": "Garmin Readiness Score Fenix 6",
@@ -455,7 +520,7 @@
     "published_url": null
   },
   {
-    "rank": 36,
+    "rank": 41,
     "question_id": "autosugg-e2f1dc1f",
     "question_text": "garmin readiness score venu 3",
     "suggested_title": "Garmin Readiness Score Venu 3",
@@ -468,7 +533,7 @@
     "published_url": null
   },
   {
-    "rank": 37,
+    "rank": 42,
     "question_id": "autosugg-bde10aec",
     "question_text": "garmin readiness score where to find",
     "suggested_title": "Garmin Readiness Score Where to Find",
@@ -481,7 +546,7 @@
     "published_url": null
   },
   {
-    "rank": 38,
+    "rank": 43,
     "question_id": "autosugg-c372cd8a",
     "question_text": "garmin readiness score vivoactive 5",
     "suggested_title": "Garmin Readiness Score Vivoactive 5",
@@ -494,7 +559,7 @@
     "published_url": null
   },
   {
-    "rank": 39,
+    "rank": 44,
     "question_id": "autosugg-55e98443",
     "question_text": "garmin readiness score reddit",
     "suggested_title": "Garmin Readiness Score Reddit",
@@ -507,7 +572,7 @@
     "published_url": null
   },
   {
-    "rank": 40,
+    "rank": 45,
     "question_id": "autosugg-ffce5413",
     "question_text": "garmin training readiness score",
     "suggested_title": "Garmin Training Readiness Score",
@@ -520,7 +585,7 @@
     "published_url": null
   },
   {
-    "rank": 41,
+    "rank": 46,
     "question_id": "autosugg-9d63e0c8",
     "question_text": "garmin 255 readiness score",
     "suggested_title": "Garmin 255 Readiness Score",
@@ -533,7 +598,7 @@
     "published_url": null
   },
   {
-    "rank": 42,
+    "rank": 47,
     "question_id": "autosugg-d1c47833",
     "question_text": "garmin forerunner readiness score",
     "suggested_title": "Garmin Forerunner Readiness Score",
@@ -546,7 +611,7 @@
     "published_url": null
   },
   {
-    "rank": 43,
+    "rank": 48,
     "question_id": "paa-5bfad60e",
     "question_text": "What is a good HRV by age?",
     "suggested_title": "What is a Good HRV by Age",
@@ -559,7 +624,7 @@
     "published_url": null
   },
   {
-    "rank": 44,
+    "rank": 49,
     "question_id": "paa-240fdf34",
     "question_text": "What is the training load?",
     "suggested_title": "What is the Training Load",
@@ -572,7 +637,7 @@
     "published_url": null
   },
   {
-    "rank": 45,
+    "rank": 50,
     "question_id": "paa-ffd7c98f",
     "question_text": "What is a good training load number?",
     "suggested_title": "What is a Good Training Load Number",
@@ -585,7 +650,7 @@
     "published_url": null
   },
   {
-    "rank": 46,
+    "rank": 51,
     "question_id": "paa-dc8b1471",
     "question_text": "What is training load class 11?",
     "suggested_title": "What is Training Load Class 11",
@@ -598,7 +663,7 @@
     "published_url": null
   },
   {
-    "rank": 47,
+    "rank": 52,
     "question_id": "paa-4bd9f6d3",
     "question_text": "What is the 28 day training load?",
     "suggested_title": "What is the 28 Day Training Load",
@@ -611,7 +676,7 @@
     "published_url": null
   },
   {
-    "rank": 48,
+    "rank": 53,
     "question_id": "paa-4057488e",
     "question_text": "What is the 10 10 10 rule for marathon?",
     "suggested_title": "What is the 10 10 10 Rule for Marathon",
@@ -624,7 +689,7 @@
     "published_url": null
   },
   {
-    "rank": 49,
+    "rank": 54,
     "question_id": "paa-463cc43f",
     "question_text": "What is the 80 20 rule in cycling?",
     "suggested_title": "What is the 80 20 Rule in Cycling",
@@ -637,7 +702,7 @@
     "published_url": null
   },
   {
-    "rank": 50,
+    "rank": 55,
     "question_id": "paa-3013817a",
     "question_text": "What is recovery running?",
     "suggested_title": "What is Recovery Running",
@@ -650,7 +715,7 @@
     "published_url": null
   },
   {
-    "rank": 51,
+    "rank": 56,
     "question_id": "paa-edd5a9e0",
     "question_text": "What is a good training load?",
     "suggested_title": "What is a Good Training Load",
@@ -663,7 +728,7 @@
     "published_url": null
   },
   {
-    "rank": 52,
+    "rank": 57,
     "question_id": "autosugg-d4c858a9",
     "question_text": "garmin readiness score vs body battery",
     "suggested_title": "Garmin Readiness Score Vs Body Battery",
@@ -676,7 +741,7 @@
     "published_url": null
   },
   {
-    "rank": 53,
+    "rank": 58,
     "question_id": "paa-acba6137",
     "question_text": "What is good HRV by age?",
     "suggested_title": "What is Good HRV by Age",
@@ -689,7 +754,33 @@
     "published_url": null
   },
   {
-    "rank": 54,
+    "rank": 59,
+    "question_id": "paa-dc917a6c",
+    "question_text": "What is the 7 day training load?",
+    "suggested_title": "What is the 7 Day Training Load",
+    "cluster": "training-load",
+    "content_type": "programmatic",
+    "composite_score": 5.7,
+    "status": "unassigned",
+    "assigned_to": null,
+    "due_date": null,
+    "published_url": null
+  },
+  {
+    "rank": 60,
+    "question_id": "paa-bbc90aa8",
+    "question_text": "What is the 75 25 rule in cycling?",
+    "suggested_title": "What is the 75 25 Rule in Cycling",
+    "cluster": "cycling-endurance",
+    "content_type": "programmatic",
+    "composite_score": 5.7,
+    "status": "unassigned",
+    "assigned_to": null,
+    "due_date": null,
+    "published_url": null
+  },
+  {
+    "rank": 61,
     "question_id": "autosugg-96712e4a",
     "question_text": "zone 2 training plan",
     "suggested_title": "Zone 2 Training Plan",
@@ -702,7 +793,7 @@
     "published_url": null
   },
   {
-    "rank": 55,
+    "rank": 62,
     "question_id": "autosugg-d6479549",
     "question_text": "zone 2 pace is so slow",
     "suggested_title": "Zone 2 Pace is So Slow",
@@ -715,7 +806,7 @@
     "published_url": null
   },
   {
-    "rank": 56,
+    "rank": 63,
     "question_id": "autosugg-8dd96186",
     "question_text": "zone 2 pace improvement",
     "suggested_title": "Zone 2 Pace Improvement",
@@ -728,7 +819,7 @@
     "published_url": null
   },
   {
-    "rank": 57,
+    "rank": 64,
     "question_id": "autosugg-42ee4307",
     "question_text": "marathon training plan for beginners",
     "suggested_title": "Marathon Training Plan for Beginners",
@@ -741,7 +832,7 @@
     "published_url": null
   },
   {
-    "rank": 58,
+    "rank": 65,
     "question_id": "autosugg-682a5368",
     "question_text": "marathon training plan pdf",
     "suggested_title": "Marathon Training Plan Pdf",
@@ -754,7 +845,7 @@
     "published_url": null
   },
   {
-    "rank": 59,
+    "rank": 66,
     "question_id": "autosugg-7948e20b",
     "question_text": "marathon training plan 16 weeks",
     "suggested_title": "Marathon Training Plan 16 Weeks",
@@ -767,7 +858,7 @@
     "published_url": null
   },
   {
-    "rank": 60,
+    "rank": 67,
     "question_id": "autosugg-edac5d83",
     "question_text": "marathon training plan 20 weeks",
     "suggested_title": "Marathon Training Plan 20 Weeks",
@@ -780,7 +871,7 @@
     "published_url": null
   },
   {
-    "rank": 61,
+    "rank": 68,
     "question_id": "autosugg-ffe6d921",
     "question_text": "marathon training plan hal higdon",
     "suggested_title": "Marathon Training Plan Hal Higdon",
@@ -793,7 +884,7 @@
     "published_url": null
   },
   {
-    "rank": 62,
+    "rank": 69,
     "question_id": "autosugg-12a4f7a5",
     "question_text": "marathon training plan reddit",
     "suggested_title": "Marathon Training Plan Reddit",
@@ -806,7 +897,7 @@
     "published_url": null
   },
   {
-    "rank": 63,
+    "rank": 70,
     "question_id": "autosugg-eadbf471",
     "question_text": "marathon training plan free",
     "suggested_title": "Marathon Training Plan Free",
@@ -819,7 +910,7 @@
     "published_url": null
   },
   {
-    "rank": 64,
+    "rank": 71,
     "question_id": "autosugg-5c4416d9",
     "question_text": "marathon training plan 12 weeks",
     "suggested_title": "Marathon Training Plan 12 Weeks",
@@ -832,7 +923,7 @@
     "published_url": null
   },
   {
-    "rank": 65,
+    "rank": 72,
     "question_id": "autosugg-7617f308",
     "question_text": "marathon training plan 6 months",
     "suggested_title": "Marathon Training Plan 6 Months",
@@ -845,7 +936,7 @@
     "published_url": null
   },
   {
-    "rank": 66,
+    "rank": 73,
     "question_id": "autosugg-0c217a6a",
     "question_text": "cycling endurance training plan",
     "suggested_title": "Cycling Endurance Training Plan",
@@ -858,7 +949,7 @@
     "published_url": null
   },
   {
-    "rank": 67,
+    "rank": 74,
     "question_id": "autosugg-189f0aed",
     "question_text": "running injury prevention app",
     "suggested_title": "Running Injury Prevention App",
@@ -871,7 +962,7 @@
     "published_url": null
   },
   {
-    "rank": 68,
+    "rank": 75,
     "question_id": "autosugg-dfd09706",
     "question_text": "marathon training plan 5 months",
     "suggested_title": "Marathon Training Plan 5 Months",
@@ -884,7 +975,7 @@
     "published_url": null
   },
   {
-    "rank": 69,
+    "rank": 76,
     "question_id": "autosugg-8fe4eb15",
     "question_text": "hrv training plan free",
     "suggested_title": "HRV Training Plan Free",
@@ -897,10 +988,10 @@
     "published_url": null
   },
   {
-    "rank": 70,
+    "rank": 77,
     "question_id": "reddit-8057676d",
-    "question_text": "What’s a guy gotta do to get a high anaerobic benefit?",
-    "suggested_title": "What’s a Guy Gotta Do to Get a High Anaerobic Benefit",
+    "question_text": "What\u2019s a guy gotta do to get a high anaerobic benefit?",
+    "suggested_title": "What\u2019s a Guy Gotta Do to Get a High Anaerobic Benefit",
     "cluster": "training-load",
     "content_type": "article",
     "composite_score": 5.5,
@@ -910,7 +1001,7 @@
     "published_url": null
   },
   {
-    "rank": 71,
+    "rank": 78,
     "question_id": "autosugg-98f53d8c",
     "question_text": "training load apple fitness",
     "suggested_title": "Training Load Apple Fitness",
@@ -923,7 +1014,7 @@
     "published_url": null
   },
   {
-    "rank": 72,
+    "rank": 79,
     "question_id": "autosugg-f31d8f2f",
     "question_text": "marathon training plan with strength training",
     "suggested_title": "Marathon Training Plan With Strength Training",
@@ -936,7 +1027,20 @@
     "published_url": null
   },
   {
-    "rank": 73,
+    "rank": 80,
+    "question_id": "autosugg-9904c400",
+    "question_text": "marathon training plan 30 weeks",
+    "suggested_title": "Marathon Training Plan 30 Weeks",
+    "cluster": "marathon-training",
+    "content_type": "programmatic",
+    "composite_score": 5.5,
+    "status": "unassigned",
+    "assigned_to": null,
+    "due_date": null,
+    "published_url": null
+  },
+  {
+    "rank": 81,
     "question_id": "reddit-91966f90",
     "question_text": "Can I run a Strong Marathon 3 weeks after a \"bad\" Marathon?",
     "suggested_title": "Can I Run a Strong Marathon 3 Weeks After a \"bad\" Marathon",
@@ -949,7 +1053,7 @@
     "published_url": null
   },
   {
-    "rank": 74,
+    "rank": 82,
     "question_id": "autosugg-9425c548",
     "question_text": "zone 2 training benefits",
     "suggested_title": "Zone 2 Training Benefits",
@@ -962,7 +1066,7 @@
     "published_url": null
   },
   {
-    "rank": 75,
+    "rank": 83,
     "question_id": "autosugg-e77cc3a0",
     "question_text": "zone 2 training heart rate",
     "suggested_title": "Zone 2 Training Heart Rate",
@@ -975,7 +1079,7 @@
     "published_url": null
   },
   {
-    "rank": 76,
+    "rank": 84,
     "question_id": "autosugg-0bd83e9f",
     "question_text": "zone 2 training calculator",
     "suggested_title": "Zone 2 Training Calculator",
@@ -988,7 +1092,7 @@
     "published_url": null
   },
   {
-    "rank": 77,
+    "rank": 85,
     "question_id": "autosugg-57811885",
     "question_text": "zone 2 training cycling",
     "suggested_title": "Zone 2 Training Cycling",
@@ -1001,7 +1105,7 @@
     "published_url": null
   },
   {
-    "rank": 78,
+    "rank": 86,
     "question_id": "autosugg-d26e9892",
     "question_text": "zone 2 training reddit",
     "suggested_title": "Zone 2 Training Reddit",
@@ -1014,7 +1118,7 @@
     "published_url": null
   },
   {
-    "rank": 79,
+    "rank": 87,
     "question_id": "autosugg-a694ea11",
     "question_text": "cycling endurance training for beginners",
     "suggested_title": "Cycling Endurance Training for Beginners",
@@ -1027,7 +1131,7 @@
     "published_url": null
   },
   {
-    "rank": 80,
+    "rank": 88,
     "question_id": "autosugg-1e2f82fc",
     "question_text": "cycling endurance events uk",
     "suggested_title": "Cycling Endurance Events Uk",
@@ -1040,7 +1144,7 @@
     "published_url": null
   },
   {
-    "rank": 81,
+    "rank": 89,
     "question_id": "autosugg-96721009",
     "question_text": "recovery running shoes meaning",
     "suggested_title": "Recovery Running Shoes Meaning",
@@ -1053,7 +1157,7 @@
     "published_url": null
   },
   {
-    "rank": 82,
+    "rank": 90,
     "question_id": "autosugg-ac979e89",
     "question_text": "recovery running shoes reddit",
     "suggested_title": "Recovery Running Shoes Reddit",
@@ -1066,7 +1170,7 @@
     "published_url": null
   },
   {
-    "rank": 83,
+    "rank": 91,
     "question_id": "autosugg-4f2490cf",
     "question_text": "running injury prevention exercises",
     "suggested_title": "Running Injury Prevention Exercises",
@@ -1079,7 +1183,7 @@
     "published_url": null
   },
   {
-    "rank": 84,
+    "rank": 92,
     "question_id": "autosugg-e1613b57",
     "question_text": "running injury prevention strength training",
     "suggested_title": "Running Injury Prevention Strength Training",
@@ -1092,7 +1196,7 @@
     "published_url": null
   },
   {
-    "rank": 85,
+    "rank": 93,
     "question_id": "autosugg-c197e5c5",
     "question_text": "running injury prevention program",
     "suggested_title": "Running Injury Prevention Program",
@@ -1105,7 +1209,7 @@
     "published_url": null
   },
   {
-    "rank": 86,
+    "rank": 94,
     "question_id": "autosugg-e7e1a215",
     "question_text": "running injury prevention workout",
     "suggested_title": "Running Injury Prevention Workout",
@@ -1118,7 +1222,7 @@
     "published_url": null
   },
   {
-    "rank": 87,
+    "rank": 95,
     "question_id": "autosugg-d778221b",
     "question_text": "running injury prevention reddit",
     "suggested_title": "Running Injury Prevention Reddit",
@@ -1131,7 +1235,7 @@
     "published_url": null
   },
   {
-    "rank": 88,
+    "rank": 96,
     "question_id": "autosugg-edcb391f",
     "question_text": "running injury prevention routine",
     "suggested_title": "Running Injury Prevention Routine",
@@ -1144,7 +1248,7 @@
     "published_url": null
   },
   {
-    "rank": 89,
+    "rank": 97,
     "question_id": "autosugg-15877877",
     "question_text": "running injury prevention book",
     "suggested_title": "Running Injury Prevention Book",
@@ -1157,7 +1261,7 @@
     "published_url": null
   },
   {
-    "rank": 90,
+    "rank": 98,
     "question_id": "autosugg-a07d4ad7",
     "question_text": "running injury prevention tips",
     "suggested_title": "Running Injury Prevention Tips",
@@ -1170,7 +1274,20 @@
     "published_url": null
   },
   {
-    "rank": 91,
+    "rank": 99,
+    "question_id": "autosugg-d148f041",
+    "question_text": "recovery running shoes nike",
+    "suggested_title": "Recovery Running Shoes Nike",
+    "cluster": "recovery-sleep",
+    "content_type": "programmatic",
+    "composite_score": 5.0,
+    "status": "unassigned",
+    "assigned_to": null,
+    "due_date": null,
+    "published_url": null
+  },
+  {
+    "rank": 100,
     "question_id": "reddit-f49da916",
     "question_text": "Can I pair my chest strap to my watch without my phone?",
     "suggested_title": "Can I Pair My Chest Strap to My Watch Without My Phone",
@@ -1183,7 +1300,7 @@
     "published_url": null
   },
   {
-    "rank": 92,
+    "rank": 101,
     "question_id": "reddit-cb8c0fbd",
     "question_text": "How many steps you getting weekly as an Active Person?",
     "suggested_title": "How Many Steps You Getting Weekly as an Active Person",
@@ -1196,7 +1313,7 @@
     "published_url": null
   },
   {
-    "rank": 93,
+    "rank": 102,
     "question_id": "reddit-543bd138",
     "question_text": "Is it normal to get lower back and neck soreness when transitioning to a road bike?",
     "suggested_title": "It Normal to Get Lower Back and Neck Soreness When Transitioning to a Road Bike: is It?",
@@ -1209,7 +1326,7 @@
     "published_url": null
   },
   {
-    "rank": 94,
+    "rank": 103,
     "question_id": "reddit-5b14c450",
     "question_text": "How high are your Training Loads?",
     "suggested_title": "How High Are Your Training Loads",
@@ -1222,7 +1339,7 @@
     "published_url": null
   },
   {
-    "rank": 95,
+    "rank": 104,
     "question_id": "reddit-6854943e",
     "question_text": "How do you warm up for brick workouts?",
     "suggested_title": "How Do You Warm up for Brick Workouts",
@@ -1235,7 +1352,7 @@
     "published_url": null
   },
   {
-    "rank": 96,
+    "rank": 105,
     "question_id": "reddit-5556c1ca",
     "question_text": "How / how long to regain fitness after flu",
     "suggested_title": "How / How Long to Regain Fitness After Flu",
@@ -1248,7 +1365,7 @@
     "published_url": null
   },
   {
-    "rank": 97,
+    "rank": 106,
     "question_id": "reddit-c5183aac",
     "question_text": "When to take rest days?",
     "suggested_title": "When to Take Rest Days",
