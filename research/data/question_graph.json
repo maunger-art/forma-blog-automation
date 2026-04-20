@@ -305,14 +305,6 @@
   },
   {
     "cluster": "training-load",
-    "pillar_id": "paa-240fdf34",
-    "pillar_text": "What is the training load?",
-    "child_id": "reddit-5b14c450",
-    "child_text": "How high are your Training Loads?",
-    "relationship": "specificity"
-  },
-  {
-    "cluster": "training-load",
     "pillar_id": "paa-dc917a6c",
     "pillar_text": "What is the 7 day training load?",
     "child_id": "paa-e5052970",
@@ -349,14 +341,6 @@
     "pillar_text": "What is the 7 day training load?",
     "child_id": "autosugg-98f53d8c",
     "child_text": "training load apple fitness",
-    "relationship": "specificity"
-  },
-  {
-    "cluster": "training-load",
-    "pillar_id": "paa-dc917a6c",
-    "pillar_text": "What is the 7 day training load?",
-    "child_id": "reddit-5b14c450",
-    "child_text": "How high are your Training Loads?",
     "relationship": "specificity"
   },
   {
