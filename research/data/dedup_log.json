@@ -1,19 +1,25 @@
 [
   {
-    "kept": "autosugg-0777ddb3",
-    "merged": "autosugg-c9d184d1",
-    "similarity": 0.8,
-    "method": "fuzzy"
-  },
-  {
     "kept": "autosugg-d959ff21",
     "merged": "autosugg-28874476",
     "similarity": 0.8333,
     "method": "fuzzy"
   },
   {
+    "kept": "autosugg-0777ddb3",
+    "merged": "autosugg-c9d184d1",
+    "similarity": 0.8,
+    "method": "fuzzy"
+  },
+  {
     "kept": "autosugg-869bf007",
     "merged": "autosugg-00104d7f",
+    "similarity": 0.8,
+    "method": "fuzzy"
+  },
+  {
+    "kept": "autosugg-4f2490cf",
+    "merged": "autosugg-95e65785",
     "similarity": 0.8,
     "method": "fuzzy"
   },
@@ -44,12 +50,6 @@
   {
     "kept": "autosugg-7df1ec3f",
     "merged": "autosugg-ed9f88f3",
-    "similarity": 0.8,
-    "method": "fuzzy"
-  },
-  {
-    "kept": "autosugg-7df1ec3f",
-    "merged": "autosugg-4576e780",
     "similarity": 0.8,
     "method": "fuzzy"
   }

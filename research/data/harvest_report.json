@@ -1,44 +1,44 @@
 {
-  "run_id": "2026-04-20-weekly",
-  "run_at": "2026-04-20T07:17:07Z",
+  "run_id": "2026-04-27-weekly",
+  "run_at": "2026-04-27T07:34:56Z",
   "collection": {
-    "reddit": 0,
-    "autosuggest": 86,
+    "reddit": 1,
+    "autosuggest": 84,
     "paa": 52,
     "competitor": 2,
-    "total_raw": 140,
+    "total_raw": 139,
     "source_failures": []
   },
   "deduplication": {
     "exact_removed": 0,
     "fuzzy_removed": 9,
-    "total_unique": 130
+    "total_unique": 129
   },
   "scoring": {
-    "scored": 130,
-    "avg_composite": 5.26,
-    "top_score": 7.3,
-    "bottom_score": 3.4
+    "scored": 129,
+    "avg_composite": 5.25,
+    "top_score": 6.8,
+    "bottom_score": 3.1
   },
   "clustering": {
-    "classified": 101,
+    "classified": 100,
     "unclassified": 29,
-    "unclassified_rate": "22.3%",
+    "unclassified_rate": "22.5%",
     "by_cluster": {
-      "zone-2-training": 45,
-      "hrv-readiness": 9,
+      "zone-2-training": 43,
+      "hrv-readiness": 10,
       "training-load": 6,
-      "garmin-wearable": 9,
+      "garmin-wearable": 8,
       "marathon-training": 12,
-      "cycling-endurance": 6,
-      "recovery-sleep": 4,
-      "injury-prevention": 10
+      "cycling-endurance": 7,
+      "recovery-sleep": 5,
+      "injury-prevention": 9
     }
   },
   "queue": {
-    "total_queued": 106,
-    "new_this_run": 0,
-    "assigned": 31,
+    "total_queued": 112,
+    "new_this_run": 6,
+    "assigned": 35,
     "in_progress": 0,
     "published": 0
   }
