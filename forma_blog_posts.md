@@ -831,3 +831,70 @@ The hardest box is low readiness, high motivation. That's where injuries and ove
 4. **Let software arbitrate.** Adaptive training platforms like Forma exist precisely to weigh these inputs for you—adjusting today's session based on recovery data so you don't have to white-knuckle every decision with willpower.
 
 Motivation gets you to the starting line. Readiness determines whether crossing it today makes you fitter or just more tired. Learn to hear both signals—and know which one gets the final vote.
+
+
+---
+
+## 14. How to Increase Training Load Safely Without Getting Injured or Burnt Out
+
+Most training injuries don't happen because athletes train too hard. They happen because athletes train too *much, too soon*. A 2016 study by Gabbett in the *British Journal of Sports Medicine* found that athletes with a high chronic training load actually had *fewer* injuries than those with a low chronic load — as long as they built to it gradually. Fitness is protective. The danger is in the spike.
+
+This changes the conversation. The goal isn't to minimize load. It's to increase it at a rate your body can absorb.
+
+## The Acute-to-Chronic Workload Ratio Explained
+
+The most useful framework for managing load progression is the Acute-to-Chronic Workload Ratio (ACWR). It compares what you've done recently (acute load, typically the last 7 days) to what you've been doing on average (chronic load, typically a rolling 28-day average).
+
+- **ACWR between 0.8 and 1.3** — the "sweet spot" where fitness is progressing and injury risk stays low.
+- **ACWR above 1.5** — the danger zone. Injury risk can increase 2–4x compared to the sweet spot.
+- **ACWR below 0.8** — you're detraining or under-stimulating, which paradoxically also raises injury risk when you eventually do push harder.
+
+The math is straightforward. If your 4-week average weekly running volume is 40 km, your acute load this week shouldn't exceed about 52 km (40 × 1.3). Jump to 60 km and your ratio hits 1.5 — that's where soft tissue starts to protest.
+
+## Why the 10% Rule Is Only Half Right
+
+You've probably heard the advice: don't increase weekly volume by more than 10%. It's a decent guardrail for beginners, but it's incomplete for two reasons.
+
+First, 10% of a small number is a small number. If you're running 20 km per week, a 2 km increase is almost negligible stimulus. You could safely progress faster. Second, 10% of a large number can be too much when combined with intensity changes. A cyclist averaging 8 hours and 450 TSS per week who adds 10% in volume *and* introduces VO2max intervals the same week has spiked both volume and intensity simultaneously.
+
+A better rule: **use the 10% cap on total training stress (not just volume), and never spike both duration and intensity in the same week.** Increase one, hold the other constant, then let the body absorb for 7–14 days before moving the other lever.
+
+## A Concrete 6-Week Ramp Example
+
+Let's say you're a runner doing 5 hours and 40 km per week at mostly easy effort. You want to build to 55 km for a half-marathon block.
+
+| Week | Volume (km) | Key Change | ACWR (approx) |
+|------|------------|------------|----------------|
+| 1 | 40 | Baseline | 1.0 |
+| 2 | 44 | +10% volume | 1.07 |
+| 3 | 44 | Hold volume, add 1 tempo session | ~1.05 |
+| 4 | 38 | Down week (−15%) | 0.91 |
+| 5 | 48 | +10% from Week 2 | 1.12 |
+| 6 | 52 | +8% | 1.15 |
+
+Notice Week 3: volume stays flat so the body can adapt to the new intensity stimulus. Week 4 is a deliberate down week — not because you're tired, but because periodic unloading (every 3–4 weeks) lets connective tissue remodel and glycogen stores fully replenish. By Week 6 you're at 52 km with an ACWR comfortably inside the safe zone.
+
+## Signals That You're Ramping Too Fast
+
+Numbers on paper are useful, but your body gives real-time feedback. Watch for these early-warning signals:
+
+- **Resting heart rate trending up** 3–5 bpm over several mornings.
+- **HRV dropping** more than 10–15% below your rolling 30-day baseline for 3+ consecutive days.
+- **Pace decoupling**: your heart rate drifts higher in the second half of easy runs even when pace is constant. A cardiac drift above 5% on an easy session suggests accumulated fatigue.
+- **Sleep disruption**: waking at 2–4 AM with an elevated resting HR is a classic sympathetic-overreach signal.
+
+Any one of these warrants holding load flat for a week. Two or more together means cut volume by 20–30% for 5–7 days.
+
+## How Forma Handles This Automatically
+
+Forma tracks your rolling ACWR using workout data from your watch and power meter. When your ratio drifts above 1.3, the app automatically dials back prescribed sessions. When HRV and resting HR trend in the wrong direction, Forma shifts the next workout toward lower intensity before you feel the damage. No spreadsheet required.
+
+## Practical Takeaways
+
+1. **Target an ACWR between 0.8 and 1.3.** This single metric matters more than any fixed percentage rule.
+2. **Never spike volume and intensity in the same week.** Move one lever at a time.
+3. **Schedule a down week every 3–4 weeks** with a 10–15% volume reduction, even if you feel fine. Adaptation happens during recovery.
+4. **Monitor resting HR and HRV daily.** They catch overreach 3–5 days before performance tanks.
+5. **Be especially cautious after breaks.** Two weeks off can drop your chronic load enough that your old "normal" week becomes a dangerous spike.
+
+Building fitness is a months-long project. The athletes who stay healthy the longest aren't the ones who train the hardest in any given week — they're the ones who progress consistently without blowing past their body's rate of adaptation.
