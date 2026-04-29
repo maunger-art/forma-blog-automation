@@ -384,9 +384,9 @@
     "cluster": "training-load",
     "content_type": "article",
     "composite_score": 6.3,
-    "status": "unassigned",
-    "assigned_to": null,
-    "due_date": null,
+    "status": "assigned",
+    "assigned_to": "content_generator",
+    "due_date": "2026-04-29",
     "published_url": null
   },
   {
