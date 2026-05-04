@@ -19,6 +19,14 @@
     "cluster": "zone-2-training",
     "pillar_id": "paa-ca4467eb",
     "pillar_text": "What is a zone 2 workout?",
+    "child_id": "paa-1a582c35",
+    "child_text": "Is zone 2 or 3 better for building an aerobic base?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-ca4467eb",
+    "pillar_text": "What is a zone 2 workout?",
     "child_id": "autosugg-3aee649f",
     "child_text": "how to run slower for zone 2",
     "relationship": "specificity"
@@ -35,8 +43,8 @@
     "cluster": "zone-2-training",
     "pillar_id": "paa-ca4467eb",
     "pillar_text": "What is a zone 2 workout?",
-    "child_id": "paa-014fa173",
-    "child_text": "Is zone 2 easy run pace?",
+    "child_id": "paa-96e67ab7",
+    "child_text": "Is a zone 2 run an easy run?",
     "relationship": "specificity"
   },
   {
@@ -45,14 +53,6 @@
     "pillar_text": "What is a zone 2 workout?",
     "child_id": "paa-bb326042",
     "child_text": "Is 20 min zone 2 enough?",
-    "relationship": "specificity"
-  },
-  {
-    "cluster": "zone-2-training",
-    "pillar_id": "paa-ca4467eb",
-    "pillar_text": "What is a zone 2 workout?",
-    "child_id": "paa-c96fee97",
-    "child_text": "Can you build an aerobic base in 2 months?",
     "relationship": "specificity"
   },
   {
@@ -171,16 +171,16 @@
     "cluster": "zone-2-training",
     "pillar_id": "paa-ca4467eb",
     "pillar_text": "What is a zone 2 workout?",
-    "child_id": "autosugg-c8cf5142",
-    "child_text": "zone 2 pace chart",
+    "child_id": "autosugg-1fb409c1",
+    "child_text": "zone 2 pace on treadmill",
     "relationship": "specificity"
   },
   {
     "cluster": "zone-2-training",
     "pillar_id": "paa-ca4467eb",
     "pillar_text": "What is a zone 2 workout?",
-    "child_id": "autosugg-1fb409c1",
-    "child_text": "zone 2 pace on treadmill",
+    "child_id": "autosugg-c8cf5142",
+    "child_text": "zone 2 pace chart",
     "relationship": "specificity"
   },
   {
@@ -219,8 +219,8 @@
     "cluster": "training-load",
     "pillar_id": "paa-dc82c746",
     "pillar_text": "What is a training load?",
-    "child_id": "paa-286b6ded",
-    "child_text": "What happens if your training load is too high?",
+    "child_id": "paa-16a4ccf7",
+    "child_text": "How do I calculate training load?",
     "relationship": "specificity"
   },
   {
@@ -259,8 +259,8 @@
     "cluster": "training-load",
     "pillar_id": "paa-b833d382",
     "pillar_text": "What is an example of a training load?",
-    "child_id": "paa-286b6ded",
-    "child_text": "What happens if your training load is too high?",
+    "child_id": "paa-16a4ccf7",
+    "child_text": "How do I calculate training load?",
     "relationship": "specificity"
   },
   {
@@ -299,8 +299,8 @@
     "cluster": "cycling-endurance",
     "pillar_id": "paa-463cc43f",
     "pillar_text": "What is the 80 20 rule in cycling?",
-    "child_id": "paa-ca4190ef",
-    "child_text": "How good is cycling for endurance?",
+    "child_id": "paa-32dd90bb",
+    "child_text": "How do I improve my cycling endurance?",
     "relationship": "specificity"
   },
   {
@@ -315,8 +315,8 @@
     "cluster": "cycling-endurance",
     "pillar_id": "paa-463cc43f",
     "pillar_text": "What is the 80 20 rule in cycling?",
-    "child_id": "paa-2888b441",
-    "child_text": "Is cycling 10 km in 25 minutes good?",
+    "child_id": "paa-0cfe8247",
+    "child_text": "What is the 30 30 30 rule for cycling?",
     "relationship": "specificity"
   },
   {
@@ -347,8 +347,16 @@
     "cluster": "recovery-sleep",
     "pillar_id": "paa-3013817a",
     "pillar_text": "What is recovery running?",
-    "child_id": "paa-3e37f525",
-    "child_text": "How long should I run for a recovery run?",
+    "child_id": "paa-6848120d",
+    "child_text": "How long should you run for a recovery run?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "recovery-sleep",
+    "pillar_id": "paa-3013817a",
+    "pillar_text": "What is recovery running?",
+    "child_id": "paa-bb1e37e9",
+    "child_text": "Can running be good for recovery?",
     "relationship": "specificity"
   },
   {
