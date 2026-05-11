@@ -949,3 +949,65 @@ Here's a practical framework that treats Body Battery as one input, not the inpu
 - **Pair it with a training load metric.** Forma's adaptive model accounts for both autonomic status and mechanical load, which is the combination that actually predicts when you need rest.
 
 Body Battery is a decent proxy for one dimension of recovery—autonomic readiness. Treat it as exactly that: one dimension. Your muscles, tendons, fuel stores, and motivation all exist outside its field of view. The athletes who get the most from wearable data are the ones who know what the numbers can't see.
+
+
+---
+
+## 16. How to Use Resting Heart Rate to Make Smarter Training Decisions
+
+Your resting heart rate probably tells you more about your readiness to train than any subjective feeling ever will. The problem is most athletes glance at the number, shrug, and lace up their shoes anyway.
+
+That one-second glance is a missed opportunity. A single RHR reading is almost useless. But a rolling trend of RHR data—tracked consistently over weeks—is one of the most reliable, lowest-cost signals you have for detecting fatigue, illness, and genuine fitness gains before you feel them.
+
+## What resting heart rate actually reflects
+
+RHR is primarily governed by your autonomic nervous system—the balance between sympathetic (fight-or-flight) and parasympathetic (rest-and-digest) activity. When you're well-recovered and aerobically fit, parasympathetic tone dominates at rest, and your heart doesn't need to beat as often to maintain cardiac output.
+
+For a trained endurance athlete logging 5–10 hours per week, a typical RHR sits somewhere between 42 and 58 bpm. Elite marathon runners can dip into the mid-30s. The absolute number matters far less than *your* personal baseline and how today's reading compares to it.
+
+Key mechanisms that shift RHR upward:
+
+- **Plasma volume contraction** after hard sessions or dehydration—less blood per beat means more beats needed.
+- **Elevated core temperature** from low-grade infection or inflammation—cardiac drift at rest.
+- **Sympathetic nervous system activation** from accumulated training stress, poor sleep, or psychological load.
+- **Glycogen depletion** after high-volume blocks without adequate fueling.
+
+All of these are real physiological signals, not noise. The challenge is separating a meaningful shift from day-to-day variance.
+
+## Why single readings mislead you
+
+RHR can swing 3–5 bpm on any given morning based on hydration, room temperature, sleep position, or whether you checked your email before your watch recorded the measurement. A study in the *International Journal of Sports Physiology and Performance* (Plews et al., 2013) found that day-to-day HRV and RHR variation in trained athletes was substantial enough that single-point decisions led to false alarms roughly 30% of the time.
+
+The fix is simple: use a 7-day rolling average. This smooths out noise and makes genuine trends visible.
+
+## The numbers that matter: a practical framework
+
+Let's say your 7-day rolling RHR average is 48 bpm. Here's how to interpret deviations:
+
+- **Within ±2 bpm (46–50 bpm):** Normal variance. Train as planned.
+- **Elevated 3–4 bpm (51–52 bpm) for 2+ consecutive days:** Yellow flag. You're likely carrying fatigue. Convert any planned intensity session to an easy aerobic day (Zone 1–2). Prioritize sleep and hydration.
+- **Elevated 5+ bpm (53+ bpm) for 3+ days:** Red flag. This pattern is strongly associated with functional overreaching or oncoming illness. Drop volume by 40–50% for the next 3–5 days. If RHR doesn't return to baseline within a week, consider a full rest day and assess sleep, nutrition, and life stress.
+- **Sustained drop of 2–3 bpm over several weeks:** This is the signal you want. It usually reflects improved stroke volume and parasympathetic adaptation—genuine aerobic fitness gains.
+
+A concrete example: a 38-year-old cyclist training 8 hours per week sees their rolling RHR climb from 50 to 55 bpm across a Tuesday-to-Thursday window after a weekend fondoride and a Monday interval session on poor sleep. Instead of hammering Thursday's scheduled VO2max workout, they swap it for 60 minutes at 65% of max HR. By Saturday, their rolling average is back to 51 bpm and they execute Sunday's long ride without issue. That one swap likely prevented a mediocre hard session and a cascading fatigue hole that could cost them the following week.
+
+## How to measure RHR consistently
+
+Accuracy depends on protocol, not hardware. Follow these rules:
+
+1. **Measure at the same time every day**—ideally within 5 minutes of waking, before standing up.
+2. **Use the same device.** Wrist-based optical sensors are fine for RHR trending; absolute accuracy is less critical than consistency.
+3. **Avoid checking your phone first.** Even a stressful notification can bump your reading 2–3 bpm via sympathetic activation.
+4. **Log it automatically.** Most wearables record overnight RHR; use the lowest overnight value or the waking value, but pick one and stick with it.
+
+## RHR vs HRV: do you need both
+
+Heart rate variability (HRV) measures beat-to-beat variation and is a more granular window into autonomic balance. In research, HRV tends to detect overreaching 1–2 days earlier than RHR. But HRV is also noisier and more sensitive to measurement error.
+
+If you're already tracking HRV, great—use both. RHR confirms what HRV suggests. If you're only going to track one metric consistently, RHR is more forgiving of imperfect measurement conditions and still highly actionable.
+
+## The practical takeaway
+
+Start tracking your 7-day rolling RHR average today. Set two mental thresholds: a yellow zone (+3–4 bpm above baseline) and a red zone (+5 bpm or more sustained over multiple days). When yellow triggers, swap intensity for easy volume. When red triggers, cut volume aggressively and investigate recovery fundamentals—sleep, nutrition, life stress.
+
+Forma uses exactly this kind of longitudinal physiological data to adjust your plan in real time, so you don't have to guess whether today is a push day or a back-off day. But even without an adaptive platform, this simple framework will help you avoid the most common amateur mistake in endurance training: ignoring the cheapest, most reliable readiness signal your body gives you every single morning.
