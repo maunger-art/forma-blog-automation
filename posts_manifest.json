@@ -1,5 +1,41 @@
 [
   {
+    "slug": "how-long-is-enough-to-train-for-a-marathon",
+    "title": "How Long is Enough to Train for a Marathon?",
+    "date": "2026-05-22",
+    "category": "Running",
+    "meta_description": "The optimal marathon training duration depends on your base fitness and running history. Here's how to determine the right timeline for your goals.",
+    "keywords": "marathon training duration, marathon training plan length, how long train marathon, marathon preparation time, marathon training weeks, marathon training schedule",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "minimum-viable-training",
+        "text": "The Minimum Viable Training Period"
+      },
+      {
+        "id": "base-fitness-determines-duration",
+        "text": "Your Base Fitness Determines Duration"
+      },
+      {
+        "id": "weekly-mileage-progression",
+        "text": "Weekly Mileage and Progression Rates"
+      },
+      {
+        "id": "injury-risk-vs-preparation",
+        "text": "Balancing Injury Risk vs. Race Preparation"
+      },
+      {
+        "id": "quality-over-quantity",
+        "text": "When Quality Matters More Than Duration"
+      }
+    ],
+    "body_html": "<p>Most marathon training plans span 16-20 weeks, but this standard timeline misses a crucial point: <strong>the optimal training duration depends entirely on where you're starting from</strong>. A runner with a solid aerobic base needs fundamentally different preparation than someone building from scratch.</p><p>The real question isn't how long everyone should train—it's how long <em>you</em> need to train based on your current fitness, running history, and performance goals.</p><h2 id=\"minimum-viable-training\">The Minimum Viable Training Period</h2><p>Research from exercise physiologists suggests that meaningful aerobic adaptations require a minimum of 8-10 weeks of consistent training. However, this baseline assumes you're already running regularly and can handle moderate training loads without injury.</p><p>For marathon-specific adaptations—particularly the metabolic efficiency needed to sustain race pace for 26.2 miles—<strong>12 weeks represents the absolute minimum for experienced runners</strong>. This compressed timeline works only if you're already running 25-30 miles per week comfortably and have completed at least one marathon previously.</p><p>Attempting to cram marathon preparation into shorter periods increases injury risk exponentially. The connective tissues, tendons, and bones that support your running simply cannot adapt as quickly as your cardiovascular system.</p><h2 id=\"base-fitness-determines-duration\">Your Base Fitness Determines Duration</h2><p>Your current weekly mileage is the most reliable predictor of how long you need to train. Runners already logging 30+ miles per week can often succeed with 12-16 week programs. Those running 15-25 miles weekly typically need 16-20 weeks. Anyone below 15 miles per week should consider 20+ weeks or postpone their marathon goal.</p><p>The principle here is simple: <strong>you need time to build your aerobic base before adding marathon-specific stress</strong>. Peak marathon training includes long runs of 18-22 miles, tempo sessions, and weekly volumes that may double your current load. Without adequate base fitness, this training becomes counterproductive.</p><p>Consider your running consistency over the past six months, not just recent weeks. Sporadic training history suggests you need additional base-building time, regardless of your current fitness level.</p><h2 id=\"weekly-mileage-progression\">Weekly Mileage and Progression Rates</h2><p>Safe mileage increases follow the conservative rule of 10% weekly growth, though this guideline requires context. Experienced runners with solid bases can sometimes handle 15-20% increases during build-up phases. Newer runners should stick closer to 5-10% growth rates.</p><p>Peak training weeks typically occur 3-4 weeks before race day, representing roughly 150-200% of your starting weekly mileage. If you're currently running 20 miles per week, expect peak weeks around 35-40 miles. Starting from 30 miles weekly, peaks might reach 50-60 miles.</p><p><strong>These progressions take time to execute safely</strong>. A runner building from 20 to 40 miles per week needs approximately 8-10 weeks of gradual increases, plus several weeks to adapt to peak training loads before beginning the taper.</p><h2 id=\"injury-risk-vs-preparation\">Balancing Injury Risk vs. Race Preparation</h2><p>Studies tracking marathon training injuries show that runners following plans shorter than 16 weeks have significantly higher injury rates—approximately 65% compared to 45% for those following longer preparations. The most common injuries occur during rapid mileage increases and high-intensity phases.</p><p>Paradoxically, <strong>longer training periods can reduce both injury risk and improve performance outcomes</strong>. Extended preparation allows for more gradual progressions, better adaptation to training stress, and built-in recovery from minor setbacks.</p><p>However, motivation and life circumstances matter. A 24-week training plan sounds ideal until work stress, family obligations, or training fatigue derail consistency after week 16. Sometimes a focused 14-week plan executed well outperforms a longer plan executed poorly.</p><h2 id=\"quality-over-quantity\">When Quality Matters More Than Duration</h2><p>Training duration means nothing without consistency and appropriate intensity distribution. A well-designed 14-week plan with 90% adherence typically produces better results than a 20-week plan with 70% adherence.</p><p>The most successful marathon training follows the 80/20 rule: approximately 80% of your training at easy, conversational pace, with 20% at moderate to hard intensities. This distribution remains constant regardless of your training duration—<strong>longer plans simply provide more time to accumulate easy aerobic volume</strong>.</p><p>Your training should also account for life stress, sleep quality, and recovery capacity. These factors fluctuate unpredictably, making rigid adherence to predetermined schedules often counterproductive. The best training plans adapt to your daily readiness rather than forcing you to adapt to arbitrary schedules.</p><p>As training becomes more sophisticated, the focus shifts from simply completing predetermined workouts to optimizing adaptation based on real-time feedback. This approach—where training adjusts to your body's actual response rather than theoretical progressions—represents the future of endurance preparation, allowing you to train more effectively regardless of your chosen timeline.</p>",
+    "status": "published",
+    "_queue_id": "paa-3c15893e",
+    "_cluster": "marathon-training",
+    "_composite_score": 6.4
+  },
+  {
     "slug": "how-much-training-load-is-good-for-endurance-athletes",
     "title": "How Much Training Load is Good for Endurance Athletes?",
     "date": "2026-05-20",
@@ -48,21 +84,6 @@
     "toc_items": [],
     "_queue_id": "paa-45ab3c1a",
     "_cluster": "training-load",
-    "_composite_score": 6.4
-  },
-  {
-    "slug": "how-long-is-enough-to-train-for-a-marathon",
-    "title": "How Long is Enough to Train for a Marathon",
-    "meta_description": "Everything endurance athletes need to know about how long is enough to train for a marathon.",
-    "category": "Performance",
-    "date": "2026-05-18",
-    "read_time": 6,
-    "keywords": "How long is enough to train for a marathon?",
-    "status": "draft",
-    "body_html": "<p><em>Coming soon: How Long is Enough to Train for a Marathon</em></p>",
-    "toc_items": [],
-    "_queue_id": "paa-3c15893e",
-    "_cluster": "marathon-training",
     "_composite_score": 6.4
   },
   {
