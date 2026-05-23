@@ -1,5 +1,41 @@
 [
   {
+    "slug": "how-many-minutes-should-a-recovery-run-be",
+    "title": "How Many Minutes Should a Recovery Run Be?",
+    "date": "2026-05-23",
+    "category": "Recovery",
+    "meta_description": "The optimal duration for recovery runs depends on your weekly volume, not arbitrary time goals. Here's how to calculate yours.",
+    "keywords": "recovery run duration, recovery run minutes, easy run length, active recovery running, recovery run pace, endurance training recovery",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "the-20-25-percent-rule",
+        "text": "The 20-25 Percent Rule"
+      },
+      {
+        "id": "why-duration-matters-more-than-distance",
+        "text": "Why Duration Matters More Than Distance"
+      },
+      {
+        "id": "adjusting-for-training-phase",
+        "text": "Adjusting for Training Phase"
+      },
+      {
+        "id": "signs-youre-running-too-long",
+        "text": "Signs You're Running Too Long"
+      },
+      {
+        "id": "recovery-runs-in-adaptive-training",
+        "text": "Recovery Runs in Adaptive Training"
+      }
+    ],
+    "body_html": "<p>Most runners approach recovery runs backwards. They pick an arbitrary duration — 30 minutes, 45 minutes, an hour — based on what feels reasonable or what their training plan dictates. But <strong>recovery run duration should be calculated as a percentage of your weekly training volume</strong>, not chosen from thin air.</p>\n\n<h2 id=\"the-20-25-percent-rule\">The 20-25 Percent Rule</h2>\n\n<p>Research from exercise physiologists suggests that <strong>recovery runs should comprise 20-25% of your total weekly training time</strong>. If you're running 5 hours per week, your recovery runs should total 60-75 minutes across the week. For a cyclist logging 8 hours weekly, that's 96-120 minutes of recovery riding.</p>\n\n<p>This percentage-based approach accounts for individual training loads rather than applying one-size-fits-all durations. A runner averaging 30 miles per week needs different recovery stimulus than someone running 60 miles. The former might benefit from 25-30 minute recovery runs, while the latter could handle 45-60 minutes while still maintaining the easy effort that defines recovery work.</p>\n\n<p>The key word here is <strong>total</strong>. If you're doing two recovery runs per week, split that 20-25% between them. Three recovery sessions? Divide accordingly. The distribution matters less than hitting the overall volume target at genuine recovery intensity.</p>\n\n<h2 id=\"why-duration-matters-more-than-distance\">Why Duration Matters More Than Distance</h2>\n\n<p>Time-based recovery runs trump distance-based sessions for one critical reason: <strong>they prevent effort creep</strong>. When you're focused on covering a specific distance, the temptation to push pace increases, especially on days when you feel sluggish. A 5-mile recovery run can quickly become a moderate effort if you're watching the clock and worried about being late.</p>\n\n<p>Duration-based sessions remove this pressure. Your only job is to stay in the aerobic zone for the prescribed time, regardless of how much ground you cover. On tired legs after a hard workout, you might run slower and cover less distance. That's exactly what should happen during recovery.</p>\n\n<p>This approach also accounts for terrain and conditions. A 45-minute recovery run on flat roads will cover more distance than the same duration on hilly trails, but the physiological stress remains appropriate for recovery purposes. The body responds to <strong>time under stress</strong>, not miles logged.</p>\n\n<h2 id=\"adjusting-for-training-phase\">Adjusting for Training Phase</h2>\n\n<p>Base building phases typically allow for longer recovery runs — potentially pushing toward that 25% ceiling or even slightly beyond. During base training, your weekly volume is lower and intensity minimal, so extended easy runs contribute positively to aerobic development without compromising recovery.</p>\n\n<p>Race preparation periods require more conservative recovery durations. When your weekly schedule includes VO2 max intervals, lactate threshold sessions, and race-pace work, <strong>recovery runs should trend toward 20% of weekly volume or even less</strong>. The higher intensity load demands more complete recovery between sessions.</p>\n\n<p>Peak training weeks — those highest-volume weeks before a taper — often benefit from shorter, more frequent recovery runs rather than longer sessions. Three 20-25 minute recovery runs distribute the easy volume while providing more opportunities for complete rest between harder efforts.</p>\n\n<h2 id=\"signs-youre-running-too-long\">Signs You're Running Too Long</h2>\n\n<p>Recovery runs should leave you feeling better than when you started, not depleted. <strong>If you're finishing recovery sessions with heavy legs or elevated fatigue, duration is likely excessive</strong>. Other warning signs include difficulty maintaining truly easy pace throughout the run, elevated resting heart rate the following morning, or poor performance in subsequent hard sessions.</p>\n\n<p>Heart rate drift during recovery runs also signals duration problems. Easy runs should show minimal cardiac drift over time. If your heart rate climbs significantly during the second half of a recovery run despite maintaining the same effort, you're either running too hard or too long for your current fitness level.</p>\n\n<p>Sleep quality provides another feedback mechanism. Recovery runs should promote better sleep, not disrupt it. If you notice restless nights following recovery sessions, consider shortening duration before adjusting intensity. Sometimes less truly is more.</p>\n\n<h2 id=\"recovery-runs-in-adaptive-training\">Recovery Runs in Adaptive Training</h2>\n\n<p>Static recovery run durations ignore daily physiological fluctuations. Your capacity for easy volume changes based on sleep quality, work stress, previous training load, and dozens of other variables. A 45-minute recovery run might be perfect on Tuesday but excessive on Friday after a challenging week.</p>\n\n<p>Modern training adaptation requires dynamic adjustment of all session components, including recovery duration. Rather than blindly following predetermined durations, successful athletes modify recovery volume based on real-time readiness indicators. This might mean cutting a planned 60-minute easy run to 40 minutes when fatigue is elevated, or extending a 30-minute session to 45 minutes when feeling exceptionally fresh.</p>\n\n<p>The future of endurance training lies in this type of responsive programming — where recovery runs, like all training elements, adapt to your body's daily capacity rather than forcing your body to adapt to rigid scheduling. As training technology continues advancing, athletes who embrace this adaptive approach will find themselves healthier, more consistent, and ultimately faster than those stuck with static planning.</p>",
+    "status": "published",
+    "_queue_id": "paa-b601e21a",
+    "_cluster": "recovery-sleep",
+    "_composite_score": 6.4
+  },
+  {
     "slug": "how-long-is-enough-to-train-for-a-marathon",
     "title": "How Long is Enough to Train for a Marathon?",
     "date": "2026-05-22",
@@ -84,21 +120,6 @@
     "toc_items": [],
     "_queue_id": "paa-45ab3c1a",
     "_cluster": "training-load",
-    "_composite_score": 6.4
-  },
-  {
-    "slug": "how-many-minutes-should-a-recovery-run-be",
-    "title": "How Many Minutes Should a Recovery Run Be",
-    "meta_description": "Everything endurance athletes need to know about how many minutes should a recovery run be.",
-    "category": "Recovery",
-    "date": "2026-05-18",
-    "read_time": 6,
-    "keywords": "How many minutes should a recovery run be?",
-    "status": "draft",
-    "body_html": "<p><em>Coming soon: How Many Minutes Should a Recovery Run Be</em></p>",
-    "toc_items": [],
-    "_queue_id": "paa-b601e21a",
-    "_cluster": "recovery-sleep",
     "_composite_score": 6.4
   },
   {
