@@ -1066,3 +1066,63 @@ If you're training 5–10 hours per week, the question isn't whether you can fol
 Start tracking HRV and resting heart rate daily — consistency of measurement matters more than the device. Look for 3–5 day trends rather than single-day readings. And if your training system can't move a key workout based on your readiness data, you're leaving adaptation on the table.
 
 The best session is the right session on the right day. An adaptive system's entire job is making sure those two things line up.
+
+
+---
+
+## 18. Cycling Fatigue and Freshness: A Smarter Way to Manage Training Load
+
+Your best performances probably didn't come when you felt great. They came when you felt *just okay*—a little heavy in the legs during warm-up, maybe questioning whether today was the day. Then you surprised yourself.
+
+This isn't a fluke. It's how fatigue and freshness actually work, and most cyclists get the relationship between them completely wrong.
+
+## The fitness-fatigue model is simple but misunderstood
+
+Sports scientists have used the Banister impulse-response model since the 1970s. The idea is straightforward: every training session produces two responses simultaneously—a **fitness** gain and a **fatigue** cost. Fitness builds slowly and decays slowly (time constant of roughly 42 days). Fatigue accumulates fast and dissipates fast (time constant of roughly 7 days).
+
+Your "form" or readiness at any moment is roughly the difference between accumulated fitness and accumulated fatigue. In platforms that track this, you'll see it called Training Stress Balance (TSB).
+
+Here's what most riders miss: **a positive TSB doesn't mean you're ready to perform, and a negative TSB doesn't mean you're broken.** A TSB of +15 after two weeks on the couch means you're rested but detrained. A TSB of -10 during a focused build block means you're absorbing load—exactly where you should be.
+
+## Feeling tired is not the same as being overtrained
+
+There's a critical distinction between **functional overreaching** and **non-functional overreaching**. Functional overreaching is the deliberate accumulation of fatigue over 2–3 weeks that, when followed by recovery, produces supercompensation. Non-functional overreaching is what happens when you ignore the recovery part for months.
+
+Research published in *Medicine & Science in Sports & Exercise* found that athletes who went through a planned overreaching phase (increasing training load by roughly 30% for 2 weeks) and then tapered saw a 4–6% improvement in time-trial performance. Athletes who maintained the same steady load saw less than 1% improvement over the same period.
+
+The takeaway: **you have to be willing to feel worse before you feel better.** If you cut every session short the moment your legs feel heavy, you're skipping the stimulus that drives adaptation.
+
+## A real-world example with actual numbers
+
+Say you're a cyclist training 8 hours per week with an FTP of 250 watts. During a normal week, you accumulate around 450 TSS. Your CTL (chronic training load, the "fitness" number) sits at about 65, and your ATL (acute training load, the "fatigue" number) hovers around 65 too, giving you a TSB near zero.
+
+Now your coach prescribes a 3-week build: 520 TSS, 560 TSS, then 580 TSS. By the end of week 3, your CTL has climbed to 72 but your ATL has spiked to 83. Your TSB is -11. You feel flat. Your intervals feel like they're at threshold when they should be tempo.
+
+This is the moment most self-coached riders panic and take an unplanned rest week—or worse, do a max-effort test to "see where they are." Both are mistakes.
+
+Instead, you drop to a 300 TSS recovery week. Within 7–10 days, ATL drops back to about 55. CTL barely budges, sitting around 70. TSB swings to +15. Now you're genuinely fresh *and* fitter than when you started. That's when you race or retest.
+
+## Freshness is a resource you spend not a state you maintain
+
+Think of freshness like a budget. You accumulate it during recovery weeks and spend it during build weeks and races. Athletes who try to stay fresh all the time never build enough fitness to matter. Athletes who never cash in their freshness burn out or plateau.
+
+The practical rhythm for most cyclists training 5–10 hours per week is a 3:1 or 2:1 build-to-recovery ratio. Three weeks of progressively increasing load, one week at 40–60% of peak load. This isn't arbitrary—it roughly matches the fatigue time constant in the Banister model.
+
+## How to monitor fatigue without obsessing over it
+
+Numbers help, but context matters more. Here are the signals worth tracking:
+
+- **Resting heart rate trend**: a sustained rise of 5+ bpm over several days (not one morning) suggests accumulated fatigue.
+- **HRV trend**: look at the 7-day rolling average, not daily values. A downward trend during a build is expected. A downward trend during a recovery week is a red flag.
+- **Session RPE vs. power**: if your RPE for a 200W effort jumps from 6 to 8 over two weeks with no change in sleep or nutrition, fatigue is accumulating.
+- **Performance at submaximal efforts**: cardiac drift during Z2 rides (heart rate climbing more than 8–10% over 60 minutes at steady power) is an underused fatigue marker.
+
+Don't track all of these. Pick one or two and be consistent.
+
+## The practical takeaway
+
+Stop chasing freshness. Plan your fatigue intentionally, recover on schedule (not on feeling alone), and trust that the flat-legged Wednesday ride in week 3 of a build is the investment—not the problem.
+
+The best adaptations happen on the other side of managed discomfort. An adaptive training platform like Forma can model this balance for you day to day, adjusting load prescriptions based on how your body is actually responding—not just how your legs feel on the first interval.
+
+Train hard on purpose. Rest hard on purpose. Everything in between is noise.
