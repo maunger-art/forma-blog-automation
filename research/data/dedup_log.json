@@ -48,9 +48,9 @@
     "method": "fuzzy"
   },
   {
-    "kept": "autosugg-841c7c3d",
-    "merged": "paa-a80a7c08",
-    "similarity": 0.8,
+    "kept": "paa-af56b83f",
+    "merged": "paa-496713bc",
+    "similarity": 0.75,
     "method": "fuzzy"
   }
 ]
