@@ -12,20 +12,8 @@
     "method": "fuzzy"
   },
   {
-    "kept": "autosugg-869bf007",
-    "merged": "autosugg-774bfaa9",
-    "similarity": 0.8,
-    "method": "fuzzy"
-  },
-  {
-    "kept": "autosugg-841c7c3d",
-    "merged": "autosugg-c69934a0",
-    "similarity": 0.8,
-    "method": "fuzzy"
-  },
-  {
-    "kept": "autosugg-841c7c3d",
-    "merged": "autosugg-10134d0e",
+    "kept": "autosugg-c69934a0",
+    "merged": "autosugg-841c7c3d",
     "similarity": 0.8,
     "method": "fuzzy"
   },
@@ -45,12 +33,6 @@
     "kept": "autosugg-7df1ec3f",
     "merged": "autosugg-ed9f88f3",
     "similarity": 0.8,
-    "method": "fuzzy"
-  },
-  {
-    "kept": "paa-af56b83f",
-    "merged": "paa-496713bc",
-    "similarity": 0.75,
     "method": "fuzzy"
   }
 ]
