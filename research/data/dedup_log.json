@@ -1,9 +1,9 @@
 [
   {
-    "kept": "autosugg-0777ddb3",
-    "merged": "autosugg-c9d184d1",
-    "similarity": 0.8,
-    "method": "fuzzy"
+    "kept": "autosugg-38fdff7d",
+    "merged": "paa-afb62129",
+    "similarity": 1.0,
+    "method": "exact"
   },
   {
     "kept": "autosugg-d959ff21",
@@ -12,8 +12,20 @@
     "method": "fuzzy"
   },
   {
-    "kept": "autosugg-c69934a0",
-    "merged": "autosugg-841c7c3d",
+    "kept": "autosugg-0777ddb3",
+    "merged": "autosugg-c9d184d1",
+    "similarity": 0.8,
+    "method": "fuzzy"
+  },
+  {
+    "kept": "autosugg-841c7c3d",
+    "merged": "autosugg-c69934a0",
+    "similarity": 0.8,
+    "method": "fuzzy"
+  },
+  {
+    "kept": "autosugg-841c7c3d",
+    "merged": "autosugg-10134d0e",
     "similarity": 0.8,
     "method": "fuzzy"
   },
@@ -25,20 +37,14 @@
   },
   {
     "kept": "autosugg-7df1ec3f",
-    "merged": "autosugg-acac9258",
-    "similarity": 0.8,
-    "method": "fuzzy"
-  },
-  {
-    "kept": "autosugg-7df1ec3f",
     "merged": "autosugg-ed9f88f3",
     "similarity": 0.8,
     "method": "fuzzy"
   },
   {
-    "kept": "paa-af56b83f",
-    "merged": "paa-496713bc",
-    "similarity": 0.75,
+    "kept": "autosugg-7df1ec3f",
+    "merged": "autosugg-acac9258",
+    "similarity": 0.8,
     "method": "fuzzy"
   }
 ]
