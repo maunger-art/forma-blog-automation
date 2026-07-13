@@ -1,11 +1,5 @@
 [
   {
-    "kept": "autosugg-38fdff7d",
-    "merged": "paa-afb62129",
-    "similarity": 1.0,
-    "method": "exact"
-  },
-  {
     "kept": "autosugg-d959ff21",
     "merged": "autosugg-28874476",
     "similarity": 0.8333,
@@ -45,6 +39,12 @@
     "kept": "autosugg-7df1ec3f",
     "merged": "autosugg-acac9258",
     "similarity": 0.8,
+    "method": "fuzzy"
+  },
+  {
+    "kept": "paa-af56b83f",
+    "merged": "paa-236eb9a8",
+    "similarity": 0.75,
     "method": "fuzzy"
   }
 ]
