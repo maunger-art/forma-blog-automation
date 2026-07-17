@@ -28,10 +28,16 @@ jobs:
       - name: Install dependencies
         run: pip install anthropic
 
+      - name: Set up Claude Code (Max plan auth)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install -g @anthropic-ai/claude-code
+
       - name: Refill topic queue
         id: refill
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # Optional — improves titles if set
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}   # Max plan — polishes titles
         run: |
           python generate_topic_queue.py
           # Count how many lines are in the queue now

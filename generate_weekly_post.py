@@ -19,7 +19,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
-import anthropic
+import llm as anthropic  # Max-plan shim (was: import anthropic)
 
 QUEUE_FILE    = Path("blog_topic_queue.txt")
 POSTS_FILE    = Path("forma_blog_posts.md")
@@ -78,12 +78,7 @@ def generate_post(topic: str) -> dict:
     Returns a dict with all fields needed for both the markdown file
     and the posts_manifest.json entry.
     """
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        print("❌  ANTHROPIC_API_KEY is not set.")
-        sys.exit(1)
-
-    client = anthropic.Anthropic(api_key=api_key)
+    client = anthropic.Anthropic()  # Max-plan auth via Claude Code (`claude -p`)
 
     prompt = f"""You are writing a blog post for Forma, an AI-powered adaptive training app
 for endurance athletes (runners and cyclists).

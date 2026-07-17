@@ -25,10 +25,15 @@ jobs:
         run: |
           pip install python-slugify
           pip install -r research/requirements.txt || true
+      - name: Set up Claude Code (Max plan auth)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install -g @anthropic-ai/claude-code
       - name: Generate post
         run: python3 content_generator.py --batch 1
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
       - name: Commit new post
         run: |
           git config user.email "actions@github.com"
