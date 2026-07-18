@@ -315,13 +315,9 @@ def ai_polish_topics(raw_topics: list[str]) -> list[str]:
     Ask Anthropic to rewrite raw candidate topics into polished SEO titles.
     Returns original list if API unavailable or call fails.
     """
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if not api_key:
-        return raw_topics
-
     try:
-        import anthropic
-        client = anthropic.Anthropic(api_key=api_key)
+        import llm as anthropic  # Max-plan shim (was: import anthropic)
+        client = anthropic.Anthropic()  # Max-plan auth via Claude Code
 
         batch = raw_topics[:MAX_AI_IMPROVE]
         numbered = "\n".join(f"{i+1}. {t}" for i, t in enumerate(batch))
@@ -411,12 +407,9 @@ def main():
     # Take slightly more than needed so AI can trim/improve
     shortlist = filtered[:needed + 5]
 
-    # ── Optional AI polish ─────────────────────────────────────────────────────
-    if os.environ.get("ANTHROPIC_API_KEY"):
-        print("\n🤖  AI key found — polishing topic titles...")
-        shortlist = ai_polish_topics(shortlist)
-    else:
-        print("\n  ℹ️   No ANTHROPIC_API_KEY — using deterministic titles")
+    # ── AI polish (Max plan via Claude Code; falls back to deterministic titles) ──
+    print("\n🤖  Polishing topic titles via Claude (Max plan)...")
+    shortlist = ai_polish_topics(shortlist)
 
     # Final trim to target
     to_add = shortlist[:needed]

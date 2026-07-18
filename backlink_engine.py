@@ -239,31 +239,9 @@ REQUIREMENTS:
 
 Respond with the email text only — subject line first, then body."""
 
-    payload = json.dumps({
-        "model":      MODEL,
-        "max_tokens": 400,
-        "messages":   [{"role": "user", "content": prompt}]
-    }).encode()
-
-    req = urllib.request.Request(
-        ANTHROPIC_URL,
-        data=payload,
-        headers={
-            "Content-Type":      "application/json",
-            "x-api-key":         api_key,
-            "anthropic-version": "2023-06-01",
-        },
-        method="POST"
-    )
-
     try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            data = json.loads(resp.read())
-        text = ""
-        for block in data.get("content", []):
-            if block.get("type") == "text":
-                text += block["text"]
-        return text.strip()
+        import llm
+        return llm.complete(prompt).strip()
     except Exception as e:
         return f"[Draft generation failed: {e}]"
 
@@ -275,8 +253,7 @@ def run_outreach(posts: list[dict], args) -> None:
 
     if not serpapi_key:
         sys.exit("ERROR: SERPAPI_KEY not set. Set env var or pass --serpapi-key")
-    if not anthropic_key and not args.dry_run:
-        sys.exit("ERROR: ANTHROPIC_API_KEY not set. Set env var or pass --api-key")
+    # Claude auth handled by Claude Code (Max plan) via `claude -p` — no API key required.
 
     OUTREACH_DIR.mkdir(parents=True, exist_ok=True)
 

@@ -205,37 +205,10 @@ RULES:
 
 
 def call_api(prompt: str, api_key: str) -> dict:
-    """Call Anthropic API and return parsed JSON response."""
-    import urllib.request
+    """Generate via Claude Code (Max plan) and return parsed JSON response."""
+    import llm
 
-    payload = json.dumps({
-        "model":      MODEL,
-        "max_tokens": 8000,
-        "messages":   [{"role": "user", "content": prompt}]
-    }).encode()
-
-    req = urllib.request.Request(
-        API_URL,
-        data=payload,
-        headers={
-            "Content-Type":      "application/json",
-            "x-api-key":         api_key,
-            "anthropic-version": "2023-06-01",
-        },
-        method="POST"
-    )
-
-    try:
-        with urllib.request.urlopen(req, timeout=180) as resp:
-            data = json.loads(resp.read())
-    except urllib.error.HTTPError as e:
-        body = e.read().decode()
-        sys.exit(f"API error {e.code}: {body}")
-
-    text = ""
-    for block in data.get("content", []):
-        if block.get("type") == "text":
-            text += block["text"]
+    text = llm.complete(prompt)
 
     # Strip accidental markdown fences
     text = re.sub(r"^```json\s*", "", text.strip())
@@ -573,8 +546,7 @@ def main():
         print("\n  Dry run — no content generated")
         return
 
-    if not args.api_key:
-        sys.exit("\nERROR: No API key. Set ANTHROPIC_API_KEY or pass --api-key")
+    # Auth handled by Claude Code (Max plan) via `claude -p` — no API key required.
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     filled = []
