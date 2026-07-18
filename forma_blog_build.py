@@ -711,7 +711,7 @@ def build_pillar_html(spec, all_posts, font_css, link_map=None):
     sections  = spec.get("suggested_sections", [])
     tool_ctas = spec.get("tool_ctas", [])
     links_to  = spec.get("internal_links_to", [])
-    canonical = f"{BLOG_URL}/blog/{slug}"
+    canonical = f"{BLOG_URL}/blog/{slug}.html"  # match sitemap/RSS/internal links (fixes GSC duplicate-canonical)
     pub_date  = TODAY
 
     cat_map = {
@@ -922,7 +922,7 @@ def build_post_html(post: dict, all_posts: list, font_css: str, link_map: dict =
     body_html = inject_internal_links(body_html, slug, all_posts, link_map)  # E: internal links
     toc_items = post.get("toc_items", [])
     pub_date  = post.get("date", TODAY)
-    canonical = f"{BLOG_URL}/blog/{slug}"
+    canonical = f"{BLOG_URL}/blog/{slug}.html"  # match sitemap/RSS/internal links (fixes GSC duplicate-canonical)
 
     schema = json.dumps({
         "@context": "https://schema.org", "@type": "BlogPosting",
