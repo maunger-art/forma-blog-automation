@@ -15,8 +15,8 @@ one shim file, `llm.py`.
   - `generate_topic_queue.py` — title polish now runs on Max (fails safe to deterministic titles).
 - **3 workflows** — `content_publish.yml`, `blog-publish.yml`, `topic-queue-refill.yml` now
   install Claude Code and pass `CLAUDE_CODE_OAUTH_TOKEN` instead of `ANTHROPIC_API_KEY`.
-- Not-yet-migrated (not on any active cron): `pillar_content_fill.py`, `backlink_engine.py`,
-  `forma_blog_scheduler.py` still use the old API path — migrate them the same way if you reactivate them.
+- Also migrated (not on any active cron, but now consistent): `pillar_content_fill.py`,
+  `backlink_engine.py`, `forma_blog_scheduler.py`. Every generation path in the repo now runs on Max.
 
 ## One-time setup (before the crons go green)
 1. On a machine logged into Max: `claude setup-token` (prints a 1-year token).

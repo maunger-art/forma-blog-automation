@@ -29,7 +29,7 @@ import sys
 from datetime import date, datetime
 from pathlib import Path
 
-import anthropic
+import llm as anthropic  # Max-plan shim (was: import anthropic)
 from slugify import slugify
 
 # ── Config ────────────────────────────────────────────────────────────────────
@@ -69,7 +69,7 @@ def pick_category(cal: dict) -> dict:
 
 # ── Generate post via Anthropic API ──────────────────────────────────────────
 def generate_post(category: dict, existing_posts: list, cal: dict) -> dict:
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    client = anthropic.Anthropic()  # Max-plan auth via Claude Code
 
     existing_titles = [p.get("title", "") for p in existing_posts if p.get("title")]
     existing_str = "\n".join(f"- {t}" for t in existing_titles) if existing_titles else "None yet."
@@ -256,9 +256,7 @@ def main():
     print(f"  Date: {TODAY}")
     print()
 
-    # Validate env
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        print("❌ ANTHROPIC_API_KEY not set"); raise SystemExit(1)
+    # Auth handled by Claude Code (Max plan) via `claude -p` — no API key required.
 
     # Load state
     cal   = load_calendar()
