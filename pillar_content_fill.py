@@ -156,7 +156,7 @@ REQUIREMENTS:
 - Start directly after the heading — do not restate the heading or introduce the section
 - Use <strong> for key concepts and important terms
 - Use <ul>/<li> for lists where natural — maximum one list
-- Include at least one specific number, threshold, or study reference
+- Include at least one specific number or threshold (real citations are added by the separate references pass — never invent one inline)
 - Clean HTML only — <p>, <strong>, <ul>, <li> — no inline styles, no divs
 - The h2 id must be exactly: s{section_index}
 
