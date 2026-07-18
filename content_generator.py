@@ -172,7 +172,8 @@ BODY HTML REQUIREMENTS:
 - Use <h2 id="matching-toc-id"> for section headings — IDs must match toc_items exactly
 - Use <ul>/<li> for lists where natural (max 1-2 lists per post)
 - Use <p> tags for all paragraphs
-- Include at least one specific data point, study reference, or metric (can be approximate)
+- Support claims with concrete mechanisms and specific numbers where you can
+- You MAY cite research, but ONLY real, verifiable studies — never invent studies, authors, journals, dates, or statistics. If you are not confident a source genuinely exists, explain the mechanism WITHOUT attributing it to a fabricated reference. A described mechanism with no citation is always better than a made-up one.
 - End with a forward-looking paragraph that naturally references adaptive training and Forma
 - Do NOT include a conclusion heading — just end naturally
 - Do NOT mention competitor apps by name
