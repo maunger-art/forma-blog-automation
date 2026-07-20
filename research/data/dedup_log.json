@@ -1,13 +1,19 @@
 [
   {
+    "kept": "autosugg-0777ddb3",
+    "merged": "autosugg-c9d184d1",
+    "similarity": 0.8,
+    "method": "fuzzy"
+  },
+  {
     "kept": "autosugg-d959ff21",
     "merged": "autosugg-28874476",
     "similarity": 0.8333,
     "method": "fuzzy"
   },
   {
-    "kept": "autosugg-0777ddb3",
-    "merged": "autosugg-c9d184d1",
+    "kept": "autosugg-869bf007",
+    "merged": "autosugg-00104d7f",
     "similarity": 0.8,
     "method": "fuzzy"
   },
@@ -24,26 +30,20 @@
     "method": "fuzzy"
   },
   {
-    "kept": "autosugg-7df1ec3f",
-    "merged": "autosugg-be4179ec",
+    "kept": "autosugg-be4179ec",
+    "merged": "autosugg-7df1ec3f",
     "similarity": 0.8,
     "method": "fuzzy"
   },
   {
-    "kept": "autosugg-7df1ec3f",
-    "merged": "autosugg-ed9f88f3",
+    "kept": "autosugg-be4179ec",
+    "merged": "autosugg-b8b2c987",
     "similarity": 0.8,
     "method": "fuzzy"
   },
   {
-    "kept": "autosugg-7df1ec3f",
-    "merged": "autosugg-acac9258",
-    "similarity": 0.8,
-    "method": "fuzzy"
-  },
-  {
-    "kept": "paa-af56b83f",
-    "merged": "paa-236eb9a8",
+    "kept": "paa-236eb9a8",
+    "merged": "paa-af56b83f",
     "similarity": 0.75,
     "method": "fuzzy"
   }
