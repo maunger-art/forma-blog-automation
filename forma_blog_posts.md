@@ -1177,3 +1177,48 @@ This is precisely why Forma ingests HRV trends alongside training data. A suppre
 - **Use HRV as a conversation starter with your data, not a verdict.** Pair it with subjective notes — perceived fatigue, mood, soreness — to build a clearer picture of what's actually going on.
 
 Your body doesn't distinguish between stress sources. Your training plan shouldn't either.
+
+
+---
+
+## 20. How to Return to Training After Illness Without Losing Fitness
+
+## The Real Cost Isn't the Sick Days
+
+Most athletes treat illness like a scheduling problem: miss four days, do a hard session to "catch up," move on. That instinct is exactly backwards, and it's the single most common way a five-day cold turns into a five-week fitness hole.
+
+VO2max doesn't fall much in the first week off — studies on detraining show aerobic capacity holds fairly steady for the first 5–7 days, then declines roughly 1% per day once you pass the two-week mark. So a short illness barely touches your engine. What actually damages you is what happens in the 48–72 hours after symptoms clear, when your immune system is still running a deficit and you load it like nothing happened.
+
+## Why "Feeling Fine" Isn't the Same as Ready
+
+Heart rate variability tells the real story here. In athletes tracked through common upper respiratory infections, HRV typically drops 15–25% below baseline during the illness and takes 3–5 days *after* symptoms resolve to normalize — sometimes longer if there was fever. Resting heart rate follows the same pattern, often staying elevated 5–10 beats above baseline for several days post-symptoms.
+
+The mismatch is the trap: your legs feel normal, your motivation is back, but your autonomic nervous system is still in recovery mode. Training on top of that suppressed state is what pushes a routine illness into a second wave — either a relapse of the original bug or a fresh one, because immune function is still compromised.
+
+## The Neck Check Rule and Where It Fails
+
+The old heuristic — symptoms above the neck (runny nose, sore throat) means light training is fine; symptoms below the neck (chest congestion, body aches, fever, GI symptoms) means full rest — is a reasonable first filter. It's not wrong, but it's incomplete.
+
+It misses the biggest actual risk: myocarditis. Training with a fever, or resuming hard efforts within a few days of one, is linked to a small but real increased risk of viral heart inflammation. This is the reason team sports medicine protocols now mandate a minimum of 10 days completely symptom-free (including no fever) before any return-to-play cardiovascular loading, regardless of how mild the illness felt. If you had a fever at any point, the neck check doesn't apply — treat it as a hard stop until that window passes.
+
+## The Graduated Return Protocol
+
+Once you're cleared — no fever for 24+ hours, resting HR back within 5 beats of baseline, HRV trending back toward your rolling average — the return should follow a load ramp, not a light-day-then-normal jump.
+
+A protocol that holds up well in practice:
+
+- **Day 1:** 40–50% of normal training volume, Zone 1–2 only, no intervals
+- **Day 2:** 50–60% of volume, still Zone 1–2
+- **Day 3:** 60–70% of volume, can introduce Zone 3 briefly if HR/RPE track normally
+- **Day 4:** 70–85% of volume, first easy structured session (tempo, not intervals)
+- **Day 5:** Back to full planned volume; hold off on your hardest scheduled session for one more day
+
+For an athlete training 8 hours a week, that's roughly: 3.5hrs, 4.5hrs, 5.5hrs, 6.5hrs, then full load — spread over five days rather than snapping back into the plan on day two. Each step should be gated on RHR and RPE-at-given-pace matching pre-illness numbers, not just how many days have passed.
+
+## What Happens When You Skip It
+
+The common failure mode: someone misses 5 days, feels 90% normal on day 6, and does their scheduled threshold session. HR runs 10–15 beats higher than normal for the same pace, RPE is inflated, and because the immune system is still down-regulated, the hard session itself becomes the trigger for a second illness or a symptom relapse — turning a 5-day setback into a 3-week one. The ramp protocol costs you roughly 3–4 extra easy days. Skipping it risks 10–20 lost training days if it backfires.
+
+## The Takeaway
+
+A short illness costs you almost nothing physiologically if you let the ramp finish before you load hard again. The expensive mistake isn't resting too long — it's returning to intensity before HRV and resting heart rate confirm your system is actually caught up, not just your symptoms.
