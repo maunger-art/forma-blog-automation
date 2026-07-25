@@ -1,5 +1,41 @@
 [
   {
+    "slug": "how-to-compute-training-load-a-practical-guide",
+    "title": "How to Compute Training Load: A Practical Guide",
+    "date": "2026-07-25",
+    "category": "Training Science",
+    "meta_description": "Learn how to calculate training load using TRIMP, session-RPE, ATL, CTL, and ACWR — the metrics that separate productive training from overreaching.",
+    "keywords": "training load, ATL, CTL, ACWR, acute chronic workload ratio, TRIMP, session RPE, overtraining prevention",
+    "read_time": 7,
+    "toc_items": [
+      {
+        "id": "what-training-load-measures",
+        "text": "What Training Load Actually Measures"
+      },
+      {
+        "id": "quantifying-a-single-session",
+        "text": "Quantifying a Single Session"
+      },
+      {
+        "id": "acute-vs-chronic-load",
+        "text": "Acute Load vs. Chronic Load"
+      },
+      {
+        "id": "the-acwr",
+        "text": "The Acute:Chronic Workload Ratio"
+      },
+      {
+        "id": "building-training-load-into-your-plan",
+        "text": "Building Training Load Into Your Plan"
+      }
+    ],
+    "body_html": "<p>Training load is the number that decides whether tomorrow's session builds fitness or digs a hole you won't climb out of for two weeks. Athletes who track distance or hours alone are missing half the picture — a 10K at threshold and a 10K easy jog cover identical ground but stress the body in completely different ways. <strong>Training load quantifies stress, not distance</strong>, and once you can measure it, you can stop guessing and start managing it deliberately.</p><h2 id=\"what-training-load-measures\">What Training Load Actually Measures</h2><p>At its core, training load is an attempt to compress two variables — how hard a session was and how long it lasted — into a single comparable number. That number lets you stack today's ride against last Tuesday's run, even though the sports, durations, and intensities were completely different. This matters because <strong>the body doesn't care what activity produced the stress</strong>, only how much of it accumulated and how quickly. A cyclist who does a hard 90-minute interval session and a swimmer who does a hard 40-minute set can both be pushing their system equally close to its limit, and load metrics are the only way to see that on paper.</p><p>The original framework for this came from exercise physiologist Eric Banister, who in the 1970s proposed the <strong>Training Impulse (TRIMP)</strong>: session duration multiplied by average heart rate reserve, weighted by an exponential factor that gives more credit to higher intensities. It was a deliberately simple idea — stress rises with both how long you work and how hard you push — and it still underpins most modern load models, including power-based Training Stress Score and pace-based equivalents.</p><h2 id=\"quantifying-a-single-session\">Quantifying a Single Session</h2><p>You don't need a power meter or heart rate strap to start computing load. Sports scientist Carl Foster popularized a method called <strong>session-RPE</strong>, which multiplies session duration in minutes by a 0–10 rating of perceived exertion collected about 30 minutes after finishing. A 60-minute run rated as a 6/10 effort produces a load of 360 arbitrary units; a 45-minute interval session rated 9/10 produces 405 — higher load despite less time, which matches how it actually felt in your legs.</p><p>More precise methods substitute physiological data for perceived effort:</p><ul><li><strong>Heart-rate-based TRIMP</strong> uses time spent in each HR zone weighted by an exponential intensity factor, so time near threshold counts disproportionately more than time in an easy zone.</li><li><strong>Power- or pace-based load</strong> (the model behind TSS and its running/swimming equivalents) uses a normalized intensity relative to your functional threshold, squared, then multiplied by duration — because physiological strain rises non-linearly as intensity climbs, not in a straight line.</li></ul><p>Whichever input you use, the output is the same: one number per session that reflects both duration and intensity, ready to be summed across days and weeks.</p><h2 id=\"acute-vs-chronic-load\">Acute Load vs. Chronic Load</h2><p>A single day's number is only useful in context. What matters for adaptation and injury risk is how that number compares to what you've absorbed recently versus what you've built up over months. This is where <strong>Acute Training Load (ATL)</strong> and <strong>Chronic Training Load (CTL)</strong> come in.</p><p>ATL is typically calculated as an exponentially weighted moving average of daily load over roughly the past 7 days — it represents short-term fatigue, rising fast when you train hard and decaying fast when you rest. CTL uses the same formula but over a longer window, commonly 28–42 days, and represents your underlying fitness: it builds slowly and decays slowly, which is exactly why fitness gained over months doesn't disappear after one easy week. The exponential weighting matters more than it sounds — it means yesterday's session counts more than one from three weeks ago, which mirrors how the body actually forgets and adapts.</p><p>Subtracting ATL from CTL gives a rough <strong>form</strong> or freshness indicator: when chronic fitness is high and acute fatigue is low, you're primed to perform. When acute load spikes well above chronic load, you're carrying fatigue that hasn't been absorbed yet.</p><h2 id=\"the-acwr\">The Acute:Chronic Workload Ratio</h2><p>Dividing acute load by chronic load produces the <strong>Acute:Chronic Workload Ratio (ACWR)</strong>, one of the more widely studied load metrics in sports science. Research by sports scientist Tim Gabbett, published in the British Journal of Sports Medicine, found that athletes whose ACWR stayed in a moderate range — roughly 0.8 to 1.3 — experienced meaningfully lower injury rates than those who let it spike above 1.5, a pattern often described as the \"training-injury prevention paradox\": the athletes training hardest were often the least injured, provided that hard training was built up gradually rather than spiked.</p><p>The mechanism is intuitive once you see the numbers: a ratio above 1.5 means you're asking your body to absorb load 50% above what it's chronically adapted to, in the space of about a week. Connective tissue, in particular, adapts more slowly than cardiovascular fitness, so a sudden acute spike outpaces what tendons and bone have been conditioned to handle — even if your engine feels fine. A ratio well below 0.8, on the other hand, usually signals detraining or excessive taper, not safety.</p><h2 id=\"building-training-load-into-your-plan\">Building Training Load Into Your Plan</h2><p>None of these numbers are useful in isolation — they're only meaningful as a trend you watch week over week, adjusted against how you're actually feeling and performing. A rising CTL with a controlled ACWR is the signature of a well-built training block. A CTL that's flat despite hard sessions usually means recovery isn't keeping pace with the work, and the next block should back off before pushing again.</p><p>The reason this matters more than most training variables is that the numbers alone don't know your sleep debt, your travel schedule, or how your HRV looked this morning. That's the gap adaptive training is built to close: instead of applying a fixed periodization template and hoping your ACWR stays in range, an adaptive system recalculates acute and chronic load daily alongside recovery signals and adjusts the next session before you overshoot. Forma builds training load calculation directly into that decision loop, so the plan you follow tomorrow reflects what your body has actually absorbed this week — not just what a spreadsheet assumed it would.",
+    "status": "published",
+    "_queue_id": "paa-e748a720",
+    "_cluster": "training-load",
+    "_composite_score": 6.4
+  },
+  {
     "slug": "how-do-you-calculate-your-training-load",
     "title": "How Do You Calculate Your Training Load?",
     "date": "2026-07-24",
