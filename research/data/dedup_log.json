@@ -6,8 +6,8 @@
     "method": "fuzzy"
   },
   {
-    "kept": "autosugg-d959ff21",
-    "merged": "autosugg-28874476",
+    "kept": "autosugg-b81e4ac2",
+    "merged": "autosugg-9e63bbb2",
     "similarity": 0.8333,
     "method": "fuzzy"
   },
@@ -30,19 +30,25 @@
     "method": "fuzzy"
   },
   {
-    "kept": "autosugg-be4179ec",
-    "merged": "autosugg-7df1ec3f",
+    "kept": "autosugg-7df1ec3f",
+    "merged": "autosugg-be4179ec",
     "similarity": 0.8,
     "method": "fuzzy"
   },
   {
-    "kept": "autosugg-be4179ec",
-    "merged": "autosugg-b8b2c987",
+    "kept": "autosugg-7df1ec3f",
+    "merged": "autosugg-ed9f88f3",
     "similarity": 0.8,
     "method": "fuzzy"
   },
   {
-    "kept": "paa-236eb9a8",
+    "kept": "autosugg-7df1ec3f",
+    "merged": "autosugg-acac9258",
+    "similarity": 0.8,
+    "method": "fuzzy"
+  },
+  {
+    "kept": "paa-c864217c",
     "merged": "paa-af56b83f",
     "similarity": 0.75,
     "method": "fuzzy"
