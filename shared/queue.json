@@ -579,9 +579,9 @@
     "cluster": "garmin-wearable",
     "content_type": "programmatic",
     "composite_score": 6.3,
-    "status": "unassigned",
-    "assigned_to": null,
-    "due_date": null,
+    "status": "assigned",
+    "assigned_to": "content_generator",
+    "due_date": "2026-08-01",
     "published_url": null
   },
   {
