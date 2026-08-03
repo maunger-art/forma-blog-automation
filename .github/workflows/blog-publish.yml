@@ -2,7 +2,7 @@ name: Generate and Publish New Blog Post
 
 on:
   schedule:
-    - cron: '0 8 * * 1'   # Every Monday 08:00 UTC
+    - cron: '19 7 * * 1'   # Mon 07:19 UTC (off :00)
   workflow_dispatch:       # Manual trigger
 
 permissions:

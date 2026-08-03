@@ -1,0 +1,48 @@
+name: Schedule guardian
+
+# GitHub silently drops scheduled runs when its queue is busy (why a Monday post can
+# just not appear). This runs a few hours after the publish window on publish days; if
+# no post went out today — and none is currently running — it fires a catch-up run.
+# Uses PAT_TOKEN (not GITHUB_TOKEN) so the catch-up and its downstream build/deploy
+# trigger normally.
+
+on:
+  schedule:
+    - cron: '41 10 * * 1,3,5,6'   # Mon/Wed/Fri/Sat 10:41 UTC — well after the 05:37 publish slot
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Catch up any dropped publish
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          today=$(date -u +%Y-%m-%d)
+
+          # Count today's publish runs that already succeeded OR are still running/queued.
+          active=$(gh run list --repo "$REPO" --workflow content_publish.yml --limit 20 \
+            --json conclusion,status,createdAt \
+            -q "[.[] | select(.createdAt[0:10]==\"$today\" and (.conclusion==\"success\" or .status==\"in_progress\" or .status==\"queued\"))] | length")
+
+          # Count today's failures (for the log / native failure email already covers these).
+          fails=$(gh run list --repo "$REPO" --workflow content_publish.yml --limit 20 \
+            --json conclusion,createdAt \
+            -q "[.[] | select(.createdAt[0:10]==\"$today\" and .conclusion==\"failure\")] | length")
+
+          echo "date=$today  active(success/running)=$active  failures=$fails"
+
+          if [ "${active:-0}" -gt 0 ]; then
+            echo "✅ Today's post already published (or a run is in progress). Nothing to do."
+          else
+            echo "⚠️ No successful publish today and nothing running — the scheduled run was dropped."
+            echo "→ Firing a catch-up content_publish run."
+            gh workflow run content_publish.yml --repo "$REPO"
+            echo "Catch-up dispatched; it will generate and deploy the missed post."
+          fi
