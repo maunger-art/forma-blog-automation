@@ -1,7 +1,7 @@
 name: Weekly Athlete Question Harvest
 on:
   schedule:
-    - cron: '0 5 * * 1'
+    - cron: '43 4 * * 1'   # Mon 04:43 UTC (off :00)
   workflow_dispatch:
     inputs:
       sources:

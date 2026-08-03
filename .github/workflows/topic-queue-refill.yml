@@ -2,7 +2,7 @@ name: Refill Blog Topic Queue
 
 on:
   schedule:
-    - cron: '0 8 * * 4'   # Every Thursday 08:00 UTC (different day from Monday publish)
+    - cron: '29 5 * * 4'   # Thu 05:29 UTC (off :00)
   workflow_dispatch:       # Manual trigger always available
 
 permissions:
