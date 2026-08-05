@@ -5,6 +5,10 @@ name: Schedule guardian
 # no post went out today — and none is currently running — it fires a catch-up run.
 # Uses PAT_TOKEN (not GITHUB_TOKEN) so the catch-up and its downstream build/deploy
 # trigger normally.
+#
+# On a catch-up it appends to automation/guardian_events.jsonl. The local agent-health
+# monitor reads that file and flags the guardian AMBER in the desktop Command Center
+# widget — so a caught drop is visible there without any email.
 
 on:
   schedule:
@@ -12,12 +16,16 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   guard:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+
       - name: Catch up any dropped publish
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
@@ -26,12 +34,11 @@ jobs:
           set -euo pipefail
           today=$(date -u +%Y-%m-%d)
 
-          # Count today's publish runs that already succeeded OR are still running/queued.
+          # Today's publish runs that already succeeded OR are still running/queued.
           active=$(gh run list --repo "$REPO" --workflow content_publish.yml --limit 20 \
             --json conclusion,status,createdAt \
             -q "[.[] | select(.createdAt[0:10]==\"$today\" and (.conclusion==\"success\" or .status==\"in_progress\" or .status==\"queued\"))] | length")
 
-          # Count today's failures (for the log / native failure email already covers these).
           fails=$(gh run list --repo "$REPO" --workflow content_publish.yml --limit 20 \
             --json conclusion,createdAt \
             -q "[.[] | select(.createdAt[0:10]==\"$today\" and .conclusion==\"failure\")] | length")
@@ -40,9 +47,19 @@ jobs:
 
           if [ "${active:-0}" -gt 0 ]; then
             echo "✅ Today's post already published (or a run is in progress). Nothing to do."
-          else
-            echo "⚠️ No successful publish today and nothing running — the scheduled run was dropped."
-            echo "→ Firing a catch-up content_publish run."
-            gh workflow run content_publish.yml --repo "$REPO"
-            echo "Catch-up dispatched; it will generate and deploy the missed post."
+            exit 0
           fi
+
+          echo "⚠️ No successful publish today and nothing running — the scheduled run was dropped."
+          echo "→ Firing a catch-up content_publish run."
+          gh workflow run content_publish.yml --repo "$REPO"
+
+          # Durable, Command-Center-visible marker (agent-health reads this → widget shows amber).
+          mkdir -p automation
+          printf '{"date":"%s","action":"catch-up","note":"scheduled publish was dropped; guardian re-fired it"}\n' "$today" >> automation/guardian_events.jsonl
+          git config user.email "actions@github.com"
+          git config user.name "Forma Guardian"
+          git add automation/guardian_events.jsonl
+          git commit -m "guardian: caught dropped publish $today [skip ci]" || true
+          git push || true
+          echo "Catch-up dispatched and event logged."
