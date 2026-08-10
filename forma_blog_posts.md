@@ -1259,3 +1259,48 @@ Heroic sessions also create a false sense of progress. They feel like proof of f
 ## The Practical Takeaway
 
 If you train 5-10 hours a week, the highest-leverage change you can make isn't adding a bigger session — it's making every session repeatable. Target workouts you could, in principle, do again the next day without dreading it: roughly 80-85% of what you're capable of, not 100%. Let the volume come from frequency and consistency, not from occasional peak efforts. If a session leaves you needing more than 48 hours before you'd willingly do something similar again, it was too big relative to your current training rhythm, not too small. Track your training load week over week rather than your single best sessions — the athlete with the flattest, most repeatable load curve over 12 weeks is the one who improves, almost every time.
+
+
+---
+
+## 22. How to Taper for a Running Race: The Science-Backed Taper Strategy That Works
+
+Three weeks before a 2:31 marathon, one of our athletes was running 100km weeks. Two weeks out, she dropped to 65km. Race week, 38km — barely a third of her peak volume. She didn't lose fitness. She ran a 4-minute personal best.
+
+That's not a fluke. It's the predictable output of a taper done correctly, and most runners still get it wrong — either they cut too little and show up flat, or they cut too much and show up flat for a different reason. The taper isn't rest. It's a precisely dosed reduction designed to let adaptation catch up with training.
+
+## The Taper Paradox
+
+Hard training makes you fitter and more tired at the same time. Fitness gains and fatigue both accumulate from the same stimulus, and fatigue masks fitness. You can be at your strongest physiological state of the training block and still run poorly, because accumulated muscle damage, depleted glycogen stores, and elevated inflammatory markers are dragging performance down. The taper's entire job is to strip away the fatigue while keeping the fitness. Cut volume too little and you toe the line still carrying that fatigue. Cut it too much, or cut intensity along with volume, and you lose the fitness too — detraining starts showing up in VO2max and enzyme activity within 10-14 days of reduced stimulus.
+
+## What's Actually Happening Physiologically
+
+A well-run taper does four things inside two to three weeks. Muscle glycogen stores rebuild and often supercompensate above baseline, since a lighter training load lets carbohydrate intake outpace depletion. Blood volume and red cell mass, both suppressed by chronic heavy training, expand back toward their ceiling — plasma volume increases of 5-10% aren't unusual, which directly improves stroke volume and oxygen delivery. Muscle damage markers like creatine kinase drop as microtears from weeks of repetitive loading actually repair. And immune function, which chronic high-volume training suppresses, recovers, lowering the odds of the cold or GI bug that wrecks race week for so many runners.
+
+None of that requires you to stop training. It requires you to stop overwhelming the system with new stimulus so it can finish processing the old one.
+
+## The Numbers That Define a Good Taper
+
+The most cited analysis on this, Mujika and Padilla's review of taper research, found the sweet spot is a taper lasting 8-14 days with total volume cut by 41-60% from peak — while keeping training frequency and intensity close to what you've been doing. That combination produced performance improvements averaging 2-3% across the studies reviewed, which is enormous in race terms: 2-3% off a 3:30 marathon is 4-6 minutes.
+
+The part people get wrong is dropping intensity along with volume. If your weekly long run has strides, your workouts have race-pace intervals, and you suddenly replace all of it with slow, easy mileage, you lose neuromuscular sharpness even as your legs feel fresher. The taper should shrink the size of your training — fewer intervals, shorter long runs, fewer total kilometers — without shrinking how hard the remaining work is.
+
+## A Worked Example: 14 Days Out
+
+Take a runner peaking at 80km/week with a weekly workout of 6x1km at 5K pace. A 14-day taper built on the research looks like this:
+
+- **Days 14-8**: ~55km (about 30% cut). Workout trimmed to 4x1km at the same pace — same intensity, fewer reps.
+- **Days 7-3**: ~35km (about 55% cut from peak). One short session with 3-4 x 400m at race pace to keep legs turning over, plus easy running.
+- **Days 2-0**: ~10-15km total, including a short shakeout run with a few strides at goal pace the day before the race.
+
+Notice intensity never disappears — it's present in every phase, just in smaller doses. That's what separates a taper from simply resting.
+
+## The Two Ways Tapers Go Wrong
+
+The first failure mode is panic mileage: doubting your fitness in the final week and sneaking in an extra long run or a hard workout "just to be sure." This resets the fatigue clock right when you need it clearing, and it's the single most common way runners sabotage a race they were fit enough to run well.
+
+The second is over-tapering — cutting volume by 70-80% or more, or dropping every hard effort, for longer than two weeks. Detraining is real: VO2max and enzymatic markers of aerobic fitness begin measurably declining after roughly 10-14 days without sufficient stimulus. A taper that's too long or too shallow in intensity leaves you well-rested but undercooked.
+
+## The Takeaway
+
+Taper length should scale with race distance and your training load: 7-10 days for a half marathon, 10-14 days for a marathon, shorter still for anything under 10K. Within that window, cut total volume by roughly 40-60% from your peak, hold training frequency steady, and keep intensity close to what you've been doing — smaller doses of the same hard efforts, not their replacement with easy miles. If you're logging your training, that's the number to watch on the way in: don't taper by feel, taper by the percentage cut, and trust that the freshness shows up on race day, not before.
