@@ -32,13 +32,13 @@ TODAY         = date.today().isoformat()
 OG_IMAGE_URL  = f"{BLOG_URL}/og-default.png"   # shared OG image for all pages
 
 # ── Exact SVG logo mark from brand files ──────────────────────────────────────
-LOGO_SVG = """<svg width="200" height="44" viewBox="0 0 200 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="7" height="44" fill="#1A6B4A"/>
-  <rect x="0" y="0" width="28" height="7" fill="#1A6B4A"/>
-  <rect x="0" y="18.5" width="21" height="7" fill="#1A6B4A"/>
-  <polygon points="33,44 39,44 46,28 40,28" fill="#1A6B4A"/>
-  <polygon points="38,44 42,44 49,28 45,28" fill="#1A6B4A" opacity="0.22"/>
-  <text x="60" y="33" font-family="Oxanium, monospace" font-weight="300" font-size="28" fill="#0F1117" letter-spacing="1">FORMA</text>
+LOGO_SVG = """<svg width="260" height="56" viewBox="0 0 260 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="9" height="56" fill="#1A6B4A"/>
+  <rect x="0" y="0" width="36" height="9" fill="#1A6B4A"/>
+  <rect x="0" y="23.5" width="27" height="9" fill="#1A6B4A"/>
+  <polygon points="42,56 50,56 60,32 52,32" fill="#1A6B4A"/>
+  <polygon points="49,56 55,56 65,32 59,32" fill="#1A6B4A" opacity="0.2"/>
+  <text x="76" y="40" font-family="Oxanium, monospace" font-weight="300" font-size="34" fill="#0F1117" letter-spacing="1.5">FORMA</text>
 </svg>"""
 
 LOGO_SVG_WHITE = """<svg width="200" height="44" viewBox="0 0 200 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,11 +129,13 @@ def NAV(active="blog"):
   <div class="nav-inner">
     <a class="nav-logo" href="{SITE_URL}">{LOGO_SVG}</a>
     <ul class="nav-links">{lis}</ul>
-    <a href="{SITE_URL}/login" class="btn-login">Log in</a>
-    <a href="{SITE_URL}/pricing" class="btn-start">Join beta</a>
-    <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </button>
+    <div class="nav-actions">
+      <a href="{SITE_URL}/login" class="btn-login">Log in</a>
+      <a href="{SITE_URL}/pricing" class="btn-start">Join beta</a>
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
   </div>
 </nav>
 <div class="nav-drawer" id="navDrawer" aria-hidden="true">
@@ -211,39 +213,46 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(
 # ── Shared CSS ────────────────────────────────────────────────────────────────
 BRAND_CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --green: #1A6B4A; --green-mid: #2D9165; --green-light: #F0FFF4;
   --ink: #0F1117; --ink-60: #5A5F6E; --ink-30: #B0B5C3; --ink-10: #F5F6F8;
   --surface: #F8F9FB; --border: #E8EAF0; --white: #FFFFFF; --radius: 12px;
   --font: 'Oxanium', system-ui, sans-serif;
+  /* Nav/UI face — matches the main site (formafit.co.uk), which uses Inter. */
+  --font-ui: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 body { font-family: var(--font); color: var(--ink); background: var(--white);
   font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4 { font-family: var(--font); font-weight: 300; }
-nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97);
-  backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
-.nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 68px;
-  display: flex; align-items: center; position: relative; }
-.nav-logo { display: flex; align-items: center; text-decoration: none;
-  flex-shrink: 0; margin-right: auto; }
-.nav-logo svg { height: 28px; width: auto; }
-.nav-links { display: flex; gap: 4px; list-style: none;
-  position: absolute; left: 50%; transform: translateX(-50%); }
-.nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--ink-60);
-  text-decoration: none; padding: 6px 14px; border-radius: 8px; transition: color 0.15s; }
+/* Nav mirrors the main site (formafit.co.uk MarketingLayout) exactly:
+   Inter face, 56px bar, logo | centred links | actions, dark active text
+   with a green underline, matching pill buttons. */
+nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border); }
+.nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 56px;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.nav-logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
+.nav-logo svg { height: 28px; width: auto; display: block; }
+.nav-links { display: flex; align-items: center; gap: 24px; list-style: none; }
+.nav-links a { font-family: var(--font-ui); font-size: 0.875rem; font-weight: 400;
+  color: var(--ink-60); text-decoration: none; padding-bottom: 4px;
+  border-bottom: 2px solid transparent; transition: color 0.15s; white-space: nowrap; }
 .nav-links a:hover { color: var(--ink); }
-.nav-links a.active { color: var(--green); font-weight: 600;
-  border-bottom: 2px solid var(--green); border-radius: 0; padding-bottom: 4px; }
-.btn-login { padding: 8px 20px; border-radius: 99px; border: 1.5px solid var(--border);
-  background: white; color: var(--ink); font-size: 0.875rem; font-weight: 500;
-  font-family: var(--font); text-decoration: none; margin-right: 8px;
-  transition: border-color 0.15s; white-space: nowrap; }
-.btn-login:hover { border-color: var(--ink-30); }
-.btn-start { padding: 9px 22px; border-radius: 99px; background: var(--green);
-  color: white; font-size: 0.875rem; font-weight: 600; font-family: var(--font);
+.nav-links a.active { color: var(--ink); font-weight: 500; border-bottom-color: var(--green); }
+.nav-actions { display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
+.btn-login { display: inline-flex; align-items: center; padding: 13px 27px; border-radius: 999px;
+  border: 1px solid var(--border); background: transparent; color: var(--ink);
+  font-family: var(--font-ui); font-size: 0.875rem; font-weight: 500;
   text-decoration: none; transition: background 0.15s; white-space: nowrap; }
-.btn-start:hover { background: var(--green-mid); }
+.btn-login:hover { background: var(--surface); }
+.btn-start { display: inline-flex; align-items: center; padding: 9px 20px; border-radius: 999px;
+  background: var(--green); color: #fff; font-family: var(--font-ui); font-size: 0.875rem;
+  font-weight: 500; text-decoration: none; transition: background 0.15s, transform 0.15s;
+  white-space: nowrap; }
+.btn-start:hover { background: var(--green-mid); transform: translateY(-1px); }
 /* ── Mobile nav trigger ── */
 .nav-menu-btn { display: none; align-items: center; justify-content: center;
   width: 40px; height: 40px; border-radius: 10px; border: 1.5px solid var(--border);
