@@ -1,5 +1,41 @@
 [
   {
+    "slug": "garmin-readiness-score-where-to-find-it-on-watch-app",
+    "title": "Garmin Readiness Score: Where to Find It on Watch & App",
+    "date": "2026-08-14",
+    "category": "Wearables",
+    "meta_description": "Can't locate your Garmin Training Readiness score? Here's exactly where it lives on your watch and in Garmin Connect, plus what the number actually means.",
+    "keywords": "garmin readiness score, garmin training readiness, where to find garmin readiness score, garmin connect training status, garmin hrv status, body battery vs readiness, garmin recovery time",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "what-it-actually-is",
+        "text": "What the Garmin Readiness Score Actually Is"
+      },
+      {
+        "id": "where-to-find-it",
+        "text": "Where to Find It on Your Watch and in Connect"
+      },
+      {
+        "id": "whats-feeding-the-number",
+        "text": "What's Feeding the Number"
+      },
+      {
+        "id": "reading-the-score",
+        "text": "How to Read the Score Without Overreacting"
+      },
+      {
+        "id": "using-it-in-training",
+        "text": "Using It to Actually Change Your Training"
+      }
+    ],
+    "body_html": "<p>You know the feature exists — you've seen the screenshots, maybe a training partner mentioned their score dropped after a bad night's sleep — but you open your Garmin Connect app and can't find it. That's usually not user error. Garmin's <strong>Training Readiness</strong> score (the feature most people mean when they say \"readiness score\") is only available on newer devices, and it's tucked into a spot that isn't obvious if you've never gone looking.</p><p>Here's exactly where it lives, what it's built from, and how to use it without treating it as a daily verdict on your training.</p><h2 id=\"what-it-actually-is\">What the Garmin Readiness Score Actually Is</h2><p>Training Readiness is Garmin's single-number summary of whether your body is prepared to handle a hard training load today. It's scored from 0 to 100 and bucketed into labels — Low, Moderate, High, and so on — so you get a quick read without having to interpret raw data yourself.</p><p>It's distinct from two other Garmin metrics people often confuse it with. <strong>Body Battery</strong> tracks your energy reserves throughout the day, rising with rest and falling with stress and activity — it's a real-time gauge, not a training recommendation. <strong>HRV Status</strong> tracks your overnight heart rate variability against your own baseline over several weeks. Training Readiness pulls from HRV Status, but it isn't the same thing — it's a composite score that folds HRV in alongside several other inputs.</p><h2 id=\"where-to-find-it\">Where to Find It on Your Watch and in Connect</h2><p>Availability first: Training Readiness requires a compatible device — Forerunner 265/965, Fenix 7 Plus/8, Epix (Gen 2), Venu 3, and other models released from 2023 onward. If you're on an older Forerunner or Vivoactive, you likely won't see it at all, no matter how you dig through the app.</p><p>If your device supports it, here's where to look:</p><ul><li><strong>On the watch:</strong> swipe through your glances (or press up/down from the watch face) until you reach the Training Readiness glance. Tapping it opens a breakdown of the score's components. Some models also surface it on the Training Status or Morning Report screen.</li><li><strong>In the Garmin Connect app:</strong> open the Today tab (the home screen with your daily stats) and scroll to the Training Readiness tile — it usually sits near Body Battery and HRV Status. Tap it for the full breakdown and a 7-day history graph.</li><li><strong>On Garmin Connect web:</strong> it's less prominently placed than in the app. Look under Health Stats or Training Status in the left-hand menu; the readiness widget appears alongside sleep and stress data.</li></ul><p>If you've checked all three and still see nothing, the most common culprits are an unsupported device, a watch that hasn't synced overnight sleep and HRV data yet, or a Morning Report feature that's been toggled off in your device settings.</p><h2 id=\"whats-feeding-the-number\">What's Feeding the Number</h2><p>The score isn't just yesterday's HRV reading dressed up differently. Garmin combines several inputs, each weighted:</p><ul><li><strong>Sleep score and sleep history</strong> — both last night's sleep and a rolling average, since one good night doesn't erase a week of short sleep</li><li><strong>HRV Status</strong> — how your overnight heart rate variability compares to your personal baseline range</li><li><strong>Recovery time</strong> — the hours your watch estimates you need before your next hard effort, based on recent training strain</li><li><strong>Acute training load</strong> — how much stress you've accumulated in the last few days relative to what you're adapted to</li><li><strong>Sleep history and stress history</strong> — longer-term context that stops a single noisy night from swinging the score too far</li></ul><p>This is why two people with identical HRV readings on a given morning can get different readiness scores — one might be carrying more accumulated training load or coming off worse sleep history, both of which pull the composite number down.</p><h2 id=\"reading-the-score\">How to Read the Score Without Overreacting</h2><p>A single low score is data, not a diagnosis. Heart rate variability is sensitive to alcohol, late meals, travel, illness onset, and even sleeping in an unfamiliar bed — none of which necessarily mean your training is off track. The value of the number comes from its <strong>trend</strong>, not any one reading.</p><p>Watch for a pattern: readiness trending downward across three or more consecutive days, especially alongside rising resting heart rate or falling HRV Status, is a more reliable signal than any single morning's number. That pattern typically reflects real accumulated fatigue — your autonomic nervous system shifting toward a more sympathetic-dominant state as recovery debt builds — rather than one-off noise.</p><h2 id=\"using-it-in-training\">Using It to Actually Change Your Training</h2><p>The score is only useful if it changes what you do. A high readiness reading is permission to push a key session — intervals, a tempo effort, a long ride at the upper end of your planned intensity. A low reading, especially a sustained one, is a signal to swap that session for aerobic volume, mobility work, or an extra rest day rather than grinding through a plan that was written before your body's current state was known.</p><p>The gap most athletes hit is that Garmin gives you the number but leaves the decision entirely up to you — there's no adjustment to tomorrow's workout, no rebalancing of the week's load. That's the piece adaptive training is built to close. Forma reads the same underlying recovery signals — HRV trends, sleep, accumulated load — and uses them to actually reshape your plan session by session, so a bad readiness morning doesn't just sit there as a number you have to act on manually. The data only earns its keep when it changes tomorrow's session, not just today's mood.",
+    "status": "published",
+    "_queue_id": "autosugg-bde10aec",
+    "_cluster": "hrv-readiness",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "acute-vs-chronic-training-load-the-two-types-explained",
     "title": "Acute vs. Chronic Training Load: The Two Types Explained",
     "date": "2026-08-10",
@@ -34,6 +70,44 @@
     "_queue_id": "paa-08a0db38",
     "_cluster": "training-load",
     "_composite_score": 5.9
+  },
+  {
+    "slug": "how-to-taper-for-a-running-race-the-science-backed-taper-strategy-that-works",
+    "title": "How to Taper for a Running Race: The Science-Backed Taper Strategy That Works",
+    "category": "Training Science",
+    "meta_description": "Cutting training volume before race day feels risky, but decades of taper research say otherwise. Here's the protocol that actually improves performance.",
+    "keywords": "running taper, taper for marathon, how to taper, taper strategy, race week training, glycogen supercompensation, taper length running",
+    "read_time": 6,
+    "date": "2026-08-10",
+    "status": "published",
+    "body_html": "<p>Three weeks before a 2:31 marathon, one of our athletes was running 100km weeks. Two weeks out, she dropped to 65km. Race week, 38km — barely a third of her peak volume. She didn't lose fitness. She ran a 4-minute personal best.</p>\n<p>That's not a fluke. It's the predictable output of a taper done correctly, and most runners still get it wrong — either they cut too little and show up flat, or they cut too much and show up flat for a different reason. The taper isn't rest. It's a precisely dosed reduction designed to let adaptation catch up with training.</p>\n<h2 id=\"the-taper-paradox\">The Taper Paradox</h2>\n<p>Hard training makes you fitter and more tired at the same time. Fitness gains and fatigue both accumulate from the same stimulus, and fatigue masks fitness. You can be at your strongest physiological state of the training block and still run poorly, because accumulated muscle damage, depleted glycogen stores, and elevated inflammatory markers are dragging performance down. The taper's entire job is to strip away the fatigue while keeping the fitness. Cut volume too little and you toe the line still carrying that fatigue. Cut it too much, or cut intensity along with volume, and you lose the fitness too — detraining starts showing up in VO2max and enzyme activity within 10-14 days of reduced stimulus.</p>\n<h2 id=\"what-s-actually-happening-physiologically\">What's Actually Happening Physiologically</h2>\n<p>A well-run taper does four things inside two to three weeks. Muscle glycogen stores rebuild and often supercompensate above baseline, since a lighter training load lets carbohydrate intake outpace depletion. Blood volume and red cell mass, both suppressed by chronic heavy training, expand back toward their ceiling — plasma volume increases of 5-10% aren't unusual, which directly improves stroke volume and oxygen delivery. Muscle damage markers like creatine kinase drop as microtears from weeks of repetitive loading actually repair. And immune function, which chronic high-volume training suppresses, recovers, lowering the odds of the cold or GI bug that wrecks race week for so many runners.</p>\n<p>None of that requires you to stop training. It requires you to stop overwhelming the system with new stimulus so it can finish processing the old one.</p>\n<h2 id=\"the-numbers-that-define-a-good-taper\">The Numbers That Define a Good Taper</h2>\n<p>The most cited analysis on this, Mujika and Padilla's review of taper research, found the sweet spot is a taper lasting 8-14 days with total volume cut by 41-60% from peak — while keeping training frequency and intensity close to what you've been doing. That combination produced performance improvements averaging 2-3% across the studies reviewed, which is enormous in race terms: 2-3% off a 3:30 marathon is 4-6 minutes.</p>\n<p>The part people get wrong is dropping intensity along with volume. If your weekly long run has strides, your workouts have race-pace intervals, and you suddenly replace all of it with slow, easy mileage, you lose neuromuscular sharpness even as your legs feel fresher. The taper should shrink the size of your training — fewer intervals, shorter long runs, fewer total kilometers — without shrinking how hard the remaining work is.</p>\n<h2 id=\"a-worked-example-14-days-out\">A Worked Example: 14 Days Out</h2>\n<p>Take a runner peaking at 80km/week with a weekly workout of 6x1km at 5K pace. A 14-day taper built on the research looks like this:</p>\n<ul>\n<li><strong>Days 14-8</strong>: ~55km (about 30% cut). Workout trimmed to 4x1km at the same pace — same intensity, fewer reps.</li>\n<li><strong>Days 7-3</strong>: ~35km (about 55% cut from peak). One short session with 3-4 x 400m at race pace to keep legs turning over, plus easy running.</li>\n<li><strong>Days 2-0</strong>: ~10-15km total, including a short shakeout run with a few strides at goal pace the day before the race.</li>\n</ul>\n<p>Notice intensity never disappears — it's present in every phase, just in smaller doses. That's what separates a taper from simply resting.</p>\n<h2 id=\"the-two-ways-tapers-go-wrong\">The Two Ways Tapers Go Wrong</h2>\n<p>The first failure mode is panic mileage: doubting your fitness in the final week and sneaking in an extra long run or a hard workout \"just to be sure.\" This resets the fatigue clock right when you need it clearing, and it's the single most common way runners sabotage a race they were fit enough to run well.</p>\n<p>The second is over-tapering — cutting volume by 70-80% or more, or dropping every hard effort, for longer than two weeks. Detraining is real: VO2max and enzymatic markers of aerobic fitness begin measurably declining after roughly 10-14 days without sufficient stimulus. A taper that's too long or too shallow in intensity leaves you well-rested but undercooked.</p>\n<h2 id=\"the-takeaway\">The Takeaway</h2>\n<p>Taper length should scale with race distance and your training load: 7-10 days for a half marathon, 10-14 days for a marathon, shorter still for anything under 10K. Within that window, cut total volume by roughly 40-60% from your peak, hold training frequency steady, and keep intensity close to what you've been doing — smaller doses of the same hard efforts, not their replacement with easy miles. If you're logging your training, that's the number to watch on the way in: don't taper by feel, taper by the percentage cut, and trust that the freshness shows up on race day, not before.</p>",
+    "toc_items": [
+      {
+        "id": "the-taper-paradox",
+        "text": "The Taper Paradox"
+      },
+      {
+        "id": "whats-actually-happening-physiologically",
+        "text": "What's Actually Happening Physiologically"
+      },
+      {
+        "id": "the-numbers-that-define-a-good-taper",
+        "text": "The Numbers That Define a Good Taper"
+      },
+      {
+        "id": "a-worked-example-14-days-out",
+        "text": "A Worked Example: 14 Days Out"
+      },
+      {
+        "id": "the-two-ways-tapers-go-wrong",
+        "text": "The Two Ways Tapers Go Wrong"
+      },
+      {
+        "id": "the-takeaway",
+        "text": "The Takeaway"
+      }
+    ],
+    "hash": "94c77f322d462a458eddf2f78e936d89"
   },
   {
     "slug": "training-load-and-overload-what-they-actually-mean",
@@ -4891,43 +4965,5 @@
       }
     ],
     "body_html": "<p>Endurance athletes often believe success comes from doing more.</p>\n\n<p>More miles. More intervals. More training.</p>\n\n<p>But one of the biggest lessons in performance science is that <strong>training harder doesn’t always produce better results</strong>.</p>\n\n<h2 id=\"training-creates-stress\">Training creates stress</h2>\n\n<p>Every workout stresses the body. That stress triggers adaptation — but only if the body has time to recover.</p>\n\n<p>Without that recovery window, the adaptation stimulus is lost. Worse, additional stress on an unrecovered system increases injury risk and suppresses performance.</p>\n\n<p>This is the paradox: the thing that makes you fitter (training) also makes you temporarily weaker. Fitness is built in the gap between sessions, not during them.</p>\n\n<h2 id=\"recovery-builds-performance\">Recovery builds performance</h2>\n\n<p>During recovery the body:</p>\n\n<ul>\n  <li>Repairs micro-tears in muscle tissue</li>\n  <li>Restores glycogen stores</li>\n  <li>Strengthens connective tissue and physiological systems</li>\n  <li>Consolidates neurological adaptations</li>\n</ul>\n\n<p>Without adequate recovery there is no adaptation. The training stress becomes noise rather than signal.</p>\n\n<h2 id=\"discipline-of-restraint\">The discipline of restraint</h2>\n\n<p>Elite athletes know when to push and when to recover.</p>\n\n<p>They understand that easy days must remain genuinely easy, and that rest is a critical — not optional — part of the training process.</p>\n\n<p>The temptation to push through fatigue is one of the most common reasons amateur athletes plateau or get injured. The ability to hold back when it matters is a learned skill.</p>\n\n<h2 id=\"sustainable-performance\">Sustainable performance</h2>\n\n<p>The goal is not to maximise effort on one day, but to sustain <strong>consistent training over months and years</strong>.</p>\n\n<p>Athletes who avoid injury and burnout — who train consistently at a manageable load — often outperform those who push relentlessly through fatigue.</p>\n\n<p>The biggest breakthroughs rarely come from doing the most work. They come from doing the <strong>right work at the right time</strong> — and then recovering properly from it.</p>"
-  },
-  {
-    "slug": "how-to-taper-for-a-running-race-the-science-backed-taper-strategy-that-works",
-    "title": "How to Taper for a Running Race: The Science-Backed Taper Strategy That Works",
-    "category": "Training Science",
-    "meta_description": "Cutting training volume before race day feels risky, but decades of taper research say otherwise. Here's the protocol that actually improves performance.",
-    "keywords": "running taper, taper for marathon, how to taper, taper strategy, race week training, glycogen supercompensation, taper length running",
-    "read_time": 6,
-    "date": "2026-08-10",
-    "status": "published",
-    "body_html": "<p>Three weeks before a 2:31 marathon, one of our athletes was running 100km weeks. Two weeks out, she dropped to 65km. Race week, 38km — barely a third of her peak volume. She didn't lose fitness. She ran a 4-minute personal best.</p>\n<p>That's not a fluke. It's the predictable output of a taper done correctly, and most runners still get it wrong — either they cut too little and show up flat, or they cut too much and show up flat for a different reason. The taper isn't rest. It's a precisely dosed reduction designed to let adaptation catch up with training.</p>\n<h2 id=\"the-taper-paradox\">The Taper Paradox</h2>\n<p>Hard training makes you fitter and more tired at the same time. Fitness gains and fatigue both accumulate from the same stimulus, and fatigue masks fitness. You can be at your strongest physiological state of the training block and still run poorly, because accumulated muscle damage, depleted glycogen stores, and elevated inflammatory markers are dragging performance down. The taper's entire job is to strip away the fatigue while keeping the fitness. Cut volume too little and you toe the line still carrying that fatigue. Cut it too much, or cut intensity along with volume, and you lose the fitness too — detraining starts showing up in VO2max and enzyme activity within 10-14 days of reduced stimulus.</p>\n<h2 id=\"what-s-actually-happening-physiologically\">What's Actually Happening Physiologically</h2>\n<p>A well-run taper does four things inside two to three weeks. Muscle glycogen stores rebuild and often supercompensate above baseline, since a lighter training load lets carbohydrate intake outpace depletion. Blood volume and red cell mass, both suppressed by chronic heavy training, expand back toward their ceiling — plasma volume increases of 5-10% aren't unusual, which directly improves stroke volume and oxygen delivery. Muscle damage markers like creatine kinase drop as microtears from weeks of repetitive loading actually repair. And immune function, which chronic high-volume training suppresses, recovers, lowering the odds of the cold or GI bug that wrecks race week for so many runners.</p>\n<p>None of that requires you to stop training. It requires you to stop overwhelming the system with new stimulus so it can finish processing the old one.</p>\n<h2 id=\"the-numbers-that-define-a-good-taper\">The Numbers That Define a Good Taper</h2>\n<p>The most cited analysis on this, Mujika and Padilla's review of taper research, found the sweet spot is a taper lasting 8-14 days with total volume cut by 41-60% from peak — while keeping training frequency and intensity close to what you've been doing. That combination produced performance improvements averaging 2-3% across the studies reviewed, which is enormous in race terms: 2-3% off a 3:30 marathon is 4-6 minutes.</p>\n<p>The part people get wrong is dropping intensity along with volume. If your weekly long run has strides, your workouts have race-pace intervals, and you suddenly replace all of it with slow, easy mileage, you lose neuromuscular sharpness even as your legs feel fresher. The taper should shrink the size of your training — fewer intervals, shorter long runs, fewer total kilometers — without shrinking how hard the remaining work is.</p>\n<h2 id=\"a-worked-example-14-days-out\">A Worked Example: 14 Days Out</h2>\n<p>Take a runner peaking at 80km/week with a weekly workout of 6x1km at 5K pace. A 14-day taper built on the research looks like this:</p>\n<ul>\n<li><strong>Days 14-8</strong>: ~55km (about 30% cut). Workout trimmed to 4x1km at the same pace — same intensity, fewer reps.</li>\n<li><strong>Days 7-3</strong>: ~35km (about 55% cut from peak). One short session with 3-4 x 400m at race pace to keep legs turning over, plus easy running.</li>\n<li><strong>Days 2-0</strong>: ~10-15km total, including a short shakeout run with a few strides at goal pace the day before the race.</li>\n</ul>\n<p>Notice intensity never disappears — it's present in every phase, just in smaller doses. That's what separates a taper from simply resting.</p>\n<h2 id=\"the-two-ways-tapers-go-wrong\">The Two Ways Tapers Go Wrong</h2>\n<p>The first failure mode is panic mileage: doubting your fitness in the final week and sneaking in an extra long run or a hard workout \"just to be sure.\" This resets the fatigue clock right when you need it clearing, and it's the single most common way runners sabotage a race they were fit enough to run well.</p>\n<p>The second is over-tapering — cutting volume by 70-80% or more, or dropping every hard effort, for longer than two weeks. Detraining is real: VO2max and enzymatic markers of aerobic fitness begin measurably declining after roughly 10-14 days without sufficient stimulus. A taper that's too long or too shallow in intensity leaves you well-rested but undercooked.</p>\n<h2 id=\"the-takeaway\">The Takeaway</h2>\n<p>Taper length should scale with race distance and your training load: 7-10 days for a half marathon, 10-14 days for a marathon, shorter still for anything under 10K. Within that window, cut total volume by roughly 40-60% from your peak, hold training frequency steady, and keep intensity close to what you've been doing — smaller doses of the same hard efforts, not their replacement with easy miles. If you're logging your training, that's the number to watch on the way in: don't taper by feel, taper by the percentage cut, and trust that the freshness shows up on race day, not before.</p>",
-    "toc_items": [
-      {
-        "id": "the-taper-paradox",
-        "text": "The Taper Paradox"
-      },
-      {
-        "id": "whats-actually-happening-physiologically",
-        "text": "What's Actually Happening Physiologically"
-      },
-      {
-        "id": "the-numbers-that-define-a-good-taper",
-        "text": "The Numbers That Define a Good Taper"
-      },
-      {
-        "id": "a-worked-example-14-days-out",
-        "text": "A Worked Example: 14 Days Out"
-      },
-      {
-        "id": "the-two-ways-tapers-go-wrong",
-        "text": "The Two Ways Tapers Go Wrong"
-      },
-      {
-        "id": "the-takeaway",
-        "text": "The Takeaway"
-      }
-    ],
-    "hash": "94c77f322d462a458eddf2f78e936d89"
   }
 ]
