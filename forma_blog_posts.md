@@ -1304,3 +1304,44 @@ The second is over-tapering — cutting volume by 70-80% or more, or dropping ev
 ## The Takeaway
 
 Taper length should scale with race distance and your training load: 7-10 days for a half marathon, 10-14 days for a marathon, shorter still for anything under 10K. Within that window, cut total volume by roughly 40-60% from your peak, hold training frequency steady, and keep intensity close to what you've been doing — smaller doses of the same hard efforts, not their replacement with easy miles. If you're logging your training, that's the number to watch on the way in: don't taper by feel, taper by the percentage cut, and trust that the freshness shows up on race day, not before.
+
+
+---
+
+## 23. How to Taper for a Cycling Event: A Science-Backed Taper Protocol
+
+Most riders taper backwards. They see "rest" on the plan and start cutting the hard stuff first — the VO2max intervals, the race-pace efforts, the group ride that hurts. What's left is a week of easy spinning. That approach can cost you 3-5% of the fitness you spent twelve weeks building, and the research on tapering has been consistent about why for over two decades.
+
+## The Taper Paradox
+
+Fitness and fatigue are both byproducts of training, but they don't decay at the same rate. Banister's impulse-response model, which underlies most modern training-load software, treats them as two separate curves: fatigue has a short half-life (roughly 5-10 days) and clears fast once load drops. Fitness has a longer half-life (closer to 4-6 weeks) and erodes slowly. The gap between those two curves — high fitness, low fatigue — is where peak performance lives.
+
+The problem is that volume and intensity don't drive those curves equally. Volume is the main driver of fatigue accumulation. Intensity is what maintains the physiological adaptations — mitochondrial enzyme activity, capillary density, cardiac stroke volume — that make up fitness. Cut both together and you clear fatigue, but you also let fitness slide before race day.
+
+## What the Research Actually Shows
+
+Bosquet and colleagues ran a meta-analysis of 27 taper studies in 2007 and found the sweet spot: a progressive taper lasting 8-14 days, with training volume reduced by 41-60%, while training frequency and intensity are held close to normal. Riders who followed that pattern improved performance by an average of 3%, which is enormous in a sport where podium spots are decided by seconds per kilometre. Studies that cut intensity alongside volume showed smaller gains, and some showed detraining effects — measurable drops in VO2max and muscle enzyme activity within as little as 10-14 days of reduced-intensity training.
+
+Mujika and Padilla's earlier work on tapering in cyclists found something else worth noting: blood volume and red cell mass, both of which support oxygen delivery, respond positively to a taper that maintains some high-intensity work, likely because intensity is the stimulus that sustains the cardiovascular adaptations built over the training block. Skip the intensity and you're not just resting — you're partially reversing weeks of adaptation.
+
+## The Split That Works: Cut Volume, Keep Intensity
+
+The practical rule: drop total training volume by 40-60% over the final 1-2 weeks, but keep 1-2 sessions per week that include efforts at or near race intensity. Frequency should stay close to normal — riding four days a week instead of six is fine, but don't collapse to two rides total. Short is fine. Easy is not the goal on every ride.
+
+A useful ratio for the final week: cut ride duration roughly in half, but keep the same number of intervals within each remaining hard session, just with fuller recovery between them.
+
+## A Worked Example: Two Weeks Out From a Gran Fondo
+
+Take a rider peaking at 14 hours/week with two threshold sessions and one long ride of 4+ hours.
+
+Week 2 (10 days out): volume drops to roughly 8-9 hours. The long ride shrinks to 2.5 hours but keeps 3x10-minute efforts at 90-95% FTP embedded in it. One threshold session stays intact — 4x8 minutes at FTP — but the warm-up and cool-down get trimmed. Everything else is easy riding or a day off.
+
+Week 1 (race week): volume drops further to 4-5 hours. Tuesday: a short session with 3-4x3 minutes at 105-110% of FTP — enough to remind the nervous system what race effort feels like, not enough to create meaningful fatigue. Thursday: 20-30 minutes easy with a handful of 30-second openers at cadence. Two full rest days. Race day arrives with legs that feel sharp rather than flat, because the neuromuscular system was never allowed to go fully dormant.
+
+## Where Cyclists Get It Wrong
+
+Three recurring mistakes show up in taper data: first, dropping intensity to zero out of caution, which is the detraining risk described above. Second, tapering too long — anything beyond roughly two weeks starts eating into the fitness curve with no further fatigue benefit, since most of the fatigue clears in the first 7-10 days. Third, adding volume back in a panic mid-taper because the legs feel "too fresh" — that freshness is the point, and it's a poor predictor of race-day form.
+
+## The Takeaway
+
+Taper by cutting duration, not by cutting effort. Reduce total volume 40-60% over 8-14 days, hold training frequency close to normal, and keep at least one session per week with real intensity — short efforts at or above race pace. The goal isn't to arrive at the start line rested. It's to arrive with fatigue gone and fitness still intact, and those two things require different levers.
