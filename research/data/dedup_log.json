@@ -6,12 +6,6 @@
     "method": "fuzzy"
   },
   {
-    "kept": "autosugg-b81e4ac2",
-    "merged": "autosugg-9e63bbb2",
-    "similarity": 0.8333,
-    "method": "fuzzy"
-  },
-  {
     "kept": "autosugg-869bf007",
     "merged": "autosugg-00104d7f",
     "similarity": 0.8,
@@ -37,13 +31,13 @@
   },
   {
     "kept": "autosugg-7df1ec3f",
-    "merged": "autosugg-ed9f88f3",
+    "merged": "autosugg-acac9258",
     "similarity": 0.8,
     "method": "fuzzy"
   },
   {
     "kept": "autosugg-7df1ec3f",
-    "merged": "autosugg-acac9258",
+    "merged": "autosugg-ed9f88f3",
     "similarity": 0.8,
     "method": "fuzzy"
   },
