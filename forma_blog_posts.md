@@ -1345,3 +1345,40 @@ Three recurring mistakes show up in taper data: first, dropping intensity to zer
 ## The Takeaway
 
 Taper by cutting duration, not by cutting effort. Reduce total volume 40-60% over 8-14 days, hold training frequency close to normal, and keep at least one session per week with real intensity — short efforts at or above race pace. The goal isn't to arrive at the start line rested. It's to arrive with fatigue gone and fitness still intact, and those two things require different levers.
+
+
+---
+
+## 24. What Makes a Training Plan Sustainable? The Science of Load That Sticks
+
+Two runners average 40km a week for eight weeks. One finishes healthy and fitter. The other gets injured in week six. Same average load. Same total mileage. The difference wasn't how hard they trained — it was how *evenly* they trained.
+
+This is the part most training plans get wrong. They're built around a target volume or a target intensity, ramped up in a straight line, and presented as sustainable because the weekly average looks reasonable on paper. But the body doesn't adapt to averages. It adapts to the pattern of stress and recovery underneath them.
+
+## The Real Reason Plans Fail
+
+Athletes usually assume plans fail because they're too hard. Sometimes that's true. But a large chunk of dropout and injury happens in plans that are objectively moderate — 5 to 8 hours a week, nothing extreme — because the load swings wildly from week to week. A 35km week followed by a 55km week followed by a 30km week averages out fine. It also produces tissue stress the body never gets a stable signal to adapt to.
+
+Tim Gabbett's workload research in team sports (2016, British Journal of Sports Medicine) found that when the acute:chronic workload ratio — this week's load divided by the rolling 4-week average — climbs above roughly 1.5, injury risk more than doubles compared to athletes training in the 0.8–1.3 range. The absolute volume mattered far less than the ratio of spike to baseline.
+
+## Monotony Is the Silent Killer
+
+Carl Foster's work on training monotony flips the usual advice on its head. Foster calculated monotony as the average daily load divided by the standard deviation of that load across the week. High monotony — every day roughly the same effort, no easy days that are genuinely easy — correlated with higher illness and injury rates than a spikier week with the same total load, because the nervous and immune systems never get a clear recovery signal.
+
+His strain metric (weekly load × monotony) predicted overtraining symptoms better than volume alone in his studies of collegiate swimmers. A week of 5 runs at moderate effort can carry more real physiological strain than a week with one hard session and three genuinely easy days, even at a lower average pace.
+
+## The 10% Rule Is Too Blunt
+
+The classic "don't increase volume by more than 10% per week" rule isn't wrong, but it's a poor proxy for what actually matters: rate of change relative to what the tissue has adapted to, not what a spreadsheet increments. A runner with a 3-year base handles a 20% jump in one week differently than someone eight weeks into training. The 10% rule treats both the same because it only looks at last week's number, not the 4- to 6-week trend underneath it.
+
+What actually predicts injury and burnout is the ratio between short-term load (7 days) and medium-term load (28 days). Keep that ratio between about 0.8 and 1.3, and you're building fitness on a foundation the body has already started adapting to. Push it past 1.5 for two weeks running, and risk climbs regardless of what the raw mileage says.
+
+## What Sustainable Looks Like in Practice
+
+Back to the two runners. Runner A's weeks looked like: 38, 55, 28, 42, 35, 48, 30, 44km — high variance, ACWR spiking to 1.6 in week two and again in week six. Runner B held: 36, 40, 39, 43, 41, 45, 42, 44km — same 8-week average (40km), but each week's load stayed within about 10% of the trailing average, with one clearly easy day and one clearly hard day, not five moderate ones.
+
+Runner B's monotony score was roughly half of Runner A's despite nearly identical total volume and average pace. That's the entire difference between a plan that holds up and one that doesn't — not willpower, not toughness, just the shape of the load curve.
+
+## The Takeaway
+
+If you're building or evaluating a training plan, stop looking at the weekly average and start looking at two numbers: the ratio of this week's load to your trailing 4-week average (keep it under 1.3), and how much your daily loads vary within a week (more variance between hard and easy days is protective, not risky). A plan that respects both will feel less impressive on paper and outlast almost anything that doesn't.
