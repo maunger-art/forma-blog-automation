@@ -12,6 +12,12 @@
     "method": "fuzzy"
   },
   {
+    "kept": "autosugg-9848f646",
+    "merged": "autosugg-6bba5606",
+    "similarity": 0.8333,
+    "method": "fuzzy"
+  },
+  {
     "kept": "autosugg-841c7c3d",
     "merged": "autosugg-c69934a0",
     "similarity": 0.8,
@@ -26,6 +32,12 @@
   {
     "kept": "autosugg-7df1ec3f",
     "merged": "autosugg-be4179ec",
+    "similarity": 0.8,
+    "method": "fuzzy"
+  },
+  {
+    "kept": "autosugg-7df1ec3f",
+    "merged": "autosugg-4576e780",
     "similarity": 0.8,
     "method": "fuzzy"
   },
