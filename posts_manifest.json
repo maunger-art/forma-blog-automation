@@ -1,5 +1,75 @@
 [
   {
+    "slug": "garmin-readiness-score-on-vivoactive-5-what-it-really-tells-you",
+    "title": "Garmin Readiness Score on Vivoactive 5: What It Really Tells You",
+    "date": "2026-08-26",
+    "category": "Wearables",
+    "meta_description": "How Garmin's readiness score works on the Vivoactive 5, what drives the number, where the watch's smaller sensor set falls short, and how to actually use it.",
+    "keywords": "garmin readiness score, vivoactive 5, garmin training readiness, hrv status vivoactive 5, garmin recovery metrics, sleep score garmin, training readiness explained",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "what-the-readiness-score-actually-measures",
+        "text": "What the Readiness Score Actually Measures"
+      },
+      {
+        "id": "how-vivoactive-5-generates-the-score",
+        "text": "How the Vivoactive 5 Generates the Score"
+      },
+      {
+        "id": "what-a-high-or-low-number-means",
+        "text": "What a High or Low Number Means"
+      },
+      {
+        "id": "where-the-vivoactive-5-falls-short",
+        "text": "Where the Vivoactive 5 Falls Short"
+      },
+      {
+        "id": "turning-the-score-into-training-decisions",
+        "text": "Turning the Score Into Training Decisions"
+      }
+    ],
+    "body_html": "<p>You wake up, check your wrist, and see a number between 1 and 100 telling you whether today is a green light or a warning sign. That's Garmin's <strong>Training Readiness</strong> score, and on the Vivoactive 5 — a watch that sits in Garmin's mid-range lineup rather than its flagship Fenix or Forerunner tier — it works, but with real caveats worth understanding before you let it dictate your training.</p><h2 id=\"what-the-readiness-score-actually-measures\">What the Readiness Score Actually Measures</h2><p>Garmin's readiness score is a composite metric built from several inputs layered together: your <strong>sleep quality and duration</strong> from the previous night, your <strong>HRV Status</strong> (a rolling baseline of overnight heart rate variability), <strong>recovery time</strong> remaining from recent training stress, <strong>sleep history</strong> over the past three nights, <strong>acute training load</strong>, and recent <strong>stress</strong> levels captured during the day. None of these are new metrics — Garmin has tracked sleep, stress, and HRV independently for years. What Training Readiness does is combine them into a single directional signal instead of forcing you to interpret five separate charts every morning.</p><p>The underlying logic is straightforward: your <strong>autonomic nervous system</strong> shifts measurably based on accumulated fatigue. When you're under-recovered, sympathetic activity tends to dominate, which suppresses the beat-to-beat variability in your heart rate overnight. A lower HRV reading relative to your personal baseline, combined with poor sleep and unresolved training load, pulls the readiness score down. It's not measuring fitness — it's estimating how much capacity you have to absorb stress today.</p><h2 id=\"how-vivoactive-5-generates-the-score\">How the Vivoactive 5 Generates the Score</h2><p>The Vivoactive 5 uses Garmin's Elevate Gen 5 optical heart rate sensor to capture overnight heart rate and HRV data, then runs it through the same Firstbeat Analytics engine that powers readiness scoring across Garmin's ecosystem. Functionally, the score calculation itself isn't dumbed down for the cheaper watch — it's the same algorithm. What differs is the <strong>quality and consistency of the raw signal</strong> feeding into it.</p><p>A few things matter for accuracy here:</p><ul><li>Wearing the watch snugly enough overnight that the optical sensor maintains consistent contact through sleep movement</li><li>At least a few nights of baseline HRV data before the score becomes meaningful — a single night tells you almost nothing</li><li>Battery life during multi-night tracking, since gaps in overnight data create gaps in the baseline</li></ul><p>Because the Vivoactive 5 is a wrist-based optical sensor rather than a chest strap, it's more susceptible to motion artifact and skin contact variability than devices using electrical HRV capture. This doesn't make the score useless — wrist-based HRV tracking has become genuinely reliable for detecting trends over time — but it does mean day-to-day noise is higher than the number's precision suggests.</p><h2 id=\"what-a-high-or-low-number-means\">What a High or Low Number Means</h2><p>Garmin buckets the score into ranges — roughly Low, Moderate, High, and Very High — and pairs each with plain-language guidance. A high score generally means your HRV is at or above your baseline, sleep was solid, and accumulated fatigue is manageable, which supports harder training. A low score usually reflects the opposite: suppressed HRV, incomplete recovery time from a previous hard session, or a poor night's sleep dragging the composite down.</p><p>The number itself matters less than the <strong>trend</strong>. A score of 65 after weeks of averaging 80 is a meaningful drop worth paying attention to. That same 65 for someone whose baseline typically sits in the 60s is unremarkable. This is exactly why the score is calculated relative to your personal rolling baseline rather than an absolute standard — comparing your readiness to someone else's is close to meaningless.</p><h2 id=\"where-the-vivoactive-5-falls-short\">Where the Vivoactive 5 Falls Short</h2><p>The honest limitation isn't the algorithm — it's the sensor tier. The Vivoactive 5 lacks some of the training-specific features found on Forerunner and Fenix devices, and its HRV capture, while functional, benefits less from the additional signal processing Garmin applies on watches built primarily for endurance athletes. If you sleep with a loose strap, move frequently overnight, or have skin tone or wrist anatomy that makes optical readings less consistent, your readiness score will carry more noise than it would on a chest-strap-paired flagship device.</p><p>There's also a structural issue that applies to any single-number readiness metric, regardless of device: it compresses multiple physiological systems — nervous system balance, sleep architecture, cumulative training stress — into one figure. Two very different physiological states can produce the same score. A watch, on its own, has no way to distinguish between fatigue from training and fatigue from a bad night's sleep unrelated to exercise.</p><h2 id=\"turning-the-score-into-training-decisions\">Turning the Score Into Training Decisions</h2><p>The most useful way to treat the readiness score is as one input among several, not a verdict. Cross-reference it against how the session actually feels in the first ten minutes, your resting heart rate trend over the past week, and what's actually on your training calendar. A low score before an easy recovery run changes nothing. A low score before a scheduled threshold session is worth acting on.</p><p>This is precisely the gap that adaptive training is built to close. Rather than asking you to manually interpret a single morning number against a fixed weekly plan, <strong>Forma</strong> continuously factors recovery signals — including HRV trends, sleep, and accumulated load — into the structure of the plan itself, adjusting session intensity before fatigue turns into a missed week or an injury. Your watch can tell you what happened overnight. What it can't do on its own is translate that into the right sequence of sessions for the weeks ahead — that's where a system built around your actual recovery data, rather than a fixed calendar, earns its place in your training.",
+    "status": "published",
+    "_queue_id": "autosugg-c372cd8a",
+    "_cluster": "hrv-readiness",
+    "_composite_score": 5.7
+  },
+  {
+    "slug": "what-makes-a-training-plan-sustainable",
+    "title": "What Makes a Training Plan Sustainable? The Science of Load That Sticks",
+    "category": "Training Science",
+    "meta_description": "Sustainable training isn't about average weekly volume — it's about variance. Here's what workload research actually says about plans that hold up.",
+    "keywords": "training plan sustainability, acute chronic workload ratio, training monotony, injury prevention running, periodization, overtraining, chronic training load, adaptive training plans",
+    "read_time": 6,
+    "date": "2026-08-24",
+    "status": "published",
+    "body_html": "<p>Two runners average 40km a week for eight weeks. One finishes healthy and fitter. The other gets injured in week six. Same average load. Same total mileage. The difference wasn't how hard they trained — it was how <em>evenly</em> they trained.</p>\n<p>This is the part most training plans get wrong. They're built around a target volume or a target intensity, ramped up in a straight line, and presented as sustainable because the weekly average looks reasonable on paper. But the body doesn't adapt to averages. It adapts to the pattern of stress and recovery underneath them.</p>\n<h2 id=\"the-real-reason-plans-fail\">The Real Reason Plans Fail</h2>\n<p>Athletes usually assume plans fail because they're too hard. Sometimes that's true. But a large chunk of dropout and injury happens in plans that are objectively moderate — 5 to 8 hours a week, nothing extreme — because the load swings wildly from week to week. A 35km week followed by a 55km week followed by a 30km week averages out fine. It also produces tissue stress the body never gets a stable signal to adapt to.</p>\n<p>Tim Gabbett's workload research in team sports (2016, British Journal of Sports Medicine) found that when the acute:chronic workload ratio — this week's load divided by the rolling 4-week average — climbs above roughly 1.5, injury risk more than doubles compared to athletes training in the 0.8–1.3 range. The absolute volume mattered far less than the ratio of spike to baseline.</p>\n<h2 id=\"monotony-is-the-silent-killer\">Monotony Is the Silent Killer</h2>\n<p>Carl Foster's work on training monotony flips the usual advice on its head. Foster calculated monotony as the average daily load divided by the standard deviation of that load across the week. High monotony — every day roughly the same effort, no easy days that are genuinely easy — correlated with higher illness and injury rates than a spikier week with the same total load, because the nervous and immune systems never get a clear recovery signal.</p>\n<p>His strain metric (weekly load × monotony) predicted overtraining symptoms better than volume alone in his studies of collegiate swimmers. A week of 5 runs at moderate effort can carry more real physiological strain than a week with one hard session and three genuinely easy days, even at a lower average pace.</p>\n<h2 id=\"the-10-rule-is-too-blunt\">The 10% Rule Is Too Blunt</h2>\n<p>The classic \"don't increase volume by more than 10% per week\" rule isn't wrong, but it's a poor proxy for what actually matters: rate of change relative to what the tissue has adapted to, not what a spreadsheet increments. A runner with a 3-year base handles a 20% jump in one week differently than someone eight weeks into training. The 10% rule treats both the same because it only looks at last week's number, not the 4- to 6-week trend underneath it.</p>\n<p>What actually predicts injury and burnout is the ratio between short-term load (7 days) and medium-term load (28 days). Keep that ratio between about 0.8 and 1.3, and you're building fitness on a foundation the body has already started adapting to. Push it past 1.5 for two weeks running, and risk climbs regardless of what the raw mileage says.</p>\n<h2 id=\"what-sustainable-looks-like-in-practice\">What Sustainable Looks Like in Practice</h2>\n<p>Back to the two runners. Runner A's weeks looked like: 38, 55, 28, 42, 35, 48, 30, 44km — high variance, ACWR spiking to 1.6 in week two and again in week six. Runner B held: 36, 40, 39, 43, 41, 45, 42, 44km — same 8-week average (40km), but each week's load stayed within about 10% of the trailing average, with one clearly easy day and one clearly hard day, not five moderate ones.</p>\n<p>Runner B's monotony score was roughly half of Runner A's despite nearly identical total volume and average pace. That's the entire difference between a plan that holds up and one that doesn't — not willpower, not toughness, just the shape of the load curve.</p>\n<h2 id=\"the-takeaway\">The Takeaway</h2>\n<p>If you're building or evaluating a training plan, stop looking at the weekly average and start looking at two numbers: the ratio of this week's load to your trailing 4-week average (keep it under 1.3), and how much your daily loads vary within a week (more variance between hard and easy days is protective, not risky). A plan that respects both will feel less impressive on paper and outlast almost anything that doesn't.</p>",
+    "toc_items": [
+      {
+        "id": "the-real-reason-plans-fail",
+        "text": "The Real Reason Plans Fail"
+      },
+      {
+        "id": "monotony-is-the-silent-killer",
+        "text": "Monotony Is the Silent Killer"
+      },
+      {
+        "id": "the-10-rule-is-too-blunt",
+        "text": "The 10% Rule Is Too Blunt"
+      },
+      {
+        "id": "what-sustainable-looks-like-in-practice",
+        "text": "What Sustainable Looks Like in Practice"
+      },
+      {
+        "id": "the-takeaway",
+        "text": "The Takeaway"
+      }
+    ],
+    "hash": "f2fe566f1ead3c4c66efc5880d200976"
+  },
+  {
     "slug": "how-accurate-is-the-garmin-readiness-score",
     "title": "How Accurate Is the Garmin Readiness Score?",
     "date": "2026-08-17",
@@ -34,6 +104,44 @@
     "_queue_id": "paa-2d4e0a86",
     "_cluster": "garmin-wearable",
     "_composite_score": 7.0
+  },
+  {
+    "slug": "how-to-taper-for-a-cycling-event",
+    "title": "How to Taper for a Cycling Event: A Science-Backed Taper Protocol",
+    "category": "Training Science",
+    "meta_description": "Cutting volume before a cycling event without cutting intensity preserves fitness and dissipates fatigue. Here's the taper protocol backed by the data.",
+    "keywords": "cycling taper, taper protocol, race taper, cycling performance, training load, peak power, gran fondo prep",
+    "read_time": 5,
+    "date": "2026-08-17",
+    "status": "published",
+    "body_html": "<p>Most riders taper backwards. They see \"rest\" on the plan and start cutting the hard stuff first — the VO2max intervals, the race-pace efforts, the group ride that hurts. What's left is a week of easy spinning. That approach can cost you 3-5% of the fitness you spent twelve weeks building, and the research on tapering has been consistent about why for over two decades.</p>\n<h2 id=\"the-taper-paradox\">The Taper Paradox</h2>\n<p>Fitness and fatigue are both byproducts of training, but they don't decay at the same rate. Banister's impulse-response model, which underlies most modern training-load software, treats them as two separate curves: fatigue has a short half-life (roughly 5-10 days) and clears fast once load drops. Fitness has a longer half-life (closer to 4-6 weeks) and erodes slowly. The gap between those two curves — high fitness, low fatigue — is where peak performance lives.</p>\n<p>The problem is that volume and intensity don't drive those curves equally. Volume is the main driver of fatigue accumulation. Intensity is what maintains the physiological adaptations — mitochondrial enzyme activity, capillary density, cardiac stroke volume — that make up fitness. Cut both together and you clear fatigue, but you also let fitness slide before race day.</p>\n<h2 id=\"what-the-research-actually-shows\">What the Research Actually Shows</h2>\n<p>Bosquet and colleagues ran a meta-analysis of 27 taper studies in 2007 and found the sweet spot: a progressive taper lasting 8-14 days, with training volume reduced by 41-60%, while training frequency and intensity are held close to normal. Riders who followed that pattern improved performance by an average of 3%, which is enormous in a sport where podium spots are decided by seconds per kilometre. Studies that cut intensity alongside volume showed smaller gains, and some showed detraining effects — measurable drops in VO2max and muscle enzyme activity within as little as 10-14 days of reduced-intensity training.</p>\n<p>Mujika and Padilla's earlier work on tapering in cyclists found something else worth noting: blood volume and red cell mass, both of which support oxygen delivery, respond positively to a taper that maintains some high-intensity work, likely because intensity is the stimulus that sustains the cardiovascular adaptations built over the training block. Skip the intensity and you're not just resting — you're partially reversing weeks of adaptation.</p>\n<h2 id=\"the-split-that-works-cut-volume-keep-intensity\">The Split That Works: Cut Volume, Keep Intensity</h2>\n<p>The practical rule: drop total training volume by 40-60% over the final 1-2 weeks, but keep 1-2 sessions per week that include efforts at or near race intensity. Frequency should stay close to normal — riding four days a week instead of six is fine, but don't collapse to two rides total. Short is fine. Easy is not the goal on every ride.</p>\n<p>A useful ratio for the final week: cut ride duration roughly in half, but keep the same number of intervals within each remaining hard session, just with fuller recovery between them.</p>\n<h2 id=\"a-worked-example-two-weeks-out-from-a-gran-fondo\">A Worked Example: Two Weeks Out From a Gran Fondo</h2>\n<p>Take a rider peaking at 14 hours/week with two threshold sessions and one long ride of 4+ hours.</p>\n<p>Week 2 (10 days out): volume drops to roughly 8-9 hours. The long ride shrinks to 2.5 hours but keeps 3x10-minute efforts at 90-95% FTP embedded in it. One threshold session stays intact — 4x8 minutes at FTP — but the warm-up and cool-down get trimmed. Everything else is easy riding or a day off.</p>\n<p>Week 1 (race week): volume drops further to 4-5 hours. Tuesday: a short session with 3-4x3 minutes at 105-110% of FTP — enough to remind the nervous system what race effort feels like, not enough to create meaningful fatigue. Thursday: 20-30 minutes easy with a handful of 30-second openers at cadence. Two full rest days. Race day arrives with legs that feel sharp rather than flat, because the neuromuscular system was never allowed to go fully dormant.</p>\n<h2 id=\"where-cyclists-get-it-wrong\">Where Cyclists Get It Wrong</h2>\n<p>Three recurring mistakes show up in taper data: first, dropping intensity to zero out of caution, which is the detraining risk described above. Second, tapering too long — anything beyond roughly two weeks starts eating into the fitness curve with no further fatigue benefit, since most of the fatigue clears in the first 7-10 days. Third, adding volume back in a panic mid-taper because the legs feel \"too fresh\" — that freshness is the point, and it's a poor predictor of race-day form.</p>\n<h2 id=\"the-takeaway\">The Takeaway</h2>\n<p>Taper by cutting duration, not by cutting effort. Reduce total volume 40-60% over 8-14 days, hold training frequency close to normal, and keep at least one session per week with real intensity — short efforts at or above race pace. The goal isn't to arrive at the start line rested. It's to arrive with fatigue gone and fitness still intact, and those two things require different levers.</p>",
+    "toc_items": [
+      {
+        "id": "the-taper-paradox",
+        "text": "The Taper Paradox"
+      },
+      {
+        "id": "what-the-research-actually-shows",
+        "text": "What the Research Actually Shows"
+      },
+      {
+        "id": "the-split-that-works-cut-volume-keep-intensity",
+        "text": "The Split That Works: Cut Volume, Keep Intensity"
+      },
+      {
+        "id": "a-worked-example-two-weeks-out-from-a-gran-fondo",
+        "text": "A Worked Example: Two Weeks Out From a Gran Fondo"
+      },
+      {
+        "id": "where-cyclists-get-it-wrong",
+        "text": "Where Cyclists Get It Wrong"
+      },
+      {
+        "id": "the-takeaway",
+        "text": "The Takeaway"
+      }
+    ],
+    "hash": "46d2de32a3f3890f935d2297e1783f23"
   },
   {
     "slug": "garmin-readiness-score-where-to-find-it-on-watch-app",
@@ -5001,77 +5109,5 @@
       }
     ],
     "body_html": "<p>Endurance athletes often believe success comes from doing more.</p>\n\n<p>More miles. More intervals. More training.</p>\n\n<p>But one of the biggest lessons in performance science is that <strong>training harder doesn’t always produce better results</strong>.</p>\n\n<h2 id=\"training-creates-stress\">Training creates stress</h2>\n\n<p>Every workout stresses the body. That stress triggers adaptation — but only if the body has time to recover.</p>\n\n<p>Without that recovery window, the adaptation stimulus is lost. Worse, additional stress on an unrecovered system increases injury risk and suppresses performance.</p>\n\n<p>This is the paradox: the thing that makes you fitter (training) also makes you temporarily weaker. Fitness is built in the gap between sessions, not during them.</p>\n\n<h2 id=\"recovery-builds-performance\">Recovery builds performance</h2>\n\n<p>During recovery the body:</p>\n\n<ul>\n  <li>Repairs micro-tears in muscle tissue</li>\n  <li>Restores glycogen stores</li>\n  <li>Strengthens connective tissue and physiological systems</li>\n  <li>Consolidates neurological adaptations</li>\n</ul>\n\n<p>Without adequate recovery there is no adaptation. The training stress becomes noise rather than signal.</p>\n\n<h2 id=\"discipline-of-restraint\">The discipline of restraint</h2>\n\n<p>Elite athletes know when to push and when to recover.</p>\n\n<p>They understand that easy days must remain genuinely easy, and that rest is a critical — not optional — part of the training process.</p>\n\n<p>The temptation to push through fatigue is one of the most common reasons amateur athletes plateau or get injured. The ability to hold back when it matters is a learned skill.</p>\n\n<h2 id=\"sustainable-performance\">Sustainable performance</h2>\n\n<p>The goal is not to maximise effort on one day, but to sustain <strong>consistent training over months and years</strong>.</p>\n\n<p>Athletes who avoid injury and burnout — who train consistently at a manageable load — often outperform those who push relentlessly through fatigue.</p>\n\n<p>The biggest breakthroughs rarely come from doing the most work. They come from doing the <strong>right work at the right time</strong> — and then recovering properly from it.</p>"
-  },
-  {
-    "slug": "how-to-taper-for-a-cycling-event",
-    "title": "How to Taper for a Cycling Event: A Science-Backed Taper Protocol",
-    "category": "Training Science",
-    "meta_description": "Cutting volume before a cycling event without cutting intensity preserves fitness and dissipates fatigue. Here's the taper protocol backed by the data.",
-    "keywords": "cycling taper, taper protocol, race taper, cycling performance, training load, peak power, gran fondo prep",
-    "read_time": 5,
-    "date": "2026-08-17",
-    "status": "published",
-    "body_html": "<p>Most riders taper backwards. They see \"rest\" on the plan and start cutting the hard stuff first — the VO2max intervals, the race-pace efforts, the group ride that hurts. What's left is a week of easy spinning. That approach can cost you 3-5% of the fitness you spent twelve weeks building, and the research on tapering has been consistent about why for over two decades.</p>\n<h2 id=\"the-taper-paradox\">The Taper Paradox</h2>\n<p>Fitness and fatigue are both byproducts of training, but they don't decay at the same rate. Banister's impulse-response model, which underlies most modern training-load software, treats them as two separate curves: fatigue has a short half-life (roughly 5-10 days) and clears fast once load drops. Fitness has a longer half-life (closer to 4-6 weeks) and erodes slowly. The gap between those two curves — high fitness, low fatigue — is where peak performance lives.</p>\n<p>The problem is that volume and intensity don't drive those curves equally. Volume is the main driver of fatigue accumulation. Intensity is what maintains the physiological adaptations — mitochondrial enzyme activity, capillary density, cardiac stroke volume — that make up fitness. Cut both together and you clear fatigue, but you also let fitness slide before race day.</p>\n<h2 id=\"what-the-research-actually-shows\">What the Research Actually Shows</h2>\n<p>Bosquet and colleagues ran a meta-analysis of 27 taper studies in 2007 and found the sweet spot: a progressive taper lasting 8-14 days, with training volume reduced by 41-60%, while training frequency and intensity are held close to normal. Riders who followed that pattern improved performance by an average of 3%, which is enormous in a sport where podium spots are decided by seconds per kilometre. Studies that cut intensity alongside volume showed smaller gains, and some showed detraining effects — measurable drops in VO2max and muscle enzyme activity within as little as 10-14 days of reduced-intensity training.</p>\n<p>Mujika and Padilla's earlier work on tapering in cyclists found something else worth noting: blood volume and red cell mass, both of which support oxygen delivery, respond positively to a taper that maintains some high-intensity work, likely because intensity is the stimulus that sustains the cardiovascular adaptations built over the training block. Skip the intensity and you're not just resting — you're partially reversing weeks of adaptation.</p>\n<h2 id=\"the-split-that-works-cut-volume-keep-intensity\">The Split That Works: Cut Volume, Keep Intensity</h2>\n<p>The practical rule: drop total training volume by 40-60% over the final 1-2 weeks, but keep 1-2 sessions per week that include efforts at or near race intensity. Frequency should stay close to normal — riding four days a week instead of six is fine, but don't collapse to two rides total. Short is fine. Easy is not the goal on every ride.</p>\n<p>A useful ratio for the final week: cut ride duration roughly in half, but keep the same number of intervals within each remaining hard session, just with fuller recovery between them.</p>\n<h2 id=\"a-worked-example-two-weeks-out-from-a-gran-fondo\">A Worked Example: Two Weeks Out From a Gran Fondo</h2>\n<p>Take a rider peaking at 14 hours/week with two threshold sessions and one long ride of 4+ hours.</p>\n<p>Week 2 (10 days out): volume drops to roughly 8-9 hours. The long ride shrinks to 2.5 hours but keeps 3x10-minute efforts at 90-95% FTP embedded in it. One threshold session stays intact — 4x8 minutes at FTP — but the warm-up and cool-down get trimmed. Everything else is easy riding or a day off.</p>\n<p>Week 1 (race week): volume drops further to 4-5 hours. Tuesday: a short session with 3-4x3 minutes at 105-110% of FTP — enough to remind the nervous system what race effort feels like, not enough to create meaningful fatigue. Thursday: 20-30 minutes easy with a handful of 30-second openers at cadence. Two full rest days. Race day arrives with legs that feel sharp rather than flat, because the neuromuscular system was never allowed to go fully dormant.</p>\n<h2 id=\"where-cyclists-get-it-wrong\">Where Cyclists Get It Wrong</h2>\n<p>Three recurring mistakes show up in taper data: first, dropping intensity to zero out of caution, which is the detraining risk described above. Second, tapering too long — anything beyond roughly two weeks starts eating into the fitness curve with no further fatigue benefit, since most of the fatigue clears in the first 7-10 days. Third, adding volume back in a panic mid-taper because the legs feel \"too fresh\" — that freshness is the point, and it's a poor predictor of race-day form.</p>\n<h2 id=\"the-takeaway\">The Takeaway</h2>\n<p>Taper by cutting duration, not by cutting effort. Reduce total volume 40-60% over 8-14 days, hold training frequency close to normal, and keep at least one session per week with real intensity — short efforts at or above race pace. The goal isn't to arrive at the start line rested. It's to arrive with fatigue gone and fitness still intact, and those two things require different levers.</p>",
-    "toc_items": [
-      {
-        "id": "the-taper-paradox",
-        "text": "The Taper Paradox"
-      },
-      {
-        "id": "what-the-research-actually-shows",
-        "text": "What the Research Actually Shows"
-      },
-      {
-        "id": "the-split-that-works-cut-volume-keep-intensity",
-        "text": "The Split That Works: Cut Volume, Keep Intensity"
-      },
-      {
-        "id": "a-worked-example-two-weeks-out-from-a-gran-fondo",
-        "text": "A Worked Example: Two Weeks Out From a Gran Fondo"
-      },
-      {
-        "id": "where-cyclists-get-it-wrong",
-        "text": "Where Cyclists Get It Wrong"
-      },
-      {
-        "id": "the-takeaway",
-        "text": "The Takeaway"
-      }
-    ],
-    "hash": "46d2de32a3f3890f935d2297e1783f23"
-  },
-  {
-    "slug": "what-makes-a-training-plan-sustainable",
-    "title": "What Makes a Training Plan Sustainable? The Science of Load That Sticks",
-    "category": "Training Science",
-    "meta_description": "Sustainable training isn't about average weekly volume — it's about variance. Here's what workload research actually says about plans that hold up.",
-    "keywords": "training plan sustainability, acute chronic workload ratio, training monotony, injury prevention running, periodization, overtraining, chronic training load, adaptive training plans",
-    "read_time": 6,
-    "date": "2026-08-24",
-    "status": "published",
-    "body_html": "<p>Two runners average 40km a week for eight weeks. One finishes healthy and fitter. The other gets injured in week six. Same average load. Same total mileage. The difference wasn't how hard they trained — it was how <em>evenly</em> they trained.</p>\n<p>This is the part most training plans get wrong. They're built around a target volume or a target intensity, ramped up in a straight line, and presented as sustainable because the weekly average looks reasonable on paper. But the body doesn't adapt to averages. It adapts to the pattern of stress and recovery underneath them.</p>\n<h2 id=\"the-real-reason-plans-fail\">The Real Reason Plans Fail</h2>\n<p>Athletes usually assume plans fail because they're too hard. Sometimes that's true. But a large chunk of dropout and injury happens in plans that are objectively moderate — 5 to 8 hours a week, nothing extreme — because the load swings wildly from week to week. A 35km week followed by a 55km week followed by a 30km week averages out fine. It also produces tissue stress the body never gets a stable signal to adapt to.</p>\n<p>Tim Gabbett's workload research in team sports (2016, British Journal of Sports Medicine) found that when the acute:chronic workload ratio — this week's load divided by the rolling 4-week average — climbs above roughly 1.5, injury risk more than doubles compared to athletes training in the 0.8–1.3 range. The absolute volume mattered far less than the ratio of spike to baseline.</p>\n<h2 id=\"monotony-is-the-silent-killer\">Monotony Is the Silent Killer</h2>\n<p>Carl Foster's work on training monotony flips the usual advice on its head. Foster calculated monotony as the average daily load divided by the standard deviation of that load across the week. High monotony — every day roughly the same effort, no easy days that are genuinely easy — correlated with higher illness and injury rates than a spikier week with the same total load, because the nervous and immune systems never get a clear recovery signal.</p>\n<p>His strain metric (weekly load × monotony) predicted overtraining symptoms better than volume alone in his studies of collegiate swimmers. A week of 5 runs at moderate effort can carry more real physiological strain than a week with one hard session and three genuinely easy days, even at a lower average pace.</p>\n<h2 id=\"the-10-rule-is-too-blunt\">The 10% Rule Is Too Blunt</h2>\n<p>The classic \"don't increase volume by more than 10% per week\" rule isn't wrong, but it's a poor proxy for what actually matters: rate of change relative to what the tissue has adapted to, not what a spreadsheet increments. A runner with a 3-year base handles a 20% jump in one week differently than someone eight weeks into training. The 10% rule treats both the same because it only looks at last week's number, not the 4- to 6-week trend underneath it.</p>\n<p>What actually predicts injury and burnout is the ratio between short-term load (7 days) and medium-term load (28 days). Keep that ratio between about 0.8 and 1.3, and you're building fitness on a foundation the body has already started adapting to. Push it past 1.5 for two weeks running, and risk climbs regardless of what the raw mileage says.</p>\n<h2 id=\"what-sustainable-looks-like-in-practice\">What Sustainable Looks Like in Practice</h2>\n<p>Back to the two runners. Runner A's weeks looked like: 38, 55, 28, 42, 35, 48, 30, 44km — high variance, ACWR spiking to 1.6 in week two and again in week six. Runner B held: 36, 40, 39, 43, 41, 45, 42, 44km — same 8-week average (40km), but each week's load stayed within about 10% of the trailing average, with one clearly easy day and one clearly hard day, not five moderate ones.</p>\n<p>Runner B's monotony score was roughly half of Runner A's despite nearly identical total volume and average pace. That's the entire difference between a plan that holds up and one that doesn't — not willpower, not toughness, just the shape of the load curve.</p>\n<h2 id=\"the-takeaway\">The Takeaway</h2>\n<p>If you're building or evaluating a training plan, stop looking at the weekly average and start looking at two numbers: the ratio of this week's load to your trailing 4-week average (keep it under 1.3), and how much your daily loads vary within a week (more variance between hard and easy days is protective, not risky). A plan that respects both will feel less impressive on paper and outlast almost anything that doesn't.</p>",
-    "toc_items": [
-      {
-        "id": "the-real-reason-plans-fail",
-        "text": "The Real Reason Plans Fail"
-      },
-      {
-        "id": "monotony-is-the-silent-killer",
-        "text": "Monotony Is the Silent Killer"
-      },
-      {
-        "id": "the-10-rule-is-too-blunt",
-        "text": "The 10% Rule Is Too Blunt"
-      },
-      {
-        "id": "what-sustainable-looks-like-in-practice",
-        "text": "What Sustainable Looks Like in Practice"
-      },
-      {
-        "id": "the-takeaway",
-        "text": "The Takeaway"
-      }
-    ],
-    "hash": "f2fe566f1ead3c4c66efc5880d200976"
   }
 ]
