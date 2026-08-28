@@ -1,5 +1,41 @@
 [
   {
+    "slug": "garmin-readiness-score-what-reddit-gets-right",
+    "title": "Garmin Readiness Score: What Reddit Gets Right",
+    "date": "2026-08-28",
+    "category": "Wearables",
+    "meta_description": "Reddit threads on the Garmin Readiness Score are full of complaints about wild swings and confusing numbers. Here's what the score actually measures and how to use it.",
+    "keywords": "garmin readiness score, garmin training readiness, hrv status garmin, garmin body battery, recovery score accuracy, training readiness reddit, garmin sleep score, adaptive training",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "what-it-measures",
+        "text": "What the Readiness Score Actually Measures"
+      },
+      {
+        "id": "why-scores-feel-inaccurate",
+        "text": "Why Reddit Says the Score Feels Random"
+      },
+      {
+        "id": "hrv-calibration-problem",
+        "text": "The HRV Status Calibration Problem"
+      },
+      {
+        "id": "readiness-vs-other-metrics",
+        "text": "Readiness Score vs. Body Battery vs. Training Status"
+      },
+      {
+        "id": "how-to-use-the-score",
+        "text": "How to Actually Use the Number"
+      }
+    ],
+    "body_html": "<p>Search \"Garmin readiness score reddit\" and you'll find the same thread repeated a hundred different ways: someone slept eight hours, felt great, and woke up to a 62. Someone else slept five hours after a night out and got an 81. The replies are half confusion, half resignation — <strong>\"I stopped looking at it\"</strong> is one of the most common responses in r/Garmin and r/GarminWatches. That reaction is understandable, but it's usually a sign the metric is being read wrong, not that it's broken.</p><p>The Readiness Score isn't a mood ring. It's a composite number, and composite numbers behave differently than any single input you're used to checking.</p><h2 id=\"what-it-measures\">What the Readiness Score Actually Measures</h2><p>Garmin's Training Readiness score blends several inputs into one 0–100 figure: <strong>HRV status</strong>, sleep score and sleep history, recovery time remaining from prior training, acute training load, and — on some devices — stress history and sleep consistency. It's designed to answer one narrow question: how prepared is your body for a hard training stimulus <em>right now</em>, relative to your own baseline.</p><p>That last part matters. The score isn't measuring fitness or absolute capacity — it's measuring deviation from what's normal for you. A 55 for one athlete might represent a totally healthy day; the same 55 for someone else might mean genuine accumulated fatigue. Reddit threads that compare scores between users (\"my friend always gets 90s, I never break 70\") are comparing numbers that were never meant to be compared across people in the first place.</p><h2 id=\"why-scores-feel-inaccurate\">Why Reddit Says the Score Feels Random</h2><p>Most of the \"this score makes no sense\" complaints trace back to a handful of recurring causes:</p><ul><li><strong>Sleep timing versus sleep quality.</strong> The algorithm weights total sleep and consistency heavily. Eight hours of fragmented, late, or irregular sleep can score worse than seven hours at a consistent time, even if the fragmented night felt fine subjectively.</li><li><strong>Lag in recovery time.</strong> A hard session two days ago can still be suppressing the score today, even if you feel fully recovered — the algorithm is conservative about how quickly it releases that debt.</li><li><strong>Alcohol and late eating.</strong> Both suppress HRV overnight in ways that show up the next morning regardless of how rested you subjectively feel, which explains the \"felt great, scored low\" threads.</li><li><strong>Firmware and sensor noise.</strong> Wrist-based HRV capture is genuinely noisier than chest-strap or lab measurement, and a single bad night of sensor contact can distort one day's reading.</li></ul><p>None of these make the score meaningless — they make it a lagging, noisy signal rather than an instant verdict. Reddit's frustration is really frustration with treating a statistical composite like a diagnosis.</p><h2 id=\"hrv-calibration-problem\">The HRV Status Calibration Problem</h2><p>The single most common complaint in these threads is about <strong>HRV status</strong>, the sub-metric that feeds the readiness score most heavily. Garmin's HRV status needs roughly three weeks of nightly data before it establishes a stable personal baseline. Until that baseline settles, the status — and by extension the readiness score — can swing in ways that look arbitrary.</p><p>This is a real limitation, not a myth. HRV reflects the balance between sympathetic and parasympathetic activity in the autonomic nervous system, and that balance is influenced by dozens of factors beyond training: illness, heat, travel, hydration, even a stressful email before bed. A short calibration window means early readings are working with a thin, noisy sample. The fix isn't to distrust the metric permanently — it's to give it the weeks it needs before treating the baseline as reliable, and to expect the number to move more in month one than in month six.</p><h2 id=\"readiness-vs-other-metrics\">Readiness Score vs. Body Battery vs. Training Status</h2><p>Part of the Reddit confusion comes from Garmin publishing several overlapping numbers that measure related but distinct things:</p><ul><li><strong>Body Battery</strong> tracks energy reserves through the day — it drains with stress and activity, recharges with rest, and resets daily. It's a short-horizon, intraday signal.</li><li><strong>Training Readiness</strong> is the longer-horizon, morning composite described above — it's asking whether today is a good day to train hard.</li><li><strong>Training Status</strong> (Productive, Unproductive, Overreaching, Detraining) looks at VO2 max trend and training load balance over weeks, not days.</li></ul><p>These three can and do disagree, and that disagreement is often informative rather than contradictory. A high Body Battery with low Training Readiness might mean you're rested in the moment but still carrying accumulated fatigue from the week. Reading them as a set, rather than picking whichever number confirms how you already feel, is where most of the value is.</p><h2 id=\"how-to-use-the-score\">How to Actually Use the Number</h2><p>The score is most useful as a <strong>trend</strong>, not a daily verdict. A single 58 tells you almost nothing. A week where your readiness sits consistently 15–20 points below your rolling average tells you something worth acting on — back off intensity, prioritize sleep, or shift a hard session by a day. Used this way, it catches accumulating fatigue before it becomes a subjective \"I feel terrible\" moment, which is precisely the gap it's designed to fill.</p><p>The deeper issue underneath most of these Reddit threads is that a single daily score, however well-built, can't fully capture what a body needs on a given day — it can only flag when something has shifted. That's the gap adaptive training is built to close: instead of a static plan that ignores the number entirely, or a rigid rule that reacts to every fluctuation, training decisions get adjusted continuously against how the body is actually trending. Forma treats readiness data the way the underlying physiology deserves — as one input in a constantly updating picture, not a single number to obey or ignore.</p>",
+    "status": "published",
+    "_queue_id": "autosugg-55e98443",
+    "_cluster": "hrv-readiness",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "garmin-readiness-score-on-vivoactive-5-what-it-really-tells-you",
     "title": "Garmin Readiness Score on Vivoactive 5: What It Really Tells You",
     "date": "2026-08-26",
