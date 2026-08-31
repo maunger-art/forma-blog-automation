@@ -1382,3 +1382,36 @@ Runner B's monotony score was roughly half of Runner A's despite nearly identica
 ## The Takeaway
 
 If you're building or evaluating a training plan, stop looking at the weekly average and start looking at two numbers: the ratio of this week's load to your trailing 4-week average (keep it under 1.3), and how much your daily loads vary within a week (more variance between hard and easy days is protective, not risky). A plan that respects both will feel less impressive on paper and outlast almost anything that doesn't.
+
+
+---
+
+## 25. HRV vs Resting Heart Rate: Which One Actually Tracks Recovery?
+
+## The Metric Everyone Trusts Is Measuring the Wrong Thing
+
+Resting heart rate has been the go-to recovery signal since the first Polar chest straps shipped in the 1980s. Wake up, check your pulse, and if it's up 5-8 beats from baseline, you're supposedly not recovered. The problem: by the time RHR moves, your body has already been under stress for days. HRV — the beat-to-beat variation in the interval between heartbeats — shifts hours before RHR does, because it's reading the nervous system directly instead of waiting for the heart muscle to react to it.
+
+## What Resting Heart Rate Actually Tells You
+
+RHR is downstream. It reflects stroke volume, blood volume, core temperature, hydration, and cardiac remodeling from months of aerobic training — which is exactly why it's a poor short-term signal. A well-trained runner's RHR might sit at 42 bpm and barely move even during a rough training block, because a bigger, more efficient heart doesn't need to beat as often regardless of how fatigued the nervous system is. RHR is a slow-moving trend line, useful over 8-12 week windows to confirm aerobic adaptation, not a daily readiness gauge.
+
+## What HRV Actually Tells You
+
+HRV (usually measured as rMSSD, the root mean square of successive differences between heartbeats) tracks the tug-of-war between your sympathetic ("go") and parasympathetic ("rest and digest") nervous systems. High variability between beats means the parasympathetic system has room to modulate heart rate moment to moment — a sign the body isn't locked in a stress response. Suppressed HRV means the sympathetic system is dominant, which happens with poor sleep, illness onset, psychological stress, alcohol, and accumulated training load, often 24-48 hours before RHR or subjective fatigue catches up.
+
+## The Case Study: Same Athlete, Two Signals, Two Stories
+
+A 34-year-old marathoner in a 16-week block logged both metrics daily for 6 weeks. In week 4, after a 20-mile long run followed by a poor night of sleep (a work deadline, four hours in bed), his RHR read 44 bpm — one beat above his 43 bpm baseline, essentially noise. His HRV, though, dropped from a 7-day rolling average of 68ms to 41ms overnight, a 40% swing. He trained through it anyway on a scheduled tempo day, because RHR looked fine. The session fell apart at mile 3 — he couldn't hold goal pace, and heart rate drifted 12 bpm above normal for the same effort. RHR said nothing was wrong. HRV had flagged it 18 hours earlier.
+
+## Why HRV Wins for Day-to-Day Decisions
+
+HRV is more sensitive because it measures the control system, not the output. It responds to a single bad night of sleep, a stressful meeting, or the first 12 hours of an oncoming cold — stimuli that won't move RHR at all in most athletes. That sensitivity is also its weakness: HRV is noisier and needs consistent measurement conditions (same time, same position, ideally supine before standing) and a personal baseline built over 2-3 weeks before the numbers mean anything. A single low reading isn't a signal; a reading more than one standard deviation below your 7-day rolling average, especially alongside elevated RHR or poor sleep, is.
+
+## Where RHR Still Matters
+
+Don't drop it. RHR is the better tool for spotting overreaching that's built up over weeks rather than a single stressor — a steady upward creep of 5+ bpm over 10-14 days, even with HRV holding steady, is a classic overtraining flag that HRV alone can miss because the nervous system can partially compensate short-term. The two metrics answer different questions: HRV asks "am I recovered enough for today," RHR asks "is my training load sustainable this month."
+
+## The Practical Takeaway
+
+Use HRV as your daily gate — measured first thing, supine, before caffeine — to decide whether to hit the session as planned, swap in an easy day, or add a warm-up buffer before committing to pace. Use RHR as your monthly trend check to catch chronic overreaching a single morning reading won't show. If the two disagree, trust HRV for today's decision and flag RHR's trend for the coming week. Neither number replaces how you actually feel, but between the two, HRV is reading closer to the source.
