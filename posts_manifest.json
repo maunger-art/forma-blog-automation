@@ -1,5 +1,41 @@
 [
   {
+    "slug": "garmin-255-readiness-score-how-its-calculated",
+    "title": "Garmin 255 Readiness Score: How It's Calculated",
+    "date": "2026-09-04",
+    "category": "Wearables",
+    "meta_description": "The Forerunner 255 doesn't always show a labeled Training Readiness score — but it captures every input that number is built from. Here's how to read them.",
+    "keywords": "garmin 255 readiness score, garmin training readiness, garmin forerunner 255 hrv, garmin body battery, garmin sleep score, hrv status garmin, recovery time garmin, training readiness explained",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "what-is-training-readiness",
+        "text": "What Training Readiness Actually Measures"
+      },
+      {
+        "id": "does-255-show-it",
+        "text": "Does the Forerunner 255 Show a Training Readiness Score?"
+      },
+      {
+        "id": "the-four-inputs",
+        "text": "The Four Inputs Behind the Number"
+      },
+      {
+        "id": "reading-the-score",
+        "text": "How to Read (and Not Over-Read) Your Score"
+      },
+      {
+        "id": "beyond-the-score",
+        "text": "Why a Single Daily Number Isn't Enough"
+      }
+    ],
+    "body_html": "<p>You open your Garmin Connect app expecting a clean number telling you whether to run hard or take it easy, and instead you find a scattering of metrics — HRV Status, Body Battery, Sleep Score, Recovery Time — with no single verdict tying them together. If you're running a Forerunner 255, this is a common source of confusion, because Garmin's <strong>Training Readiness</strong> score, the feature that consolidates those signals into one figure, wasn't part of the 255's original feature set.</p><p>That doesn't mean the watch is blind to your recovery. It means the readiness picture lives in pieces rather than one badge, and understanding those pieces is arguably more useful than staring at a single number anyway.</p><h2 id=\"what-is-training-readiness\">What Training Readiness Actually Measures</h2><p>Training Readiness is Garmin's attempt to answer one question every morning: <strong>how much stress can your body absorb today without digging you into a deeper hole?</strong> It's built on Firstbeat Analytics — the physiology engine Garmin acquired and embedded across its watch lineup — and it blends several days of autonomic nervous system data with your recent training load and sleep quality.</p><p>The score isn't a fitness measure. It's not telling you how fit you are, only how recovered you are relative to your own baseline. A well-trained athlete and a beginner can both show a low readiness score on the same morning, for entirely different reasons — one from an unusually hard training block, the other from a bad night's sleep.</p><h2 id=\"does-255-show-it\">Does the Forerunner 255 Show a Training Readiness Score?</h2><p>Training Readiness launched with the Forerunner 955/965, Fenix 7, and Epix 2 series, and Garmin has gradually extended it to other watches through software updates since. Whether your specific Forerunner 255 displays a labeled Training Readiness widget depends on your current firmware and Garmin Connect app version — it's worth checking your watch's data screens and the Connect app's daily summary, since Garmin has quietly broadened access over time.</p><p>What matters more than the label is this: <strong>the 255 already collects every raw input the Training Readiness algorithm depends on.</strong> It tracks HRV Status overnight, generates a Sleep Score, monitors Body Battery drain and recharge, and calculates Recovery Time after workouts. If your unit doesn't surface the consolidated score, you can still read your recovery state directly from those four components — arguably with more nuance than the single number provides.</p><h2 id=\"the-four-inputs\">The Four Inputs Behind the Number</h2><p>Understanding what feeds the readiness calculation lets you build your own mental model of it, even without the label:</p><ul><li><strong>HRV Status</strong> — your overnight heart rate variability compared against a rolling personal baseline, categorized as Balanced, Unbalanced, Low, or Poor. This is the single strongest signal, since HRV reflects how much your autonomic nervous system is still working to manage accumulated stress.</li><li><strong>Sleep Score</strong> — duration, deep sleep, REM proportion, and restlessness, weighted against what's typical for you specifically rather than a generic benchmark.</li><li><strong>Body Battery</strong> — a running tally of stress-driven drain versus rest-driven recharge throughout the day and night, derived from heart rate variability and activity levels.</li><li><strong>Recovery Time</strong> — an estimate, generated after each logged workout, of how many hours until your body is ready for another hard session, based on session intensity and your training history.</li></ul><p>Training Readiness essentially weighs these four against each other and against your acute training load — the volume and intensity of the last several days — to produce a composite figure. Miss the composite, and you can still triangulate the same answer by checking each piece individually.</p><h2 id=\"reading-the-score\">How to Read (and Not Over-Read) Your Score</h2><p>If your watch does display Training Readiness, or you're reading the components manually, the same interpretation logic applies. A high reading means your nervous system has settled back toward baseline and you've slept and recovered enough to absorb load — a green light for intervals or a long run. A low reading, particularly one driven by an <strong>Unbalanced or Low HRV Status</strong> rather than just a short night's sleep, is a signal that a hard session will cost more than it earns.</p><p>The mistake most runners make is treating a single morning's number as gospel. HRV is genuinely noisy — alcohol, late meals, travel, heat, and even sleeping position can shift it 10-20% night to night with no bearing on your actual training capacity. What matters is the multi-day trend, not the daily print-out. A single low morning after one bad night is background noise. Three or four consecutive low mornings alongside a heavy training block is a pattern worth acting on.</p><h2 id=\"beyond-the-score\">Why a Single Daily Number Isn't Enough</h2><p>Even a fully labeled Training Readiness score has a structural limitation: it's a snapshot generated once, in the morning, from the previous night's data. It doesn't know what your training plan calls for tomorrow, doesn't adjust as the week unfolds, and treats every athlete's baseline drift the same way regardless of what phase of training they're in.</p><p>That's the gap adaptive training is built to close. Rather than issuing one readiness figure and leaving the interpretation to you, Forma continuously reconciles your HRV trend, sleep, and recovery time against the actual sessions in your plan — adjusting intensity and volume in real time instead of asking you to manually downgrade a scheduled interval session because Garmin flagged a low morning. Your watch, whether it's a Forerunner 255 or a model with the full Training Readiness badge, is still the best source of raw physiological data. What you do with that data — session by session, week by week — is where the real gains come from.</p>",
+    "status": "published",
+    "_queue_id": "autosugg-9d63e0c8",
+    "_cluster": "hrv-readiness",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "garmin-training-readiness-score-what-it-actually-measures",
     "title": "Garmin Training Readiness Score: What It Actually Measures",
     "date": "2026-08-31",
@@ -34,6 +70,48 @@
     "_queue_id": "autosugg-ffce5413",
     "_cluster": "hrv-readiness",
     "_composite_score": 5.7
+  },
+  {
+    "slug": "hrv-vs-resting-heart-rate-which-tracks-recovery",
+    "title": "HRV vs Resting Heart Rate: Which One Actually Tracks Recovery?",
+    "category": "HRV",
+    "meta_description": "HRV and resting heart rate both claim to track recovery, but they measure different physiological systems entirely. Here's what the research actually shows.",
+    "keywords": "HRV, resting heart rate, recovery tracking, heart rate variability, wearables, training readiness, autonomic nervous system, overtraining",
+    "read_time": 5,
+    "date": "2026-08-31",
+    "status": "published",
+    "body_html": "<h2 id=\"the-metric-everyone-trusts-is-measuring-the-wrong-thing\">The Metric Everyone Trusts Is Measuring the Wrong Thing</h2>\n<p>Resting heart rate has been the go-to recovery signal since the first Polar chest straps shipped in the 1980s. Wake up, check your pulse, and if it's up 5-8 beats from baseline, you're supposedly not recovered. The problem: by the time RHR moves, your body has already been under stress for days. HRV — the beat-to-beat variation in the interval between heartbeats — shifts hours before RHR does, because it's reading the nervous system directly instead of waiting for the heart muscle to react to it.</p>\n<h2 id=\"what-resting-heart-rate-actually-tells-you\">What Resting Heart Rate Actually Tells You</h2>\n<p>RHR is downstream. It reflects stroke volume, blood volume, core temperature, hydration, and cardiac remodeling from months of aerobic training — which is exactly why it's a poor short-term signal. A well-trained runner's RHR might sit at 42 bpm and barely move even during a rough training block, because a bigger, more efficient heart doesn't need to beat as often regardless of how fatigued the nervous system is. RHR is a slow-moving trend line, useful over 8-12 week windows to confirm aerobic adaptation, not a daily readiness gauge.</p>\n<h2 id=\"what-hrv-actually-tells-you\">What HRV Actually Tells You</h2>\n<p>HRV (usually measured as rMSSD, the root mean square of successive differences between heartbeats) tracks the tug-of-war between your sympathetic (\"go\") and parasympathetic (\"rest and digest\") nervous systems. High variability between beats means the parasympathetic system has room to modulate heart rate moment to moment — a sign the body isn't locked in a stress response. Suppressed HRV means the sympathetic system is dominant, which happens with poor sleep, illness onset, psychological stress, alcohol, and accumulated training load, often 24-48 hours before RHR or subjective fatigue catches up.</p>\n<h2 id=\"the-case-study-same-athlete-two-signals-two-stories\">The Case Study: Same Athlete, Two Signals, Two Stories</h2>\n<p>A 34-year-old marathoner in a 16-week block logged both metrics daily for 6 weeks. In week 4, after a 20-mile long run followed by a poor night of sleep (a work deadline, four hours in bed), his RHR read 44 bpm — one beat above his 43 bpm baseline, essentially noise. His HRV, though, dropped from a 7-day rolling average of 68ms to 41ms overnight, a 40% swing. He trained through it anyway on a scheduled tempo day, because RHR looked fine. The session fell apart at mile 3 — he couldn't hold goal pace, and heart rate drifted 12 bpm above normal for the same effort. RHR said nothing was wrong. HRV had flagged it 18 hours earlier.</p>\n<h2 id=\"why-hrv-wins-for-day-to-day-decisions\">Why HRV Wins for Day-to-Day Decisions</h2>\n<p>HRV is more sensitive because it measures the control system, not the output. It responds to a single bad night of sleep, a stressful meeting, or the first 12 hours of an oncoming cold — stimuli that won't move RHR at all in most athletes. That sensitivity is also its weakness: HRV is noisier and needs consistent measurement conditions (same time, same position, ideally supine before standing) and a personal baseline built over 2-3 weeks before the numbers mean anything. A single low reading isn't a signal; a reading more than one standard deviation below your 7-day rolling average, especially alongside elevated RHR or poor sleep, is.</p>\n<h2 id=\"where-rhr-still-matters\">Where RHR Still Matters</h2>\n<p>Don't drop it. RHR is the better tool for spotting overreaching that's built up over weeks rather than a single stressor — a steady upward creep of 5+ bpm over 10-14 days, even with HRV holding steady, is a classic overtraining flag that HRV alone can miss because the nervous system can partially compensate short-term. The two metrics answer different questions: HRV asks \"am I recovered enough for today,\" RHR asks \"is my training load sustainable this month.\"</p>\n<h2 id=\"the-practical-takeaway\">The Practical Takeaway</h2>\n<p>Use HRV as your daily gate — measured first thing, supine, before caffeine — to decide whether to hit the session as planned, swap in an easy day, or add a warm-up buffer before committing to pace. Use RHR as your monthly trend check to catch chronic overreaching a single morning reading won't show. If the two disagree, trust HRV for today's decision and flag RHR's trend for the coming week. Neither number replaces how you actually feel, but between the two, HRV is reading closer to the source.</p>",
+    "toc_items": [
+      {
+        "id": "the-metric-everyone-trusts-is-measuring-the-wrong-thing",
+        "text": "The Metric Everyone Trusts Is Measuring the Wrong Thing"
+      },
+      {
+        "id": "what-resting-heart-rate-actually-tells-you",
+        "text": "What Resting Heart Rate Actually Tells You"
+      },
+      {
+        "id": "what-hrv-actually-tells-you",
+        "text": "What HRV Actually Tells You"
+      },
+      {
+        "id": "the-case-study-same-athlete-two-signals-two-stories",
+        "text": "The Case Study: Same Athlete, Two Signals, Two Stories"
+      },
+      {
+        "id": "why-hrv-wins-for-day-to-day-decisions",
+        "text": "Why HRV Wins for Day-to-Day Decisions"
+      },
+      {
+        "id": "where-rhr-still-matters",
+        "text": "Where RHR Still Matters"
+      },
+      {
+        "id": "the-practical-takeaway",
+        "text": "The Practical Takeaway"
+      }
+    ],
+    "hash": "c19d87a5de047966e3646f98057be395"
   },
   {
     "slug": "garmin-readiness-score-what-reddit-gets-right",
@@ -5181,47 +5259,5 @@
       }
     ],
     "body_html": "<p>Endurance athletes often believe success comes from doing more.</p>\n\n<p>More miles. More intervals. More training.</p>\n\n<p>But one of the biggest lessons in performance science is that <strong>training harder doesn’t always produce better results</strong>.</p>\n\n<h2 id=\"training-creates-stress\">Training creates stress</h2>\n\n<p>Every workout stresses the body. That stress triggers adaptation — but only if the body has time to recover.</p>\n\n<p>Without that recovery window, the adaptation stimulus is lost. Worse, additional stress on an unrecovered system increases injury risk and suppresses performance.</p>\n\n<p>This is the paradox: the thing that makes you fitter (training) also makes you temporarily weaker. Fitness is built in the gap between sessions, not during them.</p>\n\n<h2 id=\"recovery-builds-performance\">Recovery builds performance</h2>\n\n<p>During recovery the body:</p>\n\n<ul>\n  <li>Repairs micro-tears in muscle tissue</li>\n  <li>Restores glycogen stores</li>\n  <li>Strengthens connective tissue and physiological systems</li>\n  <li>Consolidates neurological adaptations</li>\n</ul>\n\n<p>Without adequate recovery there is no adaptation. The training stress becomes noise rather than signal.</p>\n\n<h2 id=\"discipline-of-restraint\">The discipline of restraint</h2>\n\n<p>Elite athletes know when to push and when to recover.</p>\n\n<p>They understand that easy days must remain genuinely easy, and that rest is a critical — not optional — part of the training process.</p>\n\n<p>The temptation to push through fatigue is one of the most common reasons amateur athletes plateau or get injured. The ability to hold back when it matters is a learned skill.</p>\n\n<h2 id=\"sustainable-performance\">Sustainable performance</h2>\n\n<p>The goal is not to maximise effort on one day, but to sustain <strong>consistent training over months and years</strong>.</p>\n\n<p>Athletes who avoid injury and burnout — who train consistently at a manageable load — often outperform those who push relentlessly through fatigue.</p>\n\n<p>The biggest breakthroughs rarely come from doing the most work. They come from doing the <strong>right work at the right time</strong> — and then recovering properly from it.</p>"
-  },
-  {
-    "slug": "hrv-vs-resting-heart-rate-which-tracks-recovery",
-    "title": "HRV vs Resting Heart Rate: Which One Actually Tracks Recovery?",
-    "category": "HRV",
-    "meta_description": "HRV and resting heart rate both claim to track recovery, but they measure different physiological systems entirely. Here's what the research actually shows.",
-    "keywords": "HRV, resting heart rate, recovery tracking, heart rate variability, wearables, training readiness, autonomic nervous system, overtraining",
-    "read_time": 5,
-    "date": "2026-08-31",
-    "status": "published",
-    "body_html": "<h2 id=\"the-metric-everyone-trusts-is-measuring-the-wrong-thing\">The Metric Everyone Trusts Is Measuring the Wrong Thing</h2>\n<p>Resting heart rate has been the go-to recovery signal since the first Polar chest straps shipped in the 1980s. Wake up, check your pulse, and if it's up 5-8 beats from baseline, you're supposedly not recovered. The problem: by the time RHR moves, your body has already been under stress for days. HRV — the beat-to-beat variation in the interval between heartbeats — shifts hours before RHR does, because it's reading the nervous system directly instead of waiting for the heart muscle to react to it.</p>\n<h2 id=\"what-resting-heart-rate-actually-tells-you\">What Resting Heart Rate Actually Tells You</h2>\n<p>RHR is downstream. It reflects stroke volume, blood volume, core temperature, hydration, and cardiac remodeling from months of aerobic training — which is exactly why it's a poor short-term signal. A well-trained runner's RHR might sit at 42 bpm and barely move even during a rough training block, because a bigger, more efficient heart doesn't need to beat as often regardless of how fatigued the nervous system is. RHR is a slow-moving trend line, useful over 8-12 week windows to confirm aerobic adaptation, not a daily readiness gauge.</p>\n<h2 id=\"what-hrv-actually-tells-you\">What HRV Actually Tells You</h2>\n<p>HRV (usually measured as rMSSD, the root mean square of successive differences between heartbeats) tracks the tug-of-war between your sympathetic (\"go\") and parasympathetic (\"rest and digest\") nervous systems. High variability between beats means the parasympathetic system has room to modulate heart rate moment to moment — a sign the body isn't locked in a stress response. Suppressed HRV means the sympathetic system is dominant, which happens with poor sleep, illness onset, psychological stress, alcohol, and accumulated training load, often 24-48 hours before RHR or subjective fatigue catches up.</p>\n<h2 id=\"the-case-study-same-athlete-two-signals-two-stories\">The Case Study: Same Athlete, Two Signals, Two Stories</h2>\n<p>A 34-year-old marathoner in a 16-week block logged both metrics daily for 6 weeks. In week 4, after a 20-mile long run followed by a poor night of sleep (a work deadline, four hours in bed), his RHR read 44 bpm — one beat above his 43 bpm baseline, essentially noise. His HRV, though, dropped from a 7-day rolling average of 68ms to 41ms overnight, a 40% swing. He trained through it anyway on a scheduled tempo day, because RHR looked fine. The session fell apart at mile 3 — he couldn't hold goal pace, and heart rate drifted 12 bpm above normal for the same effort. RHR said nothing was wrong. HRV had flagged it 18 hours earlier.</p>\n<h2 id=\"why-hrv-wins-for-day-to-day-decisions\">Why HRV Wins for Day-to-Day Decisions</h2>\n<p>HRV is more sensitive because it measures the control system, not the output. It responds to a single bad night of sleep, a stressful meeting, or the first 12 hours of an oncoming cold — stimuli that won't move RHR at all in most athletes. That sensitivity is also its weakness: HRV is noisier and needs consistent measurement conditions (same time, same position, ideally supine before standing) and a personal baseline built over 2-3 weeks before the numbers mean anything. A single low reading isn't a signal; a reading more than one standard deviation below your 7-day rolling average, especially alongside elevated RHR or poor sleep, is.</p>\n<h2 id=\"where-rhr-still-matters\">Where RHR Still Matters</h2>\n<p>Don't drop it. RHR is the better tool for spotting overreaching that's built up over weeks rather than a single stressor — a steady upward creep of 5+ bpm over 10-14 days, even with HRV holding steady, is a classic overtraining flag that HRV alone can miss because the nervous system can partially compensate short-term. The two metrics answer different questions: HRV asks \"am I recovered enough for today,\" RHR asks \"is my training load sustainable this month.\"</p>\n<h2 id=\"the-practical-takeaway\">The Practical Takeaway</h2>\n<p>Use HRV as your daily gate — measured first thing, supine, before caffeine — to decide whether to hit the session as planned, swap in an easy day, or add a warm-up buffer before committing to pace. Use RHR as your monthly trend check to catch chronic overreaching a single morning reading won't show. If the two disagree, trust HRV for today's decision and flag RHR's trend for the coming week. Neither number replaces how you actually feel, but between the two, HRV is reading closer to the source.</p>",
-    "toc_items": [
-      {
-        "id": "the-metric-everyone-trusts-is-measuring-the-wrong-thing",
-        "text": "The Metric Everyone Trusts Is Measuring the Wrong Thing"
-      },
-      {
-        "id": "what-resting-heart-rate-actually-tells-you",
-        "text": "What Resting Heart Rate Actually Tells You"
-      },
-      {
-        "id": "what-hrv-actually-tells-you",
-        "text": "What HRV Actually Tells You"
-      },
-      {
-        "id": "the-case-study-same-athlete-two-signals-two-stories",
-        "text": "The Case Study: Same Athlete, Two Signals, Two Stories"
-      },
-      {
-        "id": "why-hrv-wins-for-day-to-day-decisions",
-        "text": "Why HRV Wins for Day-to-Day Decisions"
-      },
-      {
-        "id": "where-rhr-still-matters",
-        "text": "Where RHR Still Matters"
-      },
-      {
-        "id": "the-practical-takeaway",
-        "text": "The Practical Takeaway"
-      }
-    ],
-    "hash": "c19d87a5de047966e3646f98057be395"
   }
 ]
