@@ -1415,3 +1415,43 @@ Don't drop it. RHR is the better tool for spotting overreaching that's built up 
 ## The Practical Takeaway
 
 Use HRV as your daily gate — measured first thing, supine, before caffeine — to decide whether to hit the session as planned, swap in an easy day, or add a warm-up buffer before committing to pace. Use RHR as your monthly trend check to catch chronic overreaching a single morning reading won't show. If the two disagree, trust HRV for today's decision and flag RHR's trend for the coming week. Neither number replaces how you actually feel, but between the two, HRV is reading closer to the source.
+
+
+---
+
+## 26. Recovery Week Training: How to Cut Volume Without Losing Fitness
+
+## The Detraining Myth
+
+Cut training volume by 50% for seven days and most runners assume they're sabotaging months of adaptation. They're not. Muscle mitochondrial density — the engine room for aerobic metabolism — has a half-life measured in weeks, not days. Detraining research (Mujika & Padilla, and later work from Neufer's lab) shows VO2max holds essentially flat for the first 7-14 days of reduced load, with the first measurable drop-off closer to day 12-21 depending on how much volume actually disappears. A single recovery week isn't long enough to touch it.
+
+What does move fast is plasma volume. It starts contracting within 48-72 hours of reduced training stress, and a 5-10% drop in plasma volume raises heart rate at a given pace by roughly 3-5 beats per minute. That's why day three of a recovery week can feel "off" — HR drifts up, pace feels harder — even though nothing about your muscular or cardiovascular fitness has degraded. It's fluid dynamics, not detraining, and it reverses within 3-4 days of resumed loading.
+
+## What You're Actually Managing
+
+A recovery week has one job: let training load (the acute, ATL side of the training-stress balance) drop faster than fitness (CTL) does, so the gap between the two — often tracked as TSB, or "form" — swings positive. Fitness built over 8+ weeks has a long enough half-life (roughly 42 days in the classic Banister model) that a single down week barely dents it. The real risk isn't losing aerobic fitness. It's cutting so aggressively, or for so long, that you bleed the neuromuscular sharpness — turnover, power, running economy — that erodes faster than aerobic capacity does.
+
+## The Rule: Cut Volume, Keep Frequency, Touch Intensity Once
+
+The structure that holds up across most periodization models: drop weekly volume 40-60%, keep session frequency close to normal, and include one short session at or near race-pace intensity — not zero intensity.
+
+Frequency matters because running or cycling economy is a motor-skill adaptation as much as a metabolic one. Miss more than 5-6 days of a given movement pattern and the neuromuscular groove starts to degrade measurably. A single hard-but-short intensity touch — 15-20 minutes of race-pace work inside an otherwise easy week — keeps fast-twitch recruitment and economy intact without adding meaningful fatigue, because intensity, not duration, is what preserves those adaptations.
+
+## A Worked Example
+
+Take an athlete averaging 9 hours a week: 6 runs, 60km, one interval session, one 90-minute long run. A well-built recovery week looks like this:
+
+- Volume: drop to 4-4.5 hours (a 50% cut)
+- Frequency: keep 5 of the 6 sessions, each shortened to 30-40 minutes
+- Intensity: one session keeps 4x3 minutes at 10K pace with full recovery — about 15 minutes of real work, down from a session that would normally total 30-40 minutes
+- Long run: cut to 45-50 minutes, easy pace only
+
+Total training stress for the week usually lands 55-65% below a normal week — enough for ATL to fall fast — while CTL, built over the prior 8 weeks, drops by only 2-4 points. That's the mechanism in one line: fatigue clears in days, fitness decays in months, and a recovery week is only long enough to touch the first one.
+
+## Where This Goes Wrong
+
+Two failure modes show up constantly. The first is cutting frequency instead of volume — skipping sessions entirely rather than shortening them. That's what actually costs running economy, because it's the movement pattern that degrades, not the aerobic engine. The second is cutting intensity to zero "to be safe." An all-easy recovery week removes the one stimulus that keeps neuromuscular power from softening, and athletes who do this often report feeling worse, not better, in their first hard session back — legs feel heavy and unresponsive because they haven't fired at speed in 7-10 days.
+
+## The Takeaway
+
+Structure the week around three numbers: cut total volume 40-60%, keep at least 80% of normal session frequency, and preserve one short 10-20 minute block of race-pace intensity. Do that and the physiology backs you up — plasma volume and HR drift are the only things moving in week one, aerobic fitness is untouched, and you come out able to load hard again instead of needing a second week just to find your legs.
