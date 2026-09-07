@@ -1,5 +1,41 @@
 [
   {
+    "slug": "what-garmins-training-readiness-score-really-means",
+    "title": "What Garmin's Training Readiness Score Really Means",
+    "date": "2026-09-07",
+    "category": "Wearables",
+    "meta_description": "Garmin's Training Readiness score blends HRV, sleep, and training load into one number. Here's what it actually measures, where it breaks down, and how to use it.",
+    "keywords": "garmin training readiness, garmin forerunner readiness score, garmin hrv status, garmin sleep score, training readiness explained, garmin recovery metrics",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "what-it-measures",
+        "text": "What the Readiness Score Actually Measures"
+      },
+      {
+        "id": "how-its-calculated",
+        "text": "How the Score Is Calculated"
+      },
+      {
+        "id": "reading-the-score",
+        "text": "How to Read Your Daily Number"
+      },
+      {
+        "id": "where-it-falls-short",
+        "text": "Where the Score Falls Short"
+      },
+      {
+        "id": "using-it-in-training",
+        "text": "Using Readiness to Guide Actual Decisions"
+      }
+    ],
+    "body_html": "<p>Open your Forerunner in the morning and the first thing you see is a number between 0 and 100, sitting above a label like \"Low\" or \"High.\" That's Garmin's <strong>Training Readiness score</strong>, and it's designed to answer a question most athletes used to guess at: is your body actually prepared to train hard today, or should you back off? The number is useful. It's also frequently misread, and understanding what's really going into it changes how much weight you should give it.</p>\n\n<h2 id=\"what-it-measures\">What the Readiness Score Actually Measures</h2>\n<p>Training Readiness isn't a fitness score, and it isn't a fatigue score in isolation — it's an attempt to combine several separate recovery signals into a single daily output. Garmin built it as an evolution of Body Battery and Training Status, pulling in the same underlying data streams but weighting them specifically around <strong>whether today is a good day to add training stress</strong>. A high score means your recent sleep, stress load, and training history all point toward good recovery. A low score means one or more of those inputs is flashing a warning sign, even if you feel fine.</p>\n<p>That last point matters. The score exists precisely because subjective readiness — how you feel when you wake up — is an unreliable predictor of physiological recovery. Athletes routinely underestimate accumulated fatigue after a run of good sleep, and overestimate it after a single rough night. Readiness is Garmin's attempt to strip out that bias and replace it with measured inputs.</p>\n\n<h2 id=\"how-its-calculated\">How the Score Is Calculated</h2>\n<p>The score draws on several inputs that update daily:</p>\n<ul>\n<li><strong>Sleep</strong> — duration, quality, and how your most recent night compares to your rolling sleep history</li>\n<li><strong>HRV status</strong> — your heart rate variability measured overnight, compared against your personal baseline range rather than a fixed target</li>\n<li><strong>Recovery time remaining</strong> — an estimate of how much residual fatigue is left from recent hard sessions</li>\n<li><strong>Acute training load</strong> — how much stress you've piled on in the last 7 days relative to what your body has adapted to handle</li>\n<li><strong>Stress history</strong> — elevated heart rate and stress readings from the prior day, which can reflect life stress as much as training stress</li>\n</ul>\n<p>HRV status carries particular weight because it's the closest proxy available on a wrist-worn device to autonomic nervous system balance. When your body is under strain — from training, poor sleep, illness, or psychological stress — the parasympathetic (\"rest and digest\") branch of the nervous system tends to be suppressed relative to the sympathetic (\"fight or flight\") branch, and this shows up as reduced variability between heartbeats. A HRV reading that sits well below your personal baseline is one of the more physiologically grounded warning signs the watch can give you, even before you consciously feel run down.</p>\n\n<h2 id=\"reading-the-score\">How to Read Your Daily Number</h2>\n<p>Garmin groups the score into bands, from very low through very high, but the absolute number matters less than most athletes assume. Two runners can both score 65 for entirely different reasons — one because of a slightly short night of sleep on top of otherwise strong recovery, another because of borderline HRV status masked by decent sleep. The label collapses distinct physiological states into one figure, which is efficient for a glance at your wrist but loses the diagnostic detail underneath.</p>\n<p>The more reliable signal is the <strong>trend</strong>, not any single morning's reading. A score that drifts downward over three or four consecutive days — even if each individual day looks only mildly low — is a stronger indicator of accumulating fatigue than one bad morning following a hard interval session, which is an expected and appropriate dip. Readiness after a genuinely hard workout should be lower the next day; that's the system working correctly, not a red flag.</p>\n\n<h2 id=\"where-it-falls-short\">Where the Score Falls Short</h2>\n<p>The score has real limitations, and they matter if you're using it to make training decisions rather than just glancing at it out of curiosity.</p>\n<p>Wrist-based HRV is noisier than a chest-strap reading taken under controlled conditions — sleep position, ambient temperature, alcohol, and even a loose watch band can shift the number independent of actual recovery status. Garmin's algorithm is also proprietary and opaque about exact weighting, so two athletes with visually similar sleep and HRV data sometimes land on noticeably different scores. And critically, the score has no visibility into anything outside what the watch can measure: a stressful work deadline, a poor diet, dehydration, or early-stage illness won't register until they've already begun affecting sleep or HRV, by which point you're reacting rather than anticipating.</p>\n<p>Perhaps the biggest limitation is structural rather than technical: the score tells you a number, not what to do with it. A 42 doesn't tell you whether to skip today's intervals entirely, halve the volume, or simply push the session back a day. That translation from raw readiness data into an actual training decision is left entirely to the athlete.</p>\n\n<h2 id=\"using-it-in-training\">Using Readiness to Guide Actual Decisions</h2>\n<p>Used well, Training Readiness is a prompt to look closer, not a verdict to follow blindly. If your score is low on a scheduled easy day, the plan already matches your body's state — no action needed. If it's low ahead of a key workout, that's the moment to actually think: is this a one-off dip from a late night, or the third low reading in a row signaling real accumulated fatigue that a hard session would push too far?</p>\n<p>The athletes who get the most value from this data aren't the ones checking the number obsessively — they're the ones who've learned to read it alongside how the week has actually gone. That's a manual process today: cross-referencing a readiness score against training load, upcoming sessions, and how the last few days have felt. It's also exactly the kind of correlation that adaptive training systems are built to do automatically. Forma treats readiness signals like HRV, sleep, and recovery trend as inputs that actively reshape the plan — adjusting intensity and volume in real time instead of leaving you to interpret a number in isolation every morning.</p>",
+    "status": "published",
+    "_queue_id": "autosugg-d1c47833",
+    "_cluster": "garmin-wearable",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "garmin-255-readiness-score-how-its-calculated",
     "title": "Garmin 255 Readiness Score: How It's Calculated",
     "date": "2026-09-04",
