@@ -1,5 +1,41 @@
 [
   {
+    "slug": "what-is-a-good-training-load-number",
+    "title": "What Is a Good Training Load Number?",
+    "date": "2026-09-14",
+    "category": "Training Science",
+    "meta_description": "Training load numbers only mean something in context. Learn how ATL, CTL, and ACWR interact — and what ratios actually predict injury risk.",
+    "keywords": "training load, ACWR, acute chronic workload ratio, CTL, ATL, overtraining prevention, training stress balance, injury risk endurance",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "why-the-number-alone-is-meaningless",
+        "text": "Why the Number Alone Is Meaningless"
+      },
+      {
+        "id": "acute-vs-chronic-load",
+        "text": "Acute vs. Chronic Load"
+      },
+      {
+        "id": "the-acwr-sweet-spot",
+        "text": "The ACWR Sweet Spot"
+      },
+      {
+        "id": "what-happens-outside-the-range",
+        "text": "What Happens Outside the Range"
+      },
+      {
+        "id": "building-your-own-baseline",
+        "text": "Building Your Own Baseline"
+      }
+    ],
+    "body_html": "<p>Search for \"good training load number\" and you'll find charts claiming the ideal figure is 400, or 80, or some other value pulled from a specific athlete's Garmin screen. None of those numbers mean anything without context. <strong>Training load is not a target — it's a ratio.</strong> The question isn't what number you're at, but how that number compares to what your body has recently adapted to.</p><p>This distinction matters because training load metrics were never designed to be judged in isolation. They were built to answer one question: is today's stress reasonable given your recent training history? Get that relationship wrong, and a \"good\" number on paper can still land you in a walking boot.</p><h2 id=\"why-the-number-alone-is-meaningless\">Why the Number Alone Is Meaningless</h2><p>Training load scores — whether calculated from heart rate (TRIMP), power (Training Stress Score), or pace — compress a session's duration and intensity into a single figure. A 300-point day might be a hard interval session or a long steady ride. The score doesn't distinguish between them, and it says nothing about whether your body was ready to absorb that stress.</p><p>A well-conditioned marathoner might handle a daily load of 150 without issue. A returning-from-injury runner hitting the same number could be flirting with a stress reaction. <strong>The absolute score tells you volume and intensity; it tells you nothing about capacity.</strong> That's why serious training systems track load as a relationship between two timeframes, not a single daily figure.</p><h2 id=\"acute-vs-chronic-load\">Acute vs. Chronic Load</h2><p>The two numbers that matter are:</p><ul><li><strong>Acute Training Load (ATL)</strong> — a short-term rolling average, typically 7 days, reflecting recent fatigue.</li><li><strong>Chronic Training Load (CTL)</strong> — a longer rolling average, typically 28–42 days, reflecting your built-up fitness and tolerance for stress.</li></ul><p>CTL is effectively a proxy for how much load your tissues, cardiovascular system, and nervous system have adapted to handle. ATL is what you're asking of them right now. When ATL rises faster than CTL can support, you're spending fitness reserves faster than you're building them — which is fine for a week, but compounding over a month is how overuse injuries and performance plateaus start.</p><h2 id=\"the-acwr-sweet-spot\">The ACWR Sweet Spot</h2><p>The relationship between these two numbers is the <strong>Acute:Chronic Workload Ratio (ACWR)</strong> — acute load divided by chronic load. This ratio, popularized in sports science research on team-sport injury risk (notably work by Tim Gabbett), is the closest thing to a universal answer to \"what's a good number,\" and even then it's a range, not a value.</p><p>Most of the applied research points to a ratio between <strong>0.8 and 1.3</strong> as the zone associated with lower injury risk. Inside this band, your recent training is roughly matched to — or only modestly ahead of — your established fitness. You're being challenged without being overwhelmed. This is the range where progressive overload actually produces adaptation rather than breakdown.</p><h2 id=\"what-happens-outside-the-range\">What Happens Outside the Range</h2><p>Move outside 0.8–1.3 in either direction and the picture changes:</p><ul><li><strong>Above 1.5</strong> — acute load is spiking well beyond what chronic training has prepared you for. This is the classic \"too much, too soon\" pattern: a sudden jump in mileage, an unplanned race, or cramming missed sessions into one week. Research on team-sport athletes has associated ratios in this range with meaningfully higher soft-tissue injury rates.</li><li><strong>Below 0.8</strong> — often overlooked, but a chronically low ratio suggests detraining. If life gets busy for two or three weeks and your acute load drops well below your chronic average, you lose the very fitness the low load is failing to challenge. When you return to normal training, your CTL is now lower too, so the same absolute load can feel disproportionately hard.</li></ul><p>Neither extreme is really about the number itself — it's about the mismatch between what you're asking your body to do and what it's currently equipped to handle.</p><h2 id=\"building-your-own-baseline\">Building Your Own Baseline</h2><p>Because ACWR is a ratio, it's inherently personal. A ratio of 1.2 means something different for an athlete with a CTL of 40 than for one with a CTL of 100 — the absolute jump in daily stress is far larger for the second athlete, even though the ratio looks identical. This is why generic training load targets copied from someone else's plan are close to useless. What you need is your own rolling CTL, tracked consistently over months, against which your weekly ACWR can be judged.</p><p>The practical takeaway: stop asking what your training load score should be, and start asking whether this week's acute load is proportionate to what your last six weeks have built. A number in isolation can't answer that. A trend line can.</p><p>This is precisely the kind of judgment that benefits from continuous, adaptive tracking rather than a static plan written weeks in advance. Forma calculates your ATL, CTL, and ACWR in the background from your actual training data, adjusting upcoming sessions when your ratio drifts outside a safe range — so the question of \"is this a good number\" gets answered automatically, before it becomes a problem you feel in your legs.</p>",
+    "status": "published",
+    "_queue_id": "paa-ffd7c98f",
+    "_cluster": "training-load",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "what-is-training-load-atl-ctl-acwr-explained",
     "title": "What Is Training Load? ATL, CTL & ACWR Explained",
     "date": "2026-09-12",
@@ -4367,24 +4403,6 @@
     "body_html": "<p><em>Coming soon: What is the Training Load</em></p>",
     "toc_items": [],
     "_queue_id": "paa-240fdf34",
-    "_cluster": "training-load",
-    "_composite_score": 5.7,
-    "tool_ctas": [
-      "training-load-calculator"
-    ]
-  },
-  {
-    "slug": "what-is-a-good-training-load-number",
-    "title": "What is a Good Training Load Number",
-    "meta_description": "Everything endurance athletes need to know about what is a good training load number.",
-    "category": "Load",
-    "date": "2026-03-12",
-    "read_time": 6,
-    "keywords": "What is a good training load number?",
-    "status": "draft",
-    "body_html": "<p><em>Coming soon: What is a Good Training Load Number</em></p>",
-    "toc_items": [],
-    "_queue_id": "paa-ffd7c98f",
     "_cluster": "training-load",
     "_composite_score": 5.7,
     "tool_ctas": [
