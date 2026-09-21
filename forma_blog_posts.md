@@ -1492,3 +1492,57 @@ A more precise option: a 30-minute time trial with heart rate and pace logged th
 ## The Practical Takeaway
 
 Stop trusting 220-minus-age. Use the talk test on every easy run as your real-time check, and if you have access to a lab or a sustained effort test, use that to set your actual Zone 2 ceiling once and recalibrate every few months as fitness changes. If your easy pace feels embarrassingly slow compared to what you think you should be running, that's not a sign you're doing it wrong — it's usually a sign the formula was wrong, and your actual aerobic base has more room to grow than your watch is giving you credit for.
+
+
+---
+
+## 28. How to Taper for a Marathon Without Losing Your Fitness or Your Mind
+
+## The Taper Paradox
+
+Two weeks before race day, you cut your volume by a third and your legs feel worse, not better. This is normal, and it's also exactly why so many runners panic and sneak in an unscheduled 15-miler nine days out — sabotaging the one intervention proven to add free performance to a marathon.
+
+The taper isn't rest. It's a precisely dosed reduction in training stress that lets your body finish converting months of accumulated fatigue into fitness. Mujika and Padilla's pooled analysis of taper studies across endurance sports found that a taper of 8-14 days, with volume cut 40-60% while intensity is held near race pace, produces a 2-3% performance improvement over athletes who train through. In a 4-hour marathon, 2-3% is 5-7 minutes — more than most runners gain from an entire training block's worth of extra long runs.
+
+## What's Actually Happening Inside Your Muscles
+
+Training block fatigue isn't just "tiredness." Specifically:
+
+- Muscle glycogen stores, depleted by weeks of long runs, take 10-14 days of reduced volume to fully restock and supercompensate above baseline.
+- Creatine kinase, a blood marker of muscle damage from repeated eccentric loading, needs 10+ days to normalize after heavy training blocks.
+- Type II (fast-twitch) muscle fibers, chronically suppressed under high weekly mileage, regain recruitment capacity once the damage-repair cycle catches up.
+- Plasma volume expands as training stress drops, improving stroke volume and thermoregulation on race day.
+
+None of this shows up as "feeling fit" while it's happening. It shows up on race day.
+
+## The Mistake That Wastes the Taper
+
+The single biggest taper error is cutting intensity along with volume. Drop both and you lose the neuromuscular signal that tells your body to hold onto the adaptations you built — this is what actually causes the flat, heavy-legged feeling runners mistake for detraining.
+
+The fix: cut volume aggressively, keep intensity present. A runner doing 50 miles a week doesn't need to keep long-run volume, but does need 2-3 short efforts at goal marathon pace each week — for example, 3 x 1 mile at pace with full recovery between reps.
+
+## A Taper That Works for 5-10 Hour Weeks
+
+For an athlete training 5-10 hours a week, here's the shape the data supports:
+
+**Week 3 out:** Cut volume about 20%. Keep one long run at 60-75% of peak long-run distance. Keep one workout with race-pace segments.
+
+**Week 2 out:** Cut another 20-25% from peak, landing around 55-60% of peak volume. Long run drops to 8-10 miles with 3-4 at marathon pace. Add one short, sharp session: 4-6 x 3 minutes at 10K effort.
+
+**Race week:** Volume down to 30-40% of peak. Two short runs with strides (4-6 x 20 seconds), one easy shakeout the day before. No new efforts, no proving fitness to yourself.
+
+Frequency stays close to normal — you're cutting duration and total volume, not how often you run. That keeps the movement pattern and neuromuscular groove intact.
+
+## The Taper Crazies Have a Physiological Explanation
+
+The anxiety, phantom soreness, and sudden conviction that you've lost fitness are documented enough that sports psychologists have a name for it. Part of it is real physiology, not just nerves: as training load drops, cortisol falls and resting heart rate variability rises, which paradoxically makes you more aware of normal bodily sensations that heavy training had been masking. A twinge that would've gone unnoticed during an 18-mile long run becomes a five-alarm injury scare during an easy 4-miler.
+
+The other part is behavioral — free time and mental energy that used to go into training gets redirected into worry. Athletes who track HRV or resting heart rate through the taper report lower anxiety, likely because it gives them an objective signal ("resting HR is down 4 bpm, HRV is up") to counter the subjective one ("I feel flat").
+
+## The Carb-Load Window
+
+The last 36-48 hours matter more than people think and less than they fear. Target 8-10g of carbohydrate per kg of bodyweight per day for those final two days — for a 70kg runner, that's 560-700g of carbs daily, mostly from low-fiber sources like white rice, pasta, sports drinks, and bread, to avoid race-morning GI issues. This isn't a pasta dinner the night before; it's a sustained two-day macro shift that maximizes glycogen supercompensation on top of the taper's physiological groundwork.
+
+## Practical Takeaway
+
+Cut volume by roughly 20% per week over the final 2-3 weeks, hold frequency steady, and keep short bouts of race-pace intensity in every week including race week. Don't chase the flat feeling with an extra hard session — that feeling is glycogen refilling and fast-twitch fibers recovering, not fitness leaving. Shift to 8-10g/kg carbs for the final 36-48 hours. The taper is the cheapest 2-3% you'll find in marathon training — the only cost is trusting a plan that feels wrong while it's working.
