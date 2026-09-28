@@ -1546,3 +1546,46 @@ The last 36-48 hours matter more than people think and less than they fear. Targ
 ## Practical Takeaway
 
 Cut volume by roughly 20% per week over the final 2-3 weeks, hold frequency steady, and keep short bouts of race-pace intensity in every week including race week. Don't chase the flat feeling with an extra hard session — that feeling is glycogen refilling and fast-twitch fibers recovering, not fitness leaving. Shift to 8-10g/kg carbs for the final 36-48 hours. The taper is the cheapest 2-3% you'll find in marathon training — the only cost is trusting a plan that feels wrong while it's working.
+
+
+---
+
+## 29. Tired or Fitter? How to Spot the Difference During Hard Training
+
+## The Fatigue Trap
+
+Every endurance athlete has had this week: legs heavy, sleep mediocre, splits slower than they should be for the effort. The instinct is to back off. But roughly a third of the time, what looks like fatigue is actually your body absorbing a training stimulus and about to come out the other side fitter than before. Treat that as burnout and you cut the block short right before the adaptation lands. Treat real overtraining as "just a rough week" and you dig a hole that costs three to six weeks to climb out of. The two states feel almost identical from the inside. They are not identical on paper.
+
+## What's Actually Happening Physiologically
+
+Fatigue that precedes a fitness gain — exercise physiologists call this functional overreaching — is glycogen depletion, microscopic muscle damage, and elevated cortisol from accumulated training stress. Give it 48–72 hours of reduced load and the body supercompensates: mitochondrial density, capillarization, and stroke volume all step up past baseline. That's the entire point of a training block.
+
+Non-functional overreaching, the precursor to real overtraining syndrome, produces the same signals without the recovery capacity to back them — often because sleep, calories, or life stress are compounding the training load rather than sitting on top of an otherwise stable base. The stimulus is identical. The system's ability to absorb it is not.
+
+## The Numbers That Actually Separate Them
+
+Subjective fatigue is a bad predictor of which state you're in — studies on elite rowers and cyclists show perceived fatigue and actual overreaching correlate only weakly. Three numbers are much better predictors:
+
+- **Resting heart rate**: a rise of 5–7 bpm over your 7-day rolling average, sustained more than 3 days, is a stronger overreaching signal than "feeling tired."
+- **HRV (RMSSD)**: functional overreaching typically shows a temporary suppression of 10–15% that rebounds within 3–4 days once load drops. Non-functional overreaching shows HRV staying suppressed, or turning erratic day to day, for a week or more.
+- **Heart rate drift within a session**: aerobic decoupling above 10% — comparing your pace:HR ratio in the first half of a steady run versus the second half — tells you the aerobic system is under-recovered right now, regardless of how your legs feel.
+
+None of these alone is definitive. Together, over a rolling 4–7 day window, they beat "I feel wrecked" every time.
+
+## A Real Example: Week 6 of a Marathon Block
+
+A runner averaging 45 miles a week builds to 58 in week 6, including a 20-miler at marathon pace plus 15 seconds. Splits drift from 7:45 to 8:05 in the back half — same effort, 20 seconds per mile slower. Two interpretations:
+
+Scenario A: resting HR up 3 bpm, HRV down 8% but climbing again by day 3, sleep unchanged, decoupling on the next easy run back under 5%. That's functional overreaching. The right answer is a scheduled down week — volume to roughly 35 miles — not panic. Three weeks later the same runner holds marathon pace with decoupling under 3%, a real fitness gain.
+
+Scenario B: resting HR up 8 bpm and still elevated after 5 days, HRV down 18% and flat, sleep dropped from 7.5 to 6 hours because work stress stacked on top of the mileage. That's the non-functional pattern — and pushing through it, as this runner initially did by adding a hard tempo the same week, turned a manageable dip into six weeks of stalled paces and a lingering low-grade Achilles issue from compensating form.
+
+Same session, same subjective heaviness, opposite correct response.
+
+## The Three-Day Test
+
+Without HRV data, there's a low-tech version: run three consecutive easy days — not full rest, easy aerobic volume at normal duration. If pace at a given heart rate, or heart rate at a given pace, returns to baseline within those three days, you were fatigued, not breaking down — resume the plan. If it's still off after three easy days, or resting HR hasn't come back down, that's non-functional territory, and the down week needs to be a real one: a 40–50% volume cut, not 20%.
+
+## The Takeaway
+
+Don't diagnose training fatigue by how you feel on the run — feeling bad is the point of a well-designed hard week. Diagnose it with resting HR trend, HRV trend, and aerobic decoupling over a rolling window, then confirm with a three-day easy-pace check. Functional overreaching resolves in days and pays off in weeks. Non-functional overreaching doesn't resolve on its own — it needs a real load cut, not a rest day, before it becomes a six-week setback.
