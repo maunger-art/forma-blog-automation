@@ -1,5 +1,41 @@
 [
   {
+    "slug": "the-8020-rule-in-cycling-how-polarized-training-works",
+    "title": "The 80/20 Rule in Cycling: How Polarized Training Works",
+    "date": "2026-10-02",
+    "category": "Cycling",
+    "meta_description": "The 80/20 rule in cycling means 80% of training easy, 20% hard. Learn how polarized training works, how to apply it with power zones, and when to adapt.",
+    "keywords": "80 20 rule cycling, polarized training cycling, cycling training zones, FTP training, zone 2 cycling, training intensity distribution, power-based training",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "what-the-rule-says",
+        "text": "What the 80/20 rule actually says"
+      },
+      {
+        "id": "why-it-works",
+        "text": "Why it works physiologically"
+      },
+      {
+        "id": "applying-with-power-zones",
+        "text": "Applying it with power zones"
+      },
+      {
+        "id": "common-mistakes",
+        "text": "Where cyclists get it wrong"
+      },
+      {
+        "id": "when-to-adjust",
+        "text": "When a fixed split stops working"
+      }
+    ],
+    "body_html": "<p>Most amateur cyclists train in the same place: too hard to recover from, too easy to improve fast. The 80/20 rule is a direct correction to that habit. It states that roughly <strong>80% of your training should be genuinely easy, and about 20% should be genuinely hard</strong>, with very little in the grey zone between them.</p><h2 id=\"what-the-rule-says\">What the 80/20 rule actually says</h2><p>The rule comes from research on <strong>training intensity distribution</strong>, the way athletes spread their training across low, moderate and high intensities. In a widely cited 2006 paper, Stephen Seiler and Kjerland analysed the training of elite Norwegian endurance athletes and found that most sessions were low intensity, a smaller share was high intensity, and relatively little sat at threshold. That pattern is now usually called <strong>polarized training</strong>.</p><p>The distribution is defined using a three-zone model anchored to physiological markers rather than arbitrary percentages:</p><ul><li><strong>Zone 1:</strong> below the first lactate or ventilatory threshold. Conversational, sustainable for hours.</li><li><strong>Zone 2:</strong> between the first and second thresholds. Tempo and sweet spot territory, where fatigue accumulates steadily.</li><li><strong>Zone 3:</strong> above the second threshold. VO2max intervals and harder efforts.</li></ul><p>In a strict polarized model, the 80% sits in Zone 1 and the 20% in Zone 3. The middle zone is kept small on purpose.</p><p>One detail matters here: the 80/20 split was originally described in terms of <strong>sessions</strong>, not minutes. Counted by time, the easy share is often even higher, because hard sessions are short and easy sessions are long.</p><h2 id=\"why-it-works\">Why it works physiologically</h2><p>Low-intensity riding builds the aerobic base with a very low recovery cost. Long steady rides drive adaptations in <strong>mitochondrial density, capillarisation and fat oxidation</strong>, and they do it without the heavy sympathetic stress and muscle damage that harder work produces. Because the cost is low, you can do a lot of it, and volume is a major driver of aerobic development.</p><p>High-intensity work does something different. Efforts above the second threshold push cardiac output and oxygen delivery toward their limits, which raises <strong>VO2max</strong> and your ceiling for sustained power. These sessions are expensive. They need fresh legs, a clear head and proper recovery, which is why there cannot be many of them.</p><p>The moderate zone is the problem child. Riding at tempo or just below threshold feels productive, and it is not useless. But it carries a recovery cost close to hard training while delivering less of a stimulus than either end of the spectrum. Do enough of it and you arrive at your key sessions already tired, so the hard days are not hard enough and the easy days are not easy enough.</p><p>There is some controlled evidence in cyclists. A 2013 study by Neal and colleagues in the Journal of Applied Physiology compared a polarized block with a threshold-focused block in trained cyclists. The polarized group saw larger gains in several performance measures, including peak power. The sample was small and the study was short, so it is support for the approach rather than proof that it beats everything else. Other research comparing distributions has been mixed, and well-structured threshold or pyramidal training also works for many riders.</p><h2 id=\"applying-with-power-zones\">Applying it with power zones</h2><p>If you train with power, you need to map the three-zone model onto the zones you already use. Using the common seven-zone system based on <strong>FTP</strong> (functional threshold power), the approximate mapping looks like this:</p><ul><li><strong>Easy (the 80%):</strong> Zone 1 and Zone 2, roughly below 75% of FTP.</li><li><strong>Grey zone (minimise):</strong> Zone 3 and Zone 4, tempo through threshold, roughly 76-105% of FTP.</li><li><strong>Hard (the 20%):</strong> Zone 5 and above, roughly 106% of FTP and higher, including VO2max intervals.</li></ul><p>These bands are approximations. The first threshold varies between riders and drifts with fatigue, heat and fuelling, so heart rate and perceived effort should confirm what the power number suggests. If you cannot hold a full conversation at your supposed easy power, you are riding too hard.</p><p>A typical week for a rider with around eight hours available might look like this: two or three long or steady endurance rides, one recovery spin, and two interval sessions built around efforts of three to eight minutes at VO2max intensity. That is five or six easy sessions to two hard ones, which lands close to the target ratio without needing a spreadsheet.</p><h2 id=\"common-mistakes\">Where cyclists get it wrong</h2><p>The most common failure is <strong>easy rides that are not easy</strong>. Group rides, Strava segments and a general reluctance to see a low number on the head unit pull riders upward until every outing becomes a moderate effort. The result is a week that looks polarized on paper and sits entirely in the middle in practice.</p><p>The second failure is treating 80/20 as a rigid law. It describes a distribution across weeks and blocks, not a requirement that every ride must fit a quota. During a base phase the split may be closer to 90/10. Close to an event it may shift toward more intensity, including race-specific work at threshold or above, which is a legitimate part of preparation.</p><p>The third is ignoring context. The ratio was developed in highly trained athletes with high volumes. A rider managing six hours a week alongside work and family has less room to bank easy hours, and a time-crunched plan may reasonably include more intensity per hour. The principle of keeping easy days easy still holds, but the arithmetic needs adjusting.</p><h2 id=\"when-to-adjust\">When a fixed split stops working</h2><p>The deeper issue with any fixed ratio is that it assumes your capacity to absorb hard training is constant. It is not. <strong>Sleep, life stress, heat, illness and accumulated load</strong> all change how much intensity you can handle in a given week, and a plan that demands two hard sessions regardless of readiness will occasionally push you into the wrong kind of fatigue.</p><p>This is where adaptive training changes the picture. Instead of treating 80/20 as a template to follow blindly, an adaptive system uses it as a default and adjusts based on how your body is actually responding: swapping a VO2max session for endurance when recovery is poor, or adding intensity when you are clearly absorbing load well. Forma is built around that idea, using your real training data to keep the balance between easy and hard matched to what you can adapt to, not just what the plan says should happen on Thursday.</p>",
+    "status": "published",
+    "_queue_id": "paa-463cc43f",
+    "_cluster": "cycling-endurance",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "the-10-10-10-rule-for-marathon-what-it-really-means",
     "title": "The 10 10 10 Rule for Marathon: What It Really Means",
     "date": "2026-09-30",
