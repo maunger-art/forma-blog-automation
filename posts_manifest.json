@@ -1,5 +1,41 @@
 [
   {
+    "slug": "what-is-recovery-running-pace-duration-and-when-to-skip",
+    "title": "What Is Recovery Running? Pace, Duration and When to Skip",
+    "date": "2026-10-03",
+    "category": "Recovery",
+    "meta_description": "Recovery running is a short, very easy run that promotes blood flow without adding fatigue. Learn the right pace, duration, and when to rest instead.",
+    "keywords": "recovery running, recovery run pace, active recovery, rest days for runners, easy run heart rate, running after illness, sleep and running recovery, adaptive training",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "what-recovery-running-is",
+        "text": "What recovery running actually is"
+      },
+      {
+        "id": "what-it-does",
+        "text": "What it does (and doesn't do)"
+      },
+      {
+        "id": "how-easy-is-easy",
+        "text": "How easy is easy?"
+      },
+      {
+        "id": "when-to-skip",
+        "text": "When to skip it: rest, sleep and illness"
+      },
+      {
+        "id": "fitting-it-in",
+        "text": "Fitting recovery runs into your week"
+      }
+    ],
+    "body_html": "<p>A recovery run is the easiest run in your week, and it only works if you treat it that way. <strong>Recovery running means a short, deliberately slow run done the day after hard training</strong>, with the aim of moving the legs without adding meaningful physiological stress. Most runners get it wrong in the same direction: they run it too fast, and turn a recovery session into a moderate one that quietly erodes the quality of the next hard day.</p><h2 id=\"what-recovery-running-is\">What recovery running actually is</h2><p>The defining feature of a recovery run is its purpose. A normal easy run builds aerobic base. A recovery run is there to <strong>reduce stiffness and keep the training rhythm going</strong> while the body repairs the damage from a hard session. It sits at the bottom of the intensity scale, below your easy aerobic pace, and it is short.</p><p>Typical parameters for a serious amateur:</p><ul><li><strong>Duration:</strong> 20 to 40 minutes, rarely longer</li><li><strong>Intensity:</strong> well inside Zone 1 to low Zone 2, or roughly 60 to 70% of maximum heart rate</li><li><strong>Effort:</strong> fully conversational, with the ability to speak in complete sentences without a pause</li><li><strong>Terrain:</strong> flat or gently rolling, so heart rate does not spike on climbs</li></ul><p>If you finish feeling like you have done a workout, it was not a recovery run.</p><h2 id=\"what-it-does\">What it does (and doesn't do)</h2><p>Recovery runs are often sold as a way to flush lactate from the muscles. That explanation is outdated. Lactate returns to baseline within an hour or so of finishing hard exercise whether you move or not, so it is not what makes your legs feel heavy the next day. That heaviness comes mainly from <strong>muscle damage and inflammation</strong>, particularly after long runs, downhill running and high-volume interval sessions.</p><p>What light running can plausibly offer is more modest. Gentle rhythmic movement increases blood flow to the working muscles, which helps with the sensation of stiffness. It also lets you accumulate weekly mileage at very low cost, which matters if you are trying to build aerobic volume without piling on fatigue. And for many runners, a short easy outing the day after a hard effort simply makes the next session feel more settled.</p><p>What it does not do is speed up tissue repair in any dramatic way. Repair is driven by sleep, nutrition and time. A recovery run is neutral-to-slightly-positive at best, which is exactly why its intensity ceiling matters. <strong>Add too much stress and the session stops being recovery</strong> and becomes extra load on a body that has not finished absorbing the last block.</p><h2 id=\"how-easy-is-easy\">How easy is easy?</h2><p>Most runners think they are going slowly when they are not. The reason is practical: on the day after a hard session, resting heart rate is often elevated, and perceived effort is skewed by tired legs. Pace is a poor guide here. A pace that felt comfortable last week can sit a full zone higher when you are fatigued.</p><p>Use heart rate or effort instead of pace. Cap your heart rate at the top of Zone 2 and accept that the pace may be 30 to 60 seconds per mile slower than your normal easy run. Two checks work well:</p><p>The <strong>talk test</strong> is the simplest. If you cannot hold a conversation, slow down. The second check is how you feel in the first ten minutes. If the legs loosen up and effort drops, you are in the right place. If everything still feels heavy after twenty minutes and heart rate keeps drifting upward, stop. That is information, not weakness.</p><p>Walking breaks are fine. So is cutting the run short. The only way to fail a recovery run is to run it too hard.</p><h2 id=\"when-to-skip\">When to skip it: rest, sleep and illness</h2><p>A recovery run is optional in a way that hard sessions are not. There are clear situations where a full rest day, or a walk, is the better choice.</p><p><strong>After a poor night of sleep.</strong> Sleep is where most physical repair happens, including the release of growth hormone and the consolidation of training adaptations. If you slept badly and your resting heart rate is several beats above your normal baseline, or your heart rate variability is noticeably down on your own average, your nervous system is signalling that it is still under strain. Layering more stress on top rarely helps.</p><p><strong>When you are ill.</strong> The long-standing rule of thumb is the neck check: symptoms above the neck, such as a mild head cold or sore throat, may allow very easy movement, while symptoms below the neck, such as fever, chest congestion, body aches or a deep cough, mean rest. Fever in particular is a hard stop, because exercising with a raised body temperature puts extra strain on the cardiovascular system. Returning from illness should be gradual. Start with short, genuinely easy runs, and watch for resting heart rate that stays elevated or heart rate that runs higher than usual at the same effort. Both suggest you are not yet recovered.</p><p><strong>When fatigue is accumulating.</strong> If you are three or four weeks into a hard block and easy runs feel consistently harder than they should, an additional recovery run is not the fix. A genuine rest day, or a lighter week, will do more.</p><p>Active recovery has a place, but it is not a requirement. Rest is also training. Adaptation happens when stress is followed by recovery, not during the stress itself.</p><h2 id=\"fitting-it-in\">Fitting recovery runs into your week</h2><p>The standard placement is the day after your hardest session, typically after intervals, a tempo run or a long run. A common pattern for a runner doing four or five sessions a week looks like this: one quality session, one recovery or easy day, a second quality session, another easy day, and a long run. Anchoring the recovery run directly after the hardest effort gives the legs time to settle before the next demanding session.</p><p>The mistake is making this rigid. A fixed schedule assumes that your body responds the same way every week, and it does not. A tough week at work, a run of short nights, or a minor illness can turn a planned recovery run into the wrong call. The same session can be restorative on a good day and counterproductive on a bad one.</p><p>This is where adaptive training earns its place. Rather than prescribing a recovery run because it is Wednesday, an adaptive plan reads your recent load, sleep and heart rate trends, then decides whether you need a short easy run, a full rest day, or can handle more. Forma is built around exactly that decision: matching each day's session to what your body can absorb, so recovery stops being a guess and becomes part of the plan.</p>",
+    "status": "published",
+    "_queue_id": "paa-3013817a",
+    "_cluster": "recovery-sleep",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "the-8020-rule-in-cycling-how-polarized-training-works",
     "title": "The 80/20 Rule in Cycling: How Polarized Training Works",
     "date": "2026-10-02",
