@@ -1,5 +1,41 @@
 [
   {
+    "slug": "what-is-a-good-training-load-atl-ctl-and-acwr-explained",
+    "title": "What Is a Good Training Load? ATL, CTL and ACWR Explained",
+    "date": "2026-10-05",
+    "category": "Training Science",
+    "meta_description": "A good training load is relative to your fitness, not a magic number. Learn how ATL, CTL and ACWR tell athletes when to push, hold or ease back.",
+    "keywords": "good training load, training load management, ATL CTL TSB, acute chronic workload ratio, ACWR, overtraining prevention, chronic training load, endurance training load",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "load-is-relative",
+        "text": "Why a good training load is relative"
+      },
+      {
+        "id": "atl-ctl-tsb",
+        "text": "ATL, CTL and TSB: the three numbers that matter"
+      },
+      {
+        "id": "acwr-sweet-spot",
+        "text": "The ACWR sweet spot and its limits"
+      },
+      {
+        "id": "ramping-safely",
+        "text": "How fast can you safely build?"
+      },
+      {
+        "id": "adaptive-load",
+        "text": "Why a fixed target fails"
+      }
+    ],
+    "body_html": "<p>There is no universal number that makes a training load good. A weekly load of 600 is a sensible build for one athlete and a fast route to injury for another. What separates the two is <strong>how that load compares with what the athlete's body has already adapted to</strong>, and how quickly it got there.</p>\n<h2 id=\"load-is-relative\">Why a good training load is relative</h2>\n<p><strong>Training load</strong> is a single number that combines how long and how hard a session was. It might come from heart rate, pace, power or session RPE multiplied by duration. The method matters less than consistency. Pick one and apply it to every session, so a threshold ride and an easy run can be compared on the same scale.</p>\n<p>The raw number tells you very little on its own. A 90-minute tempo run produces the same stress on paper for everyone, but the cost depends on the fitness underneath it. Two athletes can log identical weeks and respond completely differently, because one has spent months building the capacity to absorb it and the other has not.</p>\n<p>So the useful question is not \"how much am I doing?\" but <strong>\"how much am I doing relative to what I have been doing?\"</strong> Every serious load model is built around that comparison.</p>\n<h2 id=\"atl-ctl-tsb\">ATL, CTL and TSB: the three numbers that matter</h2>\n<p>Most load frameworks descend from the impulse-response model proposed by Banister and colleagues in the 1970s. It treats each session as producing two effects at once: a slow-building fitness gain and a faster-building fatigue. Modern platforms turn this into three metrics:</p>\n<ul>\n<li><strong>Acute Training Load (ATL)</strong> is a rolling average of recent stress, conventionally weighted over about 7 days. It is your short-term fatigue.</li>\n<li><strong>Chronic Training Load (CTL)</strong> is the same average over about 42 days. It is the best simple proxy for the fitness you have built.</li>\n<li><strong>Training Stress Balance (TSB)</strong> is CTL minus ATL. Negative values mean you are carrying fatigue. Positive values mean you are fresher than your recent baseline.</li>\n</ul>\n<p>The time constants of 7 and 42 days are conventions, not physiological constants. They approximate how quickly fatigue clears compared with how slowly fitness accumulates, but individual athletes vary. Treat them as a well-tested approximation rather than a law.</p>\n<p>A good load, in this framework, is one where <strong>CTL is rising steadily while ATL oscillates around it</strong>. ATL should climb above CTL during hard blocks and drop back below it during recovery. If ATL sits far above CTL week after week, you are borrowing against your recovery with no repayment schedule.</p>\n<h2 id=\"acwr-sweet-spot\">The ACWR sweet spot and its limits</h2>\n<p>The <strong>acute:chronic workload ratio (ACWR)</strong> divides ATL by CTL, which turns the comparison above into a single figure. A ratio of 1.0 means this week matches your recent baseline. Above 1.0 you are pushing harder than you have been lately. Below 1.0 you are tapering or detraining.</p>\n<p>Tim Gabbett's 2016 paper in the British Journal of Sports Medicine, \"The training-injury prevention paradox\", helped popularise the idea that injury risk rises when acute load outruns chronic load. In team-sport data, ratios of roughly <strong>0.8 to 1.3</strong> were associated with the lowest injury risk, and ratios above about 1.5 with a markedly higher one. Those bands became the standard \"sweet spot\" and \"danger zone\" shorthand.</p>\n<p>The honest caveat is that ACWR has been criticised. Impellizzeri and colleagues argued in 2020 that the ratio has conceptual and statistical weaknesses, including its sensitivity to how the averages are calculated and the way it can mask the size of the absolute change. It also came largely from team sports, not from endurance athletes who train alone with very different load patterns.</p>\n<p>The practical reading is this: ACWR is a <strong>useful warning light, not a prediction engine</strong>. A ratio of 1.6 after a week of illness and a sudden return is worth respecting. A ratio of 1.1 does not guarantee you are safe, particularly if most of that load is high intensity.</p>\n<h2 id=\"ramping-safely\">How fast can you safely build?</h2>\n<p>If you want a number to work with, <strong>ramp rate</strong> is more actionable than any single load value. This is how many CTL points you add per week. A common rule of thumb among coaches is that building around 3 to 6 points per week is sustainable for most amateur athletes. Pushing toward 8 or more for several weeks in a row tends to need unusual recovery capacity, and the cost often shows up as stalled sessions, elevated resting heart rate or a lingering cold.</p>\n<p>These figures are guidelines and not thresholds. Your own ceiling depends on training history, sleep, life stress and how much of your load is intense. An athlete with eight years of consistent training can absorb a faster ramp than someone returning after a layoff, even if their CTL is the same today.</p>\n<p>Intensity distribution matters as much as volume. Load built mostly from easy aerobic work is cheaper to recover from than the same number built from threshold and VO2max efforts. Two weeks at an identical total can leave you in very different states, which is why the number alone never settles the question.</p>\n<h2 id=\"adaptive-load\">Why a fixed target fails</h2>\n<p>Most plans fix the weekly load in advance and assume you will arrive at each week in the same condition. In practice, a poor night's sleep, a stressful week at work or a slow recovery from a hard session changes what your body can absorb. A load that was ideal on paper becomes excessive on the day.</p>\n<p>A good training load is therefore a moving target. It should <strong>rise when your fitness and recovery support it and flatten when they do not</strong>. That means watching CTL trend, checking ATL against it, using ACWR as a sanity check and treating ramp rate as a brake. It also means being willing to cut a session when the data and your body agree.</p>\n<p>This is the problem adaptive training is built to solve. Forma tracks your acute and chronic load across running and cycling, reads how you are recovering, and adjusts upcoming sessions so the load you carry stays productive rather than just large. The goal is not a bigger number. It is the right number, for you, this week.</p>",
+    "status": "published",
+    "_queue_id": "paa-edd5a9e0",
+    "_cluster": "training-load",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "what-is-recovery-running-pace-duration-and-when-to-skip",
     "title": "What Is Recovery Running? Pace, Duration and When to Skip",
     "date": "2026-10-03",
