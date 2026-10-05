@@ -1589,3 +1589,77 @@ Without HRV data, there's a low-tech version: run three consecutive easy days �
 ## The Takeaway
 
 Don't diagnose training fatigue by how you feel on the run — feeling bad is the point of a well-designed hard week. Diagnose it with resting HR trend, HRV trend, and aerobic decoupling over a rolling window, then confirm with a three-day easy-pace check. Functional overreaching resolves in days and pays off in weeks. Non-functional overreaching doesn't resolve on its own — it needs a real load cut, not a rest day, before it becomes a six-week setback.
+
+
+---
+
+## 30. Should You Run on Sore Legs? What the Research Actually Shows
+
+Most runners treat sore legs as a stop sign. The research suggests that is only half right. Soreness is a poor measure of how recovered you are, and an easy run on sore legs can be fine. The same run, at the wrong intensity, is where the real cost shows up.
+
+## Why sore legs are not a weakness signal
+
+Delayed onset muscle soreness (DOMS) typically starts 12 to 24 hours after unfamiliar or eccentric-heavy work, peaks between 24 and 72 hours, and fades within about five days. It comes from microscopic damage to muscle fibres and the inflammatory response that follows. Downhill running, hard strength sessions and a sudden jump in volume are the usual triggers.
+
+Soreness is also adaptive. The repeated bout effect, described in the eccentric exercise literature, shows that a first exposure to a damaging stimulus produces far more soreness and strength loss than the same stimulus repeated weeks later. A trained runner who feels wrecked after a new hilly route is not necessarily out of shape. They have met a stimulus their legs have not seen before.
+
+The catch is that soreness does not map neatly onto cardiovascular fitness or readiness. Your aerobic system can be fully recovered while your quadriceps are not.
+
+## What DOMS does to your running
+
+Three effects matter for a runner.
+
+**Force output drops.** After heavy eccentric exercise, studies commonly report temporary strength losses in the affected muscle, often in the range of 10 to 30 percent at the 24 to 48 hour mark. Your legs simply produce less force per stride.
+
+**Mechanics change.** Sore muscles alter how you load. Research on running after downhill or eccentric work has found shifts in stride and joint loading as the body protects painful tissue. Altered mechanics push stress onto tendons and joints that were not part of the original damage.
+
+**Running economy worsens.** Studies of runners after muscle-damaging exercise have measured higher oxygen cost at a given pace. In practice that means the same speed costs more energy, and heart rate is usually higher than normal for that pace.
+
+None of this says an easy run is harmful. It says the quality of a hard run on sore legs will be poor, and the risk of compensating in a way that irritates something else goes up.
+
+## When an easy run helps
+
+Light aerobic movement can reduce the perception of stiffness and does not appear to slow muscle repair at low intensities. The evidence for faster recovery is modest, and mostly about how you feel rather than measurable tissue repair. Still, there is no good evidence that a short, genuinely easy run worsens ordinary DOMS.
+
+An easy run is a reasonable choice when:
+
+- Soreness is mild, roughly 3 out of 10 or lower, and both legs feel similar.
+- It loosens within 10 to 15 minutes of warming up.
+- Your stride feels normal, with no limp or guarding.
+- The run is short and truly easy, such as 30 to 45 minutes in Zone 1 or low Zone 2.
+
+The key word is easy. Most runners who say they ran easy on sore legs actually ran at their usual pace and let effort creep up.
+
+## When you should skip it
+
+Skip the run, or swap it for rest or cycling, when the signals point beyond ordinary muscle soreness:
+
+- Pain is sharp, localised or gets worse as you run, rather than easing.
+- Soreness is one-sided or sits in a joint, tendon or bone rather than the belly of the muscle.
+- You notice altered gait that does not resolve after 10 to 15 minutes.
+- Soreness is severe, around 6 out of 10 or higher, with visible swelling or marked weakness.
+- Resting heart rate is elevated and sleep has been poor on top of the soreness, which suggests whole-body fatigue rather than a local issue.
+
+A hard session is a separate question. Intervals, tempo work and long runs depend on force production and good mechanics. Running them on heavily sore legs means worse quality for the same cost, so you pay the full fatigue price for a weaker training stimulus.
+
+## A worked example
+
+Say you normally run easy at 5:45 per km with a heart rate around 142 bpm. After a hilly long run on Sunday, your calves and quads are sore on Tuesday morning. You head out for 40 minutes.
+
+If you hold 5:45 per km, expect heart rate to sit a few beats higher, perhaps 147 to 150 bpm, because economy has dropped. This is an illustrative scenario, not a measured result, but the direction is consistent with the research above. That puts you out of Zone 2 and into a harder effort than you planned.
+
+The better approach is to cap heart rate at 142 and accept a slower pace, maybe 6:05 to 6:15 per km. You get the aerobic stimulus you wanted without piling extra stress on damaged muscle. A 40 minute run at that effort adds about 6.5 km and a modest training load. A run at the same pace but a higher heart rate adds more load than your legs are ready to absorb.
+
+Heart rate is the better guide here because it reflects the real cost of the effort, while pace only reflects what you hoped to do.
+
+## The practical rule
+
+Use soreness to choose the type of session, not whether you train at all.
+
+1. Rate soreness out of 10. At 3 or below, run easy. At 4 to 5, shorten the run or cross-train. At 6 or above, rest.
+2. Hold heart rate, not pace. Let pace slow by 10 to 20 seconds per km if needed.
+3. Give it 10 to 15 minutes. If the stiffness fades and mechanics look normal, continue. If pain sharpens or your stride changes, stop.
+4. Move quality work. Do not run intervals or tempo work until soreness is gone or clearly fading and the first few minutes feel smooth.
+5. Look at the trend. Repeated heavy soreness after normal sessions points to a load problem, not a toughness problem.
+
+Sore legs are information about local muscle damage. Read them alongside heart rate, sleep and the previous week's load, and they stop being a reason to skip training and become a guide to how hard to train.
