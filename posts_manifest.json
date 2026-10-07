@@ -1,5 +1,41 @@
 [
   {
+    "slug": "garmin-training-readiness-vs-body-battery-explained",
+    "title": "Garmin Training Readiness vs Body Battery Explained",
+    "date": "2026-10-07",
+    "category": "Wearables",
+    "meta_description": "Garmin Training Readiness and Body Battery sound similar but answer different questions. Learn what each measures, where they disagree, and which to trust.",
+    "keywords": "garmin readiness score vs body battery, garmin training readiness, garmin body battery, body battery accuracy, HRV status garmin, recovery metrics, training readiness explained",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "two-different-questions",
+        "text": "Two metrics, two different questions"
+      },
+      {
+        "id": "what-body-battery-measures",
+        "text": "What Body Battery actually measures"
+      },
+      {
+        "id": "what-training-readiness-measures",
+        "text": "What Training Readiness actually measures"
+      },
+      {
+        "id": "when-they-disagree",
+        "text": "Why the two scores disagree"
+      },
+      {
+        "id": "using-both-in-practice",
+        "text": "How to use both in practice"
+      }
+    ],
+    "body_html": "<p>You wake up, check your watch, and get two numbers that don't agree. Body Battery says 82. Training Readiness says 48 and tells you to take it easy. Both come from the same wrist, so one of them must be wrong. Neither is. <strong>They are built to answer different questions</strong>, and treating them as interchangeable is why so many athletes distrust both.</p><h2 id=\"two-different-questions\">Two metrics, two different questions</h2><p><strong>Body Battery</strong> is a continuous energy-reserve estimate on a 0–100 scale. It rises when you rest and sleep, and falls with stress and activity. It tells you how much is in the tank <em>right now</em>, and it updates throughout the day.</p><p><strong>Training Readiness</strong> is a single score, also on a 1–100 scale, calculated once each morning and adjusted after naps or training. It asks a narrower question: <strong>is your body prepared to absorb a hard session today?</strong> Garmin groups the result into bands from Poor to Prime, with Prime at the top of the range.</p><p>One is a live gauge of general physiological load. The other is a training-specific verdict that deliberately factors in what you have done in the past few days. That distinction explains almost every disagreement between them.</p><h2 id=\"what-body-battery-measures\">What Body Battery actually measures</h2><p>Body Battery is built on Firstbeat Analytics. It draws on <strong>heart rate variability, stress, sleep, and activity</strong> to estimate whether your body is charging or draining. The stress component is derived from HRV: when sympathetic activity is high and beat-to-beat variability drops, the watch logs stress and your battery drains. When variability is high and heart rate is low, particularly during sleep, it charges.</p><p>Two things follow from this design:</p><ul><li><strong>It reflects the last night heavily.</strong> A good night of sleep can push the morning value high even if you are carrying three days of accumulated training fatigue.</li><li><strong>It is not sport-specific.</strong> A stressful workday, an argument, and a tempo run all draw it down through the same mechanism. It does not know that your legs are cooked from Sunday's long run.</li></ul><p>That makes it useful for what it is: a read on <strong>recovery state and daily energy</strong>. It is a poor tool for deciding whether to run intervals, because it has no concept of muscular damage or cumulative load.</p><h2 id=\"what-training-readiness-measures\">What Training Readiness actually measures</h2><p>Training Readiness combines several inputs: <strong>sleep score, recovery time, HRV status, acute training load, sleep history, and stress history</strong>. The extra inputs matter. Recovery time and acute load bring in your recent training. Sleep history and stress history stretch the picture beyond a single night. HRV status compares your recent HRV against your own baseline range rather than a population norm.</p><p>The result is a score that reacts to <strong>accumulated fatigue</strong>, not just overnight recovery. If you stacked a hard Saturday and a long Sunday, Training Readiness will usually be low on Monday even after a decent sleep, because acute load and recovery time are still weighing it down.</p><p>The trade-off is that it is less immediate. It does not track your day like Body Battery does, and it depends on the watch having a few weeks of consistent data to establish baselines. Early in your use of the feature, or after a stretch of irregular wear, treat its output with some caution.</p><h2 id=\"when-they-disagree\">Why the two scores disagree</h2><p>Most mismatches fall into a few patterns.</p><p><strong>High Body Battery, low Training Readiness.</strong> This is the most common one. You slept well, so your overnight charge is high. But you have a heavy acute load, a long recovery-time countdown, or HRV running below your baseline range. Your nervous system rested; your <strong>training stress has not yet been absorbed</strong>. Trust Training Readiness here.</p><p><strong>Low Body Battery, high Training Readiness.</strong> You are lightly trained and well rested in terms of load, but you slept poorly or had a stressful night. The watch sees little training fatigue, so readiness stays reasonable, while the battery reflects a poor charge. An easy or moderate session is usually fine; a maximal effort is a gamble.</p><p><strong>Both low.</strong> This is the clearest signal in the system. Poor sleep, elevated stress, and accumulated load are all pointing the same way. Reduce intensity or rest.</p><p>A few caveats apply to both. Wrist-based HRV is sensitive to alcohol, late meals, illness, and altitude, and these will drag scores down without any change in your actual fitness. Sleep staging from wrist sensors is an estimate, not a polysomnography result. And neither metric is validated against performance outcomes in the way a lab test is, so they are best treated as <strong>trend indicators, not diagnostic tools</strong>.</p><h2 id=\"using-both-in-practice\">How to use both in practice</h2><p>Use each metric for the job it was designed for.</p><p>Check <strong>Training Readiness before a key session</strong>. If you have a threshold or interval workout planned and the score sits in the Low or Poor bands, that is a prompt to look at why. Is it one bad night, or several days of rising load and suppressed HRV? One bad night rarely justifies cancelling. A multi-day pattern usually does.</p><p>Use <strong>Body Battery for the shape of your day</strong>. If it fails to climb overnight over several nights, or it sits low through the afternoon, you have a stress or sleep problem that training adjustments alone will not fix. It is also useful for spotting which habits cost you the most charge.</p><p>Above all, look at <strong>weekly trends rather than single readings</strong>. A single morning's score is noisy. A week where Body Battery peaks stay lower and Training Readiness drifts down tells you something real about how well you are absorbing your training.</p><p>The limitation of both scores is that they are descriptive. They tell you how you feel and how loaded you are, but they do not rewrite your plan. That is the gap adaptive training closes: <strong>feeding recovery signals like HRV, sleep, and load directly into the next session</strong> so that the workout changes before you have to decide whether to trust a number. That is the approach Forma is built around.</p>",
+    "status": "published",
+    "_queue_id": "autosugg-d4c858a9",
+    "_cluster": "garmin-wearable",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "what-is-a-good-training-load-atl-ctl-and-acwr-explained",
     "title": "What Is a Good Training Load? ATL, CTL and ACWR Explained",
     "date": "2026-10-05",
@@ -34,6 +70,44 @@
     "_queue_id": "paa-edd5a9e0",
     "_cluster": "training-load",
     "_composite_score": 5.7
+  },
+  {
+    "slug": "should-you-run-on-sore-legs-research",
+    "title": "Should You Run on Sore Legs? What the Research Actually Shows",
+    "category": "Recovery",
+    "meta_description": "Running on sore legs is not always a mistake. Learn what DOMS does to your stride, when an easy run helps recovery, and the clear signs you should skip it.",
+    "keywords": "running on sore legs, DOMS running, delayed onset muscle soreness, run with sore muscles, recovery runs, active recovery, running economy, zone 2 training",
+    "read_time": 5,
+    "date": "2026-10-05",
+    "status": "published",
+    "body_html": "<p>Most runners treat sore legs as a stop sign. The research suggests that is only half right. Soreness is a poor measure of how recovered you are, and an easy run on sore legs can be fine. The same run, at the wrong intensity, is where the real cost shows up.</p>\n<h2 id=\"why-sore-legs-are-not-a-weakness-signal\">Why sore legs are not a weakness signal</h2>\n<p>Delayed onset muscle soreness (DOMS) typically starts 12 to 24 hours after unfamiliar or eccentric-heavy work, peaks between 24 and 72 hours, and fades within about five days. It comes from microscopic damage to muscle fibres and the inflammatory response that follows. Downhill running, hard strength sessions and a sudden jump in volume are the usual triggers.</p>\n<p>Soreness is also adaptive. The repeated bout effect, described in the eccentric exercise literature, shows that a first exposure to a damaging stimulus produces far more soreness and strength loss than the same stimulus repeated weeks later. A trained runner who feels wrecked after a new hilly route is not necessarily out of shape. They have met a stimulus their legs have not seen before.</p>\n<p>The catch is that soreness does not map neatly onto cardiovascular fitness or readiness. Your aerobic system can be fully recovered while your quadriceps are not.</p>\n<h2 id=\"what-doms-does-to-your-running\">What DOMS does to your running</h2>\n<p>Three effects matter for a runner.</p>\n<p><strong>Force output drops.</strong> After heavy eccentric exercise, studies commonly report temporary strength losses in the affected muscle, often in the range of 10 to 30 percent at the 24 to 48 hour mark. Your legs simply produce less force per stride.</p>\n<p><strong>Mechanics change.</strong> Sore muscles alter how you load. Research on running after downhill or eccentric work has found shifts in stride and joint loading as the body protects painful tissue. Altered mechanics push stress onto tendons and joints that were not part of the original damage.</p>\n<p><strong>Running economy worsens.</strong> Studies of runners after muscle-damaging exercise have measured higher oxygen cost at a given pace. In practice that means the same speed costs more energy, and heart rate is usually higher than normal for that pace.</p>\n<p>None of this says an easy run is harmful. It says the quality of a hard run on sore legs will be poor, and the risk of compensating in a way that irritates something else goes up.</p>\n<h2 id=\"when-an-easy-run-helps\">When an easy run helps</h2>\n<p>Light aerobic movement can reduce the perception of stiffness and does not appear to slow muscle repair at low intensities. The evidence for faster recovery is modest, and mostly about how you feel rather than measurable tissue repair. Still, there is no good evidence that a short, genuinely easy run worsens ordinary DOMS.</p>\n<p>An easy run is a reasonable choice when:</p>\n<ul>\n<li>Soreness is mild, roughly 3 out of 10 or lower, and both legs feel similar.</li>\n<li>It loosens within 10 to 15 minutes of warming up.</li>\n<li>Your stride feels normal, with no limp or guarding.</li>\n<li>The run is short and truly easy, such as 30 to 45 minutes in Zone 1 or low Zone 2.</li>\n</ul>\n<p>The key word is easy. Most runners who say they ran easy on sore legs actually ran at their usual pace and let effort creep up.</p>\n<h2 id=\"when-you-should-skip-it\">When you should skip it</h2>\n<p>Skip the run, or swap it for rest or cycling, when the signals point beyond ordinary muscle soreness:</p>\n<ul>\n<li>Pain is sharp, localised or gets worse as you run, rather than easing.</li>\n<li>Soreness is one-sided or sits in a joint, tendon or bone rather than the belly of the muscle.</li>\n<li>You notice altered gait that does not resolve after 10 to 15 minutes.</li>\n<li>Soreness is severe, around 6 out of 10 or higher, with visible swelling or marked weakness.</li>\n<li>Resting heart rate is elevated and sleep has been poor on top of the soreness, which suggests whole-body fatigue rather than a local issue.</li>\n</ul>\n<p>A hard session is a separate question. Intervals, tempo work and long runs depend on force production and good mechanics. Running them on heavily sore legs means worse quality for the same cost, so you pay the full fatigue price for a weaker training stimulus.</p>\n<h2 id=\"a-worked-example\">A worked example</h2>\n<p>Say you normally run easy at 5:45 per km with a heart rate around 142 bpm. After a hilly long run on Sunday, your calves and quads are sore on Tuesday morning. You head out for 40 minutes.</p>\n<p>If you hold 5:45 per km, expect heart rate to sit a few beats higher, perhaps 147 to 150 bpm, because economy has dropped. This is an illustrative scenario, not a measured result, but the direction is consistent with the research above. That puts you out of Zone 2 and into a harder effort than you planned.</p>\n<p>The better approach is to cap heart rate at 142 and accept a slower pace, maybe 6:05 to 6:15 per km. You get the aerobic stimulus you wanted without piling extra stress on damaged muscle. A 40 minute run at that effort adds about 6.5 km and a modest training load. A run at the same pace but a higher heart rate adds more load than your legs are ready to absorb.</p>\n<p>Heart rate is the better guide here because it reflects the real cost of the effort, while pace only reflects what you hoped to do.</p>\n<h2 id=\"the-practical-rule\">The practical rule</h2>\n<p>Use soreness to choose the type of session, not whether you train at all.</p>\n<ol>\n<li>Rate soreness out of 10. At 3 or below, run easy. At 4 to 5, shorten the run or cross-train. At 6 or above, rest.</li>\n<li>Hold heart rate, not pace. Let pace slow by 10 to 20 seconds per km if needed.</li>\n<li>Give it 10 to 15 minutes. If the stiffness fades and mechanics look normal, continue. If pain sharpens or your stride changes, stop.</li>\n<li>Move quality work. Do not run intervals or tempo work until soreness is gone or clearly fading and the first few minutes feel smooth.</li>\n<li>Look at the trend. Repeated heavy soreness after normal sessions points to a load problem, not a toughness problem.</li>\n</ol>\n<p>Sore legs are information about local muscle damage. Read them alongside heart rate, sleep and the previous week's load, and they stop being a reason to skip training and become a guide to how hard to train.</p>",
+    "toc_items": [
+      {
+        "id": "why-sore-legs-are-not-a-weakness-signal",
+        "text": "Why sore legs are not a weakness signal"
+      },
+      {
+        "id": "what-doms-does-to-your-running",
+        "text": "What DOMS does to your running"
+      },
+      {
+        "id": "when-an-easy-run-helps",
+        "text": "When an easy run helps"
+      },
+      {
+        "id": "when-you-should-skip-it",
+        "text": "When you should skip it"
+      },
+      {
+        "id": "a-worked-example",
+        "text": "A worked example"
+      },
+      {
+        "id": "the-practical-rule",
+        "text": "The practical rule"
+      }
+    ],
+    "hash": "d5c001d3eb73e08f0c000150fddc9f76"
   },
   {
     "slug": "what-is-recovery-running-pace-duration-and-when-to-skip",
@@ -5772,43 +5846,5 @@
       }
     ],
     "body_html": "<p>Endurance athletes often believe success comes from doing more.</p>\n\n<p>More miles. More intervals. More training.</p>\n\n<p>But one of the biggest lessons in performance science is that <strong>training harder doesn’t always produce better results</strong>.</p>\n\n<h2 id=\"training-creates-stress\">Training creates stress</h2>\n\n<p>Every workout stresses the body. That stress triggers adaptation — but only if the body has time to recover.</p>\n\n<p>Without that recovery window, the adaptation stimulus is lost. Worse, additional stress on an unrecovered system increases injury risk and suppresses performance.</p>\n\n<p>This is the paradox: the thing that makes you fitter (training) also makes you temporarily weaker. Fitness is built in the gap between sessions, not during them.</p>\n\n<h2 id=\"recovery-builds-performance\">Recovery builds performance</h2>\n\n<p>During recovery the body:</p>\n\n<ul>\n  <li>Repairs micro-tears in muscle tissue</li>\n  <li>Restores glycogen stores</li>\n  <li>Strengthens connective tissue and physiological systems</li>\n  <li>Consolidates neurological adaptations</li>\n</ul>\n\n<p>Without adequate recovery there is no adaptation. The training stress becomes noise rather than signal.</p>\n\n<h2 id=\"discipline-of-restraint\">The discipline of restraint</h2>\n\n<p>Elite athletes know when to push and when to recover.</p>\n\n<p>They understand that easy days must remain genuinely easy, and that rest is a critical — not optional — part of the training process.</p>\n\n<p>The temptation to push through fatigue is one of the most common reasons amateur athletes plateau or get injured. The ability to hold back when it matters is a learned skill.</p>\n\n<h2 id=\"sustainable-performance\">Sustainable performance</h2>\n\n<p>The goal is not to maximise effort on one day, but to sustain <strong>consistent training over months and years</strong>.</p>\n\n<p>Athletes who avoid injury and burnout — who train consistently at a manageable load — often outperform those who push relentlessly through fatigue.</p>\n\n<p>The biggest breakthroughs rarely come from doing the most work. They come from doing the <strong>right work at the right time</strong> — and then recovering properly from it.</p>"
-  },
-  {
-    "slug": "should-you-run-on-sore-legs-research",
-    "title": "Should You Run on Sore Legs? What the Research Actually Shows",
-    "category": "Recovery",
-    "meta_description": "Running on sore legs is not always a mistake. Learn what DOMS does to your stride, when an easy run helps recovery, and the clear signs you should skip it.",
-    "keywords": "running on sore legs, DOMS running, delayed onset muscle soreness, run with sore muscles, recovery runs, active recovery, running economy, zone 2 training",
-    "read_time": 5,
-    "date": "2026-10-05",
-    "status": "published",
-    "body_html": "<p>Most runners treat sore legs as a stop sign. The research suggests that is only half right. Soreness is a poor measure of how recovered you are, and an easy run on sore legs can be fine. The same run, at the wrong intensity, is where the real cost shows up.</p>\n<h2 id=\"why-sore-legs-are-not-a-weakness-signal\">Why sore legs are not a weakness signal</h2>\n<p>Delayed onset muscle soreness (DOMS) typically starts 12 to 24 hours after unfamiliar or eccentric-heavy work, peaks between 24 and 72 hours, and fades within about five days. It comes from microscopic damage to muscle fibres and the inflammatory response that follows. Downhill running, hard strength sessions and a sudden jump in volume are the usual triggers.</p>\n<p>Soreness is also adaptive. The repeated bout effect, described in the eccentric exercise literature, shows that a first exposure to a damaging stimulus produces far more soreness and strength loss than the same stimulus repeated weeks later. A trained runner who feels wrecked after a new hilly route is not necessarily out of shape. They have met a stimulus their legs have not seen before.</p>\n<p>The catch is that soreness does not map neatly onto cardiovascular fitness or readiness. Your aerobic system can be fully recovered while your quadriceps are not.</p>\n<h2 id=\"what-doms-does-to-your-running\">What DOMS does to your running</h2>\n<p>Three effects matter for a runner.</p>\n<p><strong>Force output drops.</strong> After heavy eccentric exercise, studies commonly report temporary strength losses in the affected muscle, often in the range of 10 to 30 percent at the 24 to 48 hour mark. Your legs simply produce less force per stride.</p>\n<p><strong>Mechanics change.</strong> Sore muscles alter how you load. Research on running after downhill or eccentric work has found shifts in stride and joint loading as the body protects painful tissue. Altered mechanics push stress onto tendons and joints that were not part of the original damage.</p>\n<p><strong>Running economy worsens.</strong> Studies of runners after muscle-damaging exercise have measured higher oxygen cost at a given pace. In practice that means the same speed costs more energy, and heart rate is usually higher than normal for that pace.</p>\n<p>None of this says an easy run is harmful. It says the quality of a hard run on sore legs will be poor, and the risk of compensating in a way that irritates something else goes up.</p>\n<h2 id=\"when-an-easy-run-helps\">When an easy run helps</h2>\n<p>Light aerobic movement can reduce the perception of stiffness and does not appear to slow muscle repair at low intensities. The evidence for faster recovery is modest, and mostly about how you feel rather than measurable tissue repair. Still, there is no good evidence that a short, genuinely easy run worsens ordinary DOMS.</p>\n<p>An easy run is a reasonable choice when:</p>\n<ul>\n<li>Soreness is mild, roughly 3 out of 10 or lower, and both legs feel similar.</li>\n<li>It loosens within 10 to 15 minutes of warming up.</li>\n<li>Your stride feels normal, with no limp or guarding.</li>\n<li>The run is short and truly easy, such as 30 to 45 minutes in Zone 1 or low Zone 2.</li>\n</ul>\n<p>The key word is easy. Most runners who say they ran easy on sore legs actually ran at their usual pace and let effort creep up.</p>\n<h2 id=\"when-you-should-skip-it\">When you should skip it</h2>\n<p>Skip the run, or swap it for rest or cycling, when the signals point beyond ordinary muscle soreness:</p>\n<ul>\n<li>Pain is sharp, localised or gets worse as you run, rather than easing.</li>\n<li>Soreness is one-sided or sits in a joint, tendon or bone rather than the belly of the muscle.</li>\n<li>You notice altered gait that does not resolve after 10 to 15 minutes.</li>\n<li>Soreness is severe, around 6 out of 10 or higher, with visible swelling or marked weakness.</li>\n<li>Resting heart rate is elevated and sleep has been poor on top of the soreness, which suggests whole-body fatigue rather than a local issue.</li>\n</ul>\n<p>A hard session is a separate question. Intervals, tempo work and long runs depend on force production and good mechanics. Running them on heavily sore legs means worse quality for the same cost, so you pay the full fatigue price for a weaker training stimulus.</p>\n<h2 id=\"a-worked-example\">A worked example</h2>\n<p>Say you normally run easy at 5:45 per km with a heart rate around 142 bpm. After a hilly long run on Sunday, your calves and quads are sore on Tuesday morning. You head out for 40 minutes.</p>\n<p>If you hold 5:45 per km, expect heart rate to sit a few beats higher, perhaps 147 to 150 bpm, because economy has dropped. This is an illustrative scenario, not a measured result, but the direction is consistent with the research above. That puts you out of Zone 2 and into a harder effort than you planned.</p>\n<p>The better approach is to cap heart rate at 142 and accept a slower pace, maybe 6:05 to 6:15 per km. You get the aerobic stimulus you wanted without piling extra stress on damaged muscle. A 40 minute run at that effort adds about 6.5 km and a modest training load. A run at the same pace but a higher heart rate adds more load than your legs are ready to absorb.</p>\n<p>Heart rate is the better guide here because it reflects the real cost of the effort, while pace only reflects what you hoped to do.</p>\n<h2 id=\"the-practical-rule\">The practical rule</h2>\n<p>Use soreness to choose the type of session, not whether you train at all.</p>\n<ol>\n<li>Rate soreness out of 10. At 3 or below, run easy. At 4 to 5, shorten the run or cross-train. At 6 or above, rest.</li>\n<li>Hold heart rate, not pace. Let pace slow by 10 to 20 seconds per km if needed.</li>\n<li>Give it 10 to 15 minutes. If the stiffness fades and mechanics look normal, continue. If pain sharpens or your stride changes, stop.</li>\n<li>Move quality work. Do not run intervals or tempo work until soreness is gone or clearly fading and the first few minutes feel smooth.</li>\n<li>Look at the trend. Repeated heavy soreness after normal sessions points to a load problem, not a toughness problem.</li>\n</ol>\n<p>Sore legs are information about local muscle damage. Read them alongside heart rate, sleep and the previous week's load, and they stop being a reason to skip training and become a guide to how hard to train.</p>",
-    "toc_items": [
-      {
-        "id": "why-sore-legs-are-not-a-weakness-signal",
-        "text": "Why sore legs are not a weakness signal"
-      },
-      {
-        "id": "what-doms-does-to-your-running",
-        "text": "What DOMS does to your running"
-      },
-      {
-        "id": "when-an-easy-run-helps",
-        "text": "When an easy run helps"
-      },
-      {
-        "id": "when-you-should-skip-it",
-        "text": "When you should skip it"
-      },
-      {
-        "id": "a-worked-example",
-        "text": "A worked example"
-      },
-      {
-        "id": "the-practical-rule",
-        "text": "The practical rule"
-      }
-    ],
-    "hash": "d5c001d3eb73e08f0c000150fddc9f76"
   }
 ]
