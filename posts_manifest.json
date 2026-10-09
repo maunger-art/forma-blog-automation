@@ -1,5 +1,41 @@
 [
   {
+    "slug": "what-is-good-hrv-by-age-ranges-and-what-they-mean",
+    "title": "What Is Good HRV by Age? Ranges and What They Mean",
+    "date": "2026-10-09",
+    "category": "Wearables",
+    "meta_description": "Find out what a good HRV looks like for your age, why population averages mislead, and how to use your personal baseline to guide training.",
+    "keywords": "good HRV by age, average HRV by age, HRV chart, RMSSD normal range, heart rate variability baseline, HRV for runners, HRV for cyclists, HRV training readiness",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "why-hrv-falls-with-age",
+        "text": "Why HRV falls with age"
+      },
+      {
+        "id": "typical-hrv-ranges",
+        "text": "Typical HRV ranges by age"
+      },
+      {
+        "id": "why-population-averages-mislead",
+        "text": "Why population averages mislead"
+      },
+      {
+        "id": "build-your-own-baseline",
+        "text": "How to build your own baseline"
+      },
+      {
+        "id": "using-hrv-in-training",
+        "text": "Using HRV to guide training"
+      }
+    ],
+    "body_html": "<p>A 25-year-old with an HRV of 60 ms and a 55-year-old with an HRV of 60 ms are not in the same physiological position. The older athlete is well above their age group. The younger one may be below theirs. <strong>A good HRV number depends on who you are, how it was measured, and what it looked like last month</strong>, not on a single universal threshold.</p><h2 id=\"why-hrv-falls-with-age\">Why HRV falls with age</h2><p><strong>Heart rate variability</strong> is the variation in time between consecutive heartbeats. Most wearables report it as <strong>RMSSD</strong> (root mean square of successive differences), measured in milliseconds. A higher RMSSD generally reflects stronger <strong>parasympathetic</strong> (vagal) activity, the branch of the nervous system that slows the heart and supports recovery.</p><p>HRV declines with age across the adult population. The mechanism is well understood: vagal tone weakens, the heart's response to autonomic signals becomes less flexible, and resting heart rate tends to drift in ways that reduce beat-to-beat variation. The decline is gradual, steepest through young adulthood and flattening in later decades.</p><p>Fitness slows this decline but does not remove it. Endurance-trained people typically sit higher than sedentary peers of the same age, and the gap tends to persist. That is why age-based ranges are a starting reference, not a verdict.</p><h2 id=\"typical-hrv-ranges\">Typical HRV ranges by age</h2><p>Published norms vary, and every device calculates HRV differently. The ranges below are <strong>approximate resting RMSSD values</strong> measured overnight or first thing in the morning. Treat them as orientation, not diagnosis.</p><ul><li><strong>20–29:</strong> roughly 55–105 ms</li><li><strong>30–39:</strong> roughly 45–90 ms</li><li><strong>40–49:</strong> roughly 35–75 ms</li><li><strong>50–59:</strong> roughly 28–60 ms</li><li><strong>60 and over:</strong> roughly 20–50 ms</li></ul><p>Notice how wide each band is. Within a single decade, a healthy person at the top of the range can have double the HRV of a healthy person at the bottom. That spread is mostly genetics, sex, and the way the number was captured, not fitness quality. A value in the lower half of your age band is not a warning sign on its own.</p><h2 id=\"why-population-averages-mislead\">Why population averages mislead</h2><p>Three factors make age charts a weak tool for individual decisions.</p><p><strong>Measurement method.</strong> A chest strap capturing R-R intervals, a wrist optical sensor, and a ring all produce different RMSSD values for the same person. Overnight averages are typically higher than a one-minute morning reading. Comparing your number to a chart built on a different method means comparing different quantities.</p><p><strong>Genetic baseline.</strong> Some athletes run an HRV of 40 and are thriving. Others sit at 110 and are overreached. The absolute value says little about readiness. The <strong>change relative to your own normal</strong> is what carries information.</p><p><strong>Metric choice.</strong> RMSSD is not the only HRV metric. Some devices report SDNN or a proprietary score. These are not interchangeable, and the scales differ. Make sure any reference range matches the metric your device uses.</p><h2 id=\"build-your-own-baseline\">How to build your own baseline</h2><p>The useful question is not whether your HRV is good for your age. It is <strong>whether today's reading is normal for you</strong>. Answering that takes a baseline.</p><p>Measure under consistent conditions, ideally the same time each day, using the same device and the same method. Overnight averages or a seated or supine morning reading both work, but do not mix them. Collect at least <strong>two to four weeks</strong> of data before drawing conclusions, since single readings are noisy and swing with sleep, alcohol, illness, and hydration.</p><p>From that data, look at two things. The first is your <strong>rolling average</strong> over 7 days, which smooths daily noise. The second is your <strong>normal range</strong>, typically your longer-term average plus or minus a band of natural variation. A reading inside that band is unremarkable. A 7-day average trending below it for several days is a signal worth acting on.</p><p>Also track the <strong>coefficient of variation</strong> if your platform shows it. Very large day-to-day swings can indicate accumulated stress or inconsistent sleep even when the average looks fine.</p><h2 id=\"using-hrv-in-training\">Using HRV to guide training</h2><p>HRV is most informative as a trend, read alongside resting heart rate, sleep, and how the session actually felt. A few patterns come up repeatedly in endurance athletes.</p><p>A <strong>sustained drop</strong> in the 7-day average, often paired with a raised resting heart rate, usually reflects accumulated load, poor sleep, illness onset, or life stress. That is a cue to reduce intensity, not to push through a planned interval session.</p><p>A <strong>stable or gently rising</strong> trend during a training block suggests you are absorbing the work. A gradual rise across months is common as aerobic fitness develops, though it is not guaranteed.</p><p>An <strong>unusually high</strong> reading is not always good news. Very high values, especially alongside a suppressed resting heart rate and fatigue, can occur in deep overreaching. Context matters more than direction alone.</p><p>As you age, expect your personal baseline to drift lower over years, not weeks. Re-anchor your range periodically so a slow, normal decline is not mistaken for a recovery problem, and a real problem is not dismissed as ageing.</p><p>This is where static plans fall short. A schedule written weeks ago cannot know that your 7-day HRV trend has dropped 15% below your normal range. <strong>Adaptive training</strong> reads your baseline, compares it with today's signals, and adjusts session intensity accordingly. That is the approach Forma is built around: using your own data, not a population chart, to decide what your body can absorb next.</p>",
+    "status": "published",
+    "_queue_id": "paa-acba6137",
+    "_cluster": "hrv-readiness",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "garmin-training-readiness-vs-body-battery-explained",
     "title": "Garmin Training Readiness vs Body Battery Explained",
     "date": "2026-10-07",
