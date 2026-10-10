@@ -1,5 +1,45 @@
 [
   {
+    "slug": "what-is-the-7-day-training-load-a-runners-guide",
+    "title": "What Is the 7 Day Training Load? A Runner's Guide",
+    "date": "2026-10-10",
+    "category": "Training Science",
+    "meta_description": "The 7 day training load is the stress you've absorbed in the past week. Learn how it's calculated, how it compares to chronic load, and how to use it.",
+    "keywords": "7 day training load, acute training load, ATL, CTL, ACWR, training load management, overtraining prevention, acute chronic workload ratio",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "what-it-measures",
+        "text": "What the 7 day training load measures"
+      },
+      {
+        "id": "how-its-calculated",
+        "text": "How it's calculated"
+      },
+      {
+        "id": "acute-vs-chronic",
+        "text": "Acute vs chronic load"
+      },
+      {
+        "id": "reading-the-number",
+        "text": "How to read the number"
+      },
+      {
+        "id": "limitations",
+        "text": "Where it falls short"
+      },
+      {
+        "id": "using-it-well",
+        "text": "Using it in real training"
+      }
+    ],
+    "body_html": "<p>Your last seven days of training are the most powerful predictor of how you'll feel tomorrow. The <strong>7 day training load</strong> is the number that captures them: a single figure for the total physiological stress you've absorbed in the past week. On its own it says little. Set against what your body is used to, it becomes one of the most useful signals in endurance training.</p><h2 id=\"what-it-measures\">What the 7 day training load measures</h2><p>The 7 day training load, often called <strong>acute training load</strong> or <strong>ATL</strong>, quantifies recent training stress. It answers one question: how much have I asked of my body lately? It is a proxy for short-term fatigue. When it climbs, fatigue builds. When it drops, you recover.</p><p>The window is seven days because that is roughly the timescale of fatigue. Hard sessions leave you sore, depleted and slower for anywhere from a day to several days, and most of that has cleared within a week. Fitness works differently. Mitochondrial density, capillary networks and cardiac adaptations build over weeks and months. Acute load tracks the cost of training, and chronic load tracks the accumulated benefit.</p><h2 id=\"how-its-calculated\">How it's calculated</h2><p>There are two common approaches, and the difference matters.</p><ul><li><strong>Rolling sum:</strong> add up the training load from the last seven days. Simple and transparent, but a hard session falls off a cliff on day eight, which doesn't match how fatigue actually fades.</li><li><strong>Exponentially weighted average:</strong> recent days count more than older ones, with a time constant of about seven days. A session from yesterday carries more weight than one from six days ago, and its influence decays gradually. This tracks recovery more realistically.</li></ul><p>Either way, the input is a <strong>per-session load score</strong>. The best scores combine intensity and duration. Heart-rate-based methods weight time spent at higher intensities more heavily. Power-based methods, common in cycling, scale stress relative to your functional threshold. Session RPE multiplies perceived effort (on a 1-10 scale) by minutes trained, and works for any sport without a sensor. A 60-minute easy run and a 60-minute threshold session are not the same stimulus, and a good load metric reflects that.</p><h2 id=\"acute-vs-chronic\">Acute vs chronic load</h2><p>Seven days of training means nothing without context. 400 units of load is a light week for one athlete and a dangerous spike for another. The reference point is <strong>chronic training load</strong> (CTL): a longer average, typically over 28 to 42 days, representing what your body has adapted to.</p><p>The relationship between the two is where the insight lives. The <strong>acute:chronic workload ratio (ACWR)</strong> divides your 7 day load by your chronic load. A ratio of 1.0 means this week matches your recent norm. Above 1.0, you're pushing beyond it. Below 1.0, you're coasting or recovering.</p><p>A related view subtracts rather than divides. Chronic minus acute gives <strong>training stress balance</strong>, a rough measure of freshness. Negative values mean you're carrying fatigue. Positive values mean you're fresher than your fitness baseline, which is where many athletes aim to be on race day.</p><h2 id=\"reading-the-number\">How to read the number</h2><p>Sports science research on team-sport athletes, notably work by Tim Gabbett published in the British Journal of Sports Medicine in 2016, associated an ACWR of roughly <strong>0.8 to 1.3</strong> with lower injury risk, and ratios above about 1.5 with a markedly higher one. Endurance athletes are a different population, so treat those figures as a rough guide rather than a threshold.</p><p>The mechanism behind them is sound. Muscle, tendon and bone adapt to load, but connective tissue adapts more slowly than your aerobic system. Fitness can outrun the tissues that support it. A sudden jump in weekly load, such as adding a block of intervals or doubling your long ride, stresses structures that haven't had time to remodel. That is how a runner with good aerobic fitness ends up with a stress reaction or an angry Achilles.</p><p>In practice, the zones look like this:</p><ul><li><strong>Below ~0.8:</strong> detraining risk if sustained. Fine during a deliberate recovery week or taper.</li><li><strong>0.8 to 1.3:</strong> productive overload. You're building without outpacing your adaptation.</li><li><strong>Above ~1.5:</strong> a spike. Sometimes intentional in a short overreaching block, but it should be a decision rather than an accident.</li></ul><h2 id=\"limitations\">Where it falls short</h2><p>The 7 day training load is a model, and models have blind spots. Be aware of these before you trust the number blindly.</p><p>First, <strong>it only sees training</strong>. Poor sleep, work stress, illness and a long flight all affect how much load you can tolerate, and none appear in the calculation. Two athletes with identical acute loads can be in very different states.</p><p>Second, <strong>the ratio is sensitive to your chronic baseline</strong>. Returning from a break, your chronic load is low, so even modest training produces a high ratio. That is accurate in one sense, since your tissues are deconditioned, but it can overstate the risk if you ramp sensibly. Statisticians have also raised methodological criticisms of ACWR as a standalone injury predictor, which is a good reason to treat it as one input among several rather than a verdict.</p><p>Third, <strong>load scores are only as good as their inputs</strong>. Wrist-based heart rate drifts, thresholds go stale, and RPE is subjective. A threshold set six months ago will misjudge today's sessions.</p><h2 id=\"using-it-well\">Using it in real training</h2><p>The most practical use of acute load is as a <strong>trend, not a daily target</strong>. Watch the direction and the rate of change. A week-on-week increase of around 10% is a common rule of thumb for steady progression, and acute load makes it measurable rather than a guess.</p><p>Pair it with subjective and physiological signals. If your acute load is climbing, your resting heart rate is elevated and your HRV is suppressed, that combination is far more informative than any one metric. If the ratio sits comfortably in range but your legs feel dead for several days running, believe your legs and investigate sleep, nutrition and life stress.</p><p>The deeper limitation of a fixed plan is that it ignores all of this. A schedule written weeks ago can't know you slept badly all week or that your load spiked after an unplanned hard group ride. <strong>Adaptive training closes that gap</strong>, using your recent load, chronic baseline and recovery signals to adjust what comes next. That is the approach behind Forma: your 7 day load becomes an input to tomorrow's session rather than a number you check after the damage is done.</p>",
+    "status": "published",
+    "_queue_id": "paa-dc917a6c",
+    "_cluster": "training-load",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "what-is-good-hrv-by-age-ranges-and-what-they-mean",
     "title": "What Is Good HRV by Age? Ranges and What They Mean",
     "date": "2026-10-09",
