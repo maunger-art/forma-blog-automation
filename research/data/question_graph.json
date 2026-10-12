@@ -1,112 +1,48 @@
 [
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-81e6fc10",
-    "pillar_text": "What is the hardest part of a marathon?",
-    "child_id": "paa-ae0c9eb6",
-    "child_text": "Can you train for a marathon in 2 months?",
+    "cluster": "hrv-readiness",
+    "pillar_id": "paa-3d8c4700",
+    "pillar_text": "What is HRV fitness?",
+    "child_id": "paa-34470d1e",
+    "child_text": "How to improve HRV status?",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-81e6fc10",
-    "pillar_text": "What is the hardest part of a marathon?",
-    "child_id": "paa-30070224",
-    "child_text": "What is the average pace for running a 4-hour marathon?",
+    "cluster": "hrv-readiness",
+    "pillar_id": "paa-3d8c4700",
+    "pillar_text": "What is HRV fitness?",
+    "child_id": "paa-acba6137",
+    "child_text": "What is good HRV by age?",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-81e6fc10",
-    "pillar_text": "What is the hardest part of a marathon?",
-    "child_id": "autosugg-42ee4307",
-    "child_text": "marathon training plan for beginners",
+    "cluster": "training-load",
+    "pillar_id": "paa-7a594e4f",
+    "pillar_text": "What is the definition of training load?",
+    "child_id": "paa-a3217fe4",
+    "child_text": "How to use training load on Apple Watch?",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-81e6fc10",
-    "pillar_text": "What is the hardest part of a marathon?",
-    "child_id": "autosugg-682a5368",
-    "child_text": "marathon training plan pdf",
+    "cluster": "training-load",
+    "pillar_id": "paa-7a594e4f",
+    "pillar_text": "What is the definition of training load?",
+    "child_id": "autosugg-869bf007",
+    "child_text": "training load apple watch",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-81e6fc10",
-    "pillar_text": "What is the hardest part of a marathon?",
-    "child_id": "autosugg-7948e20b",
-    "child_text": "marathon training plan 16 weeks",
-    "relationship": "specificity"
-  },
-  {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-81e6fc10",
-    "pillar_text": "What is the hardest part of a marathon?",
-    "child_id": "autosugg-58b75676",
-    "child_text": "marathon training plan intermediate",
-    "relationship": "specificity"
-  },
-  {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-81e6fc10",
-    "pillar_text": "What is the hardest part of a marathon?",
-    "child_id": "autosugg-ffe6d921",
-    "child_text": "marathon training plan hal higdon",
-    "relationship": "specificity"
-  },
-  {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-81e6fc10",
-    "pillar_text": "What is the hardest part of a marathon?",
-    "child_id": "autosugg-edac5d83",
-    "child_text": "marathon training plan 20 weeks",
-    "relationship": "specificity"
-  },
-  {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-81e6fc10",
-    "pillar_text": "What is the hardest part of a marathon?",
-    "child_id": "autosugg-eadbf471",
-    "child_text": "marathon training plan free",
-    "relationship": "specificity"
-  },
-  {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-81e6fc10",
-    "pillar_text": "What is the hardest part of a marathon?",
-    "child_id": "autosugg-5c4416d9",
-    "child_text": "marathon training plan 12 weeks",
-    "relationship": "specificity"
-  },
-  {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-81e6fc10",
-    "pillar_text": "What is the hardest part of a marathon?",
-    "child_id": "autosugg-12a4f7a5",
-    "child_text": "marathon training plan reddit",
+    "cluster": "training-load",
+    "pillar_id": "paa-7a594e4f",
+    "pillar_text": "What is the definition of training load?",
+    "child_id": "autosugg-426a6dd4",
+    "child_text": "training load coros meaning",
     "relationship": "specificity"
   },
   {
     "cluster": "recovery-sleep",
-    "pillar_id": "paa-3013817a",
-    "pillar_text": "What is recovery running?",
-    "child_id": "paa-3e37f525",
-    "child_text": "How long should I run for a recovery run?",
-    "relationship": "specificity"
-  },
-  {
-    "cluster": "recovery-sleep",
-    "pillar_id": "paa-3013817a",
-    "pillar_text": "What is recovery running?",
-    "child_id": "paa-f4ddd750",
-    "child_text": "What does heart rate recovery tell you?",
-    "relationship": "specificity"
-  },
-  {
-    "cluster": "recovery-sleep",
-    "pillar_id": "paa-3013817a",
-    "pillar_text": "What is recovery running?",
+    "pillar_id": "paa-8b903e7b",
+    "pillar_text": "What is a recovery run?",
     "child_id": "autosugg-ac979e89",
     "child_text": "recovery running shoes reddit",
     "relationship": "specificity"
