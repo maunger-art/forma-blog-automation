@@ -1663,3 +1663,59 @@ Use soreness to choose the type of session, not whether you train at all.
 5. Look at the trend. Repeated heavy soreness after normal sessions points to a load problem, not a toughness problem.
 
 Sore legs are information about local muscle damage. Read them alongside heart rate, sleep and the previous week's load, and they stop being a reason to skip training and become a guide to how hard to train.
+
+
+---
+
+## 31. How Wearable Data Can Push Runners Into Overtraining (And Fixes)
+
+Your watch says you are 92% recovered, so you run intervals. The next morning it says 88%, so you run again. Three weeks later your easy pace is 15 seconds per km slower and your resting heart rate is up six beats. The data never flagged a problem, because the data was never measuring the problem.
+
+## The Watch Says Go, Your Body Says Stop
+
+Overtraining rarely starts with a dramatic collapse. It starts with a run of small, defensible decisions, each backed by a number. Wearables make those decisions feel objective. A green readiness score gives permission, and permission is exactly what a motivated runner is looking for.
+
+The issue is that most consumer metrics are proxies. Heart rate variability (HRV) reflects autonomic nervous system activity, not muscle damage, tendon load or glycogen status. Resting heart rate reflects cardiovascular strain, not the micro-trauma accumulating in your calves. A device can show a healthy autonomic signal while your tissues fall behind on repair.
+
+## Why Wearable Metrics Drift From Reality
+
+Three mechanisms cause most of the trouble.
+
+**Noise masquerading as signal.** Wrist optical sensors estimate HRV from pulse waves, not from the electrical R-R intervals a chest strap records. Agreement with ECG is usually reasonable during still, overnight conditions, but error grows with movement, alcohol and poor skin contact. A single-night reading can swing 10-20% with no change in true recovery. Acting on one night means acting on noise.
+
+**Saturation of the autonomic signal.** In heavily fatigued endurance athletes, HRV can plateau or even rise. Researchers describe this as parasympathetic saturation: the system is so dominant that the metric looks excellent while performance drops. A runner in this state gets a high score precisely when they most need rest.
+
+**Baseline creep.** Most devices compare you with a rolling 30-60 day baseline. If you ramp load gradually, the baseline adapts downward with you. The score stays green because you are being compared with your recently fatigued self, not your fresh self.
+
+The common thread is that each of these failures is invisible on the dashboard. The number looks fine, so you have no reason to question it.
+
+## A Worked Example: 7 Weeks of Green Scores
+
+Consider a runner doing 45 km per week who decides to build to 70 km for a spring half marathon. That is a 55% increase, delivered over seven weeks at roughly 8% per week. Their watch shows readiness above 75 on 41 of 49 days.
+
+Here is what the readiness score missed:
+
+- Easy pace at a fixed heart rate of 140 bpm slowed from 5:50 to 6:08 per km, about 5%.
+- Resting heart rate rose from 49 to 53 bpm.
+- Weekly HRV average stayed within 4% of baseline, because the baseline had shifted.
+- Two short sleep nights were smoothed away by a 7-day trend.
+
+The drift between pace and heart rate was the real warning. A 5% loss of aerobic efficiency at constant effort over several weeks is a far stronger indicator of accumulated fatigue than any single readiness number. By week seven this runner shows the signature of non-functional overreaching: lower performance, higher perceived effort, and a recovery time measured in weeks rather than days.
+
+## What the Research Says About Load
+
+Rapid increases in training load are among the most consistent predictors of injury and overreaching. Studies of the acute-to-chronic workload ratio have associated values above roughly 1.5 with materially higher injury risk, although the method has well-known statistical limitations. The practical point holds: how fast you add load matters more than any single recovery reading.
+
+Wearables compound this because they reward engagement, not restraint. Streaks, closed rings and weekly targets all nudge you toward more. None of them has a built-in mechanism for telling you to do less, and a readiness score that stays green removes the last prompt to question the plan.
+
+## How to Use the Data Without Obeying It
+
+Treat wearable output as a hypothesis to test, not a verdict.
+
+1. **Use trends, not days.** Compare a 7-day HRV average with a 60-day baseline, and require at least three consecutive days of deviation before changing your plan.
+2. **Anchor to performance.** Test pace at a fixed heart rate on a flat route every one to two weeks. If it worsens by 3% or more across two tests, cut load regardless of your score.
+3. **Cap the ramp.** Keep weekly volume increases near 10% and insert a lighter week, around 70% of peak volume, every third or fourth week.
+4. **Add subjective data.** Rate mood, soreness and motivation from 1 to 5 each morning. A sustained drop in motivation often shows up before sensors catch anything.
+5. **Let disagreement trigger caution.** When the watch says green and your legs say otherwise, take the easier option. An extra easy day costs little; a six-week overreaching hole costs a training block.
+
+The takeaway: a readiness score tells you how your nervous system looked last night. It does not tell you whether your training is working. Make the second question, not the first, the one you answer every week.
