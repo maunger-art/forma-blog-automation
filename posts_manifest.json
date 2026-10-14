@@ -1,5 +1,41 @@
 [
   {
+    "slug": "what-is-training-load-atl-ctl-and-acwr-explained",
+    "title": "What Is Training Load? ATL, CTL and ACWR Explained",
+    "date": "2026-10-14",
+    "category": "Training Science",
+    "meta_description": "Training load measures the total physiological stress of your workouts. Learn how ATL, CTL and ACWR work, and how to use them to build fitness without overtraining.",
+    "keywords": "training load, what is training load, ATL CTL, acute chronic workload ratio, ACWR, overtraining prevention, training stress balance, session RPE",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "what-training-load-measures",
+        "text": "What Training Load Actually Measures"
+      },
+      {
+        "id": "acute-and-chronic-load",
+        "text": "Acute Load vs Chronic Load (ATL and CTL)"
+      },
+      {
+        "id": "acwr-explained",
+        "text": "The Acute:Chronic Workload Ratio"
+      },
+      {
+        "id": "why-load-outruns-adaptation",
+        "text": "Why Load Can Outrun Adaptation"
+      },
+      {
+        "id": "using-training-load",
+        "text": "Using Training Load in Practice"
+      }
+    ],
+    "body_html": "<p>Two runners complete the same 10 km at the same pace. One is fresh from a rest day. The other is on day six of a heavy block. The distance and speed are identical, but the <strong>physiological cost</strong> is not. Training load is the attempt to put a number on that cost, so you can manage it instead of guessing.</p><h2 id=\"what-training-load-measures\">What Training Load Actually Measures</h2><p><strong>Training load is the quantified stress a session places on your body</strong>, combining how long you trained with how hard you trained. Summed across days and weeks, it describes how much work your body is being asked to absorb.</p><p>There are two ways to measure it. <strong>External load</strong> is the work performed: distance, duration, pace, or power on the bike. <strong>Internal load</strong> is how your body responded to that work: heart rate, perceived effort, and how long it takes to recover. Internal load matters more, because the same external work costs more when you are tired, hot, under-fuelled or stressed.</p><p>The most accessible internal method is <strong>session RPE</strong>: multiply session duration in minutes by a 1-10 effort rating. Sixty minutes at an RPE of 6 scores 360. Forty-five minutes at an RPE of 8 also scores 360. The sessions feel very different, but they impose a comparable total stress. Heart-rate-based models such as TRIMP, and power-based scores on the bike, follow the same logic with different inputs.</p><p>Whatever the method, the single-session number is the least interesting part. What matters is the pattern it forms over time.</p><h2 id=\"acute-and-chronic-load\">Acute Load vs Chronic Load (ATL and CTL)</h2><p>Every hard session does two things at once: it builds fitness and it creates fatigue. These two effects decay at different speeds. Fatigue fades within days, while fitness persists for weeks. This is the core idea behind the fitness-fatigue model first formalised by Banister and colleagues in the 1970s, and it underpins most modern load tracking.</p><p>Two rolling averages capture it:</p><ul><li><strong>Acute Training Load (ATL)</strong> is a short-term average, conventionally weighted over about 7 days. It reflects your recent fatigue.</li><li><strong>Chronic Training Load (CTL)</strong> is a long-term average, conventionally weighted over about 42 days. It reflects the fitness base you have built.</li></ul><p>Both are usually calculated as exponentially weighted averages, so yesterday counts for more than a session five weeks ago. The gap between them is often called <strong>Training Stress Balance (TSB)</strong>, calculated as CTL minus ATL. A strongly negative TSB means you are carrying heavy fatigue relative to your fitness. A modestly positive one means you are fresh, which is where you want to be on race day.</p><p>The 7 and 42-day windows are conventions, not laws of nature. Individual recovery rates differ, which is why the numbers are a guide rather than a verdict.</p><h2 id=\"acwr-explained\">The Acute:Chronic Workload Ratio</h2><p>Divide ATL by CTL and you get the <strong>acute:chronic workload ratio (ACWR)</strong>. It answers a simple question: is this week's load out of proportion to what you are prepared for?</p><p>A ratio near 1.0 means you are training at the level you have been conditioned for. Above 1.0, you are doing more than usual. In team-sport research, popularised by sports scientist Tim Gabbett, ratios of roughly 0.8 to 1.3 have been associated with the lowest injury risk, while sustained spikes above about 1.5 were associated with a higher one.</p><p>Treat those thresholds with caution. ACWR has been criticised on statistical grounds, and it was developed largely in team sports rather than endurance athletes. It also behaves badly when CTL is low: a runner returning from a break can post a high ratio from a perfectly sensible session. <strong>Use ACWR as a warning light, not a prescription.</strong> A high reading does not mean you will get injured, but it is a reason to look harder at how you feel.</p><h2 id=\"why-load-outruns-adaptation\">Why Load Can Outrun Adaptation</h2><p>The reason sudden jumps in load are risky is that your tissues do not adapt at the same pace. Your cardiovascular system and mitochondrial machinery respond within weeks. Tendons, bone and connective tissue remodel far more slowly. That mismatch creates a trap: your lungs and legs feel ready for more, while the structures that absorb the impact are still catching up.</p><p>This is how overtraining usually develops. It is rarely one terrible session. It is a run of weeks where load climbs faster than recovery can keep pace, fatigue accumulates, and performance stalls or drops despite more effort. Early signs include a resting heart rate that stays elevated, easy pace feeling harder than it should, disrupted sleep, and heart rate variability trending below your personal baseline.</p><p>Tracking load makes this visible before it becomes an injury or a lost season. A steady, gradual rise in CTL is the signature of sustainable progress. A sharp, unplanned spike in ATL is the signature of a problem forming.</p><h2 id=\"using-training-load-in-practice\">Using Training Load in Practice</h2><p>You do not need a spreadsheet of coefficients to benefit from this. A few principles carry most of the value:</p><ul><li><strong>Build CTL gradually.</strong> A common rule of thumb is to let weekly load rise by roughly 5-10% in a build phase, then include a lighter week every third or fourth week.</li><li><strong>Watch the spikes, not just the totals.</strong> A big long run after a quiet week hurts more than the same run in a consistent week.</li><li><strong>Compare load with how you feel.</strong> If load is steady but fatigue and resting heart rate are climbing, trust the body signals over the plan.</li><li><strong>Taper deliberately.</strong> Cutting volume before a race lets ATL fall faster than CTL, producing the positive TSB associated with feeling fresh.</li></ul><p>The limitation of all of this is that a static plan cannot respond to it. A fixed schedule assumes you will recover on cue, but life, sleep and illness do not follow the calendar. The next step is training that treats load as a live input: adjusting intensity and volume as your acute fatigue, chronic fitness and recovery data shift. That is the principle behind adaptive training, and it is what Forma is built around, turning load from a number you check into a signal that shapes tomorrow's session.</p>",
+    "status": "published",
+    "_queue_id": "paa-dc82c746",
+    "_cluster": "training-load",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "what-is-the-7525-rule-in-cycling-explained",
     "title": "What Is the 75/25 Rule in Cycling? Explained",
     "date": "2026-10-12",
@@ -34,6 +70,40 @@
     "_queue_id": "paa-bbc90aa8",
     "_cluster": "cycling-endurance",
     "_composite_score": 5.7
+  },
+  {
+    "slug": "wearable-data-runners-overtraining",
+    "title": "How Wearable Data Can Push Runners Into Overtraining (And Fixes)",
+    "category": "Wearables",
+    "meta_description": "Green readiness scores can hide accumulating fatigue. Learn how HRV noise, baseline creep and load ramps push runners into overtraining, and how to avoid it.",
+    "keywords": "wearable data overtraining, runner overtraining, HRV readiness score, overreaching running, training load, resting heart rate, aerobic decoupling",
+    "read_time": 5,
+    "date": "2026-10-12",
+    "status": "published",
+    "body_html": "<p>Your watch says you are 92% recovered, so you run intervals. The next morning it says 88%, so you run again. Three weeks later your easy pace is 15 seconds per km slower and your resting heart rate is up six beats. The data never flagged a problem, because the data was never measuring the problem.</p>\n<h2 id=\"the-watch-says-go-your-body-says-stop\">The Watch Says Go, Your Body Says Stop</h2>\n<p>Overtraining rarely starts with a dramatic collapse. It starts with a run of small, defensible decisions, each backed by a number. Wearables make those decisions feel objective. A green readiness score gives permission, and permission is exactly what a motivated runner is looking for.</p>\n<p>The issue is that most consumer metrics are proxies. Heart rate variability (HRV) reflects autonomic nervous system activity, not muscle damage, tendon load or glycogen status. Resting heart rate reflects cardiovascular strain, not the micro-trauma accumulating in your calves. A device can show a healthy autonomic signal while your tissues fall behind on repair.</p>\n<h2 id=\"why-wearable-metrics-drift-from-reality\">Why Wearable Metrics Drift From Reality</h2>\n<p>Three mechanisms cause most of the trouble.</p>\n<p><strong>Noise masquerading as signal.</strong> Wrist optical sensors estimate HRV from pulse waves, not from the electrical R-R intervals a chest strap records. Agreement with ECG is usually reasonable during still, overnight conditions, but error grows with movement, alcohol and poor skin contact. A single-night reading can swing 10-20% with no change in true recovery. Acting on one night means acting on noise.</p>\n<p><strong>Saturation of the autonomic signal.</strong> In heavily fatigued endurance athletes, HRV can plateau or even rise. Researchers describe this as parasympathetic saturation: the system is so dominant that the metric looks excellent while performance drops. A runner in this state gets a high score precisely when they most need rest.</p>\n<p><strong>Baseline creep.</strong> Most devices compare you with a rolling 30-60 day baseline. If you ramp load gradually, the baseline adapts downward with you. The score stays green because you are being compared with your recently fatigued self, not your fresh self.</p>\n<p>The common thread is that each of these failures is invisible on the dashboard. The number looks fine, so you have no reason to question it.</p>\n<h2 id=\"a-worked-example-7-weeks-of-green-scores\">A Worked Example: 7 Weeks of Green Scores</h2>\n<p>Consider a runner doing 45 km per week who decides to build to 70 km for a spring half marathon. That is a 55% increase, delivered over seven weeks at roughly 8% per week. Their watch shows readiness above 75 on 41 of 49 days.</p>\n<p>Here is what the readiness score missed:</p>\n<ul>\n<li>Easy pace at a fixed heart rate of 140 bpm slowed from 5:50 to 6:08 per km, about 5%.</li>\n<li>Resting heart rate rose from 49 to 53 bpm.</li>\n<li>Weekly HRV average stayed within 4% of baseline, because the baseline had shifted.</li>\n<li>Two short sleep nights were smoothed away by a 7-day trend.</li>\n</ul>\n<p>The drift between pace and heart rate was the real warning. A 5% loss of aerobic efficiency at constant effort over several weeks is a far stronger indicator of accumulated fatigue than any single readiness number. By week seven this runner shows the signature of non-functional overreaching: lower performance, higher perceived effort, and a recovery time measured in weeks rather than days.</p>\n<h2 id=\"what-the-research-says-about-load\">What the Research Says About Load</h2>\n<p>Rapid increases in training load are among the most consistent predictors of injury and overreaching. Studies of the acute-to-chronic workload ratio have associated values above roughly 1.5 with materially higher injury risk, although the method has well-known statistical limitations. The practical point holds: how fast you add load matters more than any single recovery reading.</p>\n<p>Wearables compound this because they reward engagement, not restraint. Streaks, closed rings and weekly targets all nudge you toward more. None of them has a built-in mechanism for telling you to do less, and a readiness score that stays green removes the last prompt to question the plan.</p>\n<h2 id=\"how-to-use-the-data-without-obeying-it\">How to Use the Data Without Obeying It</h2>\n<p>Treat wearable output as a hypothesis to test, not a verdict.</p>\n<ol>\n<li><strong>Use trends, not days.</strong> Compare a 7-day HRV average with a 60-day baseline, and require at least three consecutive days of deviation before changing your plan.</li>\n<li><strong>Anchor to performance.</strong> Test pace at a fixed heart rate on a flat route every one to two weeks. If it worsens by 3% or more across two tests, cut load regardless of your score.</li>\n<li><strong>Cap the ramp.</strong> Keep weekly volume increases near 10% and insert a lighter week, around 70% of peak volume, every third or fourth week.</li>\n<li><strong>Add subjective data.</strong> Rate mood, soreness and motivation from 1 to 5 each morning. A sustained drop in motivation often shows up before sensors catch anything.</li>\n<li><strong>Let disagreement trigger caution.</strong> When the watch says green and your legs say otherwise, take the easier option. An extra easy day costs little; a six-week overreaching hole costs a training block.</li>\n</ol>\n<p>The takeaway: a readiness score tells you how your nervous system looked last night. It does not tell you whether your training is working. Make the second question, not the first, the one you answer every week.</p>",
+    "toc_items": [
+      {
+        "id": "the-watch-says-go-your-body-says-stop",
+        "text": "The Watch Says Go, Your Body Says Stop"
+      },
+      {
+        "id": "why-wearable-metrics-drift-from-reality",
+        "text": "Why Wearable Metrics Drift From Reality"
+      },
+      {
+        "id": "a-worked-example-7-weeks-of-green-scores",
+        "text": "A Worked Example: 7 Weeks of Green Scores"
+      },
+      {
+        "id": "what-the-research-says-about-load",
+        "text": "What the Research Says About Load"
+      },
+      {
+        "id": "how-to-use-the-data-without-obeying-it",
+        "text": "How to Use the Data Without Obeying It"
+      }
+    ],
+    "hash": "90a7041b71cf817a5c2d1d17d6fdcea0"
   },
   {
     "slug": "what-is-the-7-day-training-load-a-runners-guide",
@@ -459,42 +529,6 @@
       }
     ],
     "hash": "d0cc7a29102be4f58dce76f67f1875e6"
-  },
-  {
-    "slug": "what-is-training-load-atl-ctl-and-acwr-explained",
-    "title": "What Is Training Load? ATL, CTL and ACWR Explained",
-    "date": "2026-09-16",
-    "category": "Training Science",
-    "meta_description": "Training load isn't one number — it's the interplay of ATL, CTL and ACWR. Here's how each is calculated and what they reveal about fatigue and injury risk.",
-    "keywords": "training load, ATL, CTL, ACWR, acute training load, chronic training load, training stress balance, overtraining prevention",
-    "read_time": 6,
-    "toc_items": [
-      {
-        "id": "what-is-training-load",
-        "text": "What Training Load Actually Measures"
-      },
-      {
-        "id": "acute-vs-chronic-load",
-        "text": "Acute Load vs. Chronic Load: ATL and CTL"
-      },
-      {
-        "id": "acwr-and-injury-risk",
-        "text": "The Acute:Chronic Workload Ratio and Injury Risk"
-      },
-      {
-        "id": "training-stress-balance",
-        "text": "Training Stress Balance: Reading Your Freshness"
-      },
-      {
-        "id": "common-mistakes",
-        "text": "Common Mistakes in Managing Training Load"
-      }
-    ],
-    "body_html": "<p>Ask ten runners how hard their week was and you'll get ten different answers, most of them useless. \"Tough\" doesn't tell you whether a body is adapting or breaking down. <strong>Training load</strong> exists to replace that guesswork with a number — a way to quantify the physical stress of a session, a week, or a training block so it can be tracked, compared, and managed like any other input to performance.</p><p>The concept isn't new. It underpins nearly every serious training methodology in use today, from cycling power-based coaching to elite marathon programs. What's changed is how accessible it's become — you no longer need a sports science degree to use it, but you do need to understand what the underlying numbers actually mean.</p><h2 id=\"what-is-training-load\">What Training Load Actually Measures</h2><p>At its core, training load combines two variables: <strong>volume</strong> (how much you did) and <strong>intensity</strong> (how hard you did it). Neither alone tells the full story. An easy 90-minute ride and a 20-minute threshold interval session can produce a similar physiological cost despite wildly different durations.</p><p>The earliest formal model for this was the <strong>TRIMP (Training Impulse)</strong> method, developed by exercise physiologist Eric Banister in the 1970s, which weights session duration by heart rate intensity to produce a single load score. A simpler, widely used alternative is <strong>session-RPE</strong> — multiplying perceived exertion (on a 1–10 scale) by session duration in minutes — popularized by sports scientist Carl Foster as a low-cost way to track load without heart rate or power data.</p><p>Modern platforms typically use power (cycling) or pace-and-heart-rate-derived stress scores (running) to calculate a daily load value automatically. The specific formula matters less than the principle: <strong>every session produces a quantifiable stress value</strong>, and those values accumulate over time in ways that predict both fitness gains and breakdown risk.</p><h2 id=\"acute-vs-chronic-load\">Acute Load vs. Chronic Load: ATL and CTL</h2><p>A single day's load score is only useful in context. That's where <strong>ATL (Acute Training Load)</strong> and <strong>CTL (Chronic Training Load)</strong> come in.</p><ul><li><strong>ATL</strong> is a short-term rolling average of daily load, typically calculated over 7 days. It reflects recent fatigue — how much stress you're currently carrying.</li><li><strong>CTL</strong> is a longer-term rolling average, typically over 42 days. It reflects your underlying fitness — the training capacity you've built up over time.</li></ul><p>Both are usually calculated as exponentially weighted moving averages, meaning recent days count more heavily than older ones, but nothing drops off a cliff. This mirrors physiology reasonably well: fatigue from three days ago matters more than fatigue from three weeks ago, but neither disappears instantly.</p><p>The relationship between the two is where things get useful. Rising CTL over months indicates genuine fitness gains. But CTL rising too fast, without a proportional increase in the body's ability to absorb it, is exactly how injuries and illness happen.</p><h2 id=\"acwr-and-injury-risk\">The Acute:Chronic Workload Ratio and Injury Risk</h2><p>The <strong>Acute:Chronic Workload Ratio (ACWR)</strong> — ATL divided by CTL — is the metric that turns these two numbers into a risk signal. Sports scientist Tim Gabbett's research on workload and injury in team-sport athletes helped popularize this ratio, showing that athletes who spike their short-term load well above their established chronic base face measurably higher injury rates than those who build more gradually.</p><p>The general pattern that's emerged from this line of research: a ratio roughly between 0.8 and 1.3 sits in a reasonably safe zone, while ratios pushing toward 1.5 or beyond are associated with elevated injury risk. The mechanism is intuitive — tendons, bone, and connective tissue adapt more slowly than cardiovascular fitness. A sudden jump in acute load can outrun what the musculoskeletal system has been conditioned to handle, even if the athlete feels aerobically capable of the extra work.</p><p>This is precisely why the classic advice to increase weekly mileage by \"no more than 10%\" persists, despite being a blunt approximation — it's a crude proxy for keeping ACWR inside a sustainable range. The ratio itself is a more precise tool because it accounts for the training that came before, not just the week in isolation.</p><h2 id=\"training-stress-balance\">Training Stress Balance: Reading Your Freshness</h2><p>Subtract ATL from CTL and you get <strong>Training Stress Balance (TSB)</strong> — sometimes called \"form.\" A negative TSB means recent load has outpaced your fitness base; you're carrying fatigue. A positive TSB means you've backed off relative to your chronic load; you're fresher, but if sustained too long, fitness starts to erode.</p><p>This is the number that matters most in the final two to three weeks before a goal race. The taper period is a deliberate manipulation of TSB — reducing ATL while preserving as much CTL as possible, so an athlete arrives at the start line with accumulated fitness but minimal residual fatigue. Taper too little and race-day legs feel heavy; taper too long and detraining starts to erase weeks of adaptation.</p><h2 id=\"common-mistakes\">Common Mistakes in Managing Training Load</h2><p>Even athletes who track these numbers regularly tend to misuse them in predictable ways:</p><ul><li><strong>Chasing CTL as a goal in itself.</strong> A higher chronic load number isn't automatically better — it only helps if it translates into performance without crossing into overreaching.</li><li><strong>Comparing raw load scores across athletes.</strong> Load values are relative to an individual's own history and thresholds; there's no universal \"good\" number.</li><li><strong>Ignoring non-training stress.</strong> Poor sleep, illness, and life stress reduce the body's capacity to absorb a given training load, but most load models don't account for them directly.</li><li><strong>Treating recovery weeks as optional.</strong> Deliberately dropping ATL below CTL periodically is what allows chronic fitness to consolidate — skipping it is one of the most common paths to stagnation or injury.</li></ul><p>None of this requires spreadsheets if the underlying system is doing the work. Forma calculates ATL, CTL, and ACWR from your actual training data every day, adjusting recommendations in real time rather than asking you to interpret a chart. As training load models continue to incorporate more physiological context — sleep, HRV, subjective readiness — the goal stays the same: catching the difference between productive stress and accumulating risk before the body has to tell you the hard way.</p>",
-    "status": "published",
-    "_queue_id": "paa-dc8b1471",
-    "_cluster": "training-load",
-    "_composite_score": 5.7
   },
   {
     "slug": "what-is-a-good-training-load-number",
@@ -5958,39 +5992,5 @@
       }
     ],
     "body_html": "<p>Endurance athletes often believe success comes from doing more.</p>\n\n<p>More miles. More intervals. More training.</p>\n\n<p>But one of the biggest lessons in performance science is that <strong>training harder doesn’t always produce better results</strong>.</p>\n\n<h2 id=\"training-creates-stress\">Training creates stress</h2>\n\n<p>Every workout stresses the body. That stress triggers adaptation — but only if the body has time to recover.</p>\n\n<p>Without that recovery window, the adaptation stimulus is lost. Worse, additional stress on an unrecovered system increases injury risk and suppresses performance.</p>\n\n<p>This is the paradox: the thing that makes you fitter (training) also makes you temporarily weaker. Fitness is built in the gap between sessions, not during them.</p>\n\n<h2 id=\"recovery-builds-performance\">Recovery builds performance</h2>\n\n<p>During recovery the body:</p>\n\n<ul>\n  <li>Repairs micro-tears in muscle tissue</li>\n  <li>Restores glycogen stores</li>\n  <li>Strengthens connective tissue and physiological systems</li>\n  <li>Consolidates neurological adaptations</li>\n</ul>\n\n<p>Without adequate recovery there is no adaptation. The training stress becomes noise rather than signal.</p>\n\n<h2 id=\"discipline-of-restraint\">The discipline of restraint</h2>\n\n<p>Elite athletes know when to push and when to recover.</p>\n\n<p>They understand that easy days must remain genuinely easy, and that rest is a critical — not optional — part of the training process.</p>\n\n<p>The temptation to push through fatigue is one of the most common reasons amateur athletes plateau or get injured. The ability to hold back when it matters is a learned skill.</p>\n\n<h2 id=\"sustainable-performance\">Sustainable performance</h2>\n\n<p>The goal is not to maximise effort on one day, but to sustain <strong>consistent training over months and years</strong>.</p>\n\n<p>Athletes who avoid injury and burnout — who train consistently at a manageable load — often outperform those who push relentlessly through fatigue.</p>\n\n<p>The biggest breakthroughs rarely come from doing the most work. They come from doing the <strong>right work at the right time</strong> — and then recovering properly from it.</p>"
-  },
-  {
-    "slug": "wearable-data-runners-overtraining",
-    "title": "How Wearable Data Can Push Runners Into Overtraining (And Fixes)",
-    "category": "Wearables",
-    "meta_description": "Green readiness scores can hide accumulating fatigue. Learn how HRV noise, baseline creep and load ramps push runners into overtraining, and how to avoid it.",
-    "keywords": "wearable data overtraining, runner overtraining, HRV readiness score, overreaching running, training load, resting heart rate, aerobic decoupling",
-    "read_time": 5,
-    "date": "2026-10-12",
-    "status": "published",
-    "body_html": "<p>Your watch says you are 92% recovered, so you run intervals. The next morning it says 88%, so you run again. Three weeks later your easy pace is 15 seconds per km slower and your resting heart rate is up six beats. The data never flagged a problem, because the data was never measuring the problem.</p>\n<h2 id=\"the-watch-says-go-your-body-says-stop\">The Watch Says Go, Your Body Says Stop</h2>\n<p>Overtraining rarely starts with a dramatic collapse. It starts with a run of small, defensible decisions, each backed by a number. Wearables make those decisions feel objective. A green readiness score gives permission, and permission is exactly what a motivated runner is looking for.</p>\n<p>The issue is that most consumer metrics are proxies. Heart rate variability (HRV) reflects autonomic nervous system activity, not muscle damage, tendon load or glycogen status. Resting heart rate reflects cardiovascular strain, not the micro-trauma accumulating in your calves. A device can show a healthy autonomic signal while your tissues fall behind on repair.</p>\n<h2 id=\"why-wearable-metrics-drift-from-reality\">Why Wearable Metrics Drift From Reality</h2>\n<p>Three mechanisms cause most of the trouble.</p>\n<p><strong>Noise masquerading as signal.</strong> Wrist optical sensors estimate HRV from pulse waves, not from the electrical R-R intervals a chest strap records. Agreement with ECG is usually reasonable during still, overnight conditions, but error grows with movement, alcohol and poor skin contact. A single-night reading can swing 10-20% with no change in true recovery. Acting on one night means acting on noise.</p>\n<p><strong>Saturation of the autonomic signal.</strong> In heavily fatigued endurance athletes, HRV can plateau or even rise. Researchers describe this as parasympathetic saturation: the system is so dominant that the metric looks excellent while performance drops. A runner in this state gets a high score precisely when they most need rest.</p>\n<p><strong>Baseline creep.</strong> Most devices compare you with a rolling 30-60 day baseline. If you ramp load gradually, the baseline adapts downward with you. The score stays green because you are being compared with your recently fatigued self, not your fresh self.</p>\n<p>The common thread is that each of these failures is invisible on the dashboard. The number looks fine, so you have no reason to question it.</p>\n<h2 id=\"a-worked-example-7-weeks-of-green-scores\">A Worked Example: 7 Weeks of Green Scores</h2>\n<p>Consider a runner doing 45 km per week who decides to build to 70 km for a spring half marathon. That is a 55% increase, delivered over seven weeks at roughly 8% per week. Their watch shows readiness above 75 on 41 of 49 days.</p>\n<p>Here is what the readiness score missed:</p>\n<ul>\n<li>Easy pace at a fixed heart rate of 140 bpm slowed from 5:50 to 6:08 per km, about 5%.</li>\n<li>Resting heart rate rose from 49 to 53 bpm.</li>\n<li>Weekly HRV average stayed within 4% of baseline, because the baseline had shifted.</li>\n<li>Two short sleep nights were smoothed away by a 7-day trend.</li>\n</ul>\n<p>The drift between pace and heart rate was the real warning. A 5% loss of aerobic efficiency at constant effort over several weeks is a far stronger indicator of accumulated fatigue than any single readiness number. By week seven this runner shows the signature of non-functional overreaching: lower performance, higher perceived effort, and a recovery time measured in weeks rather than days.</p>\n<h2 id=\"what-the-research-says-about-load\">What the Research Says About Load</h2>\n<p>Rapid increases in training load are among the most consistent predictors of injury and overreaching. Studies of the acute-to-chronic workload ratio have associated values above roughly 1.5 with materially higher injury risk, although the method has well-known statistical limitations. The practical point holds: how fast you add load matters more than any single recovery reading.</p>\n<p>Wearables compound this because they reward engagement, not restraint. Streaks, closed rings and weekly targets all nudge you toward more. None of them has a built-in mechanism for telling you to do less, and a readiness score that stays green removes the last prompt to question the plan.</p>\n<h2 id=\"how-to-use-the-data-without-obeying-it\">How to Use the Data Without Obeying It</h2>\n<p>Treat wearable output as a hypothesis to test, not a verdict.</p>\n<ol>\n<li><strong>Use trends, not days.</strong> Compare a 7-day HRV average with a 60-day baseline, and require at least three consecutive days of deviation before changing your plan.</li>\n<li><strong>Anchor to performance.</strong> Test pace at a fixed heart rate on a flat route every one to two weeks. If it worsens by 3% or more across two tests, cut load regardless of your score.</li>\n<li><strong>Cap the ramp.</strong> Keep weekly volume increases near 10% and insert a lighter week, around 70% of peak volume, every third or fourth week.</li>\n<li><strong>Add subjective data.</strong> Rate mood, soreness and motivation from 1 to 5 each morning. A sustained drop in motivation often shows up before sensors catch anything.</li>\n<li><strong>Let disagreement trigger caution.</strong> When the watch says green and your legs say otherwise, take the easier option. An extra easy day costs little; a six-week overreaching hole costs a training block.</li>\n</ol>\n<p>The takeaway: a readiness score tells you how your nervous system looked last night. It does not tell you whether your training is working. Make the second question, not the first, the one you answer every week.</p>",
-    "toc_items": [
-      {
-        "id": "the-watch-says-go-your-body-says-stop",
-        "text": "The Watch Says Go, Your Body Says Stop"
-      },
-      {
-        "id": "why-wearable-metrics-drift-from-reality",
-        "text": "Why Wearable Metrics Drift From Reality"
-      },
-      {
-        "id": "a-worked-example-7-weeks-of-green-scores",
-        "text": "A Worked Example: 7 Weeks of Green Scores"
-      },
-      {
-        "id": "what-the-research-says-about-load",
-        "text": "What the Research Says About Load"
-      },
-      {
-        "id": "how-to-use-the-data-without-obeying-it",
-        "text": "How to Use the Data Without Obeying It"
-      }
-    ],
-    "hash": "90a7041b71cf817a5c2d1d17d6fdcea0"
   }
 ]
