@@ -1719,3 +1719,67 @@ Treat wearable output as a hypothesis to test, not a verdict.
 5. **Let disagreement trigger caution.** When the watch says green and your legs say otherwise, take the easier option. An extra easy day costs little; a six-week overreaching hole costs a training block.
 
 The takeaway: a readiness score tells you how your nervous system looked last night. It does not tell you whether your training is working. Make the second question, not the first, the one you answer every week.
+
+
+---
+
+## 32. Why Your HRV Drops During Race Week (and What to Do About It)
+
+You cut your training load by 40%. You are sleeping in your own bed, eating well and running easy. Then your watch tells you HRV is down 20% and your readiness score is amber. The logic says you should be more recovered than at any point in the block. The data says otherwise.
+
+The usual response is to worry that the taper is not working. In most cases it is, and the HRV drop is telling you something different from what you think.
+
+## The drop is usually not fatigue
+
+HRV, measured as rMSSD during sleep, reflects vagal (parasympathetic) tone. After hard training, it falls because your body is in repair mode and sympathetic activity stays elevated. Reduce the load and it normally recovers, and often rises above baseline.
+
+Race week breaks that pattern because the cause of suppression changes. It is no longer mechanical load. It is anticipation, disrupted routine and altered fuelling. Those inputs hit the same autonomic signal, so the number looks identical to overtraining while the underlying state is very different.
+
+The key distinction: fatigue-driven HRV suppression comes with heavy legs, poor session quality and a resting heart rate that creeps up over weeks. Race-week suppression arrives over two or three days alongside normal or good legs.
+
+## What is actually pushing HRV down
+
+Three mechanisms account for most of it.
+
+**Pre-race arousal.** Anticipating a goal event raises sympathetic activity. Studies of competition-related stress in athletes consistently show reduced vagal indices in the 24 to 48 hours before an event. You are not tired. You are switched on.
+
+**Sleep disruption.** Race-week sleep is often shorter and more fragmented, especially two nights out when nerves peak. Less deep sleep means less of the high-vagal-tone window that produces your best rMSSD readings. Travel, a hotel bed and time zone changes make it worse.
+
+**Carbohydrate loading and fluid shifts.** Raising carbohydrate intake to 8 to 10 g per kg of body mass stores glycogen along with roughly 3 g of water per gram. Bodyweight can rise 1 to 2 kg. Higher intake, later meals, extra sodium and sometimes alcohol or caffeine changes can all nudge overnight heart rate up and HRV down.
+
+There is also a less common case. In very well-trained athletes, heavy load can produce unusually high vagal tone that behaves oddly, with HRV dropping even as the athlete recovers. If your numbers have always been erratic under hard blocks, treat any single reading with extra suspicion.
+
+## A worked example
+
+Take a marathoner with a 28-day baseline of rMSSD 68 ms and resting heart rate of 46 bpm. Peak week was 72 km. Race week drops to 38 km.
+
+- Monday to Wednesday: rMSSD 66, 70, 67 ms. Normal.
+- Thursday (race is Sunday): 55 ms. Sleep 6 h 40 min, down from an average of 7 h 50 min. Resting HR 50.
+- Friday: 52 ms. Resting HR 51.
+- Saturday: 49 ms. Resting HR 52 after a late carb-heavy dinner and poor sleep.
+
+The drop from 68 to 49 is about 28%. On a normal training week, that would justify cutting a session. Here, the legs felt fine, the 20-minute shakeout at easy pace felt smooth, and the prior three days were normal. The pattern points to arousal and sleep, not accumulated damage. This runner raced on Sunday and ran a 2-minute personal best.
+
+The sequence matters more than the single value. A sharp three-day dip after a flat, healthy baseline is a very different signal from a slow downward slide across three weeks.
+
+## Why readiness scores mislead you this week
+
+Most readiness algorithms compare tonight's HRV with your recent baseline and penalise the gap. They have no way to know that you are in a taper, that the event is on Sunday, or that your sleep fell apart because of nerves. They apply the same rules they use in week 10 of a build.
+
+That creates a feedback loop. A poor score raises anxiety, anxiety lowers HRV further, and some athletes respond by adding rest or skipping the short openers that actually help. The score is not wrong about the physiology. It is wrong about what to do with it.
+
+## What to do in race week
+
+**Keep the openers.** Short efforts, such as 4 to 6 x 1 minute at goal race pace or slightly faster, maintain neuromuscular readiness without adding meaningful fatigue. Do not skip them because of an amber score.
+
+**Protect sleep two nights before, not the night before.** The night before a race is often poor for everyone, and performance data suggests one bad night has little effect on endurance output. Sleep banked across the previous week matters more. Aim for 8 hours opportunity on Thursday and Friday, and stop worrying about Saturday.
+
+**Standardise fuelling timing.** Spread carbohydrate across the day instead of stacking one huge dinner. Finish the last large meal at least 3 hours before bed, and keep alcohol out of the week.
+
+**Add a downregulation routine.** Ten minutes of slow breathing at around 6 breaths per minute, with a longer exhale, acutely raises vagal activity. Use it in the evening. It will not rescue the number, but it can help sleep.
+
+**Judge trends, not days.** Compare the 7-day average with your baseline, and check resting heart rate and how the legs feel on easy runs. If all three agree that you are recovering, ignore a single low reading.
+
+## The takeaway
+
+Low HRV in race week is a stress signal, not necessarily a fatigue signal. Check three things: whether your legs feel good, whether resting heart rate is within about 5 bpm of baseline, and whether the dip began in the last two to three days. If yes to all three, trust the taper, keep the openers and treat the number as noise. If the decline started weeks ago and your sessions feel flat, that is a training problem, and race week is the wrong time to try to fix it.
