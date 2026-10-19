@@ -1,5 +1,41 @@
 [
   {
+    "slug": "training-load-on-coros-what-the-numbers-mean",
+    "title": "Training Load on Coros: What the Numbers Mean",
+    "date": "2026-10-19",
+    "category": "Training Science",
+    "meta_description": "Coros training load explained: how it's calculated, how it maps to ATL, CTL and ACWR, and how to read the numbers so you train harder without breaking down.",
+    "keywords": "training load coros meaning, coros training load, coros base fitness, acute chronic workload ratio, ATL CTL explained, overtraining prevention, training load management",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "what-coros-training-load-measures",
+        "text": "What Coros training load actually measures"
+      },
+      {
+        "id": "acute-chronic-framework",
+        "text": "How it maps to acute and chronic load"
+      },
+      {
+        "id": "reading-the-ratio",
+        "text": "Reading the ratio: where the danger zone sits"
+      },
+      {
+        "id": "where-the-number-misleads",
+        "text": "Where the number misleads you"
+      },
+      {
+        "id": "using-load-to-make-decisions",
+        "text": "Using load to make better decisions"
+      }
+    ],
+    "body_html": "<p>A Coros watch gives every workout a single number, then stacks those numbers into a running picture of your fitness and fatigue. Most athletes glance at it, see a colour, and move on. But the figure only helps if you know <strong>what it measures, what it ignores, and how it connects to the load model behind it</strong>.</p><h2 id=\"what-coros-training-load-measures\">What Coros training load actually measures</h2><p><strong>Training load</strong> is an estimate of the physiological cost of a session. It is not distance, duration or pace. It is a weighted value that rises with both how long you trained and how hard your body worked while doing it.</p><p>Wearables of this type generally derive that cost from heart rate, scaled against your resting and maximum values. The idea descends from the TRIMP (training impulse) concept, which weights time spent at higher heart rates more heavily than time spent at lower ones. That weighting matters: 60 minutes of easy running and 60 minutes with a hard tempo block in the middle should not score the same, and they don't.</p><p>The result is a single number per workout. Forty minutes at conversational effort produces a small value. A long run with sustained work near threshold produces a large one. Individual values are only moderately useful on their own. The real information is in how they accumulate.</p><h2 id=\"acute-chronic-framework\">How it maps to acute and chronic load</h2><p>Sports science has used a two-part view of training for decades. The Banister impulse-response model, published in the 1970s, treats each session as producing both <strong>fitness</strong>, which builds slowly and decays slowly, and <strong>fatigue</strong>, which builds quickly and clears quickly. Your readiness is the gap between them.</p><p>Modern platforms express that idea as two rolling figures:</p><ul><li><strong>Acute training load (ATL):</strong> a short window, usually about seven days. It reflects recent fatigue and responds fast to a hard block.</li><li><strong>Chronic training load (CTL):</strong> a long window, often six weeks or more. It reflects the fitness you have built and moves slowly.</li></ul><p>Coros presents the same logic under its own labels. A short-term load figure covers your recent week, while a longer-term baseline, which the platform calls base fitness, averages your load over several weeks. Exact window lengths and smoothing are the manufacturer's choice, so check your device's documentation before comparing numbers across brands or against a spreadsheet. The structure, however, is the standard acute-versus-chronic comparison.</p><h2 id=\"reading-the-ratio\">Reading the ratio: where the danger zone sits</h2><p>Divide acute load by chronic load and you get the <strong>acute:chronic workload ratio (ACWR)</strong>. A ratio of 1.0 means this week matches what your body has been absorbing. Above 1.0, you are asking for more than recent history supports. Below it, you are tapering or detraining.</p><p>The widely cited guidance, drawn from team-sport research by Tim Gabbett and colleagues, suggests that a ratio of roughly <strong>0.8 to 1.3</strong> is a sensible zone, with injury risk climbing as the ratio pushes toward 1.5 and beyond. The mechanism is intuitive. Muscle, tendon and bone adapt over weeks, but a sudden spike in stress arrives faster than connective tissue can remodel. Cardiovascular fitness adapts quickly. Your structures do not.</p><p>The ratio is a useful guardrail, not a law. Researchers, including Franco Impellizzeri and colleagues, have published pointed critiques of ACWR, noting that the ratio can be statistically unstable and that its thresholds do not transfer cleanly between sports or individuals. Treat 1.3 as a prompt to look closer, not a line you cross at your peril.</p><h2 id=\"where-the-number-misleads\">Where the number misleads you</h2><p>Heart-rate-derived load has predictable blind spots, and knowing them is what separates useful interpretation from blind trust.</p><p><strong>Heat, dehydration and caffeine</strong> raise heart rate without a matching rise in mechanical stress, so the score inflates. <strong>Poor sleep and illness</strong> do the same, and in those cases the inflated number is arguably honest, because your body really is working harder. <strong>Short, maximal efforts</strong> are the opposite problem. A set of 10-second sprints barely moves heart rate, so heavy neuromuscular and tendon stress registers as almost nothing.</p><p>Strength work, hills and technical terrain add further noise. Eccentric loading from a long downhill damages muscle far more than its heart rate suggests. If your numbers look low after a brutal descent and your legs disagree, trust the legs.</p><p>There is also the baseline problem. The ratio is only as sound as the chronic figure underneath it. After illness, a holiday or a block of travel, your chronic load drops, and a perfectly reasonable week of training can produce an alarming ratio. The number is not wrong. It is telling you that you are re-entering training faster than your recent history supports, which is exactly the situation where injuries cluster.</p><h2 id=\"using-load-to-make-decisions\">Using load to make better decisions</h2><p>Turn the numbers into rules you can act on:</p><ul><li><strong>Build gradually.</strong> Aim to keep weekly load growth modest. A common rule of thumb is no more than around 10 percent a week, with a recovery week every third or fourth week.</li><li><strong>Watch the ratio after interruptions.</strong> When chronic load has dropped, rebuild toward your old volume over two to three weeks rather than snapping back to it.</li><li><strong>Cross-check with how you feel.</strong> Elevated resting heart rate, suppressed heart rate variability, poor sleep and heavy legs alongside a high ratio is a much stronger warning than the ratio alone.</li><li><strong>Protect the easy days.</strong> Most athletes don't overreach on hard days. They do it by letting easy days drift into moderate territory, which quietly lifts acute load week after week.</li></ul><p>Used this way, training load stops being a dashboard curiosity and becomes a planning tool. It tells you how much stress your body has been absorbing and how much more it can plausibly take.</p><p>The limitation is that a watch reports the past. It tells you what you did, not what you should do tomorrow. <strong>Adaptive training closes that gap</strong>, using load history, recovery signals and your recent response to adjust upcoming sessions rather than leaving a fixed plan to run regardless. That is the principle Forma is built around: the same acute and chronic maths, applied forward so that your next workout reflects the athlete you are this week, not the one the plan assumed.</p>",
+    "status": "published",
+    "_queue_id": "autosugg-426a6dd4",
+    "_cluster": "training-load",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "the-30-30-30-rule-for-cycling-explained",
     "title": "The 30 30 30 Rule for Cycling Explained",
     "date": "2026-10-17",
