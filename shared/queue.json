@@ -1190,9 +1190,9 @@
     "cluster": "cycling-endurance",
     "content_type": "article",
     "composite_score": 5.7,
-    "status": "unassigned",
-    "assigned_to": null,
-    "due_date": null,
+    "status": "assigned",
+    "assigned_to": "content_generator",
+    "due_date": "2026-10-23",
     "published_url": null
   },
   {
