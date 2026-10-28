@@ -1,5 +1,41 @@
 [
   {
+    "slug": "what-is-a-good-injury-prevention-plan-for-running",
+    "title": "What Is a Good Injury Prevention Plan for Running?",
+    "date": "2026-10-28",
+    "category": "Recovery",
+    "meta_description": "A good running injury prevention plan combines load management, strength work and recovery monitoring. Here's how to build one that holds up.",
+    "keywords": "running injury prevention, injury prevention plan for runners, strength training for runners, load management running, running biomechanics, acute chronic workload, running recovery",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "why-runners-get-injured",
+        "text": "Why Runners Actually Get Injured"
+      },
+      {
+        "id": "manage-your-load",
+        "text": "Manage Load Before Anything Else"
+      },
+      {
+        "id": "strength-training",
+        "text": "Make Strength Training Non-Negotiable"
+      },
+      {
+        "id": "biomechanics",
+        "text": "Use Biomechanics as a Tool, Not a Fix"
+      },
+      {
+        "id": "recovery-signals",
+        "text": "Read Recovery Signals Early"
+      }
+    ],
+    "body_html": "<p>Most running injuries are not caused by bad luck, bad shoes or bad form. They happen when <strong>the load you apply exceeds the load your tissues are prepared to absorb</strong>. A good injury prevention plan is therefore less a list of exercises and more a system for keeping training stress and tissue capacity in balance, week after week.</p><h2 id=\"why-runners-get-injured\">Why Runners Actually Get Injured</h2><p>Running is a repetitive, impact-driven activity. Each stride loads the foot, shin, knee and hip with a force of roughly two to three times body weight, and a marathon-paced runner takes well over 150,000 steps in a typical training week. Tendons, bones and muscles all adapt to that stress, but they adapt at different speeds.</p><p>Muscle and aerobic fitness respond within weeks. Tendon and bone take considerably longer to remodel. This mismatch is the core problem: <strong>your engine can improve faster than your chassis</strong>. A runner who feels fitter after a good block and adds mileage or intensity too quickly is often exactly the runner who ends up with a stress reaction, Achilles pain or runner's knee.</p><p>The pattern is consistent. Injuries cluster around sudden changes: a jump in weekly volume, a new block of speed work, a switch in surface or footwear, or a return from time off at the old training level. Prevention starts with spotting those moments before they happen.</p><h2 id=\"manage-your-load\">Manage Load Before Anything Else</h2><p>Load management is the highest-leverage part of any plan. It means controlling how much stress you add, how quickly, and how it is distributed across the week.</p><ul><li><strong>Progress gradually.</strong> The familiar 10% weekly increase rule is a crude guide, not a law. Smaller jumps are safer when you are building from a low base or returning from a layoff, and a planned down week every three to four weeks gives connective tissue time to catch up.</li><li><strong>Separate hard days.</strong> Intervals, tempo work and long runs carry the most mechanical and metabolic stress. Stacking them on consecutive days removes the recovery that makes the stress productive.</li><li><strong>Watch the spikes, not just the totals.</strong> A single long run that is much longer than anything in the previous few weeks can overload tissue even if weekly mileage looks reasonable.</li></ul><p>The principle behind the <strong>acute to chronic workload ratio</strong> is useful here: compare your recent training load, such as the last week, with what your body has been conditioned to over the last four. When the recent figure runs far ahead of the baseline, risk rises. The exact thresholds are debated and the ratio is not a precise predictor, but as a sanity check on sudden spikes it is practical.</p><h2 id=\"strength-training\">Make Strength Training Non-Negotiable</h2><p>If load management controls the demand, strength work raises the ceiling. Stronger muscles and tendons tolerate more repeated impact before fatiguing, and fatigued muscles transfer more stress to passive structures like bone and tendon.</p><p>For serious amateurs, two short sessions a week of 20 to 30 minutes is enough to make a difference. Prioritise movements that mirror what running demands:</p><ul><li><strong>Calf and soleus strength:</strong> straight-leg and bent-knee calf raises, progressed to slow, heavy reps. The calf complex absorbs and returns a large share of the force in every stride.</li><li><strong>Single-leg work:</strong> split squats, step-ups and single-leg Romanian deadlifts. Running is a series of single-leg landings, so unilateral strength and balance matter.</li><li><strong>Hip and glute strength:</strong> hip thrusts, side planks and lateral band walks help control pelvic and knee position as fatigue sets in.</li><li><strong>Hamstring loading:</strong> Nordic curls or heavy hamstring bridges build resilience for faster running, where hamstring strain risk climbs.</li></ul><p>Lift heavy enough that the last two reps are genuinely difficult, and keep a full session out of the 24 hours before a key workout. Strength training done well does not cost running performance; it tends to improve running economy by improving the stiffness and force output of the lower leg.</p><h2 id=\"biomechanics\">Use Biomechanics as a Tool, Not a Fix</h2><p>Runners often chase form changes as the answer to injuries. The evidence for a single correct running style is weak, and forcing a major change, such as switching from heel strike to forefoot strike, mostly moves stress from one structure to another. The knee may be relieved while the Achilles and calf take more.</p><p>A more useful approach is targeted. <strong>Cadence</strong> is the clearest example. Raising step rate by around 5 to 10% shortens stride length and reduces how far the foot lands in front of the body, which lowers the braking load at the knee and hip. It is a modest adjustment you can make with a metronome or watch, and it suits runners who overstride or who have recurring knee pain.</p><p>Beyond that, treat gait analysis as a way to spot asymmetries or clear faults when you are already getting symptoms, not as a reason to rebuild your stride from scratch.</p><h2 id=\"recovery-signals\">Read Recovery Signals Early</h2><p>No plan survives contact with real life. Poor sleep, work stress, illness and accumulated fatigue all reduce your capacity to absorb a given session, which means the same workout carries a different injury risk on different days.</p><p>The practical skill is learning to read the early signals: a resting heart rate elevated several beats above your baseline, a drop in heart rate variability, heavier legs than normal at an easy pace, or localised pain that shows up in the first mile and doesn't ease. General muscle soreness is normal. <strong>Sharp, focal or worsening pain that changes how you run is not</strong>, and it justifies cutting the session short or swapping it for low-impact work before a niggle turns into a six-week layoff.</p><p>The consistent theme is that a static plan cannot account for any of this. A schedule written weeks ago has no idea you slept five hours or that your calves have been tight for three days. <strong>Adaptive training closes that gap</strong> by adjusting intensity and volume based on how your body is actually responding, and that is the approach Forma is built around: using your training and recovery data to keep load progressing without pushing past what you can absorb.</p>",
+    "status": "published",
+    "_queue_id": "paa-0407519a",
+    "_cluster": "injury-prevention",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "what-is-the-most-common-injury-while-running",
     "title": "What is the Most Common Injury While Running",
     "meta_description": "Everything endurance athletes need to know about what is the most common injury while running.",
@@ -49,6 +85,44 @@
     "_queue_id": "paa-10cd27c4",
     "_cluster": "cycling-endurance",
     "_composite_score": 5.7
+  },
+  {
+    "slug": "build-aerobic-base-without-getting-bored",
+    "title": "How to Build Your Aerobic Base Without Getting Bored: A Coach's Guide",
+    "category": "Training Science",
+    "meta_description": "Aerobic base training doesn't have to mean endless slow junk miles. Learn how to build aerobic fitness with variety, structure and numbers, minus the boredom.",
+    "keywords": "aerobic base, base training, zone 2 training, build aerobic base, easy running, polarized training, heart rate zones, endurance training",
+    "read_time": 5,
+    "date": "2026-10-26",
+    "status": "published",
+    "body_html": "<p>Most athletes don't quit base training because it's too hard. They quit because it's too dull, then they drift into the grey zone: runs and rides that are too fast to build a base and too slow to build speed. The fix is not more willpower. It is understanding what the base needs from you, and noticing that boredom is mostly a design problem.</p>\n<h2 id=\"why-slow-is-not-the-problem\">Why Slow Is Not the Problem</h2>\n<p>The usual advice is to slow down and accumulate hours. That part is right. Studies of elite endurance athletes, including Stephen Seiler's work on rowers, runners and cross-country skiers, consistently find that around 80% of sessions are done at low intensity. Those athletes are not bored into mediocrity. They simply spend most of their time where the adaptations are cheapest to earn.</p>\n<p>The trouble is that recreational athletes hear \"80% easy\" and translate it as \"the same easy loop, at the same pace, every day.\" Nothing in the physiology requires that. What the base needs is time spent at low intensity, not identical sessions.</p>\n<h2 id=\"what-base-training-actually-builds\">What Base Training Actually Builds</h2>\n<p>Low-intensity volume drives a specific set of adaptations: more mitochondria and better mitochondrial function in working muscle, denser capillary networks, a higher proportion of energy from fat at a given pace, and a larger stroke volume. These changes accumulate over weeks to months and not in single sessions, which is why consistency beats any individual workout.</p>\n<p>It also explains why intensity is the wrong lever for boredom. Hard efforts add fatigue that cuts into the volume you can sustain. If a tempo session costs you two easy days of recovery, you have traded base-building time for a feeling of progress.</p>\n<h2 id=\"vary-the-stimulus-inside-zone-2\">Vary the Stimulus Inside Zone 2</h2>\n<p>Zone 2 is a range, not a single number. For most athletes it spans roughly 60 to 75% of maximum heart rate, or about 55 to 75% of threshold power on the bike. You can move within that range and change almost everything else.</p>\n<ul>\n<li><strong>Change the terrain.</strong> Rolling trails, a flat canal path and a steady hill climb at the same heart rate feel completely different.</li>\n<li><strong>Change the structure.</strong> Do 3 x 20 minutes at the top of zone 2 with 5 minutes at the bottom, rather than one 75-minute block.</li>\n<li><strong>Change the mode.</strong> Run, ride, row, hike or use the elliptical. Cross-training keeps aerobic load high while spreading the mechanical stress.</li>\n<li><strong>Change the company.</strong> Easy pace is the one intensity at which you can hold a full conversation. Use that.</li>\n<li><strong>Change the goal.</strong> Aim for a low heart rate drift, a negative split, or a set of new roads and not a faster average pace.</li>\n</ul>\n<p>None of these moves the session out of the aerobic range. They only make it feel like a different session.</p>\n<h2 id=\"a-six-hour-week-worked-through\">A Six Hour Week Worked Through</h2>\n<p>Take a runner and cyclist with six hours of training per week. A common but dull layout is six one-hour sessions at the same pace. Here is a version with the same volume and about 80% of the time at low intensity:</p>\n<ul>\n<li><strong>Monday:</strong> 45 min easy run, relaxed, flat.</li>\n<li><strong>Tuesday:</strong> 60 min ride in zone 2 with three 10 min blocks at the top of the range.</li>\n<li><strong>Wednesday:</strong> 50 min run including 6 x 20 second strides on a gentle hill, full recovery between. About 3 minutes total of fast running.</li>\n<li><strong>Thursday:</strong> Rest or 30 min walk.</li>\n<li><strong>Friday:</strong> 60 min trail run, effort capped by heart rate, not pace.</li>\n<li><strong>Saturday:</strong> 105 min long ride, last 30 minutes at the top of zone 2.</li>\n<li><strong>Sunday:</strong> 50 min easy spin or swim.</li>\n</ul>\n<p>That totals six hours. The strides are the only fast work, and they add roughly 3 minutes of intensity across the week. They add neuromuscular variety and break the monotony without adding meaningful fatigue. Everything else sits in the aerobic range, but no two days look alike.</p>\n<h2 id=\"let-heart-rate-and-hrv-set-the-ceiling\">Let Heart Rate and HRV Set the Ceiling</h2>\n<p>Boredom pushes people to go harder, and the grey zone is where that ends up. Two guardrails help.</p>\n<p>First, cap easy sessions with heart rate. If your zone 2 ceiling is 145 bpm, a hill that pushes you to 158 is a tempo effort, whatever the pace says. Walk the top of it.</p>\n<p>Second, use heart rate variability trends to decide how much volume to add. A resting HRV that stays within its normal range for your baseline suggests you are absorbing the load. A sustained drop of more than a week, combined with a higher resting heart rate, is a signal to hold volume steady and keep the intensity easy. Single-day readings are noisy, so judge the seven-day average, not the morning number.</p>\n<p>Increase weekly volume by about 5 to 10% when these signals are stable, and then repeat that for three weeks before taking a lighter week. Slow progression is the thing that makes a base last.</p>\n<h2 id=\"the-takeaway\">The Takeaway</h2>\n<p>You do not need to love every easy session. You need to complete a lot of them without drifting upward in intensity. To do that:</p>\n<ul>\n<li>Keep roughly 80% of weekly time at low intensity, capped by heart rate.</li>\n<li>Vary terrain, structure and mode so no two easy days feel the same.</li>\n<li>Add short strides once or twice a week for variety and neuromuscular work.</li>\n<li>Progress volume by 5 to 10% when HRV and resting heart rate are stable.</li>\n<li>Judge a base block by what it lets you repeat, week after week, and not by how hard any single day felt.</li>\n</ul>",
+    "toc_items": [
+      {
+        "id": "why-slow-is-not-the-problem",
+        "text": "Why Slow Is Not the Problem"
+      },
+      {
+        "id": "what-base-training-actually-builds",
+        "text": "What Base Training Actually Builds"
+      },
+      {
+        "id": "vary-the-stimulus-inside-zone-2",
+        "text": "Vary the Stimulus Inside Zone 2"
+      },
+      {
+        "id": "a-six-hour-week-worked-through",
+        "text": "A Six Hour Week Worked Through"
+      },
+      {
+        "id": "let-heart-rate-and-hrv-set-the-ceiling",
+        "text": "Let Heart Rate and HRV Set the Ceiling"
+      },
+      {
+        "id": "the-takeaway",
+        "text": "The Takeaway"
+      }
+    ],
+    "hash": "186c7110d63135469bd68615546af946"
   },
   {
     "slug": "what-is-considered-endurance-cycling-a-power-based-guide",
@@ -702,21 +776,6 @@
     "status": "published",
     "_queue_id": "paa-4057488e",
     "_cluster": "marathon-training",
-    "_composite_score": 5.7
-  },
-  {
-    "slug": "what-is-a-good-injury-prevention-plan-for-running",
-    "title": "What is a Good Injury Prevention Plan for Running",
-    "meta_description": "Everything endurance athletes need to know about what is a good injury prevention plan for running.",
-    "category": "Recovery",
-    "date": "2026-09-28",
-    "read_time": 6,
-    "keywords": "What is a good injury prevention plan for running?",
-    "status": "draft",
-    "body_html": "<p><em>Coming soon: What is a Good Injury Prevention Plan for Running</em></p>",
-    "toc_items": [],
-    "_queue_id": "paa-0407519a",
-    "_cluster": "injury-prevention",
     "_composite_score": 5.7
   },
   {
@@ -6282,43 +6341,5 @@
       }
     ],
     "body_html": "<p>Endurance athletes often believe success comes from doing more.</p>\n\n<p>More miles. More intervals. More training.</p>\n\n<p>But one of the biggest lessons in performance science is that <strong>training harder doesn’t always produce better results</strong>.</p>\n\n<h2 id=\"training-creates-stress\">Training creates stress</h2>\n\n<p>Every workout stresses the body. That stress triggers adaptation — but only if the body has time to recover.</p>\n\n<p>Without that recovery window, the adaptation stimulus is lost. Worse, additional stress on an unrecovered system increases injury risk and suppresses performance.</p>\n\n<p>This is the paradox: the thing that makes you fitter (training) also makes you temporarily weaker. Fitness is built in the gap between sessions, not during them.</p>\n\n<h2 id=\"recovery-builds-performance\">Recovery builds performance</h2>\n\n<p>During recovery the body:</p>\n\n<ul>\n  <li>Repairs micro-tears in muscle tissue</li>\n  <li>Restores glycogen stores</li>\n  <li>Strengthens connective tissue and physiological systems</li>\n  <li>Consolidates neurological adaptations</li>\n</ul>\n\n<p>Without adequate recovery there is no adaptation. The training stress becomes noise rather than signal.</p>\n\n<h2 id=\"discipline-of-restraint\">The discipline of restraint</h2>\n\n<p>Elite athletes know when to push and when to recover.</p>\n\n<p>They understand that easy days must remain genuinely easy, and that rest is a critical — not optional — part of the training process.</p>\n\n<p>The temptation to push through fatigue is one of the most common reasons amateur athletes plateau or get injured. The ability to hold back when it matters is a learned skill.</p>\n\n<h2 id=\"sustainable-performance\">Sustainable performance</h2>\n\n<p>The goal is not to maximise effort on one day, but to sustain <strong>consistent training over months and years</strong>.</p>\n\n<p>Athletes who avoid injury and burnout — who train consistently at a manageable load — often outperform those who push relentlessly through fatigue.</p>\n\n<p>The biggest breakthroughs rarely come from doing the most work. They come from doing the <strong>right work at the right time</strong> — and then recovering properly from it.</p>"
-  },
-  {
-    "slug": "build-aerobic-base-without-getting-bored",
-    "title": "How to Build Your Aerobic Base Without Getting Bored: A Coach's Guide",
-    "category": "Training Science",
-    "meta_description": "Aerobic base training doesn't have to mean endless slow junk miles. Learn how to build aerobic fitness with variety, structure and numbers, minus the boredom.",
-    "keywords": "aerobic base, base training, zone 2 training, build aerobic base, easy running, polarized training, heart rate zones, endurance training",
-    "read_time": 5,
-    "date": "2026-10-26",
-    "status": "published",
-    "body_html": "<p>Most athletes don't quit base training because it's too hard. They quit because it's too dull, then they drift into the grey zone: runs and rides that are too fast to build a base and too slow to build speed. The fix is not more willpower. It is understanding what the base needs from you, and noticing that boredom is mostly a design problem.</p>\n<h2 id=\"why-slow-is-not-the-problem\">Why Slow Is Not the Problem</h2>\n<p>The usual advice is to slow down and accumulate hours. That part is right. Studies of elite endurance athletes, including Stephen Seiler's work on rowers, runners and cross-country skiers, consistently find that around 80% of sessions are done at low intensity. Those athletes are not bored into mediocrity. They simply spend most of their time where the adaptations are cheapest to earn.</p>\n<p>The trouble is that recreational athletes hear \"80% easy\" and translate it as \"the same easy loop, at the same pace, every day.\" Nothing in the physiology requires that. What the base needs is time spent at low intensity, not identical sessions.</p>\n<h2 id=\"what-base-training-actually-builds\">What Base Training Actually Builds</h2>\n<p>Low-intensity volume drives a specific set of adaptations: more mitochondria and better mitochondrial function in working muscle, denser capillary networks, a higher proportion of energy from fat at a given pace, and a larger stroke volume. These changes accumulate over weeks to months and not in single sessions, which is why consistency beats any individual workout.</p>\n<p>It also explains why intensity is the wrong lever for boredom. Hard efforts add fatigue that cuts into the volume you can sustain. If a tempo session costs you two easy days of recovery, you have traded base-building time for a feeling of progress.</p>\n<h2 id=\"vary-the-stimulus-inside-zone-2\">Vary the Stimulus Inside Zone 2</h2>\n<p>Zone 2 is a range, not a single number. For most athletes it spans roughly 60 to 75% of maximum heart rate, or about 55 to 75% of threshold power on the bike. You can move within that range and change almost everything else.</p>\n<ul>\n<li><strong>Change the terrain.</strong> Rolling trails, a flat canal path and a steady hill climb at the same heart rate feel completely different.</li>\n<li><strong>Change the structure.</strong> Do 3 x 20 minutes at the top of zone 2 with 5 minutes at the bottom, rather than one 75-minute block.</li>\n<li><strong>Change the mode.</strong> Run, ride, row, hike or use the elliptical. Cross-training keeps aerobic load high while spreading the mechanical stress.</li>\n<li><strong>Change the company.</strong> Easy pace is the one intensity at which you can hold a full conversation. Use that.</li>\n<li><strong>Change the goal.</strong> Aim for a low heart rate drift, a negative split, or a set of new roads and not a faster average pace.</li>\n</ul>\n<p>None of these moves the session out of the aerobic range. They only make it feel like a different session.</p>\n<h2 id=\"a-six-hour-week-worked-through\">A Six Hour Week Worked Through</h2>\n<p>Take a runner and cyclist with six hours of training per week. A common but dull layout is six one-hour sessions at the same pace. Here is a version with the same volume and about 80% of the time at low intensity:</p>\n<ul>\n<li><strong>Monday:</strong> 45 min easy run, relaxed, flat.</li>\n<li><strong>Tuesday:</strong> 60 min ride in zone 2 with three 10 min blocks at the top of the range.</li>\n<li><strong>Wednesday:</strong> 50 min run including 6 x 20 second strides on a gentle hill, full recovery between. About 3 minutes total of fast running.</li>\n<li><strong>Thursday:</strong> Rest or 30 min walk.</li>\n<li><strong>Friday:</strong> 60 min trail run, effort capped by heart rate, not pace.</li>\n<li><strong>Saturday:</strong> 105 min long ride, last 30 minutes at the top of zone 2.</li>\n<li><strong>Sunday:</strong> 50 min easy spin or swim.</li>\n</ul>\n<p>That totals six hours. The strides are the only fast work, and they add roughly 3 minutes of intensity across the week. They add neuromuscular variety and break the monotony without adding meaningful fatigue. Everything else sits in the aerobic range, but no two days look alike.</p>\n<h2 id=\"let-heart-rate-and-hrv-set-the-ceiling\">Let Heart Rate and HRV Set the Ceiling</h2>\n<p>Boredom pushes people to go harder, and the grey zone is where that ends up. Two guardrails help.</p>\n<p>First, cap easy sessions with heart rate. If your zone 2 ceiling is 145 bpm, a hill that pushes you to 158 is a tempo effort, whatever the pace says. Walk the top of it.</p>\n<p>Second, use heart rate variability trends to decide how much volume to add. A resting HRV that stays within its normal range for your baseline suggests you are absorbing the load. A sustained drop of more than a week, combined with a higher resting heart rate, is a signal to hold volume steady and keep the intensity easy. Single-day readings are noisy, so judge the seven-day average, not the morning number.</p>\n<p>Increase weekly volume by about 5 to 10% when these signals are stable, and then repeat that for three weeks before taking a lighter week. Slow progression is the thing that makes a base last.</p>\n<h2 id=\"the-takeaway\">The Takeaway</h2>\n<p>You do not need to love every easy session. You need to complete a lot of them without drifting upward in intensity. To do that:</p>\n<ul>\n<li>Keep roughly 80% of weekly time at low intensity, capped by heart rate.</li>\n<li>Vary terrain, structure and mode so no two easy days feel the same.</li>\n<li>Add short strides once or twice a week for variety and neuromuscular work.</li>\n<li>Progress volume by 5 to 10% when HRV and resting heart rate are stable.</li>\n<li>Judge a base block by what it lets you repeat, week after week, and not by how hard any single day felt.</li>\n</ul>",
-    "toc_items": [
-      {
-        "id": "why-slow-is-not-the-problem",
-        "text": "Why Slow Is Not the Problem"
-      },
-      {
-        "id": "what-base-training-actually-builds",
-        "text": "What Base Training Actually Builds"
-      },
-      {
-        "id": "vary-the-stimulus-inside-zone-2",
-        "text": "Vary the Stimulus Inside Zone 2"
-      },
-      {
-        "id": "a-six-hour-week-worked-through",
-        "text": "A Six Hour Week Worked Through"
-      },
-      {
-        "id": "let-heart-rate-and-hrv-set-the-ceiling",
-        "text": "Let Heart Rate and HRV Set the Ceiling"
-      },
-      {
-        "id": "the-takeaway",
-        "text": "The Takeaway"
-      }
-    ],
-    "hash": "186c7110d63135469bd68615546af946"
   }
 ]
