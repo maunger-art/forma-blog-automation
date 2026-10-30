@@ -1,5 +1,41 @@
 [
   {
+    "slug": "most-common-running-injury-what-it-is-and-how-to-avoid-it",
+    "title": "Most Common Running Injury: What It Is and How to Avoid It",
+    "date": "2026-10-30",
+    "category": "Recovery",
+    "meta_description": "Runner's knee is the most commonly diagnosed running injury. Learn why it happens, how it differs from other overuse problems, and how load management cuts your risk.",
+    "keywords": "most common running injury, runner's knee, patellofemoral pain syndrome, running injury prevention, strength training for runners, load management, running cadence, overuse injuries",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "the-short-answer",
+        "text": "The short answer: the knee"
+      },
+      {
+        "id": "why-the-knee-takes-the-hit",
+        "text": "Why the knee takes the hit"
+      },
+      {
+        "id": "the-other-usual-suspects",
+        "text": "The other usual suspects"
+      },
+      {
+        "id": "the-real-cause-load-spikes",
+        "text": "The real cause: load spikes"
+      },
+      {
+        "id": "what-actually-reduces-risk",
+        "text": "What actually reduces risk"
+      }
+    ],
+    "body_html": "<p>Most running injuries are not freak accidents. They are slow-building overuse problems, and the knee is where they most often show up. <strong>Patellofemoral pain syndrome (PFPS)</strong>, commonly called runner's knee, is generally the most frequently diagnosed running injury, and the knee as a whole is the most commonly injured site across the research on recreational runners.</p><h2 id=\"the-short-answer\">The short answer: the knee</h2><p>Runner's knee is pain around or behind the kneecap. It typically builds gradually, is aggravated by running downhill, climbing stairs, squatting, or sitting for long periods with the knee bent, and often eases during a run only to return afterwards.</p><p>It is classed as an <strong>overuse injury</strong>: no single step causes it. Repeated loading exceeds what the tissues around the joint can currently tolerate, and the irritation accumulates until it becomes symptomatic. That distinction matters, because it means the fix is rarely just rest. If the underlying capacity or load pattern doesn't change, the pain returns the first week you build back up.</p><h2 id=\"why-the-knee-takes-the-hit\">Why the knee takes the hit</h2><p>Every running stride sends a force through the leg of roughly two to three times your body weight. The knee absorbs a large share of that as it flexes on landing, and the <strong>patellofemoral joint</strong>, where the kneecap glides over the thigh bone, sees its load rise as the knee bends further. Over a 10 km run you take several thousand strides on each leg, so small inefficiencies are repeated thousands of times.</p><p>Several factors raise that load or reduce the joint's ability to cope with it:</p><ul><li><strong>Overstriding:</strong> landing with the foot well ahead of the body increases braking forces and knee flexion at contact.</li><li><strong>Low cadence:</strong> fewer, longer strides mean more load per step. Raising cadence by around 5 to 10% has been shown to reduce knee loading in a way many runners can feel quickly.</li><li><strong>Weak hip and thigh muscles:</strong> if the glutes and quadriceps cannot control the leg, the knee tends to drift inwards under load, changing how the kneecap tracks.</li><li><strong>Fatigue:</strong> as muscles tire late in a long run, control degrades and joint stress rises.</li></ul><p>None of these is a defect in itself. They become a problem when combined with too much volume or intensity, too soon.</p><h2 id=\"the-other-usual-suspects\">The other usual suspects</h2><p>Runner's knee leads the list, but it rarely travels alone. The injuries that most often follow it share the same overuse pattern:</p><p><strong>Achilles tendinopathy</strong> shows up as stiffness and pain at the back of the heel or just above it, typically worst first thing in the morning or at the start of a run. <strong>Medial tibial stress syndrome</strong> (shin splints) causes diffuse pain along the inner shin and is common when runners add hills or speed work abruptly. <strong>Plantar fasciitis</strong> produces sharp heel pain on the first steps after rest. <strong>Iliotibial band syndrome</strong> causes pain on the outside of the knee, often appearing at a consistent distance into a run.</p><p>The location differs, but the pattern is the same: tissue that was adapting well was asked to do more than it was ready for.</p><h2 id=\"the-real-cause-load-spikes\">The real cause: load spikes</h2><p>Your cardiovascular system adapts quickly. Within a few weeks of consistent training, your aerobic fitness can improve enough that a harder run feels manageable. Tendons, bones, and cartilage adapt far more slowly. That mismatch is the core of most running injuries: <strong>your lungs and legs feel ready before your connective tissue is</strong>.</p><p>This is why injuries cluster around specific moments. A runner returning from illness who jumps straight back to full mileage. Someone adding a second weekly interval session in the build to a race. A sudden jump in long-run distance because the plan said so. A new shoe or surface that shifts load to a different structure. In each case the stress rises faster than the tissue can remodel.</p><p>Fixed rules such as \"never increase mileage more than 10% a week\" are popular because they are simple, but they ignore context. A 10% increase after a poor week of sleep and high work stress is a different physiological event from the same increase when you are fresh. <strong>The risk is not the number itself, but the number relative to what your body can currently absorb.</strong></p><h2 id=\"what-actually-reduces-risk\">What actually reduces risk</h2><p>Prevention is mostly about raising tissue capacity and controlling how quickly load changes.</p><p><strong>Strength training is the highest-value addition.</strong> Two sessions a week focused on squats or split squats, step-ups, hip thrusts, calf raises, and single-leg work build the muscle and tendon capacity that protects the knee. Keep the loads heavy enough to be challenging (the last two reps of a set should feel hard) and progress them gradually, as you would your running.</p><p><strong>Adjust your stride before you adjust your shoes.</strong> If you overstride, a small cadence increase is a low-cost change that reduces knee load without requiring any new equipment. Make it gradually over a few weeks rather than overnight.</p><p><strong>Change one variable at a time.</strong> If you add volume, hold intensity steady. If you add speed work, keep long runs where they are. Bundling several increases in one week is how tissue gets overwhelmed.</p><p><strong>Respond to early signals.</strong> Niggles that fade during a run and return afterwards are information. Reducing intensity or swapping a run for cycling for a few days is a far smaller cost than six weeks off with a fully developed injury. Persistent pain, swelling, or pain that alters how you run warrants an assessment from a physiotherapist.</p><p>The pattern behind most running injuries is a gap between the stress you applied and the stress your body was ready for, and a fixed plan cannot see that gap. Adaptive training closes it by adjusting your load based on how you are actually recovering, not how you were supposed to be recovering. That is the principle Forma is built around: using your real training and recovery data to keep progression ambitious enough to improve and sustainable enough to keep you running.</p>",
+    "status": "published",
+    "_queue_id": "paa-662756da",
+    "_cluster": "injury-prevention",
+    "_composite_score": 5.7
+  },
+  {
     "slug": "what-is-a-good-injury-prevention-plan-for-running",
     "title": "What Is a Good Injury Prevention Plan for Running?",
     "date": "2026-10-28",

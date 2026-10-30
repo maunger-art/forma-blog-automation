@@ -1242,9 +1242,9 @@
     "cluster": "injury-prevention",
     "content_type": "programmatic",
     "composite_score": 5.7,
-    "status": "unassigned",
-    "assigned_to": null,
-    "due_date": null,
+    "status": "assigned",
+    "assigned_to": "content_generator",
+    "due_date": "2026-10-30",
     "published_url": null
   },
   {
