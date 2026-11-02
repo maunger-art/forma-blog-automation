@@ -1848,3 +1848,60 @@ You do not need to love every easy session. You need to complete a lot of them w
 - Add short strides once or twice a week for variety and neuromuscular work.
 - Progress volume by 5 to 10% when HRV and resting heart rate are stable.
 - Judge a base block by what it lets you repeat, week after week, and not by how hard any single day felt.
+
+
+---
+
+## 34. What Happens in Your Body During a Recovery Run: The Physiology
+
+Most runners treat the recovery run as a way to flush out yesterday's hard session. The idea is that you jog, the lactic acid leaves, and the legs come back. The physiology says otherwise. Lactate returns to resting levels within roughly 30 to 60 minutes of finishing a hard effort whether you jog or sit still, so by the next morning it has nothing to do with your sore legs. A recovery run does something different, and it is worth knowing what, because that determines how you should run it.
+
+## Recovery runs don't speed up repair
+
+Muscle repair after hard training is driven by protein synthesis, inflammation resolution and satellite cell activity. These processes run over 24 to 72 hours and depend mainly on sleep, protein intake and total energy. Easy running does not meaningfully accelerate them. Studies comparing active recovery with passive rest generally show small or inconsistent differences in soreness and next-day performance.
+
+What easy running does do is add aerobic volume at a low physiological cost. That is the real value: a training stimulus that does not add much to the damage you are already recovering from.
+
+## What blood flow actually does
+
+During light running, blood flow to working muscle rises several-fold compared with rest. Cardiac output increases, capillaries open, and the muscle pump moves blood through the legs. This delivers oxygen and nutrients and carries away metabolic byproducts.
+
+The effect is real but modest and short-lived. Flow returns to baseline soon after you stop, so it is not repairing tissue for the rest of the day. Think of it as a temporary change in circulation that can make stiff legs feel looser, not as a treatment. The relief you feel at kilometre three is mostly reduced stiffness and a change in how your nervous system perceives the muscle, not faster healing.
+
+## Which muscle fibres you recruit
+
+At genuinely easy intensities, below roughly 70 to 75 percent of maximum heart rate for most runners, you recruit mainly Type I (slow-twitch) fibres. These fibres are fatigue resistant and rich in mitochondria. The Type II fibres that took the hardest hit in your interval session are largely left alone.
+
+That is the mechanism that makes a recovery run useful. Fibres that are damaged rest, while the ones that are fresh do the work and get a mitochondrial and capillary stimulus. Push the pace up and you start recruiting Type II fibres again, which defeats the purpose.
+
+## Fuel use and the aerobic payoff
+
+At low intensity, fat supplies a large share of your energy, often 50 to 60 percent or more, with carbohydrate covering the rest. The total cost is small relative to your glycogen stores, so a recovery run does not meaningfully delay refuelling.
+
+Running with somewhat lower glycogen can also boost signalling through pathways such as AMPK and PGC-1 alpha, which drive mitochondrial biogenesis. That does not mean you should skip food before or after. It means that an easy run in a moderately fuelled state is a reasonable stimulus, provided you eat properly afterwards.
+
+## Your nervous system and HRV
+
+Hard training shifts your autonomic balance toward sympathetic activity, and heart rate variability (HRV) often drops the next morning. A truly easy run keeps heart rate in a range where parasympathetic withdrawal is limited, so it usually does not suppress HRV much the following day.
+
+The key word is truly. When the pace creeps up, sympathetic drive increases, cortisol and perceived effort rise, and you turn a recovery session into a moderate one. If your HRV was already low, that extra load can leave it low for another day or two.
+
+## A worked example
+
+Take a 70 kg runner with a maximum heart rate of 185 bpm. An easy ceiling of about 72 percent is roughly 133 bpm. They run 35 minutes at 6:30 per km, covering about 5.4 km, with heart rate sitting at 125 to 133 bpm.
+
+Energy cost is roughly 1 kcal per kg per km, so about 380 kcal. At that intensity, around 60 percent comes from fat, roughly 230 kcal, and about 150 kcal from carbohydrate, which is around 37 g. Against 400 to 500 g of total body glycogen, that is under 10 percent.
+
+Now the same runner feels good and runs 6:00 per km at 150 bpm, about 81 percent of maximum. Energy cost is similar per km, but the carbohydrate share jumps to perhaps 60 to 70 percent, Type II recruitment increases, and next-day HRV is more likely to dip. The run felt better, but it cost more.
+
+## How to run one properly
+
+Use heart rate or perceived effort, not pace. Pace varies with heat, fatigue and terrain, and recovery runs after hard days should often be slower than you expect.
+
+- Keep heart rate below about 70 to 75 percent of maximum, or at a pace where you can speak in full sentences.
+- Run 20 to 40 minutes. Longer adds fatigue without much extra benefit for this purpose.
+- Choose flat or soft terrain to limit eccentric load.
+- If HRV is well below your baseline or resting heart rate is elevated, take the day off. A skipped recovery run costs very little. A badly executed one can cost a lot.
+- Eat protein and carbohydrate afterwards, because that is what drives repair, not the run itself.
+
+A recovery run is a low-cost way to accumulate aerobic volume on tired legs. Treat it as training, keep it truly easy, and let sleep and food do the actual recovering.
