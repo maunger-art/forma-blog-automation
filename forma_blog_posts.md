@@ -1905,3 +1905,67 @@ Use heart rate or perceived effort, not pace. Pace varies with heat, fatigue and
 - Eat protein and carbohydrate afterwards, because that is what drives repair, not the run itself.
 
 A recovery run is a low-cost way to accumulate aerobic volume on tired legs. Treat it as training, keep it truly easy, and let sleep and food do the actual recovering.
+
+
+---
+
+## 35. Power Meter vs Heart Rate for Cycling: Pros and Cons Compared
+
+Most cyclists treat power as the truth and heart rate as the rough guess. That framing is backwards. Power tells you what you did. Heart rate tells you what it cost you. You need both numbers, and the gap between them is where the useful information sits.
+
+## Heart rate is a response, not a measurement of work
+
+Heart rate is your cardiovascular system's reaction to a load. It is not the load itself. That distinction explains nearly every weakness of heart rate as a pacing tool.
+
+The first problem is lag. When you jump from 150 W to 250 W, your heart rate takes roughly 30 to 90 seconds to catch up, and longer to settle. On a 3-minute interval, a big share of the effort is over before heart rate reflects it. Heart rate is nearly useless for short intervals.
+
+The second is drift. During a long steady ride, heart rate typically creeps up 5 to 10 percent at constant power, driven by rising core temperature, fluid loss and falling stroke volume. If you hold a fixed heart rate target for three hours, you will slowly pedal less and less.
+
+The third is noise. Heat can raise heart rate by 5 to 10 bpm at the same output. Poor sleep, caffeine, altitude, dehydration and illness all move it too. A heart rate of 150 bpm does not mean the same thing on two different days.
+
+## What a power meter actually gives you
+
+Power, measured in watts at the crank, pedal or hub, is an instantaneous and objective measure of external work. It does not care about temperature, caffeine or fatigue. 200 W is 200 W.
+
+That buys you three things. First, precise pacing: you can hold 90 percent of threshold for 20 minutes without the first five minutes running away from you. Second, a consistent unit for tracking fitness over months, so you can see whether your 20-minute best moved from 240 W to 252 W. Third, a way to quantify training load, through metrics like normalized power and training stress score, that works across indoor and outdoor rides.
+
+## Where power meters fall short
+
+Power is blind to internal state. If you are under-recovered, 220 W still reads as 220 W, even though it now costs far more than it did last week. A rider chasing the numbers on a flat day can dig a deeper hole without any warning from the display.
+
+There is also the cost. A reliable single-sided pedal or crank system typically runs from about £350 to well over £1,000, against £30 to £70 for a good chest strap. Calibration drift, temperature sensitivity and left-right estimation on single-sided units add error of a few percent. And your training zones depend on a threshold estimate. If your FTP is set 8 percent too high, every zone is wrong by the same margin.
+
+## Where heart rate still wins
+
+Heart rate is the only one of the two that reflects physiological stress. That makes it valuable in three situations.
+
+On easy rides, it keeps you honest. Rolling terrain pushes power around constantly, but a ceiling on heart rate stops a Zone 2 ride turning into tempo by accident.
+
+In long rides, it exposes fatigue. If your heart rate at a given power is climbing faster than usual, something is off: hydration, heat, sleep or accumulated load.
+
+And it is cheap. A rider without a power meter can still train effectively by heart rate, provided they accept its limits and avoid using it for short, hard efforts.
+
+## A worked example: same power, different cost
+
+Take a rider with an FTP of 250 W. Their Zone 2 range, at roughly 56 to 75 percent of FTP, is about 140 to 188 W. They ride 2 hours at 170 W.
+
+In week one, the first hour averages 135 bpm and the second hour averages 142 bpm. That is a rise of about 5 percent, which is a healthy aerobic profile. Coaches often call this aerobic decoupling, and under 5 percent is generally read as good endurance at that intensity.
+
+In week four, same route, same 170 W. The first hour averages 141 bpm and the second averages 156 bpm. Decoupling is now over 10 percent. Power says the session went perfectly. Heart rate says the rider is carrying fatigue, or heat, or poor sleep, or all three. Only by reading both together does the picture emerge, and it suggests an easier day tomorrow, not another block of hard work.
+
+With heart rate alone, you would have seen a 15 bpm jump and not known whether fitness had dropped or the weather had changed. With power alone, you would have seen a flawless session.
+
+## How to use both
+
+A simple split works for most riders training 5 to 10 hours a week.
+
+- **Intervals under 10 minutes:** use power. Heart rate lags too much to guide you.
+- **Threshold and sweet spot efforts:** target power, and watch heart rate as a check. If heart rate is far above its usual value at that wattage, back off.
+- **Long Zone 2 rides:** set a power range, then use heart rate as the ceiling. If heart rate hits your cap while power sits at the bottom of the range, ride at the lower power.
+- **Trend tracking:** log the ratio of power to heart rate on steady rides. A rising ratio over weeks suggests improving aerobic fitness. A falling one suggests fatigue.
+
+## The practical takeaway
+
+If you have a power meter, do not discard heart rate. Treat watts as the plan and heart rate as the audit. If you do not have a power meter, you are not locked out of structured training. Use heart rate for steady endurance work, use perceived effort for short intervals, and put the money into a good strap and consistent sleep before upgrading hardware.
+
+The next time you ride, record both and compare them at the same power across two or three similar sessions. The pattern in that comparison tells you more about your readiness than either number alone.
