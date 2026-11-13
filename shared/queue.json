@@ -1346,9 +1346,9 @@
     "cluster": "marathon-training",
     "content_type": "article",
     "composite_score": 5.5,
-    "status": "unassigned",
-    "assigned_to": null,
-    "due_date": null,
+    "status": "assigned",
+    "assigned_to": "content_generator",
+    "due_date": "2026-11-13",
     "published_url": null
   },
   {

@@ -1,5 +1,41 @@
 [
   {
+    "slug": "marathon-training-plan-hal-higdon-is-it-right-for-you",
+    "title": "Marathon Training Plan Hal Higdon: Is It Right for You?",
+    "date": "2026-11-13",
+    "category": "Running",
+    "meta_description": "Hal Higdon's marathon plans are the most widely used in the sport. Here's how they work, where they fit, and where serious amateurs need to adapt them.",
+    "keywords": "marathon training plan hal higdon, hal higdon novice plan, hal higdon intermediate marathon, 18 week marathon plan, marathon long run progression, marathon taper, adaptive marathon training",
+    "read_time": 6,
+    "toc_items": [
+      {
+        "id": "how-the-plans-work",
+        "text": "How Higdon's plans are built"
+      },
+      {
+        "id": "choosing-a-level",
+        "text": "Choosing the right level"
+      },
+      {
+        "id": "what-the-structure-gets-right",
+        "text": "What the structure gets right"
+      },
+      {
+        "id": "where-fixed-plans-fall-short",
+        "text": "Where a fixed plan falls short"
+      },
+      {
+        "id": "adapting-the-plan",
+        "text": "How to adapt it without breaking it"
+      }
+    ],
+    "body_html": "<p>Hal Higdon's marathon plans have probably guided more first-time finishers than any other training programme, and for good reason: they're simple, predictable and they work for a lot of people. But <strong>a plan that works for the average runner is not automatically the right plan for you</strong>, and the difference matters most in the final six weeks, when mistakes are expensive.</p><p>Here is how the plans are built, who each one suits, and where a serious amateur should adjust the template rather than follow it blindly.</p><h2 id=\"how-the-plans-work\">How Higdon's plans are built</h2><p>Higdon publishes several 18-week marathon programmes: Novice 1 and 2, Intermediate 1 and 2, and Advanced 1 and 2. They share one core architecture. Weekday runs stay relatively short, and the <strong>weekend long run</strong> carries the progression, building from roughly 6 miles in the opening weeks to a peak of about 20 miles three to four weeks before race day.</p><p>Two design choices define the approach:</p><ul><li><strong>Step-back weeks.</strong> Long-run distance drops every third week or so, giving connective tissue and glycogen stores time to recover before the next increase.</li><li><strong>A three-week taper.</strong> Volume falls progressively after the final 20-miler, so you arrive at the start line with fresh legs rather than maximum fitness on paper.</li></ul><p>Notably absent is any sophisticated intensity prescription at the novice level. Most running is easy, and the plans lean on consistency and accumulated mileage rather than structured workouts. That's a deliberate choice, and it's why the plans are relatively low-risk.</p><h2 id=\"choosing-a-level\">Choosing the right level</h2><p>Picking the wrong level is the most common error. The programmes differ in weekly frequency, total mileage and how much quality work they include.</p><p><strong>Novice plans</strong> suit runners who can already run comfortably for several miles and want to finish a first marathon. They run on about four days a week with cross-training built in. <strong>Intermediate plans</strong> add running days and introduce pace work, hills and tempo-style efforts, and they assume you've completed at least one marathon or a solid block of half-marathon training. <strong>Advanced plans</strong> run six days a week and include speed sessions and marathon-pace work, so they only make sense if your current weekly volume already sits close to the plan's early weeks.</p><p>The rule of thumb is to match the plan to what you can currently absorb, not what you hope to run. If week one of a plan is a big jump above your recent mileage, you're starting with a deficit that no amount of motivation fixes.</p><h2 id=\"what-the-structure-gets-right\">What the structure gets right</h2><p>The long-run emphasis isn't arbitrary. Extended runs drive adaptations specific to the marathon: greater <strong>fat oxidation</strong> at a given pace, improved glycogen storage and use, and the muscular and tendon durability to keep your stride intact after two or three hours on the road. They also give you a rehearsal space for fuelling, which is where many marathons are won or lost.</p><p>The gradual build matters too. Increasing distance in measured steps, with a recovery week built in, respects the fact that bone and tendon adapt more slowly than the cardiovascular system. Your lungs and heart will tell you that you're ready for more weeks before your shins and Achilles agree.</p><p>The taper is also well judged. Cutting volume while keeping some intensity lets fatigue clear without letting fitness decay, and a taper of around three weeks is consistent with what most coaches recommend for the marathon distance.</p><h2 id=\"where-fixed-plans-fall-short\">Where a fixed plan falls short</h2><p>The weakness of any printed plan is that it's written before you've run a single mile of it. It assumes you'll hit every session as scheduled, recover at an average rate and arrive at each long run in similar condition. Real training doesn't cooperate.</p><p>Consider a few common scenarios. You catch a cold in week nine and miss four days. Work stress and poor sleep leave you flat for a fortnight. You respond quickly to training and the prescribed paces feel too easy by week six. In each case, the plan keeps issuing the same instructions regardless. <strong>Skipping ahead to the scheduled 18-miler after a lost week is how overuse injuries start</strong>, while repeating easy running you've outgrown leaves fitness on the table.</p><p>Fixed plans also say little about pace. Telling you to run \"at an easy effort\" or \"at goal pace\" is only useful if you know what those numbers actually are today. A runner whose aerobic fitness has improved by a few percent should be running different easy-day paces than they were at the start of the block, yet the plan can't know that.</p><h2 id=\"adapting-the-plan\">How to adapt it without breaking it</h2><p>You don't need to abandon a proven template. You need rules for when to deviate from it.</p><p>First, <strong>protect the long run and the taper</strong>, and be flexible with everything else. If you miss a long run, don't cram it in. Repeat the previous week's distance or resume the step-back pattern instead. Second, base your paces on current evidence, such as a recent race result or a time trial, rather than a target set months ago. Third, track how you respond: resting heart rate, heart rate variability and how heavy your legs feel on easy days all signal whether you're absorbing the load or merely surviving it. A sustained drop in readiness is a reason to reduce intensity for a few days, not a reason to push through to keep the spreadsheet tidy.</p><p>Finally, treat the peak weeks with the most scrutiny. The 20-mile long run and the weeks around it carry the highest load of the entire block, so they're where adjusting for fatigue pays off most.</p><p>Higdon's plans give you a dependable skeleton. The next step is training that bends around your physiology week by week: adjusting load when recovery lags, tightening paces when fitness improves and keeping the taper intact when life interferes. That's the principle behind adaptive training, and it's what Forma is built to do, turning a fixed schedule into a plan that responds to how you're actually training.</p>",
+    "status": "published",
+    "_queue_id": "autosugg-ffe6d921",
+    "_cluster": "marathon-training",
+    "_composite_score": 5.5
+  },
+  {
     "slug": "marathon-training-plan-20-weeks-phase-by-phase-guide",
     "title": "Marathon Training Plan 20 Weeks: Phase-by-Phase Guide",
     "date": "2026-11-11",
