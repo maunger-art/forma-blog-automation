@@ -1,122 +1,314 @@
 [
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-a232535e",
-    "pillar_text": "What is an ideal marathon training plan?",
-    "child_id": "paa-b360a674",
-    "child_text": "Is 3 runs a week enough for marathon training?",
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-59cee791",
+    "pillar_text": "What is an aerobic base?",
+    "child_id": "paa-96e67ab7",
+    "child_text": "Is a zone 2 run an easy run?",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-a232535e",
-    "pillar_text": "What is an ideal marathon training plan?",
-    "child_id": "autosugg-42ee4307",
-    "child_text": "marathon training plan for beginners",
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-59cee791",
+    "pillar_text": "What is an aerobic base?",
+    "child_id": "autosugg-7df1ec3f",
+    "child_text": "aerobic base building plan",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-a232535e",
-    "pillar_text": "What is an ideal marathon training plan?",
-    "child_id": "autosugg-682a5368",
-    "child_text": "marathon training plan pdf",
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-59cee791",
+    "pillar_text": "What is an aerobic base?",
+    "child_id": "autosugg-b8b2c987",
+    "child_text": "aerobic base building running",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-a232535e",
-    "pillar_text": "What is an ideal marathon training plan?",
-    "child_id": "autosugg-7948e20b",
-    "child_text": "marathon training plan 16 weeks",
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-59cee791",
+    "pillar_text": "What is an aerobic base?",
+    "child_id": "autosugg-db8ee48e",
+    "child_text": "aerobic base building program",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-a232535e",
-    "pillar_text": "What is an ideal marathon training plan?",
-    "child_id": "autosugg-ffe6d921",
-    "child_text": "marathon training plan hal higdon",
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-59cee791",
+    "pillar_text": "What is an aerobic base?",
+    "child_id": "autosugg-a085aff7",
+    "child_text": "aerobic base building reddit",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-a232535e",
-    "pillar_text": "What is an ideal marathon training plan?",
-    "child_id": "autosugg-edac5d83",
-    "child_text": "marathon training plan 20 weeks",
+    "cluster": "zone-2-training",
+    "pillar_id": "paa-59cee791",
+    "pillar_text": "What is an aerobic base?",
+    "child_id": "autosugg-3f18950f",
+    "child_text": "aerobic base building heart rate",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-a232535e",
-    "pillar_text": "What is an ideal marathon training plan?",
-    "child_id": "autosugg-eadbf471",
-    "child_text": "marathon training plan free",
+    "cluster": "hrv-readiness",
+    "pillar_id": "paa-05d1203a",
+    "pillar_text": "What is Garmin training readiness based on?",
+    "child_id": "autosugg-ffce5413",
+    "child_text": "garmin training readiness score",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-a232535e",
-    "pillar_text": "What is an ideal marathon training plan?",
-    "child_id": "autosugg-5c4416d9",
-    "child_text": "marathon training plan 12 weeks",
+    "cluster": "hrv-readiness",
+    "pillar_id": "paa-05d1203a",
+    "pillar_text": "What is Garmin training readiness based on?",
+    "child_id": "autosugg-8fe4eb15",
+    "child_text": "hrv training plan free",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-a232535e",
-    "pillar_text": "What is an ideal marathon training plan?",
-    "child_id": "autosugg-12a4f7a5",
-    "child_text": "marathon training plan reddit",
+    "cluster": "training-load",
+    "pillar_id": "paa-f39d6bbf",
+    "pillar_text": "What is training load?",
+    "child_id": "paa-72b8925c",
+    "child_text": "How to work out training load?",
     "relationship": "specificity"
   },
   {
-    "cluster": "marathon-training",
-    "pillar_id": "paa-a232535e",
-    "pillar_text": "What is an ideal marathon training plan?",
-    "child_id": "autosugg-3018dd20",
-    "child_text": "marathon training plan for sub 4 hours",
+    "cluster": "training-load",
+    "pillar_id": "paa-f39d6bbf",
+    "pillar_text": "What is training load?",
+    "child_id": "autosugg-869bf007",
+    "child_text": "training load apple watch",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-f39d6bbf",
+    "pillar_text": "What is training load?",
+    "child_id": "paa-9f551862",
+    "child_text": "What are the types of training load?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-f39d6bbf",
+    "pillar_text": "What is training load?",
+    "child_id": "autosugg-426a6dd4",
+    "child_text": "training load coros meaning",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "training-load",
+    "pillar_id": "paa-f39d6bbf",
+    "pillar_text": "What is training load?",
+    "child_id": "paa-f921d24a",
+    "child_text": "What is a good training load score?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "garmin-wearable",
+    "pillar_id": "paa-f538f69a",
+    "pillar_text": "What is the Garmin workout execution score?",
+    "child_id": "paa-79b6edc2",
+    "child_text": "Why can't I see sleep score on Garmin?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "garmin-wearable",
+    "pillar_id": "paa-f538f69a",
+    "pillar_text": "What is the Garmin workout execution score?",
+    "child_id": "competit-accb0833",
+    "child_text": "Why Does Garmin Say Unproductive? What the Training Status Means and When to Ignore It",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "garmin-wearable",
+    "pillar_id": "paa-f538f69a",
+    "pillar_text": "What is the Garmin workout execution score?",
+    "child_id": "paa-d5d3ea3c",
+    "child_text": "What is a good sleep score for Garmin?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "garmin-wearable",
+    "pillar_id": "paa-f538f69a",
+    "pillar_text": "What is the Garmin workout execution score?",
+    "child_id": "autosugg-55e98443",
+    "child_text": "garmin readiness score reddit",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "garmin-wearable",
+    "pillar_id": "paa-f538f69a",
+    "pillar_text": "What is the Garmin workout execution score?",
+    "child_id": "autosugg-bde10aec",
+    "child_text": "garmin readiness score where to find",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "garmin-wearable",
+    "pillar_id": "paa-f538f69a",
+    "pillar_text": "What is the Garmin workout execution score?",
+    "child_id": "autosugg-1ca3debb",
+    "child_text": "garmin readiness score watches",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "garmin-wearable",
+    "pillar_id": "paa-f538f69a",
+    "pillar_text": "What is the Garmin workout execution score?",
+    "child_id": "autosugg-51f07e09",
+    "child_text": "garmin readiness score fenix 6",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "garmin-wearable",
+    "pillar_id": "paa-f538f69a",
+    "pillar_text": "What is the Garmin workout execution score?",
+    "child_id": "autosugg-e2f1dc1f",
+    "child_text": "garmin readiness score venu 3",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "garmin-wearable",
+    "pillar_id": "paa-f538f69a",
+    "pillar_text": "What is the Garmin workout execution score?",
+    "child_id": "autosugg-c372cd8a",
+    "child_text": "garmin readiness score vivoactive 5",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "garmin-wearable",
+    "pillar_id": "paa-f538f69a",
+    "pillar_text": "What is the Garmin workout execution score?",
+    "child_id": "autosugg-00927bd2",
+    "child_text": "garmin readiness score of 1",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "garmin-wearable",
+    "pillar_id": "paa-f538f69a",
+    "pillar_text": "What is the Garmin workout execution score?",
+    "child_id": "autosugg-d1c47833",
+    "child_text": "garmin forerunner readiness score",
     "relationship": "specificity"
   },
   {
     "cluster": "cycling-endurance",
-    "pillar_id": "paa-55cb284f",
-    "pillar_text": "What is the 80% rule in cycling?",
-    "child_id": "paa-a1ce9de1",
-    "child_text": "Does cycling train endurance?",
+    "pillar_id": "paa-209a39ce",
+    "pillar_text": "What is the 80/20 rule in cycling?",
+    "child_id": "paa-c990256f",
+    "child_text": "Can cycling build endurance?",
     "relationship": "specificity"
   },
   {
     "cluster": "cycling-endurance",
-    "pillar_id": "paa-55cb284f",
-    "pillar_text": "What is the 80% rule in cycling?",
+    "pillar_id": "paa-209a39ce",
+    "pillar_text": "What is the 80/20 rule in cycling?",
+    "child_id": "paa-2888b441",
+    "child_text": "Is cycling 10 km in 25 minutes good?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "cycling-endurance",
+    "pillar_id": "paa-209a39ce",
+    "pillar_text": "What is the 80/20 rule in cycling?",
     "child_id": "autosugg-0c217a6a",
     "child_text": "cycling endurance training plan",
     "relationship": "specificity"
   },
   {
     "cluster": "cycling-endurance",
-    "pillar_id": "paa-55cb284f",
-    "pillar_text": "What is the 80% rule in cycling?",
+    "pillar_id": "paa-209a39ce",
+    "pillar_text": "What is the 80/20 rule in cycling?",
     "child_id": "autosugg-a694ea11",
     "child_text": "cycling endurance training for beginners",
     "relationship": "specificity"
   },
   {
     "cluster": "cycling-endurance",
-    "pillar_id": "paa-55cb284f",
-    "pillar_text": "What is the 80% rule in cycling?",
+    "pillar_id": "paa-209a39ce",
+    "pillar_text": "What is the 80/20 rule in cycling?",
     "child_id": "autosugg-fc416c8b",
     "child_text": "cycling endurance bib shorts",
     "relationship": "specificity"
   },
   {
     "cluster": "cycling-endurance",
-    "pillar_id": "paa-55cb284f",
-    "pillar_text": "What is the 80% rule in cycling?",
+    "pillar_id": "paa-209a39ce",
+    "pillar_text": "What is the 80/20 rule in cycling?",
     "child_id": "autosugg-1e2f82fc",
     "child_text": "cycling endurance events uk",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "cycling-endurance",
+    "pillar_id": "paa-60ade3b2",
+    "pillar_text": "What is endurance cycling?",
+    "child_id": "paa-c990256f",
+    "child_text": "Can cycling build endurance?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "cycling-endurance",
+    "pillar_id": "paa-60ade3b2",
+    "pillar_text": "What is endurance cycling?",
+    "child_id": "paa-2888b441",
+    "child_text": "Is cycling 10 km in 25 minutes good?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "cycling-endurance",
+    "pillar_id": "paa-60ade3b2",
+    "pillar_text": "What is endurance cycling?",
+    "child_id": "autosugg-0c217a6a",
+    "child_text": "cycling endurance training plan",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "cycling-endurance",
+    "pillar_id": "paa-60ade3b2",
+    "pillar_text": "What is endurance cycling?",
+    "child_id": "autosugg-a694ea11",
+    "child_text": "cycling endurance training for beginners",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "cycling-endurance",
+    "pillar_id": "paa-60ade3b2",
+    "pillar_text": "What is endurance cycling?",
+    "child_id": "autosugg-fc416c8b",
+    "child_text": "cycling endurance bib shorts",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "cycling-endurance",
+    "pillar_id": "paa-60ade3b2",
+    "pillar_text": "What is endurance cycling?",
+    "child_id": "autosugg-1e2f82fc",
+    "child_text": "cycling endurance events uk",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "recovery-sleep",
+    "pillar_id": "paa-3013817a",
+    "pillar_text": "What is recovery running?",
+    "child_id": "paa-3e37f525",
+    "child_text": "How long should I run for a recovery run?",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "recovery-sleep",
+    "pillar_id": "paa-3013817a",
+    "pillar_text": "What is recovery running?",
+    "child_id": "autosugg-ac979e89",
+    "child_text": "recovery running shoes reddit",
+    "relationship": "specificity"
+  },
+  {
+    "cluster": "recovery-sleep",
+    "pillar_id": "paa-3013817a",
+    "pillar_text": "What is recovery running?",
+    "child_id": "autosugg-96721009",
+    "child_text": "recovery running shoes meaning",
     "relationship": "specificity"
   }
 ]
