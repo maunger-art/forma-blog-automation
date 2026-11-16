@@ -1969,3 +1969,60 @@ A simple split works for most riders training 5 to 10 hours a week.
 If you have a power meter, do not discard heart rate. Treat watts as the plan and heart rate as the audit. If you do not have a power meter, you are not locked out of structured training. Use heart rate for steady endurance work, use perceived effort for short intervals, and put the money into a good strap and consistent sleep before upgrading hardware.
 
 The next time you ride, record both and compare them at the same power across two or three similar sessions. The pattern in that comparison tells you more about your readiness than either number alone.
+
+
+---
+
+## 36. Why You've Stopped Improving Despite Consistent Training (and What to Change)
+
+If you have trained five or six days a week for a year and your race times have not moved, the problem is probably not effort. Consistency is the entry requirement for adaptation, not the cause of it. Adaptation comes from a stimulus that is different enough from what your body has already absorbed, followed by enough recovery to absorb it. Most plateaus break one of those two conditions.
+
+## Consistency Is Not the Same as Progression
+
+Your body adapts to a specific load, then stops responding to it. This is the basic logic of the general adaptation model: repeat the same stimulus and the return shrinks toward zero. A runner who does the same 8 km loop at the same effort every Tuesday is not getting 52 weeks of training. They are getting about 6 weeks of training repeated 8 times.
+
+The frustrating part is that this kind of routine feels productive. You are tired, you are logging sessions, and your streak is intact. But fatigue is not a measure of stimulus. Fatigue tells you what you did. Fitness change tells you whether it mattered.
+
+## Intensity Drift Into the Grey Zone
+
+The most common cause we see in athletes training 5-10 hours a week is intensity drift. Easy days creep up and hard days get cut short, until nearly everything sits at moderate effort: too hard to recover from, too easy to drive a real adaptation.
+
+Studies of elite endurance athletes, including work by Stephen Seiler, consistently find that roughly 75-80% of sessions are performed at low intensity, with around 20% at high intensity. Recreational athletes tend to invert this. They run their easy days at 80-85% of max heart rate and their intervals at 85-90%, so the gap between easy and hard disappears.
+
+A simple check: look at your last four weeks of heart rate data. If more than 40% of your time is in the zone just below threshold, you are in the grey zone. The fix feels wrong, because you have to slow down on easy days so that hard days can actually be hard.
+
+## Load That Never Changes
+
+The second cause is flat load. Chronic training load, the roughly 42-day exponentially weighted average of your daily training stress, is a reasonable proxy for what your body is currently adapted to. If your weekly load has sat at 350-380 for six months, your chronic load has converged on that number, and the stimulus is now just maintenance.
+
+Progression does not need to be dramatic. A ramp of 3-6 points of chronic load per week for 3-4 weeks, followed by a lighter week, is sustainable for most people. A flat line is the failure mode. A line that rises every week without a break is the other one.
+
+## Recovery Debt You Can't Feel
+
+The opposite problem is also common. Some athletes are not under-stimulated at all. They are under-recovered, and they have trained through it for so long that it feels normal.
+
+The signals are subtle. Resting heart rate sits 3-5 bpm above your baseline. Your 7-day average HRV trends below your 60-day range. Easy runs feel harder at the same pace. None of these alone is conclusive, but when two or three move together for more than a week, your autonomic nervous system is telling you that recovery is not keeping pace with load.
+
+Adding more training on top of this does not break the plateau. It deepens it. Counterintuitively, the athletes who break through are often the ones who take 5-7 days of reduced load and come back with a higher ceiling.
+
+## A Worked Example
+
+Consider a cyclist training 7 hours a week, with an FTP stuck at 240 W for 10 months. Their week looked like this: five rides, all between 75% and 88% of FTP, with a Saturday group ride that turned into a 90-minute race. Average weekly load was about 400, almost unchanged since January.
+
+They made three changes over 8 weeks:
+
+- Easy rides moved to under 65% of FTP (Zone 2), which meant riding 20-30 W lower than before.
+- Two sessions per week became structured: one 4 x 8 minutes at 95-100% of FTP, one 3 x 12 minutes at 88-92%.
+- Load ramped from 400 to 440 over three weeks, then dropped to 330 in week four.
+
+After two repeats of that block, a ramp test showed FTP at 252 W, a 5% gain. The total hours did not change. What changed was the distribution and the progression.
+
+## What to Change This Week
+
+You do not need a new plan. You need to find which of the three failure modes applies to you, and fix only that one.
+
+1. **Audit intensity.** Pull the last 28 days. If most of your time is in moderate effort, cap your easy days at a heart rate or power that you can hold while speaking full sentences.
+2. **Audit load.** Plot your weekly training load for 12 weeks. If it is flat, raise it by about 5-8% for three weeks, then take a down week.
+3. **Audit recovery.** Compare your 7-day HRV and resting heart rate with your 60-day baseline. If both are off for more than a week, reduce volume by 30-40% before adding anything.
+
+Change one variable at a time and give it 3-4 weeks. A plateau that took six months to build rarely needs more than one corrected variable to break.
