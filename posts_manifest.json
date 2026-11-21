@@ -1,5 +1,41 @@
 [
   {
+    "slug": "cycling-endurance-training-plan-a-power-based-guide",
+    "title": "Cycling Endurance Training Plan: A Power-Based Guide",
+    "date": "2026-11-21",
+    "category": "Cycling",
+    "meta_description": "Build a cycling endurance training plan around FTP, power zones and progressive long rides, with a weekly structure and a 12-week progression.",
+    "keywords": "cycling endurance training plan, FTP training zones, power-based training, long ride training, Zone 2 cycling, cycling base training, endurance cycling, progressive overload cycling",
+    "read_time": 7,
+    "toc_items": [
+      {
+        "id": "what-endurance-is",
+        "text": "What Endurance Actually Means on the Bike"
+      },
+      {
+        "id": "anchor-to-ftp",
+        "text": "Anchor the Plan to FTP"
+      },
+      {
+        "id": "weekly-structure",
+        "text": "A Practical Weekly Structure"
+      },
+      {
+        "id": "long-ride-progression",
+        "text": "Progressing the Long Ride"
+      },
+      {
+        "id": "when-plans-break",
+        "text": "Where Fixed Plans Break Down"
+      }
+    ],
+    "body_html": "<p>Most cyclists who struggle to build endurance are not riding too little. They are riding <strong>at the wrong intensity, with no plan for how load should grow</strong>. Too much time in the grey zone between easy and hard leaves you tired without producing a clear adaptation. A good endurance plan fixes that by making the intensity of every ride deliberate.</p><h2 id=\"what-endurance-is\">What Endurance Actually Means on the Bike</h2><p>Endurance is the ability to hold a useful power output for hours while fatigue accumulates slowly. It rests on a few physiological foundations: <strong>mitochondrial density</strong>, <strong>capillary supply to working muscle</strong>, and <strong>fat oxidation capacity</strong>. Together these let you produce a given wattage while burning less glycogen and generating less metabolic disruption.</p><p>These adaptations are driven by large volumes of moderate work. They are not driven by occasional heroic efforts. That is why endurance plans are built on <strong>consistency of aerobic stress</strong>, with a smaller amount of high-intensity work placed carefully on top.</p><h2 id=\"anchor-to-ftp\">Anchor the Plan to FTP</h2><p><strong>Functional Threshold Power (FTP)</strong> is the highest power you can sustain for roughly an hour. It is an estimate, but it gives you a fixed reference for setting zones. The commonly used Coggan model divides training into percentages of FTP:</p><ul><li><strong>Zone 1, active recovery:</strong> below 55% of FTP</li><li><strong>Zone 2, endurance:</strong> 56-75% of FTP</li><li><strong>Zone 3, tempo:</strong> 76-90% of FTP</li><li><strong>Zone 4, threshold:</strong> 91-105% of FTP</li><li><strong>Zone 5 and above, VO2max and anaerobic:</strong> 106% of FTP and higher</li></ul><p>For an endurance block, <strong>Zone 2 is the foundation</strong>. A rider with a 250 W FTP should aim for roughly 140-188 W on most long rides. That feels easier than most people expect. You should be able to hold a conversation, and your heart rate should stay stable across the ride rather than drifting steadily upward.</p><p>Your FTP number is only useful if it is current. An FTP set eight weeks ago and never revisited will place your zones too low or too high, and every session inherits the error. Retest, or re-estimate from recent data, at the start of each training block.</p><h2 id=\"weekly-structure\">A Practical Weekly Structure</h2><p>For a rider with 8-10 hours available, a sound endurance week looks like this. Adjust the volume to your own availability, but keep the logic.</p><p><strong>Monday: rest or very easy spin.</strong> Recovery is part of the plan. Adaptation happens after the stress, not during it.</p><p><strong>Tuesday: one structured quality session.</strong> Two or three efforts of 10-15 minutes in Zone 4, or sweet spot work at roughly 88-94% of FTP. This keeps your top-end fitness from fading while the base grows.</p><p><strong>Wednesday: Zone 2, 60-90 minutes.</strong> Steady and controlled. Do not let it drift into tempo because you feel good.</p><p><strong>Thursday: second quality session or tempo.</strong> Keep it shorter and less demanding than Tuesday, or replace it with Zone 2 if you are accumulating fatigue.</p><p><strong>Friday: rest or easy spin.</strong></p><p><strong>Saturday: the long ride.</strong> This is the key session of the week, mostly in Zone 2.</p><p><strong>Sunday: moderate Zone 2 ride of 60-120 minutes.</strong> Riding on tired legs builds durability, which is your ability to hold power late into a long effort.</p><p>The rule that holds the structure together is <strong>roughly 80% of your weekly time in Zones 1-2, and no more than 20% above it</strong>. The exact split varies by athlete, but a polarised or pyramidal distribution consistently suits endurance goals better than a week of moderate-hard riding.</p><h2 id=\"long-ride-progression\">Progressing the Long Ride</h2><p>The long ride is where endurance is both built and tested. Progress it in a steady pattern: <strong>increase duration by 10-15% per week for three weeks, then drop volume by about 30% in a fourth recovery week</strong>. A 12-week progression for a rider starting with a 2-hour long ride might look like this:</p><p>Weeks 1-3 build from 2 hours to 2 hours 40 minutes. Week 4 drops back to about 1 hour 50 minutes. Weeks 5-7 build from 2 hours 45 minutes to 3 hours 30 minutes. Week 8 is a recovery week. Weeks 9-11 extend toward 4 hours or more. Week 12 is a taper and consolidation.</p><p>Fuelling matters as much as the ride itself. Rides beyond 90 minutes call for carbohydrate intake during the session, commonly in the range of 60 g per hour, with higher intakes practised by riders targeting very long events. Gut tolerance is trainable, so rehearse your race-day fuelling on long rides rather than discovering what works on the day.</p><p>Two numbers are worth tracking on the long ride. The first is <strong>power-to-heart-rate decoupling</strong>: if your heart rate rises more than about 5% relative to power between the first and second half of a steady ride, your aerobic base at that duration still needs work. The second is <strong>normalised power against average power</strong>. A large gap on a steady ride suggests you are surging, which spends energy you will want later.</p><h2 id=\"when-plans-break\">Where Fixed Plans Break Down</h2><p>A printed 12-week plan assumes that every week will go as scheduled and that your body will respond the same way on Tuesday as it did last Tuesday. Neither is reliable. Sleep, work stress, illness and accumulated fatigue change what a given workout costs you, and a session that was appropriate on paper can become too much in practice.</p><p>This is the gap that <strong>adaptive training</strong> is designed to close. Rather than holding to a calendar, an adaptive approach adjusts session type, intensity and volume based on how you are actually responding, using your recent training load, your power data and your recovery signals. For endurance riders this means the long ride grows when you are ready for it and holds when you are not. Forma is built around that principle, so your plan follows your physiology instead of the other way round.</p>",
+    "status": "published",
+    "_queue_id": "autosugg-0c217a6a",
+    "_cluster": "cycling-endurance",
+    "_composite_score": 5.5
+  },
+  {
     "slug": "marathon-training-plan-6-months-week-by-week-structure",
     "title": "Marathon Training Plan 6 Months: Week-by-Week Structure",
     "date": "2026-11-20",
