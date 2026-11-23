@@ -52,23 +52,5 @@
     "merged": "autosugg-4576e780",
     "similarity": 0.8,
     "method": "fuzzy"
-  },
-  {
-    "kept": "paa-c864217c",
-    "merged": "paa-af56b83f",
-    "similarity": 0.75,
-    "method": "fuzzy"
-  },
-  {
-    "kept": "paa-c864217c",
-    "merged": "paa-496713bc",
-    "similarity": 0.75,
-    "method": "fuzzy"
-  },
-  {
-    "kept": "paa-236eb9a8",
-    "merged": "paa-55cb284f",
-    "similarity": 0.75,
-    "method": "fuzzy"
   }
 ]
